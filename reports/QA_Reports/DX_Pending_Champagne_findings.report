@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_68379385</developerName>
+        <masterLabel>2022 Sprint</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>copado__User_Story__c.copado__Sprint__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 1 (previous)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 1 (previous) - Design</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 1 Copado Plan (previous)</sourceValue>
+            </sourceValues>
+            <value>Sprint 1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 2 (current)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 2 Copado Plan (current)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 2 Git Ops (Current) (March 2022)</sourceValue>
+            </sourceValues>
+            <value>Sprint 2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 3 (next)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 3 Copado Plan (next)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 3 Git Ops (Next) (April 2022)</sourceValue>
+            </sourceValues>
+            <value>Sprint 3</value>
+        </values>
+        <values>
+            <value>Sprint 4</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>copado__User_Story__c.copado__Team__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__User_Story_Title__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c.copado__Priority__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Status__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Cancellation_Reason__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Project__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Theme__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Parent_Epic_Title__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>champagne</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>copado__User_Story__c.SFDX_User_Story</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Project__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>APO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Released,Rejected,Completed,Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Team__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>DX</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.copado__Team__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_68379385</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>DX Pending Champagne findings</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>copado__User_Story__c.copado__Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

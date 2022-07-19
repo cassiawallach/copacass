@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is created for story US-0027065</description>
+    <isLicensed>false</isLicensed>
+    <label>Account Ownership change permission</label>
+</CustomPermission>

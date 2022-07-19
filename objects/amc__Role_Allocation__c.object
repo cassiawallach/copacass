@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>amc__Action__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Action record this Role Allocation relates to</inlineHelpText>
+        <label>Action</label>
+        <referenceTo>amc__Action__c</referenceTo>
+        <relationshipLabel>Role Allocations</relationshipLabel>
+        <relationshipName>Role_Allocations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Allocation_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(amc__Holiday__c)), &quot;Holiday&quot;, IF(NOT(ISBLANK(amc__Action__c)), &quot;Action&quot;, &quot;Forecast&quot;) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Identifies whether this Role Allocation relates to a Role Forecast, Action or Holiday</inlineHelpText>
+        <label>Allocation Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Contributor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Contributor record this Role Allocation relates to</inlineHelpText>
+        <label>Contributor</label>
+        <referenceTo>amc__Contributor__c</referenceTo>
+        <relationshipLabel>Role Allocations</relationshipLabel>
+        <relationshipName>Role_Allocations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the Date this Role Allocation relates to</inlineHelpText>
+        <label>Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>amc__Holiday__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Holiday record this Role Allocation relates to</inlineHelpText>
+        <label>Holiday</label>
+        <referenceTo>amc__Holiday__c</referenceTo>
+        <relationshipLabel>Role Allocations</relationshipLabel>
+        <relationshipName>Role_Allocations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Completed_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up summary of the Hours Completed - Billable field on related Role Actual records</inlineHelpText>
+        <label>Hours Completed - Billable</label>
+        <summarizedField>amc__Role_Actual__c.amc__Hours_Completed_Billable__c</summarizedField>
+        <summaryForeignKey>amc__Role_Actual__c.amc__Role_Allocation__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Completed_Non_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up summary of the Hours Completed - Non Billable field on related Role Actual records</inlineHelpText>
+        <label>Hours Completed - Non Billable</label>
+        <summarizedField>amc__Role_Actual__c.amc__Hours_Completed_Non_Billable__c</summarizedField>
+        <summaryForeignKey>amc__Role_Actual__c.amc__Role_Allocation__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Completed_Value_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up summary of the Hours Completed Value (Billable) field on related Role Actual records</inlineHelpText>
+        <label>Hours Completed Value (Billable)</label>
+        <summarizedField>amc__Role_Actual__c.amc__Hours_Completed_Value_Billable__c</summarizedField>
+        <summaryForeignKey>amc__Role_Actual__c.amc__Role_Allocation__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Completed_Value_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll up summary of the Hours Completed Value (Cost) field on related Role Actual records</inlineHelpText>
+        <label>Hours Completed Value (Cost)</label>
+        <summarizedField>amc__Role_Actual__c.amc__Hours_Completed_Value_Cost__c</summarizedField>
+        <summaryForeignKey>amc__Role_Actual__c.amc__Role_Allocation__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Scheduled_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Billable Hours assigned to this Role Allocation from the Role Forecast or Action it relates to</inlineHelpText>
+        <label>Hours Scheduled - Billable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Scheduled_Non_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Non Billable Hours assigned to this Role Allocation from the Role Forecast or Action it relates to</inlineHelpText>
+        <label>Hours Scheduled - Non Billable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Scheduled_Value_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the scheduled billable value of this Role Allocation by multiplying the Hours Scheduled - Billable with the appropriate Billable Hourly Rate</inlineHelpText>
+        <label>Hours Scheduled Value (Billable)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Scheduled_Value_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the scheduled cost value of this Role Allocation by multiplying the Total Hours Scheduled with the appropriate Cost Hourly Rate</inlineHelpText>
+        <label>Hours Scheduled Value (Cost)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__Manual_Allocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the Manual Allocation value of the parent Action, Role Forecast, or Holiday Record</description>
+        <externalId>false</externalId>
+        <formula>OR( amc__Action__r.amc__Manual_Allocation__c, amc__Role_Forecast__r.amc__Manual_Allocation__c, amc__Holiday__r.amc__Manual_Allocation__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Displays the Manual Allocation value of the parent Action, Role Forecast, or Holiday Record</inlineHelpText>
+        <label>Manual Allocation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>amc__Role_Forecast__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Role Forecast record this Role Allocation relates to</inlineHelpText>
+        <label>Role Forecast</label>
+        <referenceTo>amc__Role_Forecast__c</referenceTo>
+        <relationshipLabel>Role Allocations</relationshipLabel>
+        <relationshipName>Role_Allocations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Role__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Role record this Role Allocation relates to</inlineHelpText>
+        <label>Role</label>
+        <referenceTo>amc__Role__c</referenceTo>
+        <relationshipLabel>Role Allocations</relationshipLabel>
+        <relationshipName>Role_Allocations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Skill__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(amc__Action__c)), amc__Action__r.amc__Skill__r.Name, amc__Role_Forecast__r.amc__Skill__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Identifies the Skill Name referenced on the Action or Role Forecast record this Role Allocation relates to</inlineHelpText>
+        <label>Skill</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Total_Hours_Completed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Hours_Completed_Billable__c  +  amc__Hours_Completed_Non_Billable__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Total Hours Completed based on &apos;Hours Completed - Billable&apos; + &apos;Hours Completed - Non Billable&apos;</inlineHelpText>
+        <label>Total Hours Completed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Total_Hours_Scheduled__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Hours_Scheduled_Billable__c  +  amc__Hours_Scheduled_Non_Billable__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Total Hours Scheduled based on &apos;Hours Scheduled - Billable&apos; + &apos;Hours Scheduled - Non Billable&apos;</inlineHelpText>
+        <label>Total Hours Scheduled</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Role Allocation</label>
+    <listViews>
+        <fullName>amc__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RALL:{000000}</displayFormat>
+        <label>Allocation ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Role Allocations</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>amc__Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Skill__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Hours_Scheduled_Billable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Hours_Scheduled_Non_Billable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Total_Hours_Scheduled__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Hours_Completed_Billable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Hours_Completed_Non_Billable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Total_Hours_Completed__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Skill__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Hours_Completed_Billable__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Hours_Completed_Non_Billable__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Hours_Scheduled_Billable__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Hours_Scheduled_Non_Billable__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Total_Hours_Completed__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Total_Hours_Scheduled__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

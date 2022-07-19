@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>JavaScript tree plugin for jQuery (source: https://github.com/mar10/fancytree/)
+
+Copyright (c) 2008-2020 Martin Wendt (https://wwWendt.de/)
+
+License: MIT (https://github.com/mar10/fancytree/blob/master/LICENSE.txt)</description>
+</StaticResource>

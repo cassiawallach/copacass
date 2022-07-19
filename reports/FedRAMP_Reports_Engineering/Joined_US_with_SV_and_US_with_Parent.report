@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B2</blockId>
+            <joinTable>copado__User_Story__c</joinTable>
+        </blockInfo>
+        <columns>
+            <field>copado__User_Story__c$Name</field>
+        </columns>
+        <columns>
+            <field>copado__User_Story__c.SecVulnUserStoryAssociations__r$Security_Vulnerability__c</field>
+        </columns>
+        <columns>
+            <field>copado__User_Story__c$copado__Release__c</field>
+        </columns>
+        <currency>USD</currency>
+        <format>Tabular</format>
+        <name>US with SV</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>User_Stories_with_or_w_o_Security_Vulnerabilities__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <sortColumn>copado__User_Story__c$Name</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>copado__User_Story__c$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>x</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_NAME</field>
+        </columns>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <columns>
+            <field>copado__User_Story__c.copado__Release__c</field>
+        </columns>
+        <currency>USD</currency>
+        <format>Tabular</format>
+        <name>US with Parent US</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.Parent_User_Story__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <sortColumn>CUST_NAME</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>copado__User_Story__c</joinTable>
+    </blockInfo>
+    <description>Joined report - US with SV, and US with Parent US</description>
+    <format>MultiBlock</format>
+    <name>Joined US with SV and US with Parent</name>
+    <params>
+        <name>lsk</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Stories_with_or_w_o_Security_Vulnerabilities__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

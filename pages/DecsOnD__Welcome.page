@@ -1,0 +1,21 @@
+<apex:page sidebar="false" showHeader="true">
+    <apex:stylesheet value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/css/decsond-sfdc-wrapper.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/sfdcWrapper.js')}"/>
+    <apex:includeLightning />
+    <div id="lightning" style="width:100%" />
+    <script>
+        $Lightning.use(
+            "DecsOnD:WelcomeTabClassicContainer",
+            function () {
+                $Lightning.createComponent(
+                    "DecsOnD:WelcomeTabContent",
+                    {
+                        classic: true,
+                        UIThemeDisplayed : "{!$User.UIThemeDisplayed}",
+                        UITheme : "{!$User.UITheme}"
+                    },
+                    "lightning",
+                    createComponentHandler);
+            });
+    </script>
+</apex:page>

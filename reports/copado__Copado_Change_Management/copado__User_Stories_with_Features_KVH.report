@@ -30,8 +30,22 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <field>copado__User_Story__c.copado__User_Story_Title__c</field>
+    </columns>
+    <columns>
         <field>FK_NAME</field>
     </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FK_CUSTENT_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>aDs5p000000k9eq</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

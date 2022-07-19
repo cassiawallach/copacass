@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>amc__Project__c.amc__Total_Hours_Forecast__c:SUM-amc__Project__c.amc__Total_Hours_Completed__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Remaining Hours</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>amc__Project__c.amc__Hours_Scheduled_Non_Billable__c:SUM - amc__Project__c.amc__Total_Hours_Completed__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Hours To Plan</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>amc__Project__c.amc__Status__c</field>
+    </columns>
+    <columns>
+        <field>amc__Project__c.Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>amc__Project__c.End_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>amc__Project__c.amc__Cost_Budget__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>amc__Project__c.amc__Hours_Scheduled_Non_Billable__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>amc__Project__c.amc__Total_Hours_Completed__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>amc__Project__c.amc__Hours_Scheduled_Non_Billable__c-amc__Project__c.amc__Total_Hours_Completed__c</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Hours To Plan</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Project details for professional services engagements that are not cancelled or completed</description>
+    <filter>
+        <criteriaItems>
+            <column>amc__Project__c.amc__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Complete,Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test,template,implementation demo,holidays &amp; pto,general client,do not use,business development,option 2,internal time</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>amc__Project__c.amc__Sub_Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Partner Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>amc__Project__c.amc__Project_Owner__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>chris brown,sondra chandler,kelly cullinane,martina burton,nicole harris,rob canfield</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>amc__Project__c.amc__Project_Owner__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Projects</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$amc__Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>amc__Project__c.amc__Baseline_End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

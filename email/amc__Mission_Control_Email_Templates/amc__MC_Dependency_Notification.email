@@ -1,0 +1,5 @@
+<messaging:emailTemplate subject="Mission Control: Dependency Update Notification" recipientType="User" relatedToType="amc__Role__c">
+    <messaging:htmlEmailBody >
+        <c:MC_Dependency_Update_Notification role="{!relatedTo.Id}"/>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

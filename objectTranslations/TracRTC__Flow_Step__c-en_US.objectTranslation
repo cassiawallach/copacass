@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>TracRTC__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>TracRTC__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow --></label>
+        <name>TracRTC__Flow__c</name>
+        <relationshipLabel><!-- Flow Steps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>TracRTC__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>TracRTC__Version__c</name>
+    </fields>
+</CustomObjectTranslation>

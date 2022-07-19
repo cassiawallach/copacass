@@ -228,7 +228,7 @@
                 <sorted>false</sorted>
                 <value>
                     <fullName>Before Deployment</fullName>
-                    <default>true</default>
+                    <default>false</default>
                     <label>Before Deployment</label>
                 </value>
                 <value>
@@ -324,11 +324,6 @@
                     <label>Bulk Data</label>
                 </value>
                 <value>
-                    <fullName>Data Template</fullName>
-                    <default>false</default>
-                    <label>Data Template</label>
-                </value>
-                <value>
                     <fullName>Delete MetaData</fullName>
                     <default>false</default>
                     <label>Delete MetaData</label>
@@ -347,6 +342,11 @@
                     <fullName>URL Callout</fullName>
                     <default>false</default>
                     <label>URL Callout</label>
+                </value>
+                <value>
+                    <fullName>Data Template</fullName>
+                    <default>false</default>
+                    <label>Data Template</label>
                 </value>
                 <value>
                     <fullName>Salesforce Flow</fullName>

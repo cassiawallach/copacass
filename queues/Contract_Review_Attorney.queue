@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Contract Review Attorney</name>
+    <queueMembers>
+        <users>
+            <user>c-hshah@copado.com</user>
+            <user>jsanderson@copado.com</user>
+            <user>c-ksante@copado.com</user>
+            <user>mmoustafa@copado.com</user>
+            <user>pbellner@copado.com</user>
+            <user>rstern@copado.com</user>
+            <user>vbansod@copado.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Contract_Review__c</sobjectType>
+    </queueSobject>
+</Queue>

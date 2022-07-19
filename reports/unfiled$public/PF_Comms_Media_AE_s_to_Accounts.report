@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>RATING</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Salesforce_AE__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Alex Vitale,Brandon Pohn,Brian Dwane,Brian O&apos;Hara,Brian Uyder,Bryan Thompson,Bryant Layson,Caitlin Schields,Catherine McNally,Catherine Wilson,Chris Haverty,Clay Schuster,Collin Scott,Eileen Killeen,Elysa Vreeland,Genevivee Moore,Heather Bufinsky,Joon Bang,Joseph Groves,Lindsay Haley,Maggie Hargis,Michael Miller,Michael Shrage,Mike Donato,Morgan Empey,Nicole Palmiotto,Norm Gallagher,Ray Reed,Sam Rubin,Shane Lay,Stacy Gomez,Stepan Markarian,Stephanie Neville,Susan Guerra,Susanne Giannios,Tom Maxwell</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Salesforce_AE__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PF- Comms Media AE&apos;s to Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

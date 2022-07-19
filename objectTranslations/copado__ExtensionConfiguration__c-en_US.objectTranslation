@@ -13,7 +13,7 @@
         <name>copado__Details__c</name>
     </fields>
     <fields>
-        <help><!-- Select the Copado Phase based on the Extension Tool you want to use. For example, if you select Test, the Extension Tool picklist will list the available Tools for that specific phase, e.g. Copado Robotic Test, Apex tests, or SCA tools such as PMD or Codescan. --></help>
+        <help><!-- Select the type of Application that relates to the extension. --></help>
         <label><!-- Copado Phase --></label>
         <name>copado__ExtensionApplication__c</name>
         <picklistValues>
@@ -24,6 +24,19 @@
     <fields>
         <label><!-- Extension Tool --></label>
         <name>copado__ExtensionTool__c</name>
+        <picklistValues>
+            <masterLabel>Copado Robotic Testing</masterLabel>
+            <translation><!-- Copado Robotic Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the name of the CMDT Extension Record this integration relates to. --></help>
+        <label><!-- Extension Name - Deprecated --></label>
+        <name>copado__Extension_Name__c</name>
         <picklistValues>
             <masterLabel>None</masterLabel>
             <translation><!-- None --></translation>
@@ -49,8 +62,48 @@
         <label><!-- Test Type --></label>
         <name>copado__TestType__c</name>
     </fields>
-    <validationRules>
-        <errorMessage><!-- This Extension Tool cannot be modified. Please create a new Extension Configuration record instead. --></errorMessage>
-        <name>copado__PreventUpdatingExtensionTool</name>
-    </validationRules>
+    <fields>
+        <help><!-- Select the type of test you want to execute with the Extension. --></help>
+        <label><!-- Type - deprecated --></label>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Functional</masterLabel>
+            <translation><!-- Functional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Code Analysis</masterLabel>
+            <translation><!-- Static Code Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Test</masterLabel>
+            <translation><!-- Unit Test --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Extension Configuration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Activate - Deprecated --></label>
+        <name>copado__Activate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Activate --></label>
+        <name>copado__Activation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Deactivate --></label>
+        <name>copado__Deactivate</name>
+    </quickActions>
 </CustomObjectTranslation>

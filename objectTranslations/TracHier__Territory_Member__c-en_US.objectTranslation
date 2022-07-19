@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>TracHier__Account__c</name>
+        <relationshipLabel><!-- Territory Memberships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>TracHier__Territory_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>TracHier__Territory__c</name>
+        <relationshipLabel><!-- Territory Members --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

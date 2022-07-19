@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>DecsOnD__Account__c</name>
+        <relationshipLabel><!-- Policy Execution Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action(s) Applied --></label>
+        <name>DecsOnD__Action_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applies to --></label>
+        <name>DecsOnD__Applies_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Group ID --></label>
+        <name>DecsOnD__Assigned_Group_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Group Label --></label>
+        <name>DecsOnD__Assigned_Group_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Group Name --></label>
+        <name>DecsOnD__Assigned_Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Group --></label>
+        <name>DecsOnD__Assigned_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Owner Name --></label>
+        <name>DecsOnD__Assigned_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned User --></label>
+        <name>DecsOnD__Assigned_User__c</name>
+        <relationshipLabel><!-- Policy Execution Records (Assigned User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assignment Details --></label>
+        <name>DecsOnD__Assignment_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Audit Trail Type (deprecated) --></label>
+        <name>DecsOnD__Audit_Trail_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>DecsOnD__Case__c</name>
+        <relationshipLabel><!-- Policy Execution Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>DecsOnD__Contact__c</name>
+        <relationshipLabel><!-- Policy Execution Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Detail Messages --></label>
+        <name>DecsOnD__Decision_Server_Messages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date and time --></label>
+        <name>DecsOnD__Invocation_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invocation Record --></label>
+        <name>DecsOnD__Invocation_Record__c</name>
+        <relationshipLabel><!-- Policy Execution Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>DecsOnD__Invocation_Status__c</name>
+        <picklistValues>
+            <masterLabel>FAIL</masterLabel>
+            <translation><!-- FAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO ACTION</masterLabel>
+            <translation><!-- NO ACTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoked from --></label>
+        <name>DecsOnD__Invocation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Batch APEX</masterLabel>
+            <translation><!-- Batch APEX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Button</masterLabel>
+            <translation><!-- Custom Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trigger</masterLabel>
+            <translation><!-- Trigger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workflow</masterLabel>
+            <translation><!-- Workflow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoking user --></label>
+        <name>DecsOnD__Invoked_UserID__c</name>
+        <relationshipLabel><!-- Policy Execution Records (Invoking user) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>DecsOnD__Lead__c</name>
+        <relationshipLabel><!-- Policy Execution Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Main Record Name --></label>
+        <name>DecsOnD__Main_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Record ID --></label>
+        <name>DecsOnD__Main_object_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Record --></label>
+        <name>DecsOnD__Main_object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>DecsOnD__Opportunity__c</name>
+        <relationshipLabel><!-- Policy Execution Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>DecsOnD__Policy__c</name>
+        <relationshipLabel><!-- Policy Execution Log --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version Label --></label>
+        <name>DecsOnD__Version_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version Number --></label>
+        <name>DecsOnD__Version_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Policy Execution Record Layout</layout>
+        <sections>
+            <label><!-- Actions applied --></label>
+            <section>Actions applied</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

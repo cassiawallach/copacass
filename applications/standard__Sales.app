@@ -4,17 +4,19 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
-    <tabs>standard-Chatter</tabs>
-    <tabs>standard-UserProfile</tabs>
-    <tabs>standard-CollaborationGroup</tabs>
-    <tabs>standard-File</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
-    <tabs>standard-Product2</tabs>
     <tabs>standard-Forecasting3</tabs>
-    <uiType>Aloha</uiType>
+    <tabs>standard-ContentSearch</tabs>
+    <tabs>standard-Quote</tabs>
+    <tabs>AVA__AVA</tabs>
+    <tabs>standard-WaveHome</tabs>
+    <tabs>Competitor__c</tabs>
+    <tabs>standard-OtherUserProfile</tabs>
+    <tabs>Customer_Success__c</tabs>
+    <tabs>Custom_Account_Trends__c</tabs>
 </CustomApplication>

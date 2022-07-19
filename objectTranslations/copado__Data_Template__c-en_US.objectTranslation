@@ -13,8 +13,8 @@
             <translation><!-- Insert Attachments --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>No Actions</masterLabel>
-            <translation><!-- No Actions --></translation>
+            <masterLabel>No Attachments</masterLabel>
+            <translation><!-- No Attachments --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Remove Attachments</masterLabel>
@@ -69,6 +69,29 @@
         <name>copado__Template_Source_Org__c</name>
         <relationshipLabel><!-- Data Templates --></relationshipLabel>
     </fields>
+    <layouts>
+        <layout>Data Template Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Activate --></label>
+        <name>copado__Activate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Clone --></label>
+        <name>copado__Clone</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Deactivate --></label>
+        <name>copado__Deactivate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Export Template --></label>
+        <name>copado__Export_Template</name>
+    </quickActions>
     <webLinks>
         <label><!-- Import_Templates --></label>
         <name>copado__Import_Templates</name>

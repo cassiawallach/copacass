@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Environment_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -154,6 +157,33 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Developer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The developer&apos;s owner</description>
+        <externalId>false</externalId>
+        <label>Developer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Environments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>copado__CommitJobTemplateOverride__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Select a Job Template to override the default Commit Job Template defined in the Pipeline</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a Job Template to override the default Commit Job Template defined in the Pipeline</inlineHelpText>
+        <label>Commit Job Template Override</label>
+        <referenceTo>copado__JobTemplate__c</referenceTo>
+        <relationshipLabel>Environments (Commit Job Template Override)</relationshipLabel>
+        <relationshipName>Environments2</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <fields>
         <fullName>copado__Compliance_Rule_Group__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -241,6 +271,19 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Deployment_Job_Template_Override__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Deployment Job Template Override</label>
+        <referenceTo>copado__JobTemplate__c</referenceTo>
+        <relationshipLabel>Environments (Deployment Job Template Override)</relationshipLabel>
+        <relationshipName>Environments1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>copado__Enable_Rollback__c</fullName>
@@ -417,6 +460,31 @@
                     <label>Salesforce</label>
                 </value>
                 <value>
+                    <fullName>MuleSoft</fullName>
+                    <default>false</default>
+                    <label>MuleSoft</label>
+                </value>
+                <value>
+                    <fullName>SFDX</fullName>
+                    <default>false</default>
+                    <label>SFDX</label>
+                </value>
+                <value>
+                    <fullName>Node</fullName>
+                    <default>false</default>
+                    <label>Node</label>
+                </value>
+                <value>
+                    <fullName>Java</fullName>
+                    <default>false</default>
+                    <label>Java</label>
+                </value>
+                <value>
+                    <fullName>Python</fullName>
+                    <default>false</default>
+                    <label>Python</label>
+                </value>
+                <value>
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
@@ -438,30 +506,37 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Always</fullName>
+                    <fullName>All Promotions</fullName>
                     <default>true</default>
-                    <label>Always</label>
+                    <label>All Promotions</label>
                 </value>
                 <value>
                     <fullName>Only If User Has No Org Credential</fullName>
                     <default>false</default>
                     <label>Only If User Has No Org Credential</label>
                 </value>
-                <value>
-                    <fullName>All Promotions</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>All Promotions</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Promotion_Job_Template_Override__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Promotion Job Template Override</label>
+        <referenceTo>copado__JobTemplate__c</referenceTo>
+        <relationshipLabel>Environments</relationshipLabel>
+        <relationshipName>Environments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>copado__Run_all_tests__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>If selected, &quot;Run all local tests&quot; will be enforced when deploying to this environment.</inlineHelpText>
+        <inlineHelpText>If selected, &quot;Run all tests&quot; will be enforced when deploying to this environment.</inlineHelpText>
         <label>Run all local tests</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -486,11 +561,6 @@
                     <fullName>Sandbox</fullName>
                     <default>false</default>
                     <label>Sandbox</label>
-                </value>
-                <value>
-                    <fullName>Scratch Org</fullName>
-                    <default>false</default>
-                    <label>Scratch Org</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -521,16 +591,82 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <fields>
+        <fullName>copadometrics__Production_Org__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Production Org?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <label>Environment</label>
+    <listViews>
+        <fullName>APO_Environments</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>notContain</operation>
+            <value>PLG+</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>APO</value>
+        </filters>
+        <label>APO Environments</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Champagne_Environments</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Platform__c</columns>
+        <columns>copado__Type__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>CLI,CCH,Heroku,SFDX,Mule,connect,vsm,service</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>dev,int,pack,local,staging</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>2/2/2022 12:00 AM</value>
+        </filters>
+        <label>Champagne Environments</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_DEV</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Current_Code_Coverage__c</columns>
+        <columns>copado__Minimum_Apex_Test_Coverage__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>Copado DEV</value>
+        </filters>
+        <label>Copado DEV</label>
+    </listViews>
     <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
         <columns>copado__Type__c</columns>
+        <columns>copado__Platform__c</columns>
         <columns>copado__Minimum_Apex_Test_Coverage__c</columns>
         <columns>copado__Org_ID__c</columns>
         <columns>CREATED_DATE</columns>
         <columns>LAST_UPDATE</columns>
-        <columns>copado__Enable_Rollback__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -552,7 +688,6 @@
         <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
         <searchFilterFields>NAME</searchFilterFields>
         <searchFilterFields>copado__Org_ID__c</searchFilterFields>
-        <searchResultsAdditionalFields>copado__Platform__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Type__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Minimum_Apex_Test_Coverage__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Org_ID__c</searchResultsAdditionalFields>
@@ -560,6 +695,31 @@
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>copado__Unique_Job_Template</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+AND(
+NOT(ISBLANK(copado__CommitJobTemplateOverride__c)),
+OR(
+copado__CommitJobTemplateOverride__c == copado__Deployment_Job_Template_Override__c,
+copado__CommitJobTemplateOverride__c == copado__Promotion_Job_Template_Override__c
+)),
+AND(
+NOT(ISBLANK(copado__Promotion_Job_Template_Override__c)),
+OR(
+copado__Promotion_Job_Template_Override__c == copado__Deployment_Job_Template_Override__c,
+copado__Promotion_Job_Template_Override__c == copado__CommitJobTemplateOverride__c
+)),
+AND(
+NOT(ISBLANK(copado__Deployment_Job_Template_Override__c)),
+OR(
+copado__Deployment_Job_Template_Override__c == copado__Promotion_Job_Template_Override__c,
+copado__Deployment_Job_Template_Override__c == copado__CommitJobTemplateOverride__c
+))
+)</errorConditionFormula>
+        <errorMessage>An environment cannot have the same job template for Commit, Promote and Deploy.</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
     <webLinks>
         <fullName>copado__Find_Replace_Rule_Editor</fullName>

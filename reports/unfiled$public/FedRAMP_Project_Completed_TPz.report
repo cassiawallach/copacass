@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_29785041</developerName>
+        <masterLabel>Status2</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>copado__User_Story__c.copado__Status__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Rejected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Backburner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Acceptance Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Cancelled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Work Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Release Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regression Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Packaging Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Planning Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Investigation Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Development Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tech. Review Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA DEV Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA UAT Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting for customer</sourceValue>
+            </sourceValues>
+            <value>Blocked/Cancelled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Done</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Released</sourceValue>
+            </sourceValues>
+            <value>Completed or Released</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>copado__User_Story__c.copado__Status__c</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Developer__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__User_Story_Title__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Team__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Epic__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Close_Date__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Sprint__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>to manage FedRAMp Gap resolution &amp; planning</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FedRAMP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Parent_Epic_Title__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Preparing our FedRAMP Infrastructure for Customers,[FedRAMP] Post-VA ATO Activities</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_29785041</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.copado__Parent_Epic_Title__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FedRAMP Project % Completed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.copado__Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>amc__Billable_Hourly_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifes the Billable Hourly Rate used for this Role Forecast</inlineHelpText>
+        <label>Billable Hourly Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__Billable_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Billable&apos;</inlineHelpText>
+        <label>Billable Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Billable_Percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the percentage of Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Billable&apos;</inlineHelpText>
+        <label>Billable Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>amc__Cost_Hourly_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the Cost Hourly Rate used for this Role Forecast</inlineHelpText>
+        <label>Cost Hourly Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the Forecasted End Date</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>amc__Forecast_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__End_Date__c -  amc__Start_Date__c +1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Days elapsed between the Start and End Date (inclusive)</inlineHelpText>
+        <label>Forecast Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Forecast_GM__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Forecast_P_L__c  /  amc__Hours_Forecast_Value_Billable__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Forecast GM% based on &apos;Forecast P&amp;L&apos; / &apos;Hours Forecast Value (Billable)&apos;</inlineHelpText>
+        <label>Forecast GM%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>amc__Forecast_P_L__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Hours_Forecast_Value_Billable__c  -  amc__Hours_Forecast_Value_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Forecast P&amp;L based on &apos;Hours Forecast Value (Billable)&apos; - &apos;Hours Forecast Value (Cost)&apos;</inlineHelpText>
+        <label>Forecast P&amp;L</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Forecast_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Billable Hours assigned to this Role on this Role Forecast</inlineHelpText>
+        <label>Hours Forecast - Billable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Forecast_Non_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Non Billable Hours assigned to this Role on this Role Forecast</inlineHelpText>
+        <label>Hours Forecast - Non Billable</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Forecast_Value_Billable__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Hours_Forecast_Billable__c  *  amc__Billable_Hourly_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Hours Forecast Value (Billable) based on &apos;Hours Forecast - Billable&apos; x &apos;Billable Hourly Rate&apos;</inlineHelpText>
+        <label>Hours Forecast Value (Billable)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__Hours_Forecast_Value_Cost__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Total_Hours_Forecast__c  *  amc__Cost_Hourly_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Hours Forecast Value (Cost) based on &apos;Total Hours Forecast&apos; x &apos;Cost Hourly Rate&apos;</inlineHelpText>
+        <label>Hours Forecast Value (Cost)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>amc__Manual_Allocation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When checked, denotes child Role Allocation Records are manually allocated.</description>
+        <externalId>false</externalId>
+        <label>Manual Allocation</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>amc__Non_Billable_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Non Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Non Billable&apos;</inlineHelpText>
+        <label>Non Billable Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Non_Billable_Percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the percentage of Non Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Non Billable&apos;</inlineHelpText>
+        <label>Non Billable Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>amc__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Opportunity record this Role Forecast relates to</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Role Forecasts</relationshipLabel>
+        <relationshipName>Role_Forecasts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Project record this Role Forecast record relates to</inlineHelpText>
+        <label>Project</label>
+        <referenceTo>amc__Project__c</referenceTo>
+        <relationshipLabel>Role Forecasts</relationshipLabel>
+        <relationshipName>Role_Forecasts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Role__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Role record this Role Forecast relates to</inlineHelpText>
+        <label>Role</label>
+        <referenceTo>amc__Role__c</referenceTo>
+        <relationshipLabel>Role Forecasts</relationshipLabel>
+        <relationshipName>Role_Forecasts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Skill__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Links to the Skill record this Role Forecast relates to</inlineHelpText>
+        <label>Skill</label>
+        <referenceTo>amc__Skill__c</referenceTo>
+        <relationshipLabel>Role Forecasts</relationshipLabel>
+        <relationshipName>Role_Forecasts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>amc__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the Forecasted Start Date</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>amc__Total_Hours_Forecast__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>amc__Hours_Forecast_Billable__c  +  amc__Hours_Forecast_Non_Billable__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula: Calculates the Total Hours Forecast based on &apos;Hours Forecast - Billable&apos; + &apos;Hours Forecast - Non Billable&apos;</inlineHelpText>
+        <label>Total Hours Forecast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>amc__Working_Days__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the number of Working Days expected as part of this Role Forecast</inlineHelpText>
+        <label>Working Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Role Forecast</label>
+    <listViews>
+        <fullName>amc__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RFID:{000000}</displayFormat>
+        <label>Forecast ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Role Forecasts</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>amc__Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Skill__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Working_Days__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Hours_Forecast_Billable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Hours_Forecast_Non_Billable__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Total_Hours_Forecast__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>amc__Manual_Allocation__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Skill__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Working_Days__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Hours_Forecast_Billable__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Hours_Forecast_Non_Billable__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Total_Hours_Forecast__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>amc__Manual_Allocation__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>amc__End_Date_Validation</fullName>
+        <active>true</active>
+        <description>Ensures the End Date is not set before the Start Date</description>
+        <errorConditionFormula>amc__Start_Date__c  &gt;  amc__End_Date__c</errorConditionFormula>
+        <errorMessage>The End Date must be greater or equal to the Start Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>amc__Ensure_Working_Days_Greater_Than_Zero</fullName>
+        <active>true</active>
+        <description>Ensures the Working Days field is greater than 0</description>
+        <errorConditionFormula>or(ISNULL(amc__Working_Days__c), amc__Working_Days__c  &lt;= 0)</errorConditionFormula>
+        <errorMessage>The Working Days must be greater than 0</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

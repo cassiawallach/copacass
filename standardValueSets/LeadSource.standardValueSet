@@ -1,59 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <sorted>false</sorted>
+    <sorted>true</sorted>
     <standardValue>
-        <fullName>Advertisement</fullName>
+        <fullName>3rd Party Website</fullName>
         <default>false</default>
-        <label>Advertisement</label>
+        <label>3rd Party Website</label>
     </standardValue>
     <standardValue>
-        <fullName>Employee Referral</fullName>
+        <fullName>AE Outbound</fullName>
         <default>false</default>
-        <label>Employee Referral</label>
+        <label>AE Outbound</label>
     </standardValue>
     <standardValue>
-        <fullName>External Referral</fullName>
+        <fullName>Alliances Outbound</fullName>
         <default>false</default>
-        <label>External Referral</label>
+        <label>Alliances Outbound</label>
     </standardValue>
     <standardValue>
-        <fullName>Partner</fullName>
+        <fullName>AppExchange</fullName>
         <default>false</default>
-        <label>Partner</label>
+        <label>AppExchange</label>
     </standardValue>
     <standardValue>
-        <fullName>Public Relations</fullName>
+        <fullName>BDR Outbound</fullName>
         <default>false</default>
-        <label>Public Relations</label>
+        <label>BDR Outbound</label>
     </standardValue>
     <standardValue>
-        <fullName>Seminar - Internal</fullName>
+        <fullName>Click Deploy</fullName>
         <default>false</default>
-        <label>Seminar - Internal</label>
+        <label>Click Deploy</label>
     </standardValue>
     <standardValue>
-        <fullName>Seminar - Partner</fullName>
+        <fullName>CSM Outbound</fullName>
         <default>false</default>
-        <label>Seminar - Partner</label>
+        <label>CSM Outbound</label>
     </standardValue>
     <standardValue>
-        <fullName>Trade Show</fullName>
+        <fullName>Drift</fullName>
         <default>false</default>
-        <label>Trade Show</label>
+        <label>Drift</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Live Event</fullName>
+        <default>false</default>
+        <label>Live Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified Chat</fullName>
+        <default>false</default>
+        <label>Qualified Chat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renewals</fullName>
+        <default>false</default>
+        <label>Renewals</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SDR Outbound</fullName>
+        <default>false</default>
+        <label>SDR Outbound</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Virtual Event</fullName>
+        <default>false</default>
+        <label>Virtual Event</label>
     </standardValue>
     <standardValue>
         <fullName>Web</fullName>
         <default>false</default>
         <label>Web</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Word of mouth</fullName>
-        <default>false</default>
-        <label>Word of mouth</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Other</fullName>
-        <default>false</default>
-        <label>Other</label>
     </standardValue>
 </StandardValueSet>

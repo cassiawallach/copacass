@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assignee --></label>
+        <name>DecsOnD__Assignee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>DecsOnD__Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>DecsOnD__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>DecsOnD__Policy__c</name>
+        <relationshipLabel><!-- Assignment Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Settings --></label>
+        <name>DecsOnD__Settings__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>DecsOnD__User__c</name>
+        <relationshipLabel><!-- Assignment Settings --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>for developers to use the MC Pipelines with the DX Extension</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Copado MCDX</label>
+    <permissionSets>Copado_MC_Continuous_Delivery</permissionSets>
+    <permissionSets>SFDX_temporary</permissionSets>
+    <permissionSets>cmcSf__CMC_SFDX_Admin</permissionSets>
+    <permissionSets>copado__Copado_Functions</permissionSets>
+    <permissionSets>copado__Copado_Job_Engine</permissionSets>
+    <permissionSets>copado__Copado_User</permissionSets>
+    <permissionSets>copado__Quality_Gates_Admin</permissionSets>
+    <permissionSets>copadovsm__Copado_VSM_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

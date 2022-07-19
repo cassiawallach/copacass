@@ -16,4 +16,29 @@
         <default>false</default>
         <label>Web</label>
     </standardValue>
+    <standardValue>
+        <fullName>Sales Email</fullName>
+        <default>false</default>
+        <label>Sales Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Community</fullName>
+        <default>false</default>
+        <label>Community</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound Case</fullName>
+        <default>false</default>
+        <label>Outbound Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Academy</fullName>
+        <default>false</default>
+        <label>Academy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Privacy Email</fullName>
+        <default>false</default>
+        <label>Privacy Email</label>
+    </standardValue>
 </StandardValueSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Report ID --></label>
+        <name>TracRTC__Report_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>TracRTC__Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>TracRTC__Total__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Copa Update Layout</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="recentCopaUpdateLabel" type="String" label="Recent Copa Updates Label" description="Label for recent Copa Updates." ></property>
+            <property name="numberOfRecentCopaUpdates" type="Integer" label="Number of Recent Copa Updates" description="Number of recent Copa Updates to show." ></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

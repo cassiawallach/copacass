@@ -1,0 +1,41 @@
+<apex:page standardController="Account">
+
+    <apex:includeLightning />
+    <apex:stylesheet value="{!URLFOR($Resource.TracRTC__TracRTC_SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+    <style type="text/css">
+        .hide {
+            display: none;
+        }
+    </style>
+
+    <div class="TracRTC">
+        <div id="lightning" />
+
+        <div id="tractioncomplete-vf-spinner" class="slds-align_absolute-center" role="alert" style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+            <img height="48" width="48" src="{! $Resource.TracRTC__Assets + '/images/Complete-Spinner-24.svg' }" />
+        </div>
+    </div>
+
+    <script>
+        $Lightning.use("TracRTC:lcvfTractionComplete", function() {
+          $Lightning.createComponent(
+            "TracRTC:TractionCompleteAccount",
+            {
+                recordId : "{!account.Id}",
+                isVF : true,
+                sessionId : "{!$Api.Session_ID}",
+                viewAllObject : "Account"
+            },
+            "lightning",
+            function(cmp) {
+                // Fix to downscale font size on visualforce
+                // slds-scope class will be added by default, 
+                // making the font bigger, so we remove it here
+              document.getElementById("lightning").className = "";
+              document.getElementById("tractioncomplete-vf-spinner").className = "hide";
+            });
+        });
+
+    </script>
+</apex:page>

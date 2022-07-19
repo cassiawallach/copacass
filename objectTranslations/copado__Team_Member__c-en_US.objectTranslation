@@ -53,6 +53,22 @@
             <translation><!-- Doc Manager --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>IT Manager</masterLabel>
+            <translation><!-- IT Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InfoSec Manager</masterLabel>
+            <translation><!-- InfoSec Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infrastructure Engineer</masterLabel>
+            <translation><!-- Infrastructure Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal IT Engineer</masterLabel>
+            <translation><!-- Internal IT Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Network Engineer</masterLabel>
             <translation><!-- Network Engineer --></translation>
         </picklistValues>
@@ -77,8 +93,12 @@
             <translation><!-- Provisioning Specialist / Asset Manager --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>QA Engineer</masterLabel>
-            <translation><!-- QA Engineer --></translation>
+            <masterLabel>QA Automation Engineer</masterLabel>
+            <translation><!-- QA Automation Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA Functional Engineer</masterLabel>
+            <translation><!-- QA Functional Engineer --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>QA Manager</masterLabel>
@@ -140,10 +160,21 @@
             <masterLabel>UE Manager</masterLabel>
             <translation><!-- UE Manager --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>UX designer</masterLabel>
+            <translation><!-- UX designer --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Team --></label>
         <name>copado__Team__c</name>
         <relationshipLabel><!-- Team Members --></relationshipLabel>
     </fields>
+    <layouts>
+        <layout>Team Member Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

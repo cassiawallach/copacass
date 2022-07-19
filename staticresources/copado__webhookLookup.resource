@@ -19,6 +19,7 @@ webhookLookup.referalMap = [];
 webhookLookup.webhookLookup.currentUrl = '';
 
 //LABELS
+webhookLookup.config.VIEW_DOCUMENTATION = 'View Documentation';
 webhookLookup.config.NAME = 'Name';
 webhookLookup.config.DESCRIPTION = 'Description';
 
@@ -28,18 +29,16 @@ webhookLookup.onSuccessCB = function(){};
 
 /* WEBHOOK LOOKUP */
 webhookLookup.templateRow = function(i, row){
-    var _name = webhookLookup.copadoLabels[row.name] ? webhookLookup.copadoLabels[row.name] : row.name;
-    var _description = webhookLookup.copadoLabels[row.name+' Description'] ? webhookLookup.copadoLabels[row.name+' Description'] : row.description;
     var _row = '<tr class="dataRow">'+
         '<td style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">';
         if(!row.multiReferal || row.multiReferal === false){
-            _row += '<a id="whn-'+i+'" title="' + _name +'" href="javascript:void(0)" onclick="webhookLookup.showLookupField(\''+row.referTo+'\', \''+row.url+'\');">'+_name+'</a>';
+            _row += '<a id="whn-'+i+'" title="' + row.name +'" href="javascript:void(0)" onclick="webhookLookup.showLookupField(\''+row.referTo+'\', \''+row.url+'\');">'+row.name+'</a>';
         } else {
-            _row += '<a id="whn-'+i+'" title="' + _name +'" href="javascript:void(0)" onclick="webhookLookup.showLookupFieldsMultiReferal(\''+row.referTo+'\', \''+row.url+'\');">'+_name+'</a>';
+            _row += '<a id="whn-'+i+'" title="' + row.name +'" href="javascript:void(0)" onclick="webhookLookup.showLookupFieldsMultiReferal(\''+row.referTo+'\', \''+row.url+'\');">'+row.name+'</a>';
         }
         _row+= '</td>'+
-        '<td style="white-space: pre-wrap;"><span id="whd-'+i+'">'+_description+'</span></td>'+
-        '<td><a id="whdl-'+i+'" href="'+row.documentationLink+'" data-ref="webhookNameLink" target="_blank">'+webhookLookup.copadoLabels.VIEW_DOCUMENTATION+'</a></td>'+
+        '<td style="white-space: pre-wrap;"><span id="whd-'+i+'">'+row.description+'</span></td>'+
+        '<td><a id="whdl-'+i+'" href="'+row.documentationLink+'" data-ref="webhookNameLink" target="_blank">'+webhookLookup.config.VIEW_DOCUMENTATION+'</a></td>'+
     '</tr>';
     return _row;
 };

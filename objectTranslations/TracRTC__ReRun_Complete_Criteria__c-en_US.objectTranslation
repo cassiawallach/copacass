@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Field --></label>
+        <name>TracRTC__Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>TracRTC__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is On Create Criteria --></label>
+        <name>TracRTC__Is_On_Create_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>TracRTC__Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject Name --></label>
+        <name>TracRTC__SObject_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>TracRTC__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-card">
+        <template if:true={isBusy}>
+          <div class="slds-align_absolute-center slds-p-around_medium">
+              <lightning-spinner alternative-text="Loading" variant="brand" size="small">
+              </lightning-spinner>
+          </div>
+        </template>
+        <template if:true={status.hasError}>
+          <c-generic-error error-message={status.errorMessage}></c-generic-error>
+        </template>
+        <template if:true={showCopaUpdates}>
+          <div class="slds-p-around_medium">
+            <div class="slds-align_absolute-center slds-card__header slds-grid slds-p-right_none slds-p-left_none">
+              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                  <div class="slds-media__body">
+                      <h1 class="slds-text-heading_medium">
+                          {recentCopaUpdateLabel}
+                      </h1>
+                  </div>
+              </header>
+            </div>
+            <hr/>
+            <div class="copa_update-list">
+              <template if:true={hasRecords}>
+                <div>
+                  <ul class="slds-has-block-links_space slds-list_dotted">
+                    <template for:each={recentCopadoUpdates} for:item="copa_update">
+                      <li key={copa_update.Id}>
+                        <a href={copa_update.CopaUpdateUrl}>{copa_update.StartDate} - {copa_update.Title}</a>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+              </template>
+              <template if:false={hasRecords}>
+                <span class="slds-align_absolute-center">No Recent Copa Update Found.</span>
+              </template>
+            </div>
+          </div>
+        </template>
+    </div>
+</template>

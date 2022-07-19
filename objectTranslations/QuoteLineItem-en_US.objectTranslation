@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Line Item (Standard)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Line Items (Standard)</value>
+    </caseValues>
+    <fields>
+        <help><!-- To override the standard discount matrix --></help>
+        <label><!-- Custom Discount --></label>
+        <name>Custom_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order End Date --></label>
+        <name>Order_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Start Date --></label>
+        <name>Order_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>Total_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>Unit_Price__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Minimum Order Term must be 1 month --></errorMessage>
+        <name>Minimum_Order_Duration_1_month</name>
+    </validationRules>
+</CustomObjectTranslation>

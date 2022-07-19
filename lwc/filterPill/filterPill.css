@@ -1,0 +1,17 @@
+.filter_pill {
+    background-color: #01BBEA;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px 8px;
+}
+.filter_pill-title {
+    display: inline-block;
+    min-width: 40px;
+}
+.filter_pill-close {
+    position: relative;
+    display: inline-block;
+}

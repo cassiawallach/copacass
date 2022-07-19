@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>STATUS</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Case.User_Timezone__c</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.NoReplyAge__c</field>
+    </columns>
+    <columns>
+        <field>CONTACT.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Case.User_Story__c</field>
+    </columns>
+    <columns>
+        <field>Case.Module__c</field>
+    </columns>
+    <columns>
+        <field>Case.Sub_Module__c</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <currency>EUR</currency>
+    <customDetailFormulas>
+        <calculatedFormula>IF(Case.User_Timezone__c = &quot;(GMT-03:00) Argentina Standard Time (America/Argentina/Buenos_Aires)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-05:00) Colombia Standard Time (America/Bogota)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-05:00) Eastern Standard Time (America/Indiana/Indianapolis)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-05:00) Eastern Standard Time (America/New_York)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-05:00) Eastern Standard Time (America/Panama)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-06:00) Central Standard Time (America/Chicago)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-06:00) Central Standard Time (America/Mexico_City)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-07:00) Mountain Standard Time (America/Denver)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-07:00) Mountain Standard Time (America/Phoenix)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-08:00) Pacific Standard Time (America/Los_Angeles)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-08:00) Pacific Standard Time (America/Tijuana&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT-10:00) Hawaii-Aleutian Standard Time (Pacific/Honolulu)&quot;, &quot;US&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+00:00) Greenwich Mean Time (GMT)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+01:00) Central European Standard Time (Europe/Amsterdam)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+01:00) Central European Standard Time (Europe/Paris)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+01:00) Western European Summer Time (Europe/Lisbon)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+01:00) Central European Standard Time (Europe/Berlin)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+02:00) Central European Summer Time (Europe/Paris)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+02:00) Eastern European Standard Time (Europe/Helsinki)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+02:00) South Africa Standard Time (Africa/Johannesburg)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+05:30) India Standard Time (Asia/Colombo)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+05:30) India Standard Time (Asia/Kolkata&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+08:00) Hong Kong Standard Time (Asia/Hong_Kong)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+00:00) Western European Standard Time (Europe/Lisbon)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+05:30) India Standard Time (Asia/Kolkata)&quot;, &quot;IST&quot;,
+IF(Case.User_Timezone__c = &quot;(GMT+11:00) Australian Eastern Daylight Time (Australia/Sydney)&quot;, &quot;US&quot;,&quot;&quot;))))))))))))))))))))))))))</calculatedFormula>
+        <dataType>Text</dataType>
+        <description>Timezone</description>
+        <developerName>CDF1</developerName>
+        <label>Timezone</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>This contains the age field</description>
+    <filter>
+        <criteriaItems>
+            <column>CLOSED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Support_Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>On Hold</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STATUS</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Ramya_Status of cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case.NoReplyAge__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

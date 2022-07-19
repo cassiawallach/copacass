@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Gong__Gong_Call__c$Gong__Opportunity_Stage_Now__c</acrossGroupingContext>
+        <calculatedFormula>RowCount
+
+/
+
+PARENTGROUPVAL(RowCount,Gong__Gong_Call__c.Gong__Opp_Stage_Time_Of_Call__c,COLUMN_GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Gong__Gong_Call__c$Gong__Opp_Stage_Time_Of_Call__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>%</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Name</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Gong__Primary_Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Gong__Primary_Opportunity__c.RecordType</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Gong__Primary_Opportunity__c.Type</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Gong__Opp_Amount_Time_of_Call__c</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Gong__Primary_Opportunity__c.Amount.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c$Gong__Related_Topics_json__c</field>
+    </columns>
+    <columns>
+        <field>Gong__Gong_Call__c.Gong__Trackers__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(Gong__Gong_Call__c.Gong__Opportunity_Stage_Now__c,
+
+
+&quot;Marketing Qualification&quot;,1,
+&quot;Discovery&quot;,2,
+&quot;Solution Alignment&quot;,3,
+&quot;Solution Validation&quot;,4,
+&quot;Formal Proposal&quot;,5,
+&quot;Negotiation&quot;,6,
+&quot;Signed Contract Received&quot;,7,
+&quot;Closed Won&quot;,8,
+&quot;Fully Paid&quot;,9,
+&quot;Closed Lost&quot;,10,
+
+0)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Stage Rank</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>Gong__Gong_Call__c$Gong__Primary_Opportunity__c.Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Gong__Gong_Call__c$Gong__Opportunity_Stage_Now__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Gong__Gong_Call__c$Gong__Opp_Stage_Time_Of_Call__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Marketing Qualification,Discovery,Solution Alignment,Solution Validation</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Gong__Gong_Call__c$Gong__Opportunity_Stage_Now__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Gong__Gong_Call__c.Gong__Trackers__r$Gong__Tracker_Phrase__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Gong__Gong_Call__c$Gong__Opp_Stage_Time_Of_Call__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Conversion Rates -- By Tracker Phrase</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Conversations_with_Trackers_Additional_Info__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Gong__Gong_Call__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,14 @@
+<template>
+    <template if:true={showBanner}>
+        <div class="marquee">
+            <p>
+                ||
+                <template for:each={bannerData} for:item="bnr">
+                    <lightning-formatted-rich-text key={bnr.Id} class="slds-m-around_medium" value={bnr.Message__c}>
+                    </lightning-formatted-rich-text>
+                    ||
+                </template>
+            </p>
+        </div>
+    </template>
+</template>

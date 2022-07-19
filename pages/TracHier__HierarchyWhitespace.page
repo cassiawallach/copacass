@@ -1,0 +1,163 @@
+<apex:page sidebar="false" controller="TracHier.HierarchyProspectorCtlr" title="{!name} Hierarchy" standardStylesheets="false" tabStyle="Account">
+    <apex:stylesheet value="{!URLFOR($Resource.TracHier__AccountHierarchy, 'css/styles.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.TracHier__AccountHierarchy, 'css/prospector.css')}"/>
+
+    <apex:outputPanel rendered="{!prospectorEnabled}" layout="none">
+        <div id="filterControls">
+            <div id="filterTitle">{!$Label.WHITESPACE_FILTER_OPTIONS_TITLE}</div>
+    
+            <div class="filterSection">
+                <input class="filterField" id="CityFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_CITY_LABEL}" disabled="disabled"/>
+            </div>
+            <div class="filterSection">
+                <input class="filterField" id="StateFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_STATE_LABEL}" disabled="disabled"/>
+            </div>
+            <div class="filterSection">
+                <input class="filterField" id="CountryFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_COUNTRY_LABEL}" disabled="disabled"/>
+            </div>
+            <div class="filterSection">
+                <input class="filterField" id="ZipFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_ZIP_LABEL}" disabled="disabled"/>
+            </div>
+            <div class="filterSection">
+                <h4>{!$Label.WHITESPACE_FILTER_ANNUAL_REVENUE_LABEL}</h4>
+                <input class="range filterField" id="SalesVolumeMinFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_MIN_LABEL}" disabled="disabled"/>
+                &nbsp;-&nbsp;
+                <input class="range filterField" id="SalesVolumeMaxFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_MAX_LABEL}" disabled="disabled"/>
+            </div>
+            <div class="filterSection">
+                <h4>{!$Label.WHITESPACE_FILTER_EMPLOYEES_LABEL}</h4>
+                <input class="range filterField" id="EmployeesHereMinFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_MIN_LABEL}" disabled="disabled"/>
+                &nbsp;-&nbsp;
+                <input class="range filterField" id="EmployeesHereMaxFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_MAX_LABEL}" disabled="disabled"/>
+            </div>
+           <div><h4>{!$Label.WHITESPACE_FILTER_OTHER_LABEL}</h4></div>
+            <apex:outputPanel rendered="{!NOT(settings.TracHier__Enable_DnB__c)}">
+                <div class="filterSection">
+                    <input class="filterField" id="PrimaryNaicsDescFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_NAICS_DESCRIPTION_LABEL}" disabled="disabled"/>
+                </div>
+            </apex:outputPanel>
+            <div class="filterSection">
+                <input class="filterField" id="PrimarySicDescFilter" type="text" placeholder="{!$Label.WHITESPACE_FILTER_SIC_DESCRIPTION_LABEL}" disabled="disabled"/>
+            </div>
+            <div class="filterSection">
+                <input type="checkbox" class="filterField" id="ShowInferredOnlyFilter" disabled="disabled"/><label for="ShowInferredOnlyFilter">{!$Label.WHITESPACE_FILTER_SHOW_INFERRED_ONLY}</label>&nbsp;
+            </div>
+            <input class="side-btn" id="filterButton" type="button" value="{!$Label.WHITESPACE_FILTER_FILTER_BUTTON}" disabled="disabled"/>
+            <input class="side-btn-clear" id="clearButton" type="button" value="{!$Label.WHITESPACE_FILTER_CLEAR_BUTTON}" disabled="disabled"/>
+            <img src="{!URLFOR($Resource.AccountHierarchy, 'img/logo.png')}"/>
+        </div>
+
+        <div id="mainContent">
+            <div id="prospectorHeader">
+                <div id="recordName">{!name} {!$Label.WHITESPACE_RECORD_NAME_SUFFIX}</div>
+                <div id="searchControls">
+
+                    <input class="searchField" id="accountFilter" type="text" placeholder="{!$Label.WHITESPACE_SEARCH_BOX_PLACEHOLDER}"/>
+                    <h3 style="display: inline">{!$Label.WHITESPACE_SEARCH_LOCATION_TYPE_LABEL}</h3>&nbsp;
+                    <select id="locationFilter">
+                        <apex:outputPanel rendered="{!settings.TracHier__Enable_DnB__c}">
+                            <option>{!$Label.trachier__whitespace_search_location_type_any}</option>
+                            <option value="12769">Branch</option>
+                            <option value="12770">Division</option>
+                            <option value="12771">Headquarters</option>
+                            <option value="12773">Parent</option>
+                            <option value="12774">Domestic Ultimate</option>
+                            <option value="12775">Global Ultimate</option>
+                            <option value="15388">Sibling</option>
+                            <option value="9140">Branch/Division</option>
+                            <option value="9141">Parent/Headquarters</option>
+                            <option value="9142">Single Location</option>
+                            <option value="9159">Subsidiary</option>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!NOT(settings.TracHier__Enable_DnB__c)}">
+                            <option>{!$Label.trachier__whitespace_search_location_type_any}</option>
+                            <option value="1">{!$Label.trachier__whitespace_search_location_type_headquarters}</option>
+                            <option value="2">{!$Label.trachier__whitespace_search_location_type_branch}</option>
+                            <option value="0">{!$Label.trachier__whitespace_search_location_type_single_location}</option>
+                        </apex:outputPanel>
+                    </select>
+                    <input class="search-btn" id="searchButton" type="button" value="{!$Label.WHITESPACE_SEARCH_SEARCH_BUTTON}"/>
+
+                    <span id="recordCard"><span id="filterCount"></span><span id="recordCount"></span></span>
+
+                </div>
+                 <div id="configurationControls">
+                    <span id="gearsIconContainer"><a href="#"><span class="gearsIcon" style="display:none"></span></a></span>
+                </div>
+                <div id="editingControls">
+                    <input class="createAccount-btn" id="createAccountButton" type="button" value="Create Account(s)" style="display:none"/>
+                </div>
+
+                <br/>
+            </div>
+
+            <div id="tableContainer">
+                <div id="outerTableWrapper">
+                </div>
+            </div>
+            <div id="largeHierarchyWarning" class="messageWell">
+                <div class="messageWellInner">
+                {!$Label.WHITESPACE_SEARCH_LARGE_HIERARCHY_WARNING_LINE_1_START} <b id="largeHierarchyWarningCount"></b> {!$Label.WHITESPACE_SEARCH_LARGE_HIERARCHY_WARNING_LINE_1_END}<br/>{!$Label.WHITESPACE_SEARCH_LARGE_HIERARCHY_WARNING_LINE_2_START} <a href="#" id="searchLink">{!$Label.WHITESPACE_SEARCH_LARGE_HIERARCHY_WARNING_SEARCH_LINK}</a> {!$Label.WHITESPACE_SEARCH_LARGE_HIERARCHY_WARNING_LINE_2_END}</div>
+            </div>
+            <div id="spin">
+                <div id="progressWrapper" class="messageWellInner">
+                    <div id="progressLabel">{!$Label.WHITESPACE_SEARCH_FINDING_RECORD_COUNT_PROGRESS_LABEL}</div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 0%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spinner" style="display:none;">
+                <div class="loader"></div>
+                <div id="loadingMessage"></div>
+            </div>
+        </div>
+
+        <div id="settingsControlsOverlay" class="settings-modal-overlay-hidden">
+            <div id="settingsControls" class="settings-modal-hidden">
+                <c:HierarchyWhitespaceSettings />
+            </div>
+            <div id="mergeControls" class="settings-modal-hidden">
+            </div>
+            <div id="recordTypeControls" class="settings-modal-hidden">
+            </div>
+            <div id="massAddControls" class="settings-modal-hidden">
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/support/console/33.0/integration.js"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/lib/jquery-3.5.0.min.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/lib/jquery.treetable.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/lib/floatThead.2.1.3.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/prospector.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/ws_footer.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/common.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/linker.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/hierarchy-node.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/actions.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/ws_actions.js')}"></script>
+        <script type="text/javascript" src="{!URLFOR($Resource.AccountHierarchy, 'js/app/runProspector.js')}" defer="defer"></script>
+        <script type="text/javascript">
+            "use strict";
+
+            Visualforce.remoting.timeout = 120000; // Set timeout at page level
+
+            var recordId = "{!JSENCODE($CurrentPage.parameters.Id)}";
+            var labels = {
+                CREATE_INFERRED_TITLE : "{!JSENCODE($Label.CREATE_INFERRED_TITLE)}",
+                OVERRIDDEN_ACCOUNT_TITLE : "{!JSENCODE($Label.OVERRIDDEN_ACCOUNT_TITLE)}",
+                ERROR : "{!JSENCODE($Label.ERROR)}"
+            };
+
+            $(document).ready(function() {
+                Prospector.init(recordId, labels);
+            });
+
+        </script>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!NOT(prospectorEnabled)}" layout="none">
+        <h1>{!$Label.trachier__whitespace_search_not_enabled_message}</h1>
+    </apex:outputPanel>
+</apex:page>

@@ -1,0 +1,26 @@
+<!--
+Description: This VF Page allows you to launch the scheduled batch using a cron expression.
+-->
+<apex:page controller="DL_VC.refreshValuePropScheduleController" showHeader="false" lightningStylesheets="true">
+    <head>
+        <apex:slds />
+    </head>
+    <body>
+        <apex:form >
+            <apex:pageBlock rendered="{! not_running }" title="Manage Your Value Proposition Refresh Schedule">
+                How often do you want to refresh?<p/> 
+                <apex:inputText value="{!schedule}" label="Schedule string"/> <p/>
+                <apex:commandButton action="{!callScheduler}" value="Schedule"/> 
+            </apex:pageBlock>
+            
+            <apex:pageBlock rendered="{! running }" title="Scheduled!">
+                <p>Your Batch refresh job is now scheduled to run at the specified interval.</p>
+            </apex:pageBlock>
+            
+            <apex:pageBlock rendered="{! error }" title="Error">
+                <p>An error has occurred. Check to make sure your entered the schedule string properly.</p>
+                <apex:commandButton action="{!resetForm}" value="Reset"/> 
+            </apex:pageBlock>
+        </apex:form>
+    </body>
+</apex:page>

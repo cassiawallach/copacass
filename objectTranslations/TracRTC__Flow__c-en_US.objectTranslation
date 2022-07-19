@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>TracRTC__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archived --></label>
+        <name>TracRTC__Archived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>TracRTC__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Step --></label>
+        <name>TracRTC__First_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Id --></label>
+        <name>TracRTC__Flow_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Newly Imported --></label>
+        <name>TracRTC__Is_Newly_Imported__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Saved Date --></label>
+        <name>TracRTC__Last_Saved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>TracRTC__Object__c</name>
+    </fields>
+    <sharingReasons>
+        <label><!-- Flow Manager --></label>
+        <name>TracRTC__Flow_Manager</name>
+    </sharingReasons>
+</CustomObjectTranslation>

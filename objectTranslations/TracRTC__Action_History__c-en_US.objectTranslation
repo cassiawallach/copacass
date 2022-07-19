@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action Date --></label>
+        <name>TracRTC__Action_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Number --></label>
+        <name>TracRTC__Action_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Step --></label>
+        <name>TracRTC__Flow_Step__c</name>
+        <relationshipLabel><!-- Action History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>TracRTC__Lead__c</name>
+        <relationshipLabel><!-- Action History --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

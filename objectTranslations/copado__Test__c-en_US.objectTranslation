@@ -10,6 +10,10 @@
         <relationshipLabel><!-- Tests --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Category - Deprecated --></label>
+        <name>copado__Category__c</name>
+    </fields>
+    <fields>
         <label><!-- Configuration --></label>
         <name>copado__Configuration__c</name>
     </fields>
@@ -27,6 +31,12 @@
     <fields>
         <label><!-- Has Extra Configuration --></label>
         <name>copado__HasExtraConfiguration__c</name>
+    </fields>
+    <fields>
+        <help><!-- The displayed values are based on the name of the Integrations available in your org. The configuration and status of the Integration will be used for your Tests. --></help>
+        <label><!-- Tool - Deprecated --></label>
+        <name>copado__Integration__c</name>
+        <relationshipLabel><!-- Tests - Deprecated --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Latest Job Execution --></label>
@@ -87,6 +97,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Tool - Deprecated --></label>
+        <name>copado__Tool__c</name>
+    </fields>
+    <fields>
         <label><!-- Type --></label>
         <name>copado__Type__c</name>
     </fields>
@@ -95,8 +109,19 @@
         <name>copado__User_Story__c</name>
         <relationshipLabel><!-- Tests --></relationshipLabel>
     </fields>
-    <validationRules>
-        <errorMessage><!-- This Tool Configuration cannot be modified. Please create a new Test and select the Tool Configuration needed. --></errorMessage>
-        <name>copado__PreventUpdatingToolConfiguration</name>
-    </validationRules>
+    <layouts>
+        <layout>Test Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Open CRT --></label>
+        <name>copadoQuality__Open_CRT</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Run --></label>
+        <name>copado__Run</name>
+    </quickActions>
 </CustomObjectTranslation>

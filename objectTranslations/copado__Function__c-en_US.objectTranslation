@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <help><!-- Provide a unique API name. --></help>
+        <help><!-- Unique name that identifies this function. The function result records will contain this API Name in the job type field for filtering these results in reports and dashboards. --></help>
         <label><!-- API Name --></label>
         <name>copado__API_Name__c</name>
     </fields>
     <fields>
-        <help><!-- Name of the Apex Class. The class must implement the MCCallBack interface. --></help>
+        <help><!-- Handler format: ClassName
+The class must implement the MCCallBack interface. --></help>
         <label><!-- ApexClass --></label>
         <name>copado__ApexClass__c</name>
     </fields>
     <fields>
-        <help><!-- Type of Callback selected for the function. --></help>
+        <help><!-- Trigger a Flow or Apex class each time a function execution completes. This trigger happens when the function result status changes to Success or Failed. --></help>
         <label><!-- Callback Type --></label>
         <name>copado__Callback_Type__c</name>
         <picklistValues>
@@ -24,7 +25,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Description of the function. --></help>
         <label><!-- Description --></label>
         <name>copado__Description__c</name>
     </fields>
@@ -34,12 +34,11 @@
         <name>copado__FlowHandler__c</name>
     </fields>
     <fields>
-        <help><!-- Name of the docker image provided by Copado. Check our documentation site to find all available images. --></help>
+        <help><!-- The docker image name provided by Copado. You will find available image paths in the Copado documentation. An image name is made up of slash-separated name components, prefixed by a registry hostname. --></help>
         <label><!-- Image Name --></label>
         <name>copado__Image_Name__c</name>
     </fields>
     <fields>
-        <help><!-- Define the maxVolume and volumeTTL to be used to run a standalone function with these configurations. --></help>
         <label><!-- Options --></label>
         <name>copado__Options__c</name>
     </fields>
@@ -49,17 +48,15 @@
         <name>copado__Parameters__c</name>
     </fields>
     <fields>
-        <help><!-- Provide the script with the commands you would like the function to execute. --></help>
         <label><!-- Script --></label>
         <name>copado__Script__c</name>
     </fields>
     <fields>
-        <help><!-- The number of minutes after which the function will finish automatically and fail if it doesn&apos;t finish before the given timeout. --></help>
+        <help><!-- The number of minutes after which the function will automatically end if there is no response from the function backend execution. --></help>
         <label><!-- Timeout --></label>
         <name>copado__Timeout__c</name>
     </fields>
     <fields>
-        <help><!-- Type of Copado function. --></help>
         <label><!-- Type --></label>
         <name>copado__Type__c</name>
         <picklistValues>
@@ -72,12 +69,10 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Version of the function. --></help>
         <label><!-- Version --></label>
         <name>copado__Version__c</name>
     </fields>
     <fields>
-        <help><!-- Picklist field that defines the size of the worker. The available options are S, M, L, and XL. --></help>
         <label><!-- Worker Size --></label>
         <name>copado__Worker_Size__c</name>
         <picklistValues>
@@ -97,6 +92,29 @@
             <translation><!-- XL --></translation>
         </picklistValues>
     </fields>
+    <layouts>
+        <layout>Function Layout</layout>
+        <sections>
+            <label><!-- Callback --></label>
+            <section>Callback</section>
+        </sections>
+        <sections>
+            <label><!-- Configuration --></label>
+            <section>Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone Function --></label>
+        <name>copado__Clone_Function</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Execute Function --></label>
+        <name>copado__Execute_Function</name>
+    </quickActions>
     <validationRules>
         <errorMessage><!-- Api name can only contain alphanumeric characters and must begin with a letter --></errorMessage>
         <name>copado__Function_Name_must_Be_Alpha_Numeric</name>

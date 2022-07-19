@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <available>true</available>
+    <description>Academy Certification Expiration Reminder Email Before 10,3 days of expiration of certificate.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Academy Certification Expiration Reminder Before 10,3 Days</name>
+    <style>none</style>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

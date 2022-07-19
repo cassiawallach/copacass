@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_93297097</developerName>
+        <masterLabel>Capgemini Accenture FR + Nearshore</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_ACC_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Accenture France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Mauritius</sourceValue>
+            </sourceValues>
+            <value>Accenture France + Mauritius</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Capgemini France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CapGemini Morocco</sourceValue>
+            </sourceValues>
+            <value>Capgemini France + Morocco</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_16482606</developerName>
+        <masterLabel>Europe groups</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_ACC_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Accenture France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Mauritius</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Austria</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Belgium</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Czech Republic</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Denmark</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Germany</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Greece</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Ireland</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Israel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Italy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Latvia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Netherlands</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Nordics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Portugal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Slovakia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Spain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture Sweden</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accenture UK</sourceValue>
+            </sourceValues>
+            <value>Accenture Europe</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Capgemini France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CapGemini Morocco</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Belgium</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Denmark</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Finland</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Germany</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CapGemini Italy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini NL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Norway</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Poland</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CapGemini Portugal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Spain</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Sweden</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini Switzerland</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Capgemini UK</sourceValue>
+            </sourceValues>
+            <value>Capgemini Europe</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>LineCumulativeGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>redwing__Achievement_Assignment__c.redwing__Acquisition_Date__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>FK_$Account.Ultimate_Parent__c</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Partners Employees by Achievement Status</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>redwing__Achievement_Assignment__c.redwing__Achievement__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Account_Type_Std__c</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_EMAIL</field>
+    </columns>
+    <columns>
+        <field>FK_CNTC_PHONE1</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_93297097</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Shows partner employees that have been certified in Copado and those that are eligible.  Eligible means they have taken some, not all of the training. If they finish, they can take the exams.</description>
+    <filter>
+        <criteriaItems>
+            <column>redwing__Achievement_Assignment__c.redwing__Achievement__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Certification</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>redwing__Achievement_Assignment__c.redwing__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Eligible,Acquired</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_ACC_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>IBM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Contact.No_Longer_Works_Here__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Account.Region__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>APAC</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>redwing__Achievement_Assignment__c.redwing__Acquisition_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_16482606</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$Account.Ultimate_Parent__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IBM Certif progress APAC</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$redwing__Achievement_Assignment__c@redwing__Achievement_Assignment__c.redwing__Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>redwing__Achievement_Assignment__c.redwing__Acquisition_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

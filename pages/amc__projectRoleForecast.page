@@ -1,0 +1,35 @@
+<apex:page sidebar="false" standardController="amc__Project__c">
+    <style>
+        html, body{
+          height:100%;
+        }
+    </style>
+    <apex:includeLightning /> 
+    <div id="roleForecast" style="height:100%; width:100%;"/>
+    <script>
+        function getParam(neededParam) {
+          let urlString = window.location.search.substring(1);
+          let params = urlString.split("&");
+          for (let i=0;i<params.length;i++) {
+              const paramMap = params[i].split("=");
+              if (paramMap[0] == neededParam) {
+                  return paramMap[1];
+              }
+          } 
+          return null;
+        }
+        let showButton = (getParam('showButton')) ? true : false;
+        let loadAs = (getParam('loadAs'));
+        $Lightning.use("amc:RoleForecastApp", function() {
+          $Lightning.createComponent("amc:RoleForecast",
+          {'recordId':'{!amc__Project__c.Id}',
+          'recordType':'amc__Project__c',
+          'showButton':showButton,
+          'loadAs':loadAs,
+          'isClassic':true},
+        "roleForecast",
+          function(cmp) {});
+        });
+        
+    </script>
+</apex:page>

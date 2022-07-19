@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_64986378</developerName>
+        <masterLabel>Month</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Heroku Extension</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mulesoft Extension</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado CLI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CCH Preset Rules</sourceValue>
+            </sourceValues>
+            <value>02 - February</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado CCH Extension</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Quality Tools</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado VSM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Salesforce DX Extension</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Connect</sourceValue>
+            </sourceValues>
+            <value>03 - March</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marketing Cloud Extension</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ServiceNow Extension</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ServiceNow Lib</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Generic DevOps</sourceValue>
+            </sourceValues>
+            <value>04 - April</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Java yamlreplace-service</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Java Metadata-Processor-Command</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Java Conflict Resolver</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Java Copado Contract</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Java Copado Parent Pom</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Java Nested Conflict Resolution</sourceValue>
+            </sourceValues>
+            <value>05 - May</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_64986378</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_UPDATE</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>copado__Deployment_Flow__c.copado__Platform__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SFDX,Node,Python,Java,Other</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_64986378</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__Deployment_Flow__c.copado__Platform__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Champagne pipelines</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__Deployment_Flow__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

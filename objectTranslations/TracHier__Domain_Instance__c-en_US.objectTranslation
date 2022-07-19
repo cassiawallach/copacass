@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Complete Company --></label>
+        <name>TracHier__Complete_Company__c</name>
+        <relationshipLabel><!-- Domain Instances --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>TracHier__Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instance Identifier --></label>
+        <name>TracHier__Instance_Identifier__c</name>
+    </fields>
+</CustomObjectTranslation>

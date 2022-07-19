@@ -17,7 +17,6 @@
         <description>Description of the Notification</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Description of the Notification</inlineHelpText>
         <label>Description</label>
         <length>255</length>
         <required>false</required>
@@ -30,7 +29,6 @@
         <description>Subject of the notiication</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Subject of the notiication</inlineHelpText>
         <label>Subject</label>
         <length>255</length>
         <required>true</required>
@@ -43,7 +41,6 @@
         <description>This is the body template of the notification</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>This is the body template of the notification</inlineHelpText>
         <label>Template</label>
         <length>131072</length>
         <type>LongTextArea</type>

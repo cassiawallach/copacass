@@ -1,0 +1,21 @@
+<apex:page standardController="Account"
+    title="Manage Contracts | Kugamon" 
+    applyBodyTag="false"
+    sidebar="false" 
+    docType="html-5.0">
+   
+    <script>        
+        // get the id of the Account record    
+        const accountId = "{!JSENCODE(Account.Id)}";
+        const accountName = "{!JSENCODE(Account.Name)}";
+
+        const appName = 'ManageContractApp';
+        const cmpName = 'manageContract';
+        const cmpParams = {
+		                    recordId: accountId,
+                            accountName: accountName
+                        };
+    </script>
+
+    <c:BaseLightningOut />
+</apex:page>

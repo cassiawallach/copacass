@@ -128,16 +128,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Package_Version_Record_Page1</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Package_Version_Record_Page1</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -156,7 +162,6 @@
     <deprecated>false</deprecated>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
@@ -299,15 +304,6 @@
         <fullName>copado__Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Draft indicates that a placeholder record has been created.
-
-Pre-Release indicates a package version that has been generated but not yet promoted or is not ready for release. 
-
-A package version with Published status, indicates it can be released or deployed to production. 
-
-Deprecated highlights a package version that has been deleted and is no longer available for use.
-
-Open, Locked and Cancelled are used for packages related to User Story bundles.</inlineHelpText>
         <label>Status</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -316,11 +312,6 @@ Open, Locked and Cancelled are used for packages related to User Story bundles.<
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
-                <value>
-                    <fullName>Draft</fullName>
-                    <default>false</default>
-                    <label>Draft</label>
-                </value>
                 <value>
                     <fullName>Open</fullName>
                     <default>true</default>
@@ -332,24 +323,9 @@ Open, Locked and Cancelled are used for packages related to User Story bundles.<
                     <label>Locked</label>
                 </value>
                 <value>
-                    <fullName>Pre-Release</fullName>
-                    <default>false</default>
-                    <label>Pre-Release</label>
-                </value>
-                <value>
-                    <fullName>Published</fullName>
-                    <default>false</default>
-                    <label>Published</label>
-                </value>
-                <value>
                     <fullName>Cancelled</fullName>
                     <default>false</default>
                     <label>Cancelled</label>
-                </value>
-                <value>
-                    <fullName>Deprecated</fullName>
-                    <default>false</default>
-                    <label>Deprecated</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -471,44 +447,7 @@ Open, Locked and Cancelled are used for packages related to User Story bundles.<
         <type>Text</type>
     </nameField>
     <pluralLabel>Package Versions</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>copado__Artifact__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Version_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Version_number__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Version_Description__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Branch__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Is_released__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Release__c</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Artifact__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Version_Name__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Version_number__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Version_Description__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Branch__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Is_released__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Release__c</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Artifact__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Version_Name__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Version_number__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Version_Description__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Branch__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Is_released__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Release__c</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>NAME</searchFilterFields>
-        <searchFilterFields>copado__Artifact__c</searchFilterFields>
-        <searchFilterFields>copado__Version_Name__c</searchFilterFields>
-        <searchFilterFields>copado__Version_number__c</searchFilterFields>
-        <searchFilterFields>copado__Version_Description__c</searchFilterFields>
-        <searchFilterFields>copado__Branch__c</searchFilterFields>
-        <searchFilterFields>copado__Is_released__c</searchFilterFields>
-        <searchFilterFields>copado__Release__c</searchFilterFields>
-        <searchResultsAdditionalFields>copado__Artifact__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Version_Name__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Version_number__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Version_Description__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Branch__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Is_released__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Release__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
     <webLinks>

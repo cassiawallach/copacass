@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>360,A. O. Smith,A.O. Smith,AARP,Abbott Laboratories,ABM Industries,Accenture US,ACV Auctions,ADP,Aetna Inc.,Alcon,Align Technology,Allegis Group,Inc.,Alliance Data Systems,AllianceBernstein,Amazon,American Cancer Society,American Family Mutual Insurance Company,American International Group,American Well Corporation,AmerisourceBergen Services Corporation,Amtrak,Anthem,Apotex Inc,Apptio,Arthrex Inc,Avalara,Avaya Inc.,Bank of Montreal,Bankers Healthcare Group,LLC.,Baptist Health South Florida,BD Diagnostics,Becton Dickinson and Company,Booz Allen Hamilton Inc.,Brightcove Inc.,Brink&apos;s Incorporated,Bristol Myers Squibb Company,C2FO,Canada Drives,Canadian Imperial Bank of Commerce (CIBC),Capital One,Carbon Health,Carrier Corporation (MAIN) NAFO &amp; ALC,Caterpillar Inc.,CBRE Inc. (HQ - Corporate Account - OrgID 00Di0000000amTo),Cengage Learning,Inc,CGI Technologies &amp; Solutions,Charles River Laboratories,CIT Group,Cloudflare,Cofense Inc,CommScope,Concentrix Services US,Conduent Business Services,Consolidated Communications Holdings,Constellation Research,Cornerstone OnDemand,Covered California Call Center,CoverMyMeds,Covetrus,creative sparq,Credit Karma,LLC,Cummins,Cushman &amp; Wakefield,D2L Corporation,Dallas Capital Bank,Deloitte Canada,Delta Air Lines,DigitSec,DiscoverOrg</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Duke University,DXC Technology,EchoStar,Ecolab Specialty &amp; Services Sector,ECS Marketing/Business Development/Affinity,Epiq (formerly Document Technologies,Inc.),Equifax,Eversana,Eversource Energy,Finning International Inc.,FireMon,Firstservice Corporation,Flockjay,Four Seasons Hotels And Resorts,Freedom Financial Network,Geisinger Health,Genentech,Inc. - Main Org (Irda),General Motors Financial Company Inc.,Gigamon Inc.,Gilead Sciences inc,Google,Government Of District Of Columbia,GuidePoint Security,HealthStream,Inc.,Higher Ground Education Inc,Hitachi Vantara,Hopebridge,Horizon Blue Cross Blue Shield New Jersey,Hunter Douglas,Hyster-Yale Group,IBM,IDEXX Laboratories,Insperity Services Lp,Integra LifeSciences Corporation,Intrust Bank NA,Intuit,Intuitive Surgical,Invitae,Jade Global,Jefferies,JLL,Johnson &amp; Johnson,JP Morgan Chase,KAR Auction Services,KinderCare Education,L’Oréal USA S/D,Lab Corp,Legrand,Liberty IT Solutions,Listrak,LTI,Maple Leaf Sports And Entertainment Partnership,MasterCard Worldwide,Maximum Software Services,McGraw Hill,McGraw-Hill Global Education Holdings,LLC,McKesson,Mcmakler Gmbh,Meijer,Meridian Capital Group,Milacron,Mirantis,Mohawk Industries,Moneygram Payment Systems,Inc,Morningstar Corporate,Morris Group Inc,NASDAQ,Navistar,Netjets Inc.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Asurion Corporation,New Mexico Department Of Human Services,NextEra Energy,NextGear Capital (Cox Auto),NRG Energy,nThrive,Inc.,OhioDAS - Ohio Business Gateway 3.0,Ontario Government,Optum,ORION ADVISOR SOLUTIONS,LLC,Ortho-Clinical Diagnostics,OrthoFi,Outset Medical Inc,Owens &amp; Minor,OwnBackup,Palmetto,Paylocity Corporation,PennyMac Financial Services,Penske,Perforce Software Inc,Pfizer,Philips Healthcare,Planview,Inc (New Org),PRA Health Sciences,Press Ganey Associates,Proofpoint,Inc. (MAIN),Providence Health &amp; Services,Qualys Inc.,Questrade,RealPage,Regional Municipality of Peel,Resideo,Robert Half,Roche United States,Securus Technologies,SentinelOne Inc,State Of Oregon,State of Rhode Island,Stemcell Technologies Inc,Stericycle,Stryker Corporation,SunPower Corporation (MAIN),T-Mobile US,T. D. Williamson,Target,Team,Teleperformance,Texas Health Resources,The Bank of Nova Scotia,The Goodyear Tire &amp; Rubber Company,The Home Depot Inc,The Interpublic Group of Companies,The Mitre Corporation,The NPD Group,Thermo Fisher Scientific Inc. - Patheon,Threebridge Solutions,Thunder Inc United States,Toast,Total System Services,TransUnion LLC,Truist Financial Corporation,Tufts Health Plan,UL LLC,UMUC Ventures,United Healthcare,United Rentals,Unity,Unqork,UPMC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>UPMC Health Plan,Inc,Vertex Inc,Visa Inc.,Vivint,Inc. (Main Org),Vlocity Inc. PARENT,Waste Management,Wells Fargo,Werner Enterprises,West Coast University,Inc. “WCU”,Western Union,World Wide Technology,YPO Inc,Zimmer Biomet,Inc.,Zing Health,Zions Bancorporation,N.A.,Zoetis,ZoomInfo,Zuora</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_SOURCE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>BDR Outbound</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.BDR__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Year</dateGranularity>
+        <field>Opportunity.SAL_Acceptance_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BDR SALs by Account Jan-May</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.SAL_Acceptance_Date__c</dateColumn>
+        <endDate>2022-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-01-01</startDate>
+    </timeFrameFilter>
+</Report>

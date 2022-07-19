@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_80314816</developerName>
+        <masterLabel>Developed by</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>copado__User_Story__c$copado__Developer__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Anjali Chaudhary</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mayank Mishra</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rahul Ranjan</sourceValue>
+            </sourceValues>
+            <value>APO Dev</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sruthi Dasarraju</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Maria Kane</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gustavo Castaneda</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Moore</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Andrew Liu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Steve Frey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jesus Gaviria</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mishaal Jamil</sourceValue>
+            </sourceValues>
+            <value>APO Platform Support</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_97247134</developerName>
+        <masterLabel>User Story Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>copado__User_Story__c$copado__Status__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Draft</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ready for Design</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Development Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Development In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA DEV Testing In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA DEV Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA DEV Testing Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ready for QA DEV Testing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ready for Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting for customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ready for QA UAT Testing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ready for Testing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ready for Release</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA UAT Testing In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA UAT Testing Blocked</sourceValue>
+            </sourceValues>
+            <value>Not Delivered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cancelled</sourceValue>
+            </sourceValues>
+            <value>Cancelled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Released</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Done</sourceValue>
+            </sourceValues>
+            <value>Delivered</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>copado__User_Story__c$copado__Story_Points_SFDC__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>copado__User_Story__c$copado__Sprint__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>copado__User_Story__c$copado__User_Story_Title__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Developer__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$Name</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c$copado__Story_Points_SFDC__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>copado__User_Story__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>copado__User_Story__c.APO_User_Story</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c$copado__Project__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>APO Development</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c$copado__Developer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Andrew Liu,Anjali Chaudhary,Gustavo Castaneda,Jesus Gaviria,Maria Kane,Mayank Mishra,Rahul Ranjan,Scott Moore,Sruthi Dasarraju,Steve Frey</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c$copado__Sprint__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Sprint 25,Sprint 26,Sprint 27,Sprint 28,Sprint 29</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c$copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Released,Completed</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c$copado__Sprint__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sprint Released metric - Actual Points</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Story_Record_Types__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.copado__Team_Dependencies_For_UStory__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

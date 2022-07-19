@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>jQuery Timepicker Addon
+Source: http://trentrichardson.com/examples/timepicker/
+Copyright (c) 2009 Trent Richardson, http://trentrichardson.com/Impromptu/
+
+License: MIT (http://trentrichardson.com/Impromptu/MIT-LICENSE.txt)</description>
+</StaticResource>

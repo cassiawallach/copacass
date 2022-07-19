@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-grid slds-wrap slds-grid--align-center">
+        <div class="slds-size--1-of-1 slds-medium-size--6-of-12 slds-large-size--2-of-8 slds-small-size--7-of-12 slds--small-order--1 slds-medium-order--1 slds-large-order--2 slds-p-around_x-small slds-is-relative">
+            <div if:true={isBusy} class="slds-align_absolute-center slds-m-top_x-large">
+                <lightning-spinner variant="brand" 
+                                    alternative-text="Loading...."     
+                                    size="medium">
+                </lightning-spinner>
+            </div>
+            <template if:true={status.hasError}>
+                <c-generic-error error-message={status.errorMessage}></c-generic-error>
+            </template>
+            <div if:true={hasRecords}>
+                <c-date-picker available-records-on-dates={allCopaEventsWithStartDate} no-records-title='No Events!!!' no-records-message='No events found on this date.'></c-date-picker>
+            </div>
+        </div>
+        <div class="slds-size--1-of-1 slds-small-size--12-of-12 slds-medium-size--10-of-12  slds-large-size--6-of-8 slds-x-small-order--2 slds-medium-order--1">
+            <c-copa-events-list></c-copa-events-list>
+        </div>
+    </div>
+</template>

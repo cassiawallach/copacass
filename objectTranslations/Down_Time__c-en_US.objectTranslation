@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Down Time</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Down Times</value>
+    </caseValues>
+    <fields>
+        <label><!-- Down Time Over --></label>
+        <name>Down_Time_Over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Downtime Status Notes --></label>
+        <name>Downtime_Status_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter time in UTC. After saving it will show you time as per your user&apos;s timezone. --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned Impact --></label>
+        <name>Planned_Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter time in UTC. After saving it will show you time as per your user&apos;s timezone. --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Down Time Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- End Date can not be before Start Date --></errorMessage>
+        <name>Start_Date_should_be_less_than_End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

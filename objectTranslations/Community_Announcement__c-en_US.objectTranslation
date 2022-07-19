@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Community Announcement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Community Announcements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description 1 --></label>
+        <name>Description_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description 2 --></label>
+        <name>Description_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description 3 --></label>
+        <name>Description_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message/Title --></label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Published --></label>
+        <name>Published__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Community Announcement - Copa Update</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Descriptions --></label>
+            <section>Descriptions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Announcement - Marquee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Announcement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used to create Copa Updates for community. --></description>
+        <label><!-- Copa Update --></label>
+        <name>Copa_Update</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to create Marquee for community. --></description>
+        <label><!-- Marquee --></label>
+        <name>Marquee</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- End Date cannot be before Start Date. --></errorMessage>
+        <name>End_Date_Cannot_Be_Prior_To_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Maximum 58 characters can be added in Copa-Update Title. --></errorMessage>
+        <name>Limit_Ttitle_Chars_on_Copa_Update</name>
+    </validationRules>
+</CustomObjectTranslation>

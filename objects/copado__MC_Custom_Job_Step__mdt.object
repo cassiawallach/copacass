@@ -7,7 +7,6 @@
         <description>Type of Custom job step</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Type of Custom job step</inlineHelpText>
         <label>Custom Type</label>
         <length>255</length>
         <required>false</required>
@@ -20,7 +19,6 @@
         <description>Name of LWC/Aura component to render while configuring the Custom Job step</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Name of LWC/Aura component to render while configuring the Custom Job step</inlineHelpText>
         <label>LWC Name</label>
         <length>255</length>
         <required>false</required>
@@ -33,7 +31,6 @@
         <description>Platform Name</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Platform Name</inlineHelpText>
         <label>Platform</label>
         <length>255</length>
         <required>false</required>

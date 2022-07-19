@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Actions --></label>
+        <name>fcio1__Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>fcio1__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Timer End Field --></label>
+        <name>fcio1__SLA_Timer_End_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Timer Start Field --></label>
+        <name>fcio1__SLA_Timer_Start_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tag Value --></label>
+        <name>fcio1__Tag_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Entity --></label>
+        <name>fcio1__Target_Entity__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territory External --></label>
+        <name>fcio1__Territory_External__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory --></label>
+        <name>fcio1__Territory__c</name>
+        <relationshipLabel><!-- Fullcast Service Level Policies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Thresholds --></label>
+        <name>fcio1__Thresholds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vacation Hours --></label>
+        <name>fcio1__Vacation_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Working Hours --></label>
+        <name>fcio1__Working_Hours__c</name>
+    </fields>
+</CustomObjectTranslation>

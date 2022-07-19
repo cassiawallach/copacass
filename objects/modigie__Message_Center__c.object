@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>modigie__AdhoqLimitReached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Adhoq Limit Reached</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__AllException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>All Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__CalloutException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Callout Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__CalloutResponse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Callout Response</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__CreditError__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Credit Error</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__DMLException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DML Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__EmailException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Email Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__InvocableLimitExceeded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invocable Limit Exceeded</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__LimitException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Limit Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__NoDataFoundException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>NoDataFound Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__SecurityException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Security Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__UnexpectedException__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Unexpected Exception</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_AdhoqLimitReached__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Adhoq Limit Reached</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_AllException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For All Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_CalloutException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Callout Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_CalloutResponse__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Callout Response</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_CreditError__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Credit Error</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_DMLException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For DML Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_EmailException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Email Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_InvocableLimitExceeded__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Invocable Limit Exceeded</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_LimitException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Limit Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_NoDataFoundException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For NoDataFound Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_SecurityException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Security Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>modigie__Users_Opted_For_UnexpectedException__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Users Opted For Unexpected Exception</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Modigie Message Center</label>
+    <visibility>Public</visibility>
+</CustomObject>

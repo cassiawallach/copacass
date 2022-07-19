@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Feature_Record_Page_Dynamic_Forms</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -157,7 +160,7 @@
     <description>Copado&apos;s Feature object enables you to manage Features related to User Stories &amp; Applications. Features are made up of multiple User Stories.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -165,6 +168,96 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Business_Epic__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Epic</label>
+        <referenceTo>copado__Epic__c</referenceTo>
+        <relationshipLabel>Features (Business Epic)</relationshipLabel>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Date_of_Delivery__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Date of Delivery</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Release__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Estimated Release</label>
+        <referenceTo>copado__Release__c</referenceTo>
+        <relationshipLabel>Features</relationshipLabel>
+        <relationshipName>Features</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Feature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Feature</label>
+        <referenceTo>copado__Application_Feature__c</referenceTo>
+        <relationshipLabel>Child Features</relationshipLabel>
+        <relationshipName>Child_Features</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rejected_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Rejected Reason</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Time_Spent_Hours__c</fullName>
+        <description>Sum of all related User Stories &quot;Time Spent (hours)&quot;.</description>
+        <externalId>false</externalId>
+        <label>Time Spent (hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>copado__Application__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -175,6 +268,7 @@
         <relationshipLabel>Features</relationshipLabel>
         <relationshipName>ApplicationFeatures</relationshipName>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -188,6 +282,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>FeatureArchitects</relationshipName>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -200,6 +295,7 @@
         <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -211,6 +307,7 @@
         <externalId>false</externalId>
         <label>Description</label>
         <length>131072</length>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Html</type>
@@ -226,7 +323,8 @@
         <relationshipLabel>Features</relationshipLabel>
         <relationshipName>ApplicaitonFeatures</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -238,6 +336,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -248,7 +347,8 @@
         <externalId>false</externalId>
         <label>Priority</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -291,6 +391,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>FeatureOwners</relationshipName>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -299,9 +400,11 @@
         <fullName>copado__Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>Status of Feature</inlineHelpText>
         <label>Status</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -357,6 +460,7 @@
         <inlineHelpText>Technical Assumptions or Design Considerations for Feature</inlineHelpText>
         <label>Technical Assumptions</label>
         <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Html</type>
@@ -370,6 +474,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -382,6 +487,7 @@
         <inlineHelpText>Business Value of Feature</inlineHelpText>
         <label>Value Type</label>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -398,53 +504,513 @@
                     <default>false</default>
                     <label>New Revenue</label>
                 </value>
+                <value>
+                    <fullName>User Adoption</fullName>
+                    <default>false</default>
+                    <label>User Adoption</label>
+                </value>
+                <value>
+                    <fullName>User Experience</fullName>
+                    <default>false</default>
+                    <label>User Experience</label>
+                </value>
+                <value>
+                    <fullName>Performance</fullName>
+                    <default>false</default>
+                    <label>Performance</label>
+                </value>
+                <value>
+                    <fullName>Stability</fullName>
+                    <default>false</default>
+                    <label>Stability</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <fields>
-        <fullName>copadoconnect__Last_Synced_Date__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Last Synced Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
     <label>Feature</label>
     <listViews>
-        <fullName>copado__All</fullName>
+        <fullName>Agile_Planning_Features</fullName>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9) AND 10</booleanFilter>
+        <columns>NAME</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Value_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Agile</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Sprint</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Kanban</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Plan</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Portfolio</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Plan</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Work Manager</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Management</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Dependen</value>
+        </filters>
+        <filters>
+            <field>copado__Product_Owner__c</field>
+            <operation>contains</operation>
+            <value>Soraya</value>
+        </filters>
+        <label>Copado Plan - Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Alpha_Features</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Value_Type__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>Data Deploy</value>
+        </filters>
+        <label>Alpha - Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Classic</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>classic</value>
+        </filters>
+        <filters>
+            <field>copado__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Delivered,Rejected</value>
+        </filters>
+        <label>Classic</label>
+    </listViews>
+    <listViews>
+        <fullName>Compliance_Hub</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>Copado Compliance Hub</value>
+        </filters>
+        <label>Copado Compliance Hub</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_ATF_Roadmap</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Value_Type__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Product_Owner__c</field>
+            <operation>equals</operation>
+            <value>Shereen Khosravi</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Summer</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Roadmap</value>
+        </filters>
+        <label>Copado ATF_Roadmap</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_GovCloud</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>Copado GovCloud</value>
+        </filters>
+        <label>Copado GovCloud</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_Package_Validator</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>Copado Package Validator</value>
+        </filters>
+        <label>Copado Package Validator</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_Plan_Features_Summer_22</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
+        <columns>NAME</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>Business_Epic__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>copado__Value_Type__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Application__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Product_Owner__c</field>
+            <operation>contains</operation>
+            <value>Soraya</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Plan</value>
+        </filters>
+        <filters>
+            <field>Estimated_Release__c</field>
+            <operation>contains</operation>
+            <value>Summer</value>
+        </filters>
+        <filters>
+            <field>Estimated_Release__c</field>
+            <operation>contains</operation>
+            <value>v19.</value>
+        </filters>
+        <filters>
+            <field>copado__Priority__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Copado Plan v20 Summer/Fall 22 by Prio</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_Plan_Features_Winter_Spring_22</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Value_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Plan</value>
+        </filters>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>contains</operation>
+            <value>Plan</value>
+        </filters>
+        <filters>
+            <field>Estimated_Release__c</field>
+            <operation>contains</operation>
+            <value>Spring &apos;22</value>
+        </filters>
+        <label>Copado Plan v19 Winter/Spring 22</label>
+    </listViews>
+    <listViews>
+        <fullName>Copado_Version_Control</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>Copado Version Control</value>
+        </filters>
+        <label>Copado Version Control</label>
+    </listViews>
+    <listViews>
+        <fullName>DevOps_Exchange_Features</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>DevOps Exchange</value>
+        </filters>
+        <label>DevOps Exchange Features</label>
+    </listViews>
+    <listViews>
+        <fullName>FY23_Roadmap_DX_Fall_Release</fullName>
+        <columns>copado__Priority__c</columns>
+        <columns>NAME</columns>
+        <columns>copado__Status__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Epic__c</field>
+            <operation>equals</operation>
+            <value>E0001104,E0001103,E0001118</value>
+        </filters>
+        <filters>
+            <field>copado__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Rejected</value>
+        </filters>
+        <label>FY23 Roadmap - DX (Fall Release)</label>
+    </listViews>
+    <listViews>
+        <fullName>FY23_Roadmap_Multicloud_Fall_Release</fullName>
+        <columns>copado__Priority__c</columns>
+        <columns>NAME</columns>
+        <columns>copado__Status__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Epic__c</field>
+            <operation>equals</operation>
+            <value>E0001105,E0001115,E0001109,E0001107,E0001108,E0001110</value>
+        </filters>
+        <label>FY23 Roadmap - Multicloud (Fall Release)</label>
+    </listViews>
+    <listViews>
+        <fullName>FY23_Roadmap_Multicloud_Sprint_Release</fullName>
+        <columns>copado__Priority__c</columns>
+        <columns>NAME</columns>
+        <columns>copado__Status__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Epic__c</field>
+            <operation>equals</operation>
+            <value>E0001111,E0001112,E0001113</value>
+        </filters>
+        <label>FY23 Roadmap - Multicloud Sprint Release</label>
+    </listViews>
+    <listViews>
+        <fullName>Feature_Requests_From_Services</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>copado__Status__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>equals</operation>
+            <value>Joe Imperato,Andrew Durrans,Jen Nelson,Matt Barclay,James Leblanc,Kevin Blessum,Caity Stark,Ashley Dodge,Ariel Ridley,Rohit Boggarapu,Dan Kellogg,Katie Belton,andrew davis</value>
+        </filters>
+        <filters>
+            <field>copado__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Under Review,Ready for Refinement,Refinement in Progress,Accepted,Coming Soon,Delivered,Rejected</value>
+        </filters>
+        <label>Feature Requests From Services</label>
+    </listViews>
+    <listViews>
+        <fullName>Feature_Requests_from_Business</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>Business_Owner__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER</field>
+            <operation>equals</operation>
+            <value>Joe Imperato</value>
+        </filters>
+        <label>Feature Requests from Business</label>
+    </listViews>
+    <listViews>
+        <fullName>MCDX_Features</fullName>
+        <columns>copado__Application__c</columns>
         <columns>NAME</columns>
         <columns>copado__Status__c</columns>
         <columns>copado__Priority__c</columns>
-        <columns>copado__Epic__c</columns>
-        <columns>copado__Application__c</columns>
-        <columns>copado__Product_Owner__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>MCDX 1. BUILD,MCDX 2. TEST,MCDX 3. DELIVER,MCDX 4. PACKAGE,MCDX 5. ENVIRONMENT MANAGEMENT,MCDX 6. CLI,MCDX AUTOMATIONS,MCDX Enablers,MCDX VLOCITY</value>
+        </filters>
+        <label>MCDX Features</label>
+    </listViews>
+    <listViews>
+        <fullName>Mine</fullName>
+        <columns>NAME</columns>
         <columns>copado__Architect__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>Business_Epic__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Application__c</field>
+            <operation>equals</operation>
+            <value>[Product Line] Multi Cloud Platform,License Manager,Copado Actions,MC Pipelines,MC Quality Gates</value>
+        </filters>
+        <label>Pipelines &amp; Automations - All</label>
+    </listViews>
+    <listViews>
+        <fullName>P_A_v20_Summer_22</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Status__c</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Epic__c</columns>
+        <columns>Business_Epic__c</columns>
+        <columns>Estimated_Release__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Product_Owner__c</field>
+            <operation>contains</operation>
+            <value>ivan</value>
+        </filters>
+        <filters>
+            <field>Estimated_Release__c</field>
+            <operation>contains</operation>
+            <value>v20 - Summer &apos;22,v19</value>
+        </filters>
+        <filters>
+            <field>Estimated_Release__c</field>
+            <operation>notContain</operation>
+            <value>v19.0</value>
+        </filters>
+        <label>P&amp;A - v20 - Summer &apos;22</label>
+    </listViews>
+    <listViews>
+        <fullName>copado__All</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Architect__c</columns>
+        <columns>copado__Application__c</columns>
+        <columns>copado__Priority__c</columns>
+        <columns>copado__Complexity__c</columns>
+        <columns>copado__Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>copado__Product_Owner__c</columns>
+        <columns>copado__Estimated_Value__c</columns>
+        <columns>Estimated_Release__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-        <language>en_US</language>
     </listViews>
     <nameField>
         <label>Feature Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Features</pluralLabel>
-    <searchLayouts>
-        <customTabListAdditionalFields>copado__Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Priority__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Epic__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Application__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Product_Owner__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Architect__c</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Priority__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Epic__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Application__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Product_Owner__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Architect__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

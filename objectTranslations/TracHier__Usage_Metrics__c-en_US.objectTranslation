@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Count --></label>
+        <name>TracHier__Account_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Object Count --></label>
+        <name>TracHier__Child_Object_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date and time of the most recent LMO sync. --></help>
+        <label><!-- Date of Last LMO Sync --></label>
+        <name>TracHier__Date_Last_Sync__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fullscreen Whitespace Opens Count --></label>
+        <name>TracHier__Fullscreen_Whitespace_Opens_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Click Count --></label>
+        <name>TracHier__Hierarchy_Click_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Count --></label>
+        <name>TracHier__Hierarchy_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Scroll Count --></label>
+        <name>TracHier__Hierarchy_Scroll_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Users Active --></label>
+        <name>TracHier__Hierarchy_Users_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date and time of the most recent processing by Build Hierarchies. --></help>
+        <label><!-- Last Build Hierarchy Date --></label>
+        <name>TracHier__Last_Build_Hierarchy_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date and time of the most recent processing by Build Rollups. --></help>
+        <label><!-- Last Build Rollups Date --></label>
+        <name>TracHier__Last_Build_Rollup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Count --></label>
+        <name>TracHier__License_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rollup Count --></label>
+        <name>TracHier__Rollup_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settings Enabled Set A --></label>
+        <name>TracHier__Settings_Enabled_A__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settings Enabled Set B --></label>
+        <name>TracHier__Settings_Enabled_B__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Overridden Fields --></label>
+        <name>TracHier__Users_Overridden_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Overridden Filters --></label>
+        <name>TracHier__Users_Overridden_Filters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Account Count --></label>
+        <name>TracHier__WS_CreateAccount_Count__c</name>
+    </fields>
+</CustomObjectTranslation>

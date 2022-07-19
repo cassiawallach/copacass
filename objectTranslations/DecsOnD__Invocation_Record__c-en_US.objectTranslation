@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Apex Job Id --></label>
+        <name>DecsOnD__Apex_Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date/Time --></label>
+        <name>DecsOnD__Complete_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failures --></label>
+        <name>DecsOnD__Failures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invocation Configuration Id --></label>
+        <name>DecsOnD__Invocation_Configuration_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many records didn&apos;t have any actions and therefore were not processed --></help>
+        <label><!-- No Actions --></label>
+        <name>DecsOnD__No_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>DecsOnD__Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Params --></label>
+        <name>DecsOnD__Params__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>DecsOnD__Policy__c</name>
+        <relationshipLabel><!-- Invocation Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>DecsOnD__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seconds Since Last Modified --></label>
+        <name>DecsOnD__Seconds_Since_Last_Modified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date/Time --></label>
+        <name>DecsOnD__Start_DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>DecsOnD__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finished</masterLabel>
+            <translation><!-- Finished --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holding</masterLabel>
+            <translation><!-- Holding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparing</masterLabel>
+            <translation><!-- Preparing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Success --></label>
+        <name>DecsOnD__Success__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>DecsOnD__Type__c</name>
+        <picklistValues>
+            <masterLabel>Batch</masterLabel>
+            <translation><!-- Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interactive</masterLabel>
+            <translation><!-- Interactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Periodic</masterLabel>
+            <translation><!-- Periodic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queueable</masterLabel>
+            <translation><!-- Queueable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trigger</masterLabel>
+            <translation><!-- Trigger --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Policy Version Label --></label>
+        <name>DecsOnD__Version_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Version Number --></label>
+        <name>DecsOnD__Version_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Invocation Record Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Cannot change status once reached final status --></errorMessage>
+        <name>DecsOnD__Prevent_changing_status</name>
+    </validationRules>
+</CustomObjectTranslation>

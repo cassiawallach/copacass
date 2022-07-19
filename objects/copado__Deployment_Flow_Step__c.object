@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>copado__Pipeline_Connection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -168,7 +171,6 @@
         <fullName>copado__Branch__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Git branch linked to the source environment.</inlineHelpText>
         <label>Branch</label>
         <length>255</length>
         <required>false</required>
@@ -253,7 +255,7 @@
         <deprecated>false</deprecated>
         <description>Value updated automatically by Copado. This is defined in the Deployment Flow Step of the Destination Environment.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Value updated automatically by Copado. This is defined in the Deployment Flow Step of the Destination Environment.</inlineHelpText>
+        <inlineHelpText>This is the Git branch linked to the destination environment. This Git branch is defined in another deployment flow step record where the current destination environment is the source environment.</inlineHelpText>
         <label>Destination Branch</label>
         <length>255</length>
         <required>false</required>
@@ -356,18 +358,6 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>copado__Next_Stage__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <formula>copado__Stage_Connection__r.copado__Next_Stage__c</formula>
-        <label>Next Stage</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>copado__Pull_Auto_Resolved_Files__c</fullName>
         <deprecated>false</deprecated>
         <description>List of conflicted files auto resolved by Copado when merging the destination branch into the source branch.</description>
@@ -392,44 +382,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>copado__Stage_Connection__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <inlineHelpText>Stage Connection where the source environment belongs to.</inlineHelpText>
-        <label>Stage Connection</label>
-        <lookupFilter>
-            <active>true</active>
-            <errorMessage>You can only select Stage Connections that belong to the same Pipeline.</errorMessage>
-            <filterItems>
-                <field>copado__Stage_Connection__c.copado__Pipeline__c</field>
-                <operation>equals</operation>
-                <valueField>$Source.copado__Deployment_Flow__c</valueField>
-            </filterItems>
-            <isOptional>false</isOptional>
-        </lookupFilter>
-        <referenceTo>copado__Stage_Connection__c</referenceTo>
-        <relationshipLabel>Stage Connections</relationshipLabel>
-        <relationshipName>Stage_Connections</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>copado__Stage__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <formula>HYPERLINK(&quot;/&quot; &amp; copado__Stage_Connection__r.copado__Stage__c, copado__Stage_Connection__r.copado__Stage__r.copado__Display_Name__c, &quot;_self&quot;)</formula>
-        <inlineHelpText>Stage to which the source environment belongs.</inlineHelpText>
-        <label>Stage</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>copado__Sync_Merge_State__c</fullName>
@@ -525,7 +477,6 @@
         <fullName>copado__Test_Level__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Recommended Test Level: &quot;Run Local Tests&quot;</inlineHelpText>
         <label>Test Level</label>
         <required>false</required>
         <trackHistory>false</trackHistory>

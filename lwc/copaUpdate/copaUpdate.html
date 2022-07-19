@@ -1,0 +1,41 @@
+<template>
+    <div class="slds-is-relative">
+        <template if:true={isBusy}>
+            <div class="slds-align_absolute-center">
+                <lightning-spinner alternative-text="Loading" variant="brand" size="medium">
+                </lightning-spinner>
+            </div>
+        </template>
+        <template if:true={status.hasError}>
+            <c-generic-error error-message={status.errorMessage}></c-generic-error>
+        </template>
+        <template if:true={hasLatestCopaUpdate}>
+            <a href={latestCopaUpdate.CopaUpdateUrl} class="image-div">
+                <div style={backgroundStyle}>
+                    <div class="slds-grid slds-wrap copa_update-div">
+                        <div class="slds-col slds-size_2-of-4 slds-align_absolute-center slds-p-horizontal_x-small">
+                            <img src={copaUpdateLogo}></img>
+                        </div>
+                        <div class="slds-col slds-size_2-of-4 slds-align_absolute-center">
+                            <span class="copa_update-date slds-p-around_x-small">
+                                {latestCopaUpdate.StartDate}
+                            </span>
+                        </div>
+                        <div class="slds-col slds-size_4-of-4 slds-align_absolute-center slds-m-top_medium slds-text-align_center">
+                            <span class="copa_update-title slds-p-horizontal_x-small">
+                                {latestCopaUpdate.Title}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href={latestCopaUpdate.CopaUpdateUrl}>
+                <div class="bottom slds-align_absolute-center">
+                    <span>
+                        {footerText}
+                    </span>
+                </div>
+            </a>
+        </template>
+    </div>
+</template>

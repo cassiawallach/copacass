@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Key Task to User Story</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Key Tasks to User Stories</value>
+    </caseValues>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Task to G.A. --></label>
+        <name>Key_Task_to_G_A__c</name>
+        <relationshipLabel><!-- Key Tasks to User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Relate a Key Task to G.A. to a User Story --></help>
+        <label><!-- User Story --></label>
+        <name>User_Story__c</name>
+        <relationshipLabel><!-- Key Tasks to User Stories --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Key Task to User Story Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

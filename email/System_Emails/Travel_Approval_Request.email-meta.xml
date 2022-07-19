@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email will be sent when a travel request has been submitted for approval.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Copado_default</letterhead>
+    <name>Travel Approval Request</name>
+    <style>formalLetter</style>
+    <subject>Travel approval has been requested</subject>
+    <textOnly>Hi,
+
+
+A travel request has been submitted by {!Travel_Approval__c.OwnerFirstName} for your review.
+
+Link:{!Travel_Approval__c.Link}
+Destination: {!Travel_Approval__c.Destination__c}
+Start Date: {!Travel_Approval__c.Trip_Start_Date__c}
+End Date: {!Travel_Approval__c.Trip_End_Date__c}
+Purpose of the Trip: {!Travel_Approval__c.Purpose_of_Trip__c}
+
+The Copado Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

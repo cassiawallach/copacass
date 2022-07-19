@@ -3,7 +3,7 @@
     <dashboardMobile>
         <enableDashboardIPadApp>true</enableDashboardIPadApp>
     </dashboardMobile>
-    <enableImportContactFromDevice>true</enableImportContactFromDevice>
+    <enableImportContactFromDevice>false</enableImportContactFromDevice>
     <enableNewSalesforceMobileAppForTablet>false</enableNewSalesforceMobileAppForTablet>
     <enableNewSalesforceMobileAppForTabletWideScreen>false</enableNewSalesforceMobileAppForTabletWideScreen>
     <enableOfflineDraftsEnabled>true</enableOfflineDraftsEnabled>

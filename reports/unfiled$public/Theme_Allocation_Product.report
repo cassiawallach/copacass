@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_22594187</developerName>
+        <masterLabel>Main theme</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>copado__User_Story__c.copado__Theme__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Quality Assurance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Quality Assurance - Automation</sourceValue>
+            </sourceValues>
+            <value>Quality Assurance</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Feature - Customer Commitment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - Enhancement</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - GA MVP</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - Internal findings</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - Meet Competition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - Usability (UX)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Governance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado DX extension plugin functions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - Customer Commitment (OLD)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - GA MVP (OLD)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Feature - Meet Competition (OLD)</sourceValue>
+            </sourceValues>
+            <value>New Features</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>BAU - Business As Usual</sourceValue>
+            </sourceValues>
+            <value>BAU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Security Issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technical Debt</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technical Debt - Internal Findings</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bugs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Metadata Dependency Management</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Release Management</sourceValue>
+            </sourceValues>
+            <value>Bugs &amp; Tech Debt</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Academy Articles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Academy Modules Updates</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Delta Squad Documentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Design Guideline (DO NOT USE IT)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Easy Squad Documentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Educational Events</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Foxtrot Squad Documentation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Interactive Modules</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Non development tasks (DO NOT USE IT)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Onboarding</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Playgrounds and Academy enhancements</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Research (DO NOT USE IT)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tango</sourceValue>
+            </sourceValues>
+            <value>Non Development Work</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_22594187</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Theme Allocation</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Theme__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__User_Story_Title__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>copado__User_Story__c.copado__Progress__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Priority__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c.copado__Story_Points_SFDC__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c.copado__Story_Points_Other__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Release__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Epic__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Project__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Developer__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Rejected,Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$copado__Sprint__c.copado__Project__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Copado Application</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Team__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>ux,infra,it</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>2021</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Theme__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Quality Assurance</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>copado__User_Story__c.Subtask,copado__User_Story__c.IT_Operations,copado__User_Story__c.APO_User_Story</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_22594187</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.Module__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>2021 - Theme Allocation for Product</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.copado__Sprint__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>copado__User_Story__c.copado__User_Story_Title__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

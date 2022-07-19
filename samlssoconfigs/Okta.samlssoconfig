@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>exk1ap474qqkUz8QW4h7</issuer>
+    <loginUrl>https://copado.okta.com/app/salesforce/exk1ap474qqkUz8QW4h7/sso/saml</loginUrl>
+    <logoutUrl>https://copado.okta.com</logoutUrl>
+    <name>Okta</name>
+    <oauthTokenEndpoint>https://copado--se.my.salesforce.com/services/oauth2/token?so=00D2z0000008awY</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P10N000000WRpf</requestSigningCertId>
+    <salesforceLoginUrl>https://copado--se.my.salesforce.com?so=00D2z0000008awY</salesforceLoginUrl>
+    <samlEntityId>https://copado.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDnDCCAoSgAwIBAgIGAYFEH4GuMA0GCSqGSIb3DQEBCwUAMIGOMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxDzANBgNVBAMMBmNvcGFkbzEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0yMjA2MDgxNjIxMDRaFw0zMjA2MDgxNjIyMDRaMIGOMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxDzANBgNVBAMMBmNvcGFkbzEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJmUx11dbBI1wQ4C5aitJbNVKBWXT1mPAcYpekX6PXW4yREZHjFqg3Vkhir7isfp59ENKbFWvN5EhjIwZZueuflt0jZ1od8dkACadB5gdCCMRY4EwkdZXx+RggVsv4BLomx1sVbNk5a+O1NycmvOcAhlYF99hmh5i4U95S/xRmpDnaxZsFckoGogzL7xT2UrAf8lRfYsI6xie2wYxYgkHxtmkpLoVU/I5pD+yyewhx1Pirpt2T18bjqyS3k82Gd6AznJMEj44OVGEutV7TA7af+mvnEHxhSaZF9ADkMzFKuP5hlZcpcFi0mUIjfDU9doCSWQG79P4bZd73odxcSJ8XECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAcUhKCUeewEdvw8v/45/VsYqfQB7fKrPKc9dIOprXMRH6QZLJ7aMigHjm3CmBhZddhh0weFlXlw+TrJoktBhDVhPQkFtz0bbMSFWvbsMDzTr01y8KuFo5L8Z2+RxrVMc7Gk5olm0tHELo37M0Eg2D/B8qjR3bPP4Pdp169KLaImcVuoXQhkYO7zUtISRRsUT5pFdFJiFmGrFTKTdbjsupxw4pMX3sNXEr2zVXV8EVaL2HXl2L4nAV4oTMKdtiLSDUk1BNH2atdFhjoU1JdHNxnPkNg11/haJAQazWZnJcTpur0MGMUOW3E5mbqH5wVmFo7YH9dTkdvXWGhi7VRxrn7w==</validationCert>
+</SamlSsoConfig>

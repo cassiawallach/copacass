@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SecVulnUserStoryAssociation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SecVulnUserStoryAssociations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Security Vulnerability --></label>
+        <name>Security_Vulnerability__c</name>
+        <relationshipLabel><!-- User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Story --></label>
+        <name>User_Story__c</name>
+        <relationshipLabel><!-- Security Vulnerabilities --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>SecVulnUserStoryAssociation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

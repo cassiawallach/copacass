@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>DecsOnD__Detail_Page_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>DecsOnD__Detail_Page_Layout</fullName>
+        <fields>Name</fields>
+        <fields>DecsOnD__ftxt_Status__c</fields>
+        <fields>DecsOnD__Applies_to__c</fields>
+        <fields>OwnerId</fields>
+        <fields>DecsOnD__Active_Version__c</fields>
+        <fields>DecsOnD__Current_Version__c</fields>
+        <fields>DecsOnD__Documentation_Link__c</fields>
+        <fields>CreatedById</fields>
+        <fields>LastModifiedById</fields>
+        <label>Detail Page</label>
+    </compactLayouts>
+    <customHelpPage>DecsOnD__PolicyDetailHelp</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>A business policy maintained on the Decisions on Demand server</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>DecsOnD__Active_Version_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active Version Label</label>
+        <length>125</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Active_Version_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active Version Number</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Active_Version__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF ( 
+    (DecsOnD__Active_Version_Number__c &lt;= 0) ,  
+    &quot;&lt;none&gt;&quot; ,  
+    &quot;#&quot; &amp; RPAD(TEXT( DecsOnD__Active_Version_Number__c), 4) &amp; &quot; -- &quot; &amp;
+        IF ( ISBLANK(DecsOnD__Active_Version_Label__c) ,  
+            &quot;&quot;, 
+            BLANKVALUE(DecsOnD__Active_Version_Label__c, &quot;&lt;no label&gt;&quot;)
+        )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active Version</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Applies_to__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of Salesforce object to which this policy applies</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of Salesforce object to which this policy applies</inlineHelpText>
+        <label>Applies to</label>
+        <length>50</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Author_Versioning_Rights__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines what actions a user with Author access rights is granted with respect to policy version</description>
+        <externalId>false</externalId>
+        <label>Author Versioning Rights</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Commit</fullName>
+                    <default>false</default>
+                    <label>Commit</label>
+                </value>
+                <value>
+                    <fullName>Activate</fullName>
+                    <default>true</default>
+                    <label>Activate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Current_Version_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Current Version Label</label>
+        <length>125</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Current_Version_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Current Version Number</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Current_Version__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF ( 
+    (DecsOnD__Current_Version_Number__c &lt;= 0) ,  
+    &quot;&lt;none&gt;&quot; ,  
+    &quot;#&quot; &amp; RPAD(TEXT( DecsOnD__Current_Version_Number__c), 4) &amp; &quot; -- &quot; &amp;
+        IF ( ISBLANK(DecsOnD__Current_Version_Label__c) ,  
+            &quot;&quot;, 
+            BLANKVALUE(DecsOnD__Current_Version_Label__c, &quot;&lt;no label&gt;&quot;)
+        )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Version</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__DecisionPointConfiguration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Keeps local copy of decision point configuration. For internal use only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For internal use only</inlineHelpText>
+        <label>Decision Point Configuration</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__DecisionTableConfiguration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Keeps local copy of decision table configurations. For internal use only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For internal use only</inlineHelpText>
+        <label>Decision Table Configurations</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Free text description of the business policy</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>4000</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Documentation_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(DecsOnD__Documentation_Link__c, &apos;View&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Documentation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Documentation_Link__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Link to online documentation for the policy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Online documentation</inlineHelpText>
+        <label>Documentation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>User-friendly name for the policy</description>
+        <externalId>false</externalId>
+        <label>Label</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__LockExpires__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date and time the current lock expires</description>
+        <externalId>false</externalId>
+        <label>Lock Expires</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__LockedBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The user who last locked the policy</description>
+        <externalId>false</externalId>
+        <label>Locked By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Business_Policies</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Log_level__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Log level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Production</fullName>
+                    <default>true</default>
+                    <label>Production</label>
+                </value>
+                <value>
+                    <fullName>Debug</fullName>
+                    <default>false</default>
+                    <label>Debug</label>
+                </value>
+                <value>
+                    <fullName>Trace</fullName>
+                    <default>false</default>
+                    <label>Trace</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Revision__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Revision</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Schedule__c</fullName>
+        <deprecated>false</deprecated>
+        <description>For internal use only. Stores (optional) schedule for automated invocation of policy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For internal use only</inlineHelpText>
+        <label>Schedule</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Status_Derived__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF(AND(DecsOnD__Active_Version_Number__c=0,ISPICKVAL(DecsOnD__Status__c, &apos;Active&apos;)), &apos;Draft&apos;, TEXT(DecsOnD__Status__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The status of the policy. All policies can be browsed, but only Active policies can be invoked or edited</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Archived</fullName>
+                    <default>false</default>
+                    <label>Archived</label>
+                </value>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Invalid</fullName>
+                    <default>false</default>
+                    <label>Invalid</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Template_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the template from which this policy was created</description>
+        <externalId>false</externalId>
+        <label>Template Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__Triggers_enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A System Administrator or Decisions on Demand Administrator use to control the visibility of the Triggers section for a specific policy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Control the visibility of the Triggers section</inlineHelpText>
+        <label>Triggers enabled?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__UUID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Unique identifier for the policy</description>
+        <externalId>false</externalId>
+        <label>UUID</label>
+        <length>36</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>DecsOnD__ftxt_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>DecsOnD__Status_Derived__c &amp;
+IF(
+OR( 
+    ISPICKVAL(DecsOnD__Status__c, &apos;Draft&apos;),
+    ISPICKVAL(DecsOnD__Status__c, &apos;Active&apos;),
+    ISPICKVAL(DecsOnD__Status__c, &apos;Archived&apos;)),
+&quot; [&quot; &amp;  HYPERLINK(&quot;/apex/DecsOnD__PolicyLifecycleStatus?id=&quot;&amp;  Id &amp; &quot;&amp;type=change&quot;, &quot;Change&quot;, &quot;_top&quot;) &amp; &quot;]&quot;,
+&apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Business Policy</label>
+    <listViews>
+        <fullName>DecsOnD__Active</fullName>
+        <columns>NAME</columns>
+        <columns>DecsOnD__Applies_to__c</columns>
+        <columns>DecsOnD__Status_Derived__c</columns>
+        <columns>DecsOnD__Current_Version__c</columns>
+        <columns>DecsOnD__Active_Version__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>DecsOnD__Description__c</columns>
+        <columns>DecsOnD__Documentation_Formula__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DecsOnD__Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>Active</label>
+    </listViews>
+    <listViews>
+        <fullName>DecsOnD__All</fullName>
+        <columns>NAME</columns>
+        <columns>DecsOnD__Applies_to__c</columns>
+        <columns>DecsOnD__Status_Derived__c</columns>
+        <columns>DecsOnD__Current_Version__c</columns>
+        <columns>DecsOnD__Active_Version__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>DecsOnD__Description__c</columns>
+        <columns>DecsOnD__Documentation_Formula__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>DecsOnD__Not_active</fullName>
+        <columns>NAME</columns>
+        <columns>DecsOnD__Applies_to__c</columns>
+        <columns>DecsOnD__Status_Derived__c</columns>
+        <columns>DecsOnD__Current_Version__c</columns>
+        <columns>DecsOnD__Active_Version__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>DecsOnD__Description__c</columns>
+        <columns>DecsOnD__Documentation_Formula__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DecsOnD__Status__c</field>
+            <operation>notEqual</operation>
+            <value>Active</value>
+        </filters>
+        <label>Not Active</label>
+    </listViews>
+    <nameField>
+        <label>Policy Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Business Policies</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>DecsOnD__Applies_to__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DecsOnD__Status_Derived__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DecsOnD__Description__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>DecsOnD__Applies_to__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>DecsOnD__Status_Derived__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>DecsOnD__Status_Derived__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DecsOnD__Applies_to__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DecsOnD__Description__c</searchResultsAdditionalFields>
+        <searchResultsCustomButtons>DecsOnD__Import_Using_Token</searchResultsCustomButtons>
+        <searchResultsCustomButtons>DecsOnD__Refresh_From_Server</searchResultsCustomButtons>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>DecsOnD__Prevent_AppliesTo_change</fullName>
+        <active>true</active>
+        <description>Policy root objects are determined by the Decisions on Demand server, cannot be changed in Salesforce</description>
+        <errorConditionFormula>ISCHANGED(  DecsOnD__Applies_to__c  ) &amp;&amp; NOT ( ISNEW())</errorConditionFormula>
+        <errorDisplayField>DecsOnD__Applies_to__c</errorDisplayField>
+        <errorMessage>Cannot change this field from inside Salesforce - contact your administrator or support@decisionsondemand.com for further assistance</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>DecsOnD__Prevent_renaming</fullName>
+        <active>true</active>
+        <description>Policy names are managed on the Decisions on Demand server, they cannot be changed in Salesforce</description>
+        <errorConditionFormula>ISCHANGED( Name ) &amp;&amp; NOT ( ISNEW())</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Rename of Policy is not allowed from inside Salesforce - contact your administrator or support@decisionsondemand.com for further assistance</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>DecsOnD__Clone</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!if($User.UIThemeDisplayed=&apos;Theme4d&apos;,
+        URLFOR(&apos;/lightning/cmp/DecsOnD__NewPolicy_EnterDetails?DecsOnD__policyId=&apos;+DecsOnD__Policy__c.Id),
+        URLFOR(&apos;/apex/DecsOnD__NewPolicy_EnterDetails?DecsOnD__policyId=&apos;+DecsOnD__Policy__c.Id))}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DecsOnD__Delete</fullName>
+        <availability>online</availability>
+        <description>Delete business policy</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Delete</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/DecsOnD__PolicyLifecycleStatus?id={!DecsOnD__Policy__c.Id}&amp;type=&apos;delete&apos;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DecsOnD__Edit_Description</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit Description</masterLabel>
+        <openType>noSidebar</openType>
+        <page>DecsOnD__DescriptionInlineEditingPage</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>DecsOnD__Export_Policy</fullName>
+        <availability>online</availability>
+        <description>Generate token for exporting this policy to another org</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>false</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Export Policy</masterLabel>
+        <openType>newWindow</openType>
+        <page>DecsOnD__PolicyExporter</page>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <width>630</width>
+    </webLinks>
+    <webLinks>
+        <fullName>DecsOnD__Import_Using_Token</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Import Policy</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!if($User.UIThemeDisplayed=&apos;Theme4d&apos;,
+URLFOR(&apos;/lightning/cmp/DecsOnD__NewPolicy_Import&apos;),
+URLFOR(&apos;/apex/DecsOnD__NewPolicy_Import&apos;))}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DecsOnD__Refresh_From_Server</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Refresh From Server</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!if($User.UIThemeDisplayed=&apos;Theme4d&apos;,
+URLFOR(&apos;/lightning/cmp/DecsOnD__NewPolicy_Refresh&apos;),
+URLFOR(&apos;/apex/DecsOnD__NewPolicy_Refresh&apos;))}</url>
+    </webLinks>
+</CustomObject>

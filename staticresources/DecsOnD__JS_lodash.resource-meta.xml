@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>Source: https://lodash.com/
+
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)
+
+License: MIT (https://lodash.com/license)</description>
+</StaticResource>

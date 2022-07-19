@@ -1,0 +1,9 @@
+<!-- 
+ VisualForce wrapper for Lightning PolicyDetailInvocations component  
+
+ Copyright 2012-2018, Decisions on Demand, Inc.
+ All Rights Reserved.
+ -->
+<apex:page >
+<p>Placeholder -- to be implemented</p>
+</apex:page>

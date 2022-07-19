@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>Contextual menu plugin for jQuery 
+        
+Source: http://swisnl.github.io/jQuery-contextMenu/
+
+Copyright (c) 2010-2016 SWIS BV
+
+License: MIT (http://swisnl.github.io/jQuery-contextMenu/#license)</description>
+</StaticResource>

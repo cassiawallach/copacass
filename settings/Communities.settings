@@ -6,7 +6,8 @@
     <embeddedVisualforcePages>false</embeddedVisualforcePages>
     <enableCommunityWorkspaces>true</enableCommunityWorkspaces>
     <enableCspContactVisibilityPref>false</enableCspContactVisibilityPref>
-    <enableCspNotesOnAccConPref>true</enableCspNotesOnAccConPref>
+    <enableCspNotesOnAccConPref>false</enableCspNotesOnAccConPref>
+    <enableEnablePRM>false</enableEnablePRM>
     <enableExternalAccHierPref>false</enableExternalAccHierPref>
     <enableGuestPermDisOptOutCruc>false</enableGuestPermDisOptOutCruc>
     <enableGuestRecordReassignOrgPref>true</enableGuestRecordReassignOrgPref>

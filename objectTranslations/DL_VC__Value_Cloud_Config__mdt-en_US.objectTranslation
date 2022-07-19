@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Use Stage Endpoints --></label>
+        <name>DL_VC__Use_Stage_Endpoints__c</name>
+    </fields>
+</CustomObjectTranslation>

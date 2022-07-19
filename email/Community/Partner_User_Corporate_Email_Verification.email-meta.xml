@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for Partner Corporate Email Verification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Partner User Corporate Email Verification</name>
+    <style>none</style>
+    <subject>Welcome to Copado Partner Portal: Verify your email address!</subject>
+    <textOnly>Hi {!Target_User.FirstName},
+
+We need to verify your email address before you can start accessing Copado Community as a Partner.
+
+Verify your email address by clicking {!$Label.Copado_Community_URL}s/partnerverification?uid={! Target_User.Partner_Unique_Id__c}.
+
+Thanks!
+Copado Community</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

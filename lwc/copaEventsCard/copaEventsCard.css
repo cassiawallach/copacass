@@ -1,0 +1,32 @@
+.event_title{
+    color: #012131;
+    font-size: 22px;
+}
+.svg-icon{
+    fill: #C1C1C1 !important;
+}
+.event-icon-date {
+    margin-top: -39px;
+    align-items: center;
+    height: 57px;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 35px;
+}
+.event-icon-month {
+    margin-top: 18px;
+    margin-bottom: 40px;
+    align-items: center;
+    height: 28px;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    max-height: 28px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+.event_details-link, .event_details-link:hover, .event_details-link:active, .event_details-link:visited, .event_details-link:focus {
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Security_Vulnerability__c$Name</field>
+    </columns>
+    <columns>
+        <field>Security_Vulnerability__c.SecVulnUserStoryAssociations__r$User_Story__c</field>
+    </columns>
+    <columns>
+        <field>Security_Vulnerability__c.SecVulnUserStoryAssociations__r$User_Story__c.RecordType</field>
+    </columns>
+    <columns>
+        <field>Security_Vulnerability__c.SecVulnUserStoryAssociations__r$User_Story__c.Parent_User_Story__c.Name</field>
+    </columns>
+    <columns>
+        <field>Security_Vulnerability__c.SecVulnUserStoryAssociations__r$User_Story__c.Parent_User_Story__c.RecordType</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Sec Vuln with or w/o US</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Security_Vulnerabilities_with_or_w_o_User_Stories__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Security_Vulnerability__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Security_Vulnerability__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

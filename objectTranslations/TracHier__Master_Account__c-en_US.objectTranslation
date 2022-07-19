@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Click Deploy Family Total --></label>
+        <name>Click_Deploy_Family_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AOV --></label>
+        <name>Total_AOV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accounts Closed Won --></label>
+        <name>TracHier__Accounts_Closed_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activities --></label>
+        <name>TracHier__Activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opp Amount --></label>
+        <name>TracHier__Closed_Won_Opp_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opp Avg --></label>
+        <name>TracHier__Closed_Won_Opp_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opps --></label>
+        <name>TracHier__Closed_Won_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts --></label>
+        <name>TracHier__Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Whitespace Count --></label>
+        <name>TracHier__DnB_Whitespace_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hierarchy Label --></help>
+        <label><!-- Hierarchy Label --></label>
+        <name>TracHier__HierarchyLabel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hierarchy Type --></help>
+        <label><!-- Hierarchy Type --></label>
+        <name>TracHier__HierarchyType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hierarchy --></help>
+        <label><!-- Hierarchy --></label>
+        <name>TracHier__Hierarchy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads --></label>
+        <name>TracHier__Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Company ID --></label>
+        <name>TracHier__Master_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts --></label>
+        <name>TracHier__Member_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Cases --></label>
+        <name>TracHier__Open_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opp Amount --></label>
+        <name>TracHier__Open_Opp_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opps --></label>
+        <name>TracHier__Open_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Contact Roles --></label>
+        <name>TracHier__Opp_Contact_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Products Sold --></label>
+        <name>TracHier__Opp_Products_Sold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Count --></label>
+        <name>TracHier__Owner_Count__c</name>
+    </fields>
+    <layouts>
+        <layout>Master Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Hierarchy --></label>
+            <section>Hierarchy</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

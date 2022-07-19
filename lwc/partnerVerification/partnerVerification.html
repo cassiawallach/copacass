@@ -1,0 +1,15 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="inverse"></lightning-spinner>
+    </template>
+     
+    <template if:false={isLoading}>
+        <template if:true={isSuccess}>
+            <div class="slds-text-color_success slds-text-heading_large slds-align_absolute-center">{message}</div>
+        </template>
+    
+        <template if:false={isSuccess}>
+            <div class="slds-text-color_error slds-text-heading_large slds-align_absolute-center">{message}</div>
+        </template>
+    </template>
+</template>

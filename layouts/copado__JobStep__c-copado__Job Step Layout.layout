@@ -27,10 +27,6 @@
                 <behavior>Required</behavior>
                 <field>copado__Type__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__CustomType__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -44,14 +40,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>copado__JobTemplate__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__UserStory__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__ExecutionSequence__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -125,12 +113,7 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>copado__Status__c</fields>
-        <fields>copado__Progress_Status__c</fields>
-        <fields>copado__End_Time__c</fields>
-        <fields>copado__Start_Time__c</fields>
         <relatedList>copado__Result__c.copado__JobStep__c</relatedList>
-        <sortField>copado__Start_Time__c</sortField>
-        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -138,7 +121,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0900000C61WV</masterLabel>
+        <masterLabel>00h7Y000001k6SK</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

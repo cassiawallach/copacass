@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Data --></label>
+        <name>TracHier__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interval --></label>
+        <name>TracHier__Interval__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date and time of the most recent processing by Subscription Scheduler. --></help>
+        <label><!-- Last Run Date --></label>
+        <name>TracHier__Last_Run_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>TracHier__Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>TracHier__Record_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>TracHier__User__c</name>
+    </fields>
+    <layouts>
+        <layout>Subscription Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DATA --></label>
+            <section>DATA</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

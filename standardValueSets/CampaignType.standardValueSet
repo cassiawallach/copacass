@@ -1,49 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <sorted>false</sorted>
+    <sorted>true</sorted>
     <standardValue>
-        <fullName>Advertisement</fullName>
-        <default>true</default>
-        <label>Advertisement</label>
+        <fullName>Ads/Social - AD</fullName>
+        <default>false</default>
+        <label>Ads/Social - AD</label>
     </standardValue>
     <standardValue>
-        <fullName>Email</fullName>
+        <fullName>Conference - CNF</fullName>
         <default>false</default>
-        <label>Email</label>
+        <label>Conference - CNF</label>
     </standardValue>
     <standardValue>
-        <fullName>Telemarketing</fullName>
+        <fullName>Email - EML</fullName>
         <default>false</default>
-        <label>Telemarketing</label>
+        <label>Email - EML</label>
     </standardValue>
     <standardValue>
-        <fullName>Banner Ads</fullName>
+        <fullName>Event - EVT</fullName>
         <default>false</default>
-        <label>Banner Ads</label>
+        <label>Event - EVT</label>
     </standardValue>
     <standardValue>
-        <fullName>Seminar / Conference</fullName>
+        <fullName>Inbound - INB</fullName>
         <default>false</default>
-        <label>Seminar / Conference</label>
+        <label>Inbound - INB</label>
     </standardValue>
     <standardValue>
-        <fullName>Public Relations</fullName>
+        <fullName>Parent Campaign - PARENT</fullName>
         <default>false</default>
-        <label>Public Relations</label>
+        <label>Parent Campaign - PARENT</label>
     </standardValue>
     <standardValue>
-        <fullName>Partners</fullName>
+        <fullName>Sales - SLS</fullName>
         <default>false</default>
-        <label>Partners</label>
+        <label>Sales - SLS</label>
     </standardValue>
     <standardValue>
-        <fullName>Referral Program</fullName>
+        <fullName>Webinar - WBN</fullName>
         <default>false</default>
-        <label>Referral Program</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Other</fullName>
-        <default>false</default>
-        <label>Other</label>
+        <label>Webinar - WBN</label>
     </standardValue>
 </StandardValueSet>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>true</default>
+        <label>Unknown</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Ready</fullName>
+        <default>false</default>
+        <label>Not Ready</label>
+    </customValue>
+    <customValue>
+        <fullName>Do Not Assign</fullName>
+        <default>false</default>
+        <label>Do Not Assign</label>
+    </customValue>
+    <customValue>
+        <fullName>Ready</fullName>
+        <default>false</default>
+        <label>Ready</label>
+    </customValue>
+    <customValue>
+        <fullName>No Assignment</fullName>
+        <default>false</default>
+        <label>No Assignment</label>
+    </customValue>
+    <customValue>
+        <fullName>Assigned - Auto</fullName>
+        <default>false</default>
+        <label>Assigned - Auto</label>
+    </customValue>
+    <customValue>
+        <fullName>Assigned - Manual</fullName>
+        <default>false</default>
+        <label>Assigned - Manual</label>
+    </customValue>
+    <customValue>
+        <fullName>Failed</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <description>Status of the most recent assignment by Decisions on Demand</description>
+    <masterLabel>Assignment Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

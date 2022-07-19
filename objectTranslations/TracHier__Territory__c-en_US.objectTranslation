@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Number of Accounts --></label>
+        <name>TracHier__Member_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Count --></label>
+        <name>TracHier__Owner_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory ID --></label>
+        <name>TracHier__Territory_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Territory Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,21 @@
+<!-- Copyright 2012-2019, Decisions on Demand, Inc.
+All Rights Reserved. -->
+<apex:page standardController="DecsOnD__Policy__c" sidebar="false">
+    <apex:stylesheet value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/css/decsond-sfdc-wrapper.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/sfdcWrapper.js')}"/>
+    <apex:includeLightning />
+    <div id="lightning"/>
+    <script>
+        $Lightning.use(
+            "DecsOnD:NewPolicy_Container",
+            function () {
+                $Lightning.createComponent(
+                    "DecsOnD:NewPolicy_Refresh",
+                    {
+                        classic: true
+                    },
+                    "lightning",
+                    createComponentHandler);
+            });
+    </script>
+</apex:page>

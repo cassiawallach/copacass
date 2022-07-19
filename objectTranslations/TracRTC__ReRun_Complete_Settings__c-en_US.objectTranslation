@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Criteria Logic On Create --></label>
+        <name>TracRTC__Criteria_Logic_On_Create__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria Logic --></label>
+        <name>TracRTC__Criteria_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Retry Complete --></label>
+        <name>TracRTC__Enable_Retry_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Trigger Time Delay --></label>
+        <name>TracRTC__Enable_Trigger_Time_Delay__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Create --></label>
+        <name>TracRTC__On_Create__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Update --></label>
+        <name>TracRTC__On_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Complete Attempts --></label>
+        <name>TracRTC__Retry_Complete_Attempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Complete Time Units --></label>
+        <name>TracRTC__Retry_Complete_Time_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject Name --></label>
+        <name>TracRTC__SObject_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trigger Time Delay Time Units --></label>
+        <name>TracRTC__Trigger_Time_Delay_Time_Units__c</name>
+    </fields>
+</CustomObjectTranslation>

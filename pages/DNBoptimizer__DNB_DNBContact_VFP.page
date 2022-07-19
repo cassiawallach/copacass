@@ -1,0 +1,70 @@
+<apex:page standardController="Contact" showHeader="true" sidebar="false" extensions="DNBoptimizer.DNB_ContactController_VFC">
+    <apex:outputPanel rendered="{!NOT(OR($User.UITheme == 'Theme4d', $User.UITheme == 'Theme4t'))}">
+        <apex:pageblock mode="maindetail">  
+            
+            <apex:pageBlockSection columns="2">  
+                <apex:repeat value="{!aWrapperList}" var="fieldValue">          
+                    <apex:outputField value="{!acct[fieldValue['fieldName']]}"/>
+                </apex:repeat>               
+            </apex:pageBlockSection>
+                            
+            <apex:pageBlockSection columns="2"> 
+            <apex:outputPanel rendered="{!Contact.DNBoptimizer__DnBContactRecord__c != null}">           
+                <apex:outputLink id="ContactLink1" value="/{!Contact.DNBoptimizer__DnBContactRecord__c}"  target="_blank" ><br/>
+                     <apex:outputText value="Access Additional D&B Contact Data"></apex:outputText>    
+                </apex:outputLink> 
+            </apex:outputPanel>              
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!OR($User.UITheme == 'Theme4d', $User.UITheme == 'Theme4t')}">
+        <apex:slds /> 
+        <div class="slds-scope">
+            <div class="slds-grid slds-wrap">
+                <apex:repeat value="{!aWrapperList}" var="fieldValue">
+                    <div class="slds-p-right--large slds-size_1-of-2 slds-medium-size_3-of-6 slds-large-size_6-of-12">
+                        <div class="slds-form-element slds-form-element_edit slds-grow slds-hint-parent slds-p-vertical_xx-small override--slds-form-element">
+                            <label class="slds-form-element__label" for="input-unique-id">{!fieldValue.labelName}</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-border_bottom">
+                                    <span class="slds-form-element__static slds-grow">{!acct[fieldValue['fieldName']]}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </apex:repeat>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-p-right--small slds-size_1-of-1 slds-medium-size_3-of-6 slds-large-size_6-of-12">
+                    <apex:outputPanel rendered="{!IF(Contact.DNBoptimizer__DnBContactRecord__c != null && $User.UITheme == 'Theme4t', true, false)}">           
+                        <apex:outputLink id="ContactLink2" onclick="viewRecord('{!JSENCODE(HTMLENCODE(Contact.DNBoptimizer__DnBContactRecord__c))}')">
+                            <apex:outputText value="Access Additional D&B Contact Data"></apex:outputText>
+                        </apex:outputLink> 
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF(Contact.DNBoptimizer__DnBContactRecord__c != null && $User.UITheme == 'Theme4d', true, false)}">           
+                        <apex:outputLink id="ContactLink3" value="/one/one.app?source=aloha#/sObject/{!Contact.DNBoptimizer__DnBContactRecord__c}/view" target="_blank"><br/>
+                             <apex:outputText value="Access Additional D&B Contact Data"></apex:outputText>    
+                        </apex:outputLink> 
+                    </apex:outputPanel> 
+                </div>
+            </div>
+        </div>
+    </apex:outputPanel>
+    <head>        
+        <script>
+            function viewRecord(aId){
+                if ( (typeof window.sforce != 'undefined') && (window.sforce!=null) ) {
+                  sforce.one.navigateToSObject(aId);
+                }
+            }
+        </script>
+        <!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KZ4FPRX');
+        </script>
+		<!-- End Google Tag Manager -->
+    </head>
+</apex:page>

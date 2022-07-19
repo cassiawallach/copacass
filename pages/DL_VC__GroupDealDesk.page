@@ -1,0 +1,23 @@
+<!--
+Description: This VF Page launches an iFrame to the ValueCloud, where you can add a new Value Proposition Group.
+-->
+<apex:page controller="DL_VC.GroupDealDeskController" sidebar="false" lightningStylesheets="true">
+    <head>
+        <apex:slds />
+    </head>
+    <body>
+        <apex:iframe src="{! url }" scrolling="true" id="groupDealDesk" height="{! height}"/>
+        <apex:form >
+            <apex:pageBlock >
+                <apex:pageBlockSection >
+                    <apex:pageMessages >
+                    </apex:pageMessages>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="3">
+                    <!--<apex:inputText value="{! url}"/>-->
+                    <apex:commandButton action="{! PreviousPage }" value="Close"/>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:form>
+    </body>
+</apex:page>

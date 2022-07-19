@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_45394154</developerName>
+        <masterLabel>Robot and Success</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SBQQ__QuoteLine__c.SBQQ__ProductName__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Success+</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Success</sourceValue>
+            </sourceValues>
+            <value>Robot and Success</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>SBQQ__QuoteLine__c.SBQQ__ProductName__c</field>
+    </columns>
+    <columns>
+        <field>CHILD_CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>SBQQ__QuoteLine__c.SBQQ__ProductName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>robot</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>James Montanari</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Andrew CRT issue</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$SBQQ__Quote__c$SBQQ__QuoteLine__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CHILD_CREATED_DATE</dateColumn>
+        <endDate>2021-11-20</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-11-18</startDate>
+    </timeFrameFilter>
+</Report>

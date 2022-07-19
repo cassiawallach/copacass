@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>developers@copa.do</contactEmail>
+    <contactPhone>+34 910 56 11 75</contactPhone>
+    <description>Copado</description>
+    <infoUrl>https://www.copa.do</infoUrl>
+    <label>Copado (DEV)</label>
+    <logoUrl>https://copado--c.documentforce.com/servlet/servlet.ImageServer?id=0150N000006oDXO&amp;oid=00D2z0000008awY</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://dev-app-api.copa.do/forcedotcomoauth2/callback
+https://dev-app-api.copado.com/forcedotcomoauth2/callback
+https://api-dev.backend.copado.com/forcedotcomoauth2/callback
+https://copado-worker-mr-235.backend.copado.com/forcedotcomoauth2/callback
+https://copado-worker-mr-237.backend.copado.com/forcedotcomoauth2/callback</callbackUrl>
+        <consumerKey>3MVG9LlLrkcRhGHZ75_1zzxBX1hCMJEiFNuFpPPQG5Q3JHdaocD09m56xRn3.D9nnKeLV3X50pI1Q4Gb5_fI4</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+        <scopes>Eclair</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

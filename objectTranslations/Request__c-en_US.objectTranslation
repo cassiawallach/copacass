@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deal Desk Requests</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deal Desk Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACV --></label>
+        <name>ACV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Deal Desk Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date/Time --></label>
+        <name>Close_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Desk Type --></label>
+        <name>Deal_Desk_Type__c</name>
+        <picklistValues>
+            <masterLabel>Expansion Quote</masterLabel>
+            <translation><!-- Expansion Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Swap Quote</masterLabel>
+            <translation><!-- License Swap Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Order Form</masterLabel>
+            <translation><!-- Manual Order Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memo Language</masterLabel>
+            <translation><!-- Memo Language --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Cleanup</masterLabel>
+            <translation><!-- Opportunity Cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage-Based Feature Add On Quote</masterLabel>
+            <translation><!-- Percentage-Based Feature Add On Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Support</masterLabel>
+            <translation><!-- Pricing Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signature Assistance</masterLabel>
+            <translation><!-- Signature Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Quote</masterLabel>
+            <translation><!-- Standard Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Quote</masterLabel>
+            <translation><!-- Support Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Progress Date/Time --></label>
+        <name>In_Progress_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Manager --></label>
+        <name>Opportunity_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Deal Desk Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pending Date/Time --></label>
+        <name>Pending_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Deal Desk Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requestor --></label>
+        <name>Requestor__c</name>
+        <relationshipLabel><!-- Deal Desk Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Not Processed</masterLabel>
+            <translation><!-- Closed Not Processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - Finance</masterLabel>
+            <translation><!-- Pending - Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - Legal</masterLabel>
+            <translation><!-- Pending - Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending - Sales</masterLabel>
+            <translation><!-- Pending - Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Usage metrics collected by Traction Complete.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TracRTC__Active_Users_Dynamic_Assignment__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of Complete active users via dynamic assignment.</description>
+        <externalId>false</externalId>
+        <label>Active Users Dynamic Assignment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Active_Users_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of Complete active users in user groups.</description>
+        <externalId>false</externalId>
+        <label>Active Users Group</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Active_Users_Round_Robin__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of Complete active users in round robin steps.</description>
+        <externalId>false</externalId>
+        <label>Active Users Round Robin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Attempts_To_Save_Corrupt_Flows__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count how many times a user has tried to save a corrupt flow</description>
+        <externalId>false</externalId>
+        <label>Attempts to Save Corrupt Flow</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Average_Lead_Response_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Average lead response time last week</description>
+        <externalId>false</externalId>
+        <label>Average Lead Response Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Conversion_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Leads converted into opportunities</description>
+        <externalId>false</externalId>
+        <label>Conversion Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Enabled_Flow_Steps_Types__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of enabled flow steps by type</description>
+        <externalId>false</externalId>
+        <label>Enabled Flow Steps Types</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Last_Complete_Without_Error__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of last lead processed by Complete without errors</description>
+        <externalId>false</externalId>
+        <label>Last Complete Without Error</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Leads_Matched__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of leads matched</description>
+        <externalId>false</externalId>
+        <label>Leads Matched</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Leads_Merged__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Leads Merged</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Leads_Processed_By_Complete__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of leads processed by Complete</description>
+        <externalId>false</externalId>
+        <label>Leads Processed By Complete</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Leads_with_Errors__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of leads with errors</description>
+        <externalId>false</externalId>
+        <label>Leads with Errors</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__License_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Salesforce licenses in current org.</description>
+        <externalId>false</externalId>
+        <label>License Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Settings_Enabled__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of settings enabled by user</description>
+        <externalId>false</externalId>
+        <label>Settings Enabled</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Total_Active_Users_Last_Week__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total number of users that are actively being assigned by complete in the last week</description>
+        <externalId>false</externalId>
+        <label>Total Active Users Last Week</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Total_Active_Users__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The total number of users that are actively being assigned by complete in the last week</description>
+        <externalId>false</externalId>
+        <label>Total Active Users</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Total_Leads_Converted__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total leads converted into opportunities last week</description>
+        <externalId>false</externalId>
+        <label>Total Leads Converted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Total_Leads__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total leads last week</description>
+        <externalId>false</externalId>
+        <label>Total Leads Last Week</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Users_With_Admin_Permission__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Users assigned the admin permission set</description>
+        <externalId>false</externalId>
+        <label>Users With Admin Permission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Users_With_User_Permission__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Users assigned the user permission set</description>
+        <externalId>false</externalId>
+        <label>Users With User Permission</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Usage Metrics</label>
+    <listViews>
+        <fullName>TracRTC__All</fullName>
+        <columns>NAME</columns>
+        <columns>TracRTC__License_Count__c</columns>
+        <columns>TracRTC__Active_Users_Dynamic_Assignment__c</columns>
+        <columns>TracRTC__Active_Users_Group__c</columns>
+        <columns>TracRTC__Active_Users_Round_Robin__c</columns>
+        <columns>TracRTC__Average_Lead_Response_Time__c</columns>
+        <columns>TracRTC__Leads_Matched__c</columns>
+        <columns>TracRTC__Leads_Merged__c</columns>
+        <columns>TracRTC__Leads_Processed_By_Complete__c</columns>
+        <columns>TracRTC__Leads_with_Errors__c</columns>
+        <columns>TracRTC__Conversion_Rate__c</columns>
+        <columns>TracRTC__Enabled_Flow_Steps_Types__c</columns>
+        <columns>TracRTC__Last_Complete_Without_Error__c</columns>
+        <columns>TracRTC__Total_Active_Users__c</columns>
+        <columns>TracRTC__Total_Active_Users_Last_Week__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

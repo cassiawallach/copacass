@@ -1,0 +1,288 @@
+<apex:page sidebar="false" controller="DNBoptimizer.DNB_ApplicationController">
+<!--
+    <apex:slds /> 
+    <apex:includeScript value="{!URLFOR($Resource.Angular, 'angular.min.js')}"/>
+    <div class="slds-scope" ng-app="mainapplication" ng-cloak="true" ng-controller="MainController" ng-init="doInit()">
+        <div ng-show="isLoading">
+            <div role="status" class="slds-spinner slds-spinner_medium" style="z-index:10;">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+        </div>
+        <section role="dialog" tabindex="1" class="slds-modal slds-fade-in-open" ng-show="isSuccessful">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header" style="background-color:#005172;">
+                    <h2 id="modal-heading-01" style="color:white;" class="slds-text-heading_medium slds-hyphenate"><strong>Optimizer Settings</strong></h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    Settings Have Been Saved Successfully.
+                </div>
+                <footer class="slds-modal__footer">                                                                                       
+                    <button class="slds-button slds-button_neutral" style="color: white; background-color:rgb(48, 149, 180); width: 80px;" ng-click="isSuccessful = false">OK</button>
+                </footer>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open" style="z-index:-10;"></div>
+        </section>
+        <section role="dialog" tabindex="1" class="slds-modal slds-fade-in-open" ng-show="hasIssue">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header" style="background-color:#005172;">
+                    <h2 id="modal-heading-01" style="color:white;" class="slds-text-heading_medium slds-hyphenate">{{modalHeader}}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-2">
+                    {{message}}
+                </div>
+                <footer class="slds-modal__footer">                                                                                       
+                    <button class="slds-button slds-button_neutral" style="color: white; background-color:rgb(48, 149, 180); width: 80px;" ng-click="hasIssue = false;executeFunction(modalFunction)">OK</button>
+                </footer>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open" style="z-index:-10;"></div>
+        </section>
+        <div>
+            <div class="slds-card-wrapper" style="height: 800px; max-width: 720px;margin-left: auto;margin-right: auto;">
+                <header>
+                    <h2 class="slds-text-heading_medium">D&amp;B Optimizer Settings</h2>
+                    <p class="slds-text-body_small">Thank you for choosing to manage your Salesforce data with Dun &amp; Bradstreet.  In order to properly activate the Optimizer service and product experience, the information requested below must be provided.  Please refer to our implementation guide (found in our App Exhange listing) for more information.</p>
+                </header>
+                <div class="slds-grid" style="background: rgb(244, 246, 249); padding: 1rem;">
+                    <div class="slds-panel slds-grid slds-grid_vertical slds-nowrap">
+                        <div class="slds-form slds-form_stacked slds-grow slds-scrollable_y">
+                            <div class="slds-panel__section slds-border_bottom">
+                                <div class="slds-media">
+                                    <div class="slds-media__body">
+                                        <h2 class="slds-truncate slds-text-heading_small" title="Authorization Information"><a href="javascript:void(0);">Authorization Information</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-panel__section">
+                                <ul>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
+                                        <span class="slds-form-element__label">Optimizer User ID* </span>
+                                        <div class="slds-form-element__control">
+                                            <input type="text" ng-model="adminSettings.userName" id="text-input-id-2" class="slds-input" placeholder="Username" />
+                                        </div>
+                                    </li>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
+                                        <span class="slds-form-element__label">Optimizer User Password* </span>
+                                        <div class="slds-form-element__control">
+                                            <input type="password" ng-model="adminSettings.passWord" id="text-input-id-3" class="slds-input" placeholder="Password" />
+                                        </div>
+                                    </li>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
+                                        <span class="slds-form-element__label">Optimizer User Security Token* </span>
+                                        <div class="slds-form-element__control">
+                                            <input type="password" ng-model="adminSettings.securityToken" id="text-input-id-1" class="slds-input" placeholder="Security Token" />
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid" style="background: rgb(244, 246, 249); padding: 1rem;">
+                    <div class="slds-panel slds-grid slds-grid_vertical slds-nowrap">
+                        <div class="slds-form slds-form_stacked slds-grow slds-scrollable_y">
+                            <div class="slds-panel__section slds-border_bottom">
+                                <div class="slds-media">
+                                    <div class="slds-media__body">
+                                        <h2 class="slds-truncate slds-text-heading_small" title="Organization Domain Setting"><a href="javascript:void(0);">Organization Domain Information</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-panel__section">
+                                <ul>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
+                                        <span class="slds-form-element__label">Organization Domain Name*
+                                          
+                                        </span>
+                                        <div class="slds-form-element__control">
+                                            <input type="text" ng-model="adminSettings.orgDomain" id="text-input-id-6" class="slds-input" placeholder="Domain Name" />                                            
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-grid" style="background: rgb(244, 246, 249); padding: 1rem;">
+                    <div class="slds-panel slds-grid slds-grid_vertical slds-nowrap">
+                        <div class="slds-form slds-form_stacked slds-grow slds-scrollable_y">
+                            <div class="slds-panel__section slds-border_bottom">
+                                <div class="slds-media">
+                                    <div class="slds-media__body">
+                                        <h2 class="slds-truncate slds-text-heading_small" title="Organization Domain Setting"><a href="javascript:void(0);">API Timeout Setting</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-panel__section">
+                                <ul>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
+                                        <span class="slds-form-element__label">API Timeout (in seconds)*
+                                          
+                                        </span>
+                                        <div class="slds-form-element__control">
+                                            <input type="text" ng-model="adminSettings.apiTimeOut" ng-blur="setMinMaxForInputNumbersOnly(30,120)" id="text-input-id-12" class="slds-input" placeholder="Time Out" />                                            
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-panel__actions slds-border_top">
+                    <div class="slds-grid slds-grid_align-center">
+                        <button type="button" class="slds-button slds-button_brand" ng-click="validateSettings()">Validate</button>
+                        <button type="button" class="slds-button slds-button_brand" ng-click="validateData()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"> 
+    angular.module('mainapplication',['controllers','factories']).config(function($interpolateProvider) {
+    });
+    angular.module('controllers',[]).controller('MainController',function($scope,$rootScope,$http,$filter,adminSetting){
+        $scope.adminSettings = new adminSetting();
+        $scope.isLoading = false;
+        $scope.isSuccessful = false;
+        $scope.hasIssue = false;
+        $scope.message = '';
+        $scope.modalColor = '#005172';
+        $scope.modalHeader = 'Warning';
+        $scope.modalFunction = '';
+        $scope.executeFunction = function (name){
+            if(angular.isFunction($scope[name]))
+                $scope[name]();
+        };
+        $scope.setMinMaxForInputNumbersOnly = function(min,max){
+            if(!isNaN($scope.adminSettings.apiTimeOut)){
+                if($scope.adminSettings.apiTimeOut < min){
+                    $scope.adminSettings.apiTimeOut = min;
+                }
+                if($scope.adminSettings.apiTimeOut > max){
+                    $scope.adminSettings.apiTimeOut = max;
+                }
+            }else{
+                $scope.adminSettings.apiTimeOut = min;
+            }
+        };
+        $scope.doInit = function(){
+            $scope.isLoading = true;
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.DNB_ApplicationController.getAppSetting}',function(result, event){
+                    if (event.status) {
+                        $scope.$apply(function () {
+                            $scope.adminSettings = result;
+                            $scope.isLoading = false;
+                        });
+                    } else if (event.type === 'exception') {
+                        $scope.modalHeader = 'Exception';
+                        $scope.modalColor = '#005172';
+                        $scope.hasIssue = true;
+                        $scope.message = event.where;
+                        $scope.isLoading = false;
+                    } else {
+                        $scope.modalHeader = 'Error';
+                        $scope.modalColor = '#005172';
+                        $scope.hasIssue = true;
+                        $scope.message = event.message;
+                        $scope.isLoading = false;
+                    }
+                }, 
+                {escape: true}
+            );
+        };
+        $scope.saveSetting = function(){
+            $scope.isLoading = true;
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.DNB_ApplicationController.setAppSetting}',JSON.stringify($scope.adminSettings),function(result, event){
+                    if (event.status) {
+                        $scope.$apply(function () {
+                            $scope.isSuccessful = true;
+                            $scope.isLoading = false;
+                        });
+                    } else if (event.type === 'exception') {
+                        $scope.modalHeader = 'Execption';
+                        $scope.modalColor = '#005172';
+                        $scope.hasIssue = true;
+                        $scope.message = event.where;
+                        $scope.isSuccessful = false;
+                        $scope.isLoading = false;
+                    } else {
+                        $scope.modalHeader = 'Error';
+                        $scope.modalColor = '#005172';
+                        $scope.hasIssue = true;
+                        $scope.message = event.message;
+                        $scope.isSuccessful = false;
+                        $scope.isLoading = false;
+                    }
+                }, 
+                {escape: true}
+            );
+        };
+        $scope.validateData = function(){
+            if($scope.adminSettings.hasOwnProperty('orgDomain') && $scope.adminSettings.hasOwnProperty('userName') && $scope.adminSettings.hasOwnProperty('passWord') && $scope.adminSettings.hasOwnProperty('securityToken') && $scope.adminSettings.orgDomain.length >0 && $scope.adminSettings.userName.length >0 && $scope.adminSettings.passWord.length >0 && $scope.adminSettings.securityToken.length >0){
+                $scope.saveSetting();
+            }else{
+                $scope.modalHeader = 'Warning';
+                $scope.modalFunction = 'saveSetting';
+                $scope.modalColor = '#005172';
+                $scope.hasIssue = true;
+                $scope.message = 'Please note that all fields on this form are required to activate D&B Optimizer.  Your information will be saved.';
+            }
+        };
+        $scope.validateSettings = function(){
+            $scope.modalFunction = '';
+            $scope.isLoading = true;
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.DNB_ApplicationController.validateSettings}',JSON.stringify($scope.adminSettings),function(result, event){
+                    if (event.status) {
+                        $scope.$apply(function () {
+                            if(result == 'success'){
+                                $scope.modalHeader = 'Success';
+                                $scope.hasIssue = true;
+                                $scope.modalColor = '#005172';
+                                $scope.message = 'Your validation has succeeded.';
+                            }else{
+                                $scope.modalHeader = 'Error';
+                                $scope.modalColor = '#005172';
+                                $scope.hasIssue = true;
+                                $scope.message = 'Unfortunately, validation failed for this user.  Please ensure that the domain name, username and password is correct and the token was created by the user specified in the username field.';
+                            }
+                            $scope.isLoading = false;
+                        });
+                    } else if (event.type === 'exception') {
+                        $scope.modalHeader = 'Exception';
+                        $scope.modalColor = '#005172';
+                        $scope.hasIssue = true;
+                        $scope.message = event.where;
+                        $scope.isLoading = false;
+                    } else {
+                        $scope.modalHeader = 'Error';
+                        $scope.modalColor = '#005172';
+                        $scope.hasIssue = true;
+                        $scope.message = event.message;
+                        $scope.isLoading = false;
+                    }
+                }, 
+                {escape: true}
+            );
+        };
+    });
+    angular.module('factories',[])
+    .factory('adminSetting', function() {
+        function adminSetting() {
+            this.orgDomain = '';
+            this.clientId = '';
+            this.clientSecret = '';
+            this.userName = '';
+            this.passWord = '';
+            this.securityToken = '';
+            this.apiTimeOut = 0;
+        }
+        return adminSetting;
+    });
+    </script>
+ !-->   
+</apex:page>

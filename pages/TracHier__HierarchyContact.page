@@ -1,0 +1,22 @@
+<apex:page standardController="Contact" extensions="TracHier.HierarchyLWCinVFPageCtlrExtension" showHeader="false" sidebar="false" title="Traction Hierarchies" lightningStylesheets="true"  standardStylesheets="false">
+
+    <apex:includeLightning />
+    <div id="HierarchyLWCinVFPid" />
+
+    <script>
+        if ({!enableLWCForVFP}){
+            $Lightning.use("TracHier:HierarchyVFP", function() {
+                $Lightning.createComponent("TracHier:hierarchy",
+                    {
+                        recordId: "{!$CurrentPage.parameters.id}"
+                    },
+                    "HierarchyLWCinVFPid",
+                    function(cmp) {
+                        console.log('LWC Component added in VF page {!$CurrentPage.parameters.id}');
+                    });
+            });
+        }
+    </script>
+
+    <c:Hierarchy recordId="{!Contact.AccountId}" rendered="{!NOT(enableLWCForVFP)}"/>
+</apex:page>

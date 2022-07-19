@@ -1,0 +1,21 @@
+<template>
+    <div style={backgroundStyle}>
+        <div class="slds-grid slds-wrap"> 
+            <div class="slds-grid slds-wrap copa_update-div">
+                <div class="slds-col slds-size_2-of-4 slds-small-size--2-of-4 slds-medium-size--2-of-4 slds-large-size--4-of-4 slds-align_absolute-center slds-p-horizontal_x-small copa_update-img_div">
+                    <img src={copaUpdateLogo}></img>
+                </div>
+                <div class="slds-col slds-size_2-of-4 slds-small-size--2-of-4 slds-medium-size--2-of-4 slds-large-size--4-of-4 slds-align_absolute-center">
+                    <span class="copa_update-date slds-p-around_small">
+                        {currentCopaUpdate.StartDate}
+                    </span>
+                </div>
+                <div class="slds-col slds-size_4-of-4 slds-align_absolute-center slds-m-top_medium slds-text-align_center">
+                    <span class="copa_update-title slds-p-horizontal_x-small">
+                        {currentCopaUpdate.Title}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

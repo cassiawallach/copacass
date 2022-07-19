@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to create events which will be displayed on community.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>End Date time of event.</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Event_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Event Details</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Event_Name__c</fullName>
+        <description>Contains the event name.</description>
+        <externalId>false</externalId>
+        <label>Event Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Event_Time_Shown_To_Public__c</fullName>
+        <description>Event time string which is shown to public.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Filled automatically based on Start Date, End Date and Timezone of event.</inlineHelpText>
+        <label>Event Time Shown To Public</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Meeting_Link_For_Email__c</fullName>
+        <description>This field is used in email template for copa event registration and it populates location or meeting link based on event venue.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Venue__c, &quot;In-Person&quot;), Location__c, Meeting_Link__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location/Meeting Link For Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter location for In-Person events.</inlineHelpText>
+        <label>Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meeting_Link__c</fullName>
+        <description>Meeting link for the event.</description>
+        <externalId>false</externalId>
+        <label>Meeting Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Registration_Link__c</fullName>
+        <description>Contains the registration link for the event.</description>
+        <externalId>false</externalId>
+        <label>Registration Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <description>Contains start date of event.</description>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Timezone__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone in which event is going to happen.</inlineHelpText>
+        <label>Timezone</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Custom_Timezone</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Venue__c</fullName>
+        <externalId>false</externalId>
+        <label>Venue</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-Person</fullName>
+                    <default>false</default>
+                    <label>In-Person</label>
+                </value>
+                <value>
+                    <fullName>Virtual</fullName>
+                    <default>false</default>
+                    <label>Virtual</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Copa Event</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Community_Events</fullName>
+        <columns>NAME</columns>
+        <columns>Event_Name__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Copa_Event__c.Community_Events</value>
+        </filters>
+        <label>Community Events</label>
+    </listViews>
+    <listViews>
+        <fullName>Marketing_Events</fullName>
+        <columns>NAME</columns>
+        <columns>Event_Name__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Copa_Event__c.Marketing_Events</value>
+        </filters>
+        <label>Marketing Events</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CE-{0000}</displayFormat>
+        <label>Copa Event Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Copa Events</pluralLabel>
+    <recordTypes>
+        <fullName>Community_Events</fullName>
+        <active>true</active>
+        <description>Events which are related to community.</description>
+        <label>Community Events</label>
+        <picklistValues>
+            <picklist>Timezone__c</picklist>
+            <values>
+                <fullName>America%2FCambridge_Bay GMT-06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FCambridge_Bay GMT-07%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FLos_Angeles GMT-07%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FLos_Angeles GMT-08%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FMexico_City GMT-05%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FMexico_City GMT-06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FNew_York GMT-04%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FNew_York GMT-05%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FKolkata GMT%2B05%3A30</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Venue__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Marketing_Events</fullName>
+        <active>true</active>
+        <description>Events which are related to marketing.</description>
+        <label>Marketing Events</label>
+        <picklistValues>
+            <picklist>Timezone__c</picklist>
+            <values>
+                <fullName>America%2FCambridge_Bay GMT-06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FCambridge_Bay GMT-07%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FLos_Angeles GMT-07%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FLos_Angeles GMT-08%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FMexico_City GMT-05%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FMexico_City GMT-06%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FNew_York GMT-04%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>America%2FNew_York GMT-05%3A00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia%2FKolkata GMT%2B05%3A30</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Venue__c</picklist>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virtual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>End_Date_Cannot_Be_Prior_To_Start_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Start_Date__c &gt; End_Date__c</errorConditionFormula>
+        <errorMessage>End date should not be less then start date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Invalid_Registration_URL</fullName>
+        <active>true</active>
+        <description>Check whether the Registration URL starts with http or https</description>
+        <errorConditionFormula>AND( 
+    NOT(ISBLANK(Registration_Link__c)),
+    NOT(BEGINS(LOWER(Registration_Link__c), &quot;https://&quot;)),
+    NOT(BEGINS(LOWER(Registration_Link__c), &quot;http://&quot;))
+)</errorConditionFormula>
+        <errorMessage>Please provide complete URL including http or https.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Location_Required_For_In_Person_Events</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( AND(TEXT(Venue__c) == &apos;In-Person&apos;, ISBLANK( Location__c )), true, false)</errorConditionFormula>
+        <errorMessage>Please provide the location for In-Person event.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

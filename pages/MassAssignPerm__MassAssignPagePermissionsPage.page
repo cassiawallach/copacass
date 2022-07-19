@@ -1,0 +1,3 @@
+<apex:page docType="html-5.0" standardStylesheets="false" title="Mass Assign Page Permission" tabStyle="Mass_Assign_Visualforce_Page_Permissions__tab">
+    <c:MassAssignPagePermissionsComponent />
+</apex:page>

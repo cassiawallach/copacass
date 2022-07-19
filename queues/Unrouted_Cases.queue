@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Unrouted Cases</name>
+    <queueMembers>
+        <users>
+            <user>adodge@copado.com</user>
+            <user>cstark@copado.com</user>
+            <user>egarcia@copa.do</user>
+            <user>gramchandani@copado.com</user>
+            <user>mbarclay@copa.do</user>
+            <user>mmessina@copado.com</user>
+            <user>rmilem@copa.do</user>
+            <user>sfrazier@copado.com</user>
+            <user>sdasarraju@copado.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

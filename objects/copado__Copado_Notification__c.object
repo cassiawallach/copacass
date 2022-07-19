@@ -253,7 +253,7 @@
         <externalId>false</externalId>
         <label>status</label>
         <required>false</required>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -279,17 +279,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Copado Notifications</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>copado__AttachmentId__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Type__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__isFinished__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__isSuccess__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATEDBY_USER.ALIAS</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Parent2Id__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__ParentId__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

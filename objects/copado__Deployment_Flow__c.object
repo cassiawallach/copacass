@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Pipeline_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -155,12 +158,61 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Continuous_Promotion_Until__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Continuous Promotion Until</label>
+        <referenceTo>copado__Environment__c</referenceTo>
+        <relationshipLabel>Pipelines</relationshipLabel>
+        <relationshipName>Pipelines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Create_Package_Version__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Create Package Version</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_Continuous_Back_Promotion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable Continuous Back Promotion</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_Continuous_Promotion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable Continuous Promotion</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Skip_Validations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Skips validation of dependencies, package ancestors, and metadata during package version creation. Skipping validation reduces the time it takes to create a new package version, but you can promote only validated package versions. Skipping validation can suppress important errors that can surface at a later stage. You can specify skip validation or code coverage, but not both. Code coverage is calculated during validation.</inlineHelpText>
+        <label>Skip Validations</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>copado__Active__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
         <description>If checked, all Branch Management features will be enabled in the Deployment Flow.</description>
         <externalId>false</externalId>
-        <inlineHelpText>If checked, all Branch Management features will be enabled in the Deployment Flow.</inlineHelpText>
         <label>Active</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -172,7 +224,7 @@
         <deprecated>false</deprecated>
         <description>If checked, committing changes on user stories linked to this Pipeline will not be allowed</description>
         <externalId>false</externalId>
-        <inlineHelpText>If checked, committing changes on user stories linked to this Pipeline will not be allowed</inlineHelpText>
+        <inlineHelpText>If checked, committing changes on user stories linked to this pipeline will not be allowed</inlineHelpText>
         <label>Block Commits</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -205,17 +257,34 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Branch</fullName>
-                    <default>false</default>
-                    <label>Branch</label>
-                </value>
-                <value>
                     <fullName>User Story</fullName>
                     <default>true</default>
                     <label>User Story</label>
                 </value>
+                <value>
+                    <fullName>Branch</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Branch</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__CommitJobTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Select the Job Template that implements the commit action for this Pipeline</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Job Template that implements the commit action for this Pipeline</inlineHelpText>
+        <label>Commit Job Template</label>
+        <referenceTo>copado__JobTemplate__c</referenceTo>
+        <relationshipLabel>Pipelines (Commit Job Template)</relationshipLabel>
+        <relationshipName>Pipelines2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>copado__Copado_DX_Mode__c</fullName>
@@ -232,14 +301,14 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Git Package</fullName>
+                    <fullName>Git Artifacts</fullName>
                     <default>false</default>
-                    <label>Git Package</label>
+                    <label>Git Artifacts</label>
                 </value>
                 <value>
-                    <fullName>Salesforce Package</fullName>
+                    <fullName>Package Artifacts</fullName>
                     <default>false</default>
-                    <label>Salesforce Package</label>
+                    <label>Package Artifacts</label>
                 </value>
                 <value>
                     <fullName>Branches</fullName>
@@ -251,20 +320,22 @@
                     <default>false</default>
                     <label>Org Metadata</label>
                 </value>
-                <value>
-                    <fullName>Git Artifacts</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Git Artifacts</label>
-                </value>
-                <value>
-                    <fullName>Package Artifacts</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Package Artifacts</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Deployment_Job_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Deployment Job Template</label>
+        <referenceTo>copado__JobTemplate__c</referenceTo>
+        <relationshipLabel>Pipelines (Deployment Job Template)</relationshipLabel>
+        <relationshipName>Pipelines1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>copado__Disable_Validations__c</fullName>
@@ -272,7 +343,6 @@
         <deprecated>false</deprecated>
         <description>If checked, Deployment Flow Steps best practices validations will be disabled.</description>
         <externalId>false</externalId>
-        <inlineHelpText>If checked, Deployment Flow Steps best practices validations will be disabled.</inlineHelpText>
         <label>Disable Validations</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -306,7 +376,6 @@
         <deprecated>false</deprecated>
         <description>If checked, Environment names must equal their corresponding Branches in the Deployment Flow Steps.</description>
         <externalId>false</externalId>
-        <inlineHelpText>If checked, Environment names must equal their corresponding Branches in the Deployment Flow Steps.</inlineHelpText>
         <label>Enforce branch/env naming convention</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -347,7 +416,6 @@
         <deprecated>false</deprecated>
         <description>Git Repository linked to the Deployment Flow. All branches of the Deployment Flow Steps must exist in this Git Repository.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Git Repository linked to the Deployment Flow. All branches of the Deployment Flow Steps must exist in this Git Repository.</inlineHelpText>
         <label>Git Repository</label>
         <referenceTo>copado__Git_Repository__c</referenceTo>
         <relationshipName>Deployment_Flows</relationshipName>
@@ -419,7 +487,6 @@
         <deprecated>false</deprecated>
         <description>Main branch of the selected Git Repository (e.g. master).</description>
         <externalId>false</externalId>
-        <inlineHelpText>Main branch of the selected Git Repository (e.g. master).</inlineHelpText>
         <label>Main Branch</label>
         <length>255</length>
         <required>false</required>
@@ -435,7 +502,6 @@
         <externalId>false</externalId>
         <formula>HYPERLINK(&apos;/apex/&apos;&amp;
             IF($Setup.copado__Settings__c.copado__Namespace__c!=&apos;none&apos;,&apos;copado__&apos;, &apos;&apos;)&amp;IF( ISPICKVAL(copado__Calculate_Based_on__c, &apos;User Story&apos;), IF( copado__Active__c,&apos;PipelineManager?mode=manager&amp;id=&apos;&amp;Id, &apos;PipelineManager?mode=diagram&amp;id=&apos;&amp;Id), &apos;BranchManagement?id=&apos;&amp;Id), &apos;Pipeline Manager&apos;, IF($User.UIThemeDisplayed != &quot;Theme4d&quot;,&apos;_blank&apos;,&apos;_self&apos;))</formula>
-        <inlineHelpText>Link to open the Pipeline Manager to promote and back promote User Stories.</inlineHelpText>
         <label>Manage Releases</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -447,7 +513,6 @@
         <fullName>copado__Merge_Strategy__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>When a conflicted file cannot be semantically merged during an Auto Resolve, the entire file is overwritten by default. You can choose to overwrite only the conflicting lines and merge the mergeable lines; Copado uses the &quot;Theirs&quot; git merge strategy.</inlineHelpText>
         <label>Auto Resolve Conflict Strategy</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -460,12 +525,12 @@
                 <value>
                     <fullName>Default</fullName>
                     <default>true</default>
-                    <label>Overwrite file</label>
+                    <label>Default</label>
                 </value>
                 <value>
                     <fullName>Theirs</fullName>
                     <default>false</default>
-                    <label>Overwrite conflicting lines only</label>
+                    <label>Theirs</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -502,6 +567,31 @@ This value will prefill the order by field on related Promotion record creation 
                     <label>Salesforce</label>
                 </value>
                 <value>
+                    <fullName>MuleSoft</fullName>
+                    <default>false</default>
+                    <label>MuleSoft</label>
+                </value>
+                <value>
+                    <fullName>SFDX</fullName>
+                    <default>false</default>
+                    <label>SFDX</label>
+                </value>
+                <value>
+                    <fullName>Node</fullName>
+                    <default>false</default>
+                    <label>Node</label>
+                </value>
+                <value>
+                    <fullName>Python</fullName>
+                    <default>false</default>
+                    <label>Python</label>
+                </value>
+                <value>
+                    <fullName>Java</fullName>
+                    <default>false</default>
+                    <label>Java</label>
+                </value>
+                <value>
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
@@ -510,12 +600,25 @@ This value will prefill the order by field on related Promotion record creation 
         </valueSet>
     </fields>
     <fields>
+        <fullName>copado__Promotion_Job_Template__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Promotion Job Template</label>
+        <referenceTo>copado__JobTemplate__c</referenceTo>
+        <relationshipLabel>Pipelines</relationshipLabel>
+        <relationshipName>Pipelines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>copado__Static_Code_Analysis_Settings__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
         <description>Static Code Analysis settings used whenever the analysis is run in Environments or User Stories linked to the Deployment Flow.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Static Code Analysis settings used whenever the analysis is run in Environments or User Stories linked to the Deployment Flow.</inlineHelpText>
         <label>Static Code Analysis Settings</label>
         <referenceTo>copado__Static_Code_Analysis_Settings__c</referenceTo>
         <relationshipName>Deployment_Flows</relationshipName>
@@ -526,12 +629,20 @@ This value will prefill the order by field on related Promotion record creation 
     </fields>
     <label>Pipeline</label>
     <listViews>
+        <fullName>Pipeline_Job_Template_Migration</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Platform__c</columns>
+        <columns>copado__CommitJobTemplate__c</columns>
+        <columns>copado__Promotion_Job_Template__c</columns>
+        <columns>copado__Deployment_Job_Template__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Pipeline - Job Template Migration</label>
+    </listViews>
+    <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
-        <columns>copado__Active__c</columns>
         <columns>copado__Manage_Branches__c</columns>
-        <columns>copado__Git_Repository__c</columns>
-        <columns>copado__Main_Branch__c</columns>
+        <columns>copado__Active__c</columns>
         <columns>CREATED_DATE</columns>
         <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
@@ -545,14 +656,10 @@ This value will prefill the order by field on related Promotion record creation 
     </nameField>
     <pluralLabel>Pipelines</pluralLabel>
     <searchLayouts>
-        <customTabListAdditionalFields>copado__Active__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Manage_Branches__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>copado__Active__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
         <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
-        <excludedStandardButtons>Accept</excludedStandardButtons>
-        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
-        <listViewButtons>copado__Pipeline_Wizard</listViewButtons>
         <lookupDialogsAdditionalFields>copado__Active__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
@@ -560,8 +667,34 @@ This value will prefill the order by field on related Promotion record creation 
         <searchResultsAdditionalFields>copado__Active__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsCustomButtons>copado__Pipeline_Wizard</searchResultsCustomButtons>
     </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>copado__Unique_Job_Template</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+AND(
+NOT(ISBLANK(copado__CommitJobTemplate__c)),
+OR(
+copado__CommitJobTemplate__c == copado__Deployment_Job_Template__c,
+copado__CommitJobTemplate__c == copado__Promotion_Job_Template__c
+)),
+AND(
+NOT(ISBLANK(copado__Promotion_Job_Template__c)),
+OR(
+copado__Promotion_Job_Template__c == copado__Deployment_Job_Template__c,
+copado__Promotion_Job_Template__c == copado__CommitJobTemplate__c
+)),
+AND(
+NOT(ISBLANK(copado__Deployment_Job_Template__c)),
+OR(
+copado__Deployment_Job_Template__c == copado__Promotion_Job_Template__c,
+copado__Deployment_Job_Template__c == copado__CommitJobTemplate__c
+))
+)</errorConditionFormula>
+        <errorMessage>A pipeline cannot have the same job template for Commit, Promote and Deploy.</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
     <webLinks>
         <fullName>copado__Find_Replace_Rule_Editor</fullName>

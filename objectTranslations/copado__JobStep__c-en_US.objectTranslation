@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <help><!-- API name of the job that triggered the result. This information can be used for reporting purposes. --></help>
         <label><!-- Api Name --></label>
         <name>copado__ApiName__c</name>
     </fields>
     <fields>
-        <help><!-- Config Json stores Job step related configuration information, for example in case of manual step it contains manual task assignee and instructions. --></help>
         <label><!-- ConfigJson --></label>
         <name>copado__ConfigJson__c</name>
     </fields>
     <fields>
-        <help><!-- Type of the Job Step. --></help>
         <label><!-- Type --></label>
         <name>copado__CustomType__c</name>
     </fields>
     <fields>
-        <help><!-- Id of the destination environment. --></help>
         <label><!-- Destination Id --></label>
         <name>copado__Destination_Id__c</name>
     </fields>
     <fields>
-        <help><!-- Used to define the order of execution in the context of User Story Deployment --></help>
         <label><!-- Execution Sequence --></label>
         <name>copado__ExecutionSequence__c</name>
         <picklistValues>
@@ -34,28 +29,20 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Git RepositoryId --></label>
-        <name>copado__Git_RepositoryId__c</name>
-    </fields>
-    <fields>
-        <help><!-- Id of the Git repository record linked to the pipeline to which the job step appliies. --></help>
         <label><!-- Git Repository --></label>
         <name>copado__Git_Repository__c</name>
     </fields>
     <fields>
-        <help><!-- The job Execution associated with the step --></help>
         <label><!-- Job Execution --></label>
         <name>copado__JobExecution__c</name>
         <relationshipLabel><!-- Job Steps --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Name of the job template which initiates the execution of the job step. --></help>
         <label><!-- Job Template --></label>
         <name>copado__JobTemplate__c</name>
         <relationshipLabel><!-- Job Steps --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- The order in which the job steps are executed. --></help>
         <label><!-- Order --></label>
         <name>copado__Order__c</name>
     </fields>
@@ -64,12 +51,6 @@
         <name>copado__Parent_Owner_Id__c</name>
     </fields>
     <fields>
-        <help><!-- Stores pipeline Id linked to job execution --></help>
-        <label><!-- PipelineId --></label>
-        <name>copado__PipelineId__c</name>
-    </fields>
-    <fields>
-        <help><!-- Id of the pipeline in which the job step has been executed. --></help>
         <label><!-- Pipeline Id --></label>
         <name>copado__Pipeline_Id__c</name>
     </fields>
@@ -95,23 +76,19 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- This field contains any additional step result information once the step has finished. --></help>
         <label><!-- Result Data Json --></label>
         <name>copado__ResultDataJson__c</name>
     </fields>
     <fields>
-        <help><!-- The latest result associated with the job step. --></help>
         <label><!-- Last Result --></label>
         <name>copado__Result__c</name>
         <relationshipLabel><!-- Job Steps --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Id of the source environment. --></help>
         <label><!-- Source Id --></label>
         <name>copado__Source_Id__c</name>
     </fields>
     <fields>
-        <help><!-- The status of the Job Step. --></help>
         <label><!-- Status --></label>
         <name>copado__Status__c</name>
     </fields>
@@ -121,7 +98,6 @@
         <name>copado__Sub_Job_Execution__c</name>
     </fields>
     <fields>
-        <help><!-- Type of the Job Step. --></help>
         <label><!-- Behaviour --></label>
         <name>copado__Type__c</name>
         <picklistValues>
@@ -142,11 +118,29 @@
         </picklistValues>
     </fields>
     <fields>
-        <help><!-- Lookup field to the user story to which this deployment task belongs --></help>
         <label><!-- User Story --></label>
         <name>copado__UserStory__c</name>
         <relationshipLabel><!-- Deployment Steps --></relationshipLabel>
     </fields>
+    <layouts>
+        <layout>Job Step Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- JSON --></label>
+            <section>JSON</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Complete Manual Task --></label>
+        <name>copado__Complete_Manual_Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Execute Manual Step --></label>
+        <name>copado__ExecuteManualStep</name>
+    </quickActions>
     <validationRules>
         <errorMessage><!-- Execution Sequence is required for Deployment steps --></errorMessage>
         <name>copado__Execution_Sequence_Required</name>

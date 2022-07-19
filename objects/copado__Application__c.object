@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Application_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -140,7 +143,7 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <allowInChatterGroups>false</allowInChatterGroups>
+    <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>copado__Application_Highlight_Panel</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Application_Highlight_Panel</fullName>
@@ -153,9 +156,9 @@
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -164,11 +167,76 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce</fullName>
+                    <default>false</default>
+                    <label>Salesforce</label>
+                </value>
+                <value>
+                    <fullName>Testing &amp; Analytics</fullName>
+                    <default>false</default>
+                    <label>Testing &amp; Analytics</label>
+                </value>
+                <value>
+                    <fullName>Multi-Cloud</fullName>
+                    <default>false</default>
+                    <label>Multi-Cloud</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Team</label>
+        <referenceTo>copado__Team__c</referenceTo>
+        <relationshipLabel>Applications</relationshipLabel>
+        <relationshipName>Applications</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Time_Spent_hours__c</fullName>
+        <description>Sum of all time spent on the related features.</description>
+        <externalId>false</externalId>
+        <label>Time Spent (hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>copado__Description__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Description</label>
         <length>131072</length>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Html</type>
@@ -184,6 +252,7 @@
         <relationshipLabel>Sub-Applications</relationshipLabel>
         <relationshipName>Sub_Applications</relationshipName>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -197,6 +266,7 @@
         <referenceTo>User</referenceTo>
         <relationshipName>Applications</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -207,6 +277,7 @@
         <externalId>false</externalId>
         <label>Release Status</label>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -267,6 +338,7 @@ CASE( copado__Stability__c,
         <externalId>false</externalId>
         <label>Stability</label>
         <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -294,29 +366,86 @@ CASE( copado__Stability__c,
     </fields>
     <label>Application</label>
     <listViews>
-        <fullName>copado__All</fullName>
+        <fullName>APO_Applications</fullName>
         <columns>NAME</columns>
+        <columns>copado__Product_Manager__c</columns>
+        <columns>copado__Stability__c</columns>
+        <columns>copado__Release_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Parent_Application__c</field>
+            <operation>contains</operation>
+            <value>APO</value>
+        </filters>
+        <label>APO Applications</label>
+    </listViews>
+    <listViews>
+        <fullName>Agile_Planning_Applications</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Parent_Application__c</columns>
+        <columns>copado__Release_Status__c</columns>
+        <columns>copado__Product_Manager__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Product_Manager__c</field>
+            <operation>contains</operation>
+            <value>Soraya</value>
+        </filters>
+        <label>Agile Planning - Applications</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Product_Line__c</columns>
+        <columns>NAME</columns>
+        <columns>copado__Parent_Application__c</columns>
+        <columns>copado__Product_Manager__c</columns>
+        <columns>Team__c</columns>
         <columns>copado__Release_Status__c</columns>
         <columns>copado__Stability__c</columns>
         <columns>copado__Stability_Icon__c</columns>
-        <columns>copado__Parent_Application__c</columns>
-        <columns>copado__Product_Manager__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
-        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>GA_Applications</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Product_Manager__c</columns>
+        <columns>copado__Release_Status__c</columns>
+        <columns>copado__Stability_Icon__c</columns>
+        <columns>Team__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Release_Status__c</field>
+            <operation>equals</operation>
+            <value>GA</value>
+        </filters>
+        <label>GA Applications</label>
+    </listViews>
+    <listViews>
+        <fullName>SKU_Applications</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Product_Manager__c</columns>
+        <columns>copado__Release_Status__c</columns>
+        <columns>copado__Stability_Icon__c</columns>
+        <columns>Team__c</columns>
+        <columns>Product_Line__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Line__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>SKU Applications</label>
     </listViews>
     <nameField>
         <label>Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Applications</pluralLabel>
     <searchLayouts>
-        <customTabListAdditionalFields>copado__Release_Status__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Stability__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Stability_Icon__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Parent_Application__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Product_Manager__c</customTabListAdditionalFields>
         <searchResultsAdditionalFields>copado__Release_Status__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Stability__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Stability_Icon__c</searchResultsAdditionalFields>

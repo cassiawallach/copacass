@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>copado__Job_Execution</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Job_Execution</fullName>
         <fields>Name</fields>
@@ -170,7 +170,7 @@
         <deprecated>false</deprecated>
         <description>In this field, you can define an action to be executed once the function runs. This action must be an Apex class that implements copado.JobExecutionCallback interface.</description>
         <externalId>false</externalId>
-        <inlineHelpText>In this field, you can define an action to be executed once the function runs. This action must be an Apex class that implements copado.JobExecutionCallback interface.</inlineHelpText>
+        <inlineHelpText>An apex class that must implement copado.JobExecutionCallback interface.</inlineHelpText>
         <label>Callback</label>
         <length>255</length>
         <required>false</required>
@@ -216,7 +216,6 @@
         <deprecated>false</deprecated>
         <description>This field contains the test level for the Delete Metadata step.</description>
         <externalId>false</externalId>
-        <inlineHelpText>This field contains the test level for the Delete Metadata step.</inlineHelpText>
         <label>DataJson</label>
         <length>131072</length>
         <trackTrending>false</trackTrending>
@@ -229,7 +228,6 @@
         <deprecated>false</deprecated>
         <description>Deployment in Copado is the process of moving one or multiple changes from one environment to another, following a designated Pipeline.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup field to the deployment that triggered the execution.</inlineHelpText>
         <label>Deployment</label>
         <referenceTo>copado__Deployment__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -244,7 +242,6 @@
         <deprecated>false</deprecated>
         <description>Name of the destination environment.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Name of the destination environment.</inlineHelpText>
         <label>Destination</label>
         <referenceTo>copado__Environment__c</referenceTo>
         <relationshipLabel>Job Executions (Destination)</relationshipLabel>
@@ -258,7 +255,6 @@
         <deprecated>false</deprecated>
         <description>Description of the error if the job has failed.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Description of the error if the job has failed.</inlineHelpText>
         <label>Error Message</label>
         <length>32768</length>
         <trackTrending>false</trackTrending>
@@ -287,7 +283,6 @@
         <deprecated>false</deprecated>
         <description>Id of the parent record linked to the job execution such as, commit job template.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Id of the parent record linked to the job execution such as, commit job template.</inlineHelpText>
         <label>Parent Id</label>
         <length>18</length>
         <required>false</required>
@@ -301,7 +296,6 @@
         <deprecated>false</deprecated>
         <description>Lookup field to the pipeline where this job execution applies.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup field to the pipeline where this job execution applies.</inlineHelpText>
         <label>Pipeline</label>
         <referenceTo>copado__Deployment_Flow__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -316,7 +310,6 @@
         <deprecated>false</deprecated>
         <description>It is a container used to deploy one or multiple user stories from one environment to another following a designated pipeline.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup field to the promotion that triggered the execution.</inlineHelpText>
         <label>Promotion</label>
         <referenceTo>copado__Promotion__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -331,7 +324,6 @@
         <deprecated>false</deprecated>
         <description>It is a full backup of the selected metadata types into a repository/branch.</description>
         <externalId>false</externalId>
-        <inlineHelpText>It is a full backup of the selected metadata types into a repository/branch.</inlineHelpText>
         <label>Snapshot</label>
         <referenceTo>copado__Git_Backup__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -346,7 +338,6 @@
         <deprecated>false</deprecated>
         <description>Name of the source environment.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Name of the source environment.</inlineHelpText>
         <label>Source</label>
         <referenceTo>copado__Environment__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -360,7 +351,6 @@
         <deprecated>false</deprecated>
         <description>It is the status of the job execution.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Status of the job execution.</inlineHelpText>
         <label>Status</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -402,7 +392,6 @@
         <deprecated>false</deprecated>
         <description>It is a reusable template with a list of steps that can be executed as part of different processes such as a commit, a promotion or a deployment.</description>
         <externalId>false</externalId>
-        <inlineHelpText>The Job Template used in the Job Execution process.</inlineHelpText>
         <label>Template</label>
         <referenceTo>copado__JobTemplate__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -417,7 +406,7 @@
         <deprecated>false</deprecated>
         <description>This field refers to the parent User Story Commit record of the job execution.</description>
         <externalId>false</externalId>
-        <inlineHelpText>This field refers to the parent User Story Commit record of the job execution.</inlineHelpText>
+        <inlineHelpText>This field relates to the parent User Story Commit record of the job execution</inlineHelpText>
         <label>User Story Commit</label>
         <referenceTo>copado__User_Story_Commit__c</referenceTo>
         <relationshipLabel>Job Executions</relationshipLabel>
@@ -431,7 +420,6 @@
         <deprecated>false</deprecated>
         <description>In this field, you can introduce a list of JSON options with the configuration for the volumes used in every new job execution.</description>
         <externalId>false</externalId>
-        <inlineHelpText>In this field, you can introduce a list of JSON options with the configuration for the volumes used in every new job execution.</inlineHelpText>
         <label>VolumeOptions</label>
         <length>32768</length>
         <trackTrending>false</trackTrending>

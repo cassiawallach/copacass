@@ -1,0 +1,136 @@
+<!-- 
+ Copyright 2012-2017, Decisions on Demand, Inc.
+ All Rights Reserved.
+ -->
+<apex:page standardController="DecsOnD__Policy__c" extensions="DecsOnD.PolicyLifecycleStatusController" Id="Thepage" action="{!checkRight}">
+    <head>
+        <style>
+        .button{
+            width : 50px;
+            padding-left : 10px;
+        }
+        .buttonLocation{
+            position : relative;
+            left : 20px;
+        }
+        
+        /*@Sothea #454*/
+        .confirmDelete{
+        	background: url('/img/alohaSkin/lookup_bg.png') repeat-x scroll 0 0 #fff;
+        	border-radius: 5px;
+        }
+		.confirmDelete .body {
+			margin-left: 4em;
+			margin-right: 4em;
+			width:46%;
+		}
+		.confirmDelete .body img {
+			margin-right: 1em;
+			vertical-align: middle;
+		}
+		.confirmDelete .buttons {
+			text-align: center;
+		}
+		.confirmDelete .check {
+			font-weight: bold;
+			margin-bottom: 1em;
+			margin-top: 1em;
+			text-align: center;
+		}
+		.delConfirmInfo {
+			display: block;
+			margin-left: 35px;
+			margin-top: -35px;
+		}
+		.confirmDeleteDivContentItem {
+			margin-top: 8px;
+			line-height: 25px;
+		}
+        </style>
+        
+        <script>
+        	//@Sothea #454 enable/disable a button
+        	function enableButton(subId, isEnable) {
+            	var btn = document.getElementById('Thepage:theform:'+subId);
+            	if (btn) {
+            		btn.disabled = isEnable ? false : true;
+					btn.className = isEnable ? 'btn' : 'btnDisabled';
+            	}
+            }
+        </script>
+    </head>
+    
+    <apex:form id="theform">
+        <apex:variable var="applied" value="{!DecsOnD__Policy__c.DecsOnD__Applies_to__c}"/>
+        <apex:variable var="status" value="{!DecsOnD__Policy__c.DecsOnD__Status__c}"/>
+        <apex:outputPanel id="changeSection" rendered="{!NOT(isShowDelSection)}">
+            <apex:sectionHeader title="Change Status" subtitle="{!DecsOnD__Policy__c.Name}"/>
+            <apex:pageMessages showDetail="true" escape="true" id="errChangeMsg" rendered="{!isError}"/>  
+            <apex:commandLink action="{!doCancel}"  value="Back to Previous Screen" reRender="theform"/>
+            <apex:pageMessage summary="You do not have the right to change policy lifecycle status!" severity="error" strength="2" escape="true" rendered="{!AND(NOT(isError), NOT(canUpdatePolicy))}">
+            </apex:pageMessage>
+            <apex:outputPanel rendered="{!AND(canUpdatePolicy, NOT(isError))}">  
+                <apex:pageMessage summary=" Policy {!DecsOnD__Policy__c.Name} is currently in {!IF(AND(DecsOnD__Policy__c.DecsOnD__Active_Version_Number__c==null,DecsOnD__Policy__c.DecsOnD__Status__c=='Active'), 'Draft', DecsOnD__Policy__c.DecsOnD__Status__c)} state. Click below to {!ActionText} this policy." severity="confirm" strength="2" escape="true" rendered="{!NOT(isError)}"/>
+                <apex:outputPanel styleClass="buttonLocation">
+                    <apex:commandButton action="{!doCancel}"  value="{!$Label.decsond__policy_cancel}" id="btnCancel" reRender="theform"/ >
+                    &nbsp;&nbsp;
+                    <apex:commandButton action="{!requestActivatePolicy}"  value="Activate" id="btnActive" reRender="theform" rendered="{!(ActionText == 'activate') && NOT(isError)}"/ > 
+                    <apex:commandButton action="{!requestRestorePolicy}"  value="Restore" id="btnRestore" reRender="theform" rendered="{!(ActionText == 'restore') && NOT(isError)}"/ > 
+                    <apex:commandButton action="{!requestArchivePolicy}"  value="Archive" id="btnArchive"  reRender="theform" rendered="{!(ActionText == 'archive') && NOT(isError)}"/ >
+                </apex:outputPanel>
+            </apex:outputPanel>  
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="delSection" layout="block" rendered="{!isShowDelSection}" styleClass="confirmDelete">
+            <apex:sectionHeader title="Delete Business Policy" subtitle="{!DecsOnD__Policy__c.Name}"/>
+            <apex:pageMessages showDetail="true" escape="true" id="errDelMsg" rendered="{!isError}"/>
+           
+       		<apex:outputPanel layout="block" styleClass="body">
+       			<apex:image id="theImage" title="Warning" alt="Warning" value="/s.gif" styleClass="warningMedium"/>
+       			<apex:outputPanel layout="block" styleClass="delConfirmInfo">
+     					<apex:outputPanel id="pnDelPolicyMsg" layout="block" styleClass="confirmDeleteDivContentItem">
+     						<apex:outputLabel value="Deleting this policy will permanently remove all version history and execution records associated with it."/><br/>
+     						<apex:outputLabel value="You can choose to archive it instead -- archived policies can be viewed, as well as restored to active status." rendered="{!isActivePolicy}"/>
+     					</apex:outputPanel>
+       			</apex:outputPanel>
+       			
+       			<apex:outputPanel layout="block" styleClass="check"> 
+       				<apex:inputCheckbox id="chkConfirmDel" value="{!isConfirmDelete}" onchange="enableButton('btnDelete', this.checked);enableButton('btnArchive2', !this.checked);"/>
+       				<apex:outputLabel value="I want to permanently delete this policy"/>
+       			</apex:outputPanel>
+       			
+       			<apex:outputPanel id="pnDelPolBtn" layout="block" styleClass="buttons">
+       				<apex:actionStatus id="archiveStatus">
+                        <apex:facet name="start">   
+                            <apex:commandButton value="Archiving" disabled="true"/>
+                        </apex:facet>
+                        <apex:facet name="stop">   
+                        	<apex:commandButton id="btnArchive2" value="Archive" action="{!requestArchivePolicy}" onclick="enableButton('btnCancel2', false);enableButton('btnDelete', false);" reRender="theform" status="archiveStatus" rendered="{!isActivePolicy && NOT(isError)}"/> 
+                        </apex:facet>
+                    </apex:actionStatus> 
+                    
+                    <apex:actionStatus id="deleteStatus">
+                        <apex:facet name="start">   
+                            <apex:commandButton value="Deleting" disabled="true"/>
+                        </apex:facet>
+                        <apex:facet name="stop">   
+                        	<apex:commandButton id="btnDelete" value="Delete" action="{!requestDeletePolicy}" onclick="enableButton('btnCancel2', false);enableButton('btnArchive2', false);" reRender="theform" status="deleteStatus" styleClass="button" rendered="{!canDeletePolicy && NOT(isError)}" />
+                        </apex:facet>
+                    </apex:actionStatus>
+       			
+       				 <apex:actionStatus id="cancelStatus">
+                        <apex:facet name="start">   
+                            <apex:commandButton value="Canceling" disabled="true"/>
+                        </apex:facet>
+                        <apex:facet name="stop">   
+							<apex:commandButton id="btnCancel2" value="Cancel" action="{!doCancel}" onclick="enableButton('btnDelete', false);enableButton('btnArchive2', false);" reRender="theform" status="cancelStatus"/ >                        
+                        </apex:facet>
+                    </apex:actionStatus>
+       				<script>
+       					enableButton('btnDelete', false);
+       				</script>
+       			</apex:outputPanel>
+       		</apex:outputPanel>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

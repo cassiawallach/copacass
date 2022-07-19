@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>copado__Job_Template</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Job_Template</fullName>
         <fields>Name</fields>
@@ -168,7 +168,6 @@
         <deprecated>false</deprecated>
         <description>API name of the job that triggered the result.</description>
         <externalId>true</externalId>
-        <inlineHelpText>API name of the job that triggered the result.</inlineHelpText>
         <label>API Name</label>
         <length>255</length>
         <required>false</required>
@@ -182,7 +181,6 @@
         <deprecated>false</deprecated>
         <description>A description of the job template.</description>
         <externalId>false</externalId>
-        <inlineHelpText>A description of the job template.</inlineHelpText>
         <label>Description</label>
         <length>32768</length>
         <trackHistory>false</trackHistory>
@@ -196,7 +194,6 @@
         <deprecated>false</deprecated>
         <description>Type of Job Template</description>
         <externalId>false</externalId>
-        <inlineHelpText>Type of Job Template</inlineHelpText>
         <label>Type</label>
         <required>true</required>
         <trackHistory>false</trackHistory>
@@ -224,7 +221,6 @@
         <deprecated>false</deprecated>
         <description>The version of the Job Template.</description>
         <externalId>false</externalId>
-        <inlineHelpText>The version of the Job Template.</inlineHelpText>
         <label>Version</label>
         <precision>18</precision>
         <required>true</required>
@@ -239,7 +235,7 @@
         <deprecated>false</deprecated>
         <description>A JSON containing transaction and volume options.</description>
         <externalId>false</externalId>
-        <inlineHelpText>In this field, you can introduce a list of JSON options with the configuration for the volumes used in every new job execution.</inlineHelpText>
+        <inlineHelpText>A JSON containing transaction and volume options</inlineHelpText>
         <label>VolumeOptions</label>
         <length>32768</length>
         <trackHistory>false</trackHistory>

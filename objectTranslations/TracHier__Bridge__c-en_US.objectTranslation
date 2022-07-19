@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Child Type --></label>
+        <name>TracHier__Child_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clause --></label>
+        <name>TracHier__Clause__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria Logic --></label>
+        <name>TracHier__Criteria_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interval Date Field --></label>
+        <name>TracHier__Interval_Date_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interval Number --></label>
+        <name>TracHier__Interval_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interval --></label>
+        <name>TracHier__Interval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>TracHier__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup --></label>
+        <name>TracHier__Lookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Type --></label>
+        <name>TracHier__Parent_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TracHier__Type__c</name>
+    </fields>
+</CustomObjectTranslation>

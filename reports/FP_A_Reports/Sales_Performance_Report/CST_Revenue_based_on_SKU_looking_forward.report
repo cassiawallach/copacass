@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_17926999</developerName>
+        <masterLabel>Opp Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SBQQ__Quote__c$SBQQ__Opportunity2__c.StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Marketing Qualification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pipeline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Alignment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Validation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Value Proposition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Formal Proposal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiation/Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Procurement</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Signed Contract Received</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fully Paid</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partially Paid</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>Closed Lost</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63934899</developerName>
+        <masterLabel>Product</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__ProductName__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Compliance Hub Package</sourceValue>
+            </sourceValues>
+            <value>Compliance Hub Package</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Data Deploy</sourceValue>
+            </sourceValues>
+            <value>Copado Data Deploy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DevOps360</sourceValue>
+            </sourceValues>
+            <value>DevOps 360</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DevOps 360 Analytics</sourceValue>
+            </sourceValues>
+            <value>DevOps 360 Analytics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Program Architect</sourceValue>
+            </sourceValues>
+            <value>Program Architect</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Selenium User</sourceValue>
+            </sourceValues>
+            <value>Selenium User</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Value Stream Mapping</sourceValue>
+            </sourceValues>
+            <value>Value Stream Mapping</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__ProductName__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c.CloseDate</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__EffectiveEndDate__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c.Type</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Account__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__StartDate__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$PS_CPQ_Term_in_Months__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__NetTotal__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$Name</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c.SBQQ__LineItems__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c.ACV__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SBQQ__Quote__c$TCV__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>By Quarter list of all CST Line Items by End Date</description>
+    <filter>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Test Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Primary__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Opportunity2__c.StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>,Closed Won,Partially Paid,Fully Paid,Best Case,Negotiation CS,Commit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Opportunity2__c.Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New Customer,Renewal,Add-on,New Business Add-on</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__ProductName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Selenium,CST</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__NetTotal__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Quarter</dateGranularity>
+        <field>SBQQ__Quote__c$SBQQ__EndDate__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CST Revenue based on SKU looking forward</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Quotes_with_Quote_Lines_Additional_Opp_Info1__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__EffectiveEndDate__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>SBQQ__Quote__c$SBQQ__EndDate__c</dateColumn>
+        <endDate>2027-06-06</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-06-06</startDate>
+    </timeFrameFilter>
+</Report>

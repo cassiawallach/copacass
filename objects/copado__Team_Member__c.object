@@ -236,6 +236,26 @@
                     <label>Doc Manager</label>
                 </value>
                 <value>
+                    <fullName>InfoSec Manager</fullName>
+                    <default>false</default>
+                    <label>InfoSec Manager</label>
+                </value>
+                <value>
+                    <fullName>Infrastructure Engineer</fullName>
+                    <default>false</default>
+                    <label>Infrastructure Engineer</label>
+                </value>
+                <value>
+                    <fullName>Internal IT Engineer</fullName>
+                    <default>false</default>
+                    <label>Internal IT Engineer</label>
+                </value>
+                <value>
+                    <fullName>IT Manager</fullName>
+                    <default>false</default>
+                    <label>IT Manager</label>
+                </value>
+                <value>
                     <fullName>Network Engineer</fullName>
                     <default>false</default>
                     <label>Network Engineer</label>
@@ -264,11 +284,6 @@
                     <fullName>Provisioning Specialist / Asset Manager</fullName>
                     <default>false</default>
                     <label>Provisioning Specialist / Asset Manager</label>
-                </value>
-                <value>
-                    <fullName>QA Engineer</fullName>
-                    <default>false</default>
-                    <label>QA Engineer</label>
                 </value>
                 <value>
                     <fullName>QA Manager</fullName>
@@ -344,6 +359,27 @@
                     <fullName>UE Manager</fullName>
                     <default>false</default>
                     <label>UE Manager</label>
+                </value>
+                <value>
+                    <fullName>UX designer</fullName>
+                    <default>false</default>
+                    <label>UX designer</label>
+                </value>
+                <value>
+                    <fullName>QA Functional Engineer</fullName>
+                    <default>false</default>
+                    <label>QA Functional Engineer</label>
+                </value>
+                <value>
+                    <fullName>QA Automation Engineer</fullName>
+                    <default>false</default>
+                    <label>QA Automation Engineer</label>
+                </value>
+                <value>
+                    <fullName>QA Engineer</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>QA Engineer</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

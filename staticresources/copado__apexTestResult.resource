@@ -264,7 +264,10 @@ var apexTestResult = {
         var me = apexTestResult;
         var DX_PLATFORM = 'SFDX';
 
-        var pipelinePlatform = (me.userStory[me.ns + 'Project__r'] != null) ? me.userStory[me.ns + 'Project__r'][me.ns + 'Deployment_Flow__r'][me.ns + 'Platform__c'] : me.userStory[me.ns + 'Release__r'][me.ns + 'Project__r'][me.ns + 'Deployment_Flow__r'][me.ns + 'Platform__c'];
+        var pipelinePlatform = 
+            me.userStory[me.ns+'Project__r'][me.ns+'Deployment_Flow__r'][me.ns+'Platform__c']
+            ||
+            me.userStory[me.ns+'Release__r'][me.ns+'Project__r'][me.ns+'Deployment_Flow__r'][me.ns+'Platform__c'];
 
         var environmentPlatform = me.userStory[me.ns+'Environment__r'][me.ns+'Platform__c'];
 

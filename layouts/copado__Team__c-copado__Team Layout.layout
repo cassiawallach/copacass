@@ -19,10 +19,6 @@
                 <behavior>Edit</behavior>
                 <field>copado__Vision__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__Description__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -32,6 +28,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>copado__Sprint_Wall_FieldSet_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Description__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -45,10 +45,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CreatedById</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OwnerId</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -69,65 +65,49 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <platformActionList>
-        <actionListContext>Record</actionListContext>
-        <platformActionListItems>
-            <actionName>IsotopeSubscription</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>8</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>RecordShareHierarchy</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>9</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Clone</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>1</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Delete</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>2</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>ChangeRecordType</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>ChangeOwnerOne</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>4</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>PrintableView</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>5</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Submit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Share</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>7</sortOrder>
-        </platformActionListItems>
-    </platformActionList>
     <relatedLists>
         <fields>copado__Member__c</fields>
         <fields>copado__Role__c</fields>
         <relatedList>copado__Team_Member__c.copado__Team__c</relatedList>
         <sortField>copado__Member__c</sortField>
         <sortOrder>Asc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copado__Product_Manager__c</fields>
+        <fields>copado__Release_Status__c</fields>
+        <fields>copado__Stability__c</fields>
+        <fields>copado__Stability_Icon__c</fields>
+        <relatedList>copado__Application__c.Team__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copado__User_Story_Title__c</fields>
+        <fields>copado__userStory_Role__c</fields>
+        <fields>copado__userStory_reason__c</fields>
+        <fields>copado__userStory_need__c</fields>
+        <fields>copado__Status__c</fields>
+        <fields>copado__Close_Date__c</fields>
+        <fields>copado__Project__c</fields>
+        <relatedList>copado__User_Story__c.copado__Team__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copado__Deliverable__c</fields>
+        <fields>copado__Dependency_Status__c</fields>
+        <fields>copado__Provider_Team__c</fields>
+        <fields>copado__Dependent_User_Story__c</fields>
+        <fields>copado__Provider_User_Story__c</fields>
+        <relatedList>copado__Team_Dependency__c.copado__Dependent_Team__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copado__Deliverable__c</fields>
+        <fields>copado__Dependency_Status__c</fields>
+        <fields>copado__Dependent_Team__c</fields>
+        <fields>copado__Dependent_User_Story__c</fields>
+        <fields>copado__Provider_User_Story__c</fields>
+        <relatedList>copado__Team_Dependency__c.copado__Provider_Team__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -140,16 +120,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>RECORDTYPE</fields>
-        <fields>copado__User_Story_Title__c</fields>
-        <fields>copado__Status__c</fields>
-        <fields>copado__Priority__c</fields>
-        <fields>copado__Order__c</fields>
-        <fields>copado__US_Feature__c</fields>
-        <fields>copado__Epic__c</fields>
-        <fields>copado__Theme__c</fields>
-        <fields>copado__Project__c</fields>
-        <relatedList>copado__User_Story__c.copado__Team__c</relatedList>
+        <relatedList>Module__c.Team__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>
@@ -160,7 +131,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0900000ANK4S</masterLabel>
+        <masterLabel>00hb000000XQmPF</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

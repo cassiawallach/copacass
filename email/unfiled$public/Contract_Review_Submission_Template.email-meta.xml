@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>Contract Review Submission Template</name>
+    <style>freeForm</style>
+    <subject>{!Contract_Review__c.Assigned_AE_Name__c} has requested review for {!Contract_Review__c.Customer_Account_Name__c} agreement</subject>
+    <textOnly>{!Contract_Review__c.Assigned_AE__r.Name} has just submitted a new contract review 
+for {!Contract_Review__c.Customer_Account__r.Name}. The SLA for {!Contract_Review__c.OwnerFullName} is 10
+business days starting now. 
+
+The submitter has filled out these answers to the 
+required intake questions: 
+If the agreement includes Infosec and/or Integration 
+considerations, Kyle Tobener and/or Rob Canfield may 
+need to be additional approvers.
+Thank you for helping to contain all communications 
+about this agreement within Chatter regarding this 
+case.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

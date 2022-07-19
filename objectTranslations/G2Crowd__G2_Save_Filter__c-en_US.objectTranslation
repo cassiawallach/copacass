@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Filters --></label>
+        <name>G2Crowd__Filters__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>G2Crowd__User__c</name>
+        <relationshipLabel><!-- G2 Save Filters --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>G2 Save Filter Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

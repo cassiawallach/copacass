@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>RATING</field>
+    </columns>
+    <columns>
+        <field>Account.BDR__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Tek4gov,Traction on Demand,NYC DOT,Cloud Analogy,CEC France SAS,Sardar Patel Institute of Technology,Ritesh enterprises,Integer Technologies LLC,Accenture India,Tridevi Media,MyOWn,Harmony New Technologies,BT Digital,Abbvie,Builder.ai,SMBWorld,Kuti Tech Solutions,parasme software &amp; technology,Modelit,My Scoot,Customertimes,Phygital24,Navyaan,ArganoKeste,Speetus It solutions,SoftClouds LLC,Contractbook,Upstairs LLC,Sight Analytics,Tap N Go Pty Ltd,Grzegorz Bobrowski QA Inc.,NXP,Kingston,Monkey business,New Tech Solutions Inc.,devis,Realme,Birla,Campus Training,Bionic,popprobe,Consummate,Dotson and Mejia LLC,sarvika,Codemastr Apps Private Limited,&amp;Open,Knox Financial,Agrotools,ford,Slalom,Triple point,Firstport,Jacobi Group,SIRC,Kpaul,KaBuM!,Grant and Sons,360 Degree Cloud Technology Pvt Ltd,IBM,Veepee,Pharmacovigilance Business and AI Technology Consulting,Accenture,Delivery Hero,NTT Global,Veevart,Mutual of Omaha,CTS,Infosys,Wavestone,Coastal Cloud,TCS,Yandex,HCL Technologies,Integrated Management Systems,Mindtree Limited,Eternus,Deloitte,Apisero,Krajcik Inc,SQLCORP,Tech Mahindra,Cassin Inc,Hahn Group,Kassulke,Quitzon and Vandervort,Graham - Heidenreich,Smart Cloud,Зуева Пром (Zueva Prom),Ritchie - Tillman</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Roy Gum,Tom Maras,Nicole Miller,Scott Holland,Matt Gipson,Mark Hughes,Todd Shelton,Marcus Stangl,Stephen Oliver,Kris Nicolls,Paul Fox,Kevin Peiffer,James Wolf,Kristin Brandt,Ryan Easley,Scott Gendelman,Chris Ortiz,Matt Doerfler,Everett Kowalski,Nick Zellem,Leslie Clifton,Konstantine Argirakis,Moe Nawaz,Josh Jaffe,Kris Jacobs,Dan McDevitt,Kyle Phelan,Colin Thompson,Doug Penson,Brian Powers,Steve Thomas,Dan Shoop,Brett Manning,Rafael Amorim,Brock Buckley,Louis Clifton,Josh Hobbs,Chris Leandres,Ryan Watson,Caterina Ong,John Ferraiolo,Kirsten Hendricks,Christina Clarkson Swapp,Niko Bonds,Sean Brophy,Christopher Finnerty,Steven Schliem,Holly Peterson,John Ainson,Andres Pesquera,Bruce Glenn,Brittany Roberts</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JT Account Intel</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,3 @@
+<apex:page docType="html-5.0" standardStylesheets="false" title="Mass Assign Object Permission" tabStyle="Mass_Assign_Object_Permissions__tab">
+    <c:MassAssignObjectPermissionsComponent />
+</apex:page>

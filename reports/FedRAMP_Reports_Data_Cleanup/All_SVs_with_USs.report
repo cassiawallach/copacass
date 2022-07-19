@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Security_Vulnerability__c.Vulnerability_Name__c</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>CUST_ID</primaryTableColumn>
+        <relatedTable>SecVulnUserStoryAssociation__c</relatedTable>
+        <relatedTableJoinColumn>Security_Vulnerability__c</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <description>All Security Vulnerabilities with at least one User Story. Report type is Security Vulnerabilities. Cross Filter set to &apos;with User Story&apos;</description>
+    <format>Tabular</format>
+    <name>All SVs with USs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Security_Vulnerability__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Security_Vulnerability__c.Imported_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

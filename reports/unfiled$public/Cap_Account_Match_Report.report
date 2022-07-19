@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2) OR 3</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>AB In Bev,Ace Hardware Corporation,Ahold Delhaize,Albertsons Companies,Inc.,Aldi Inc.,Altria Group,Belk,Best Buy,Big Lots,Brinker International,Campbell Soup Company,Camping World Holdings,Capri Holdings,Carter&apos;s,Church &amp; Dwight Co.,Coca-Cola,Compass Group USA Investments Llp,Conagra,Costco Wholesale Corporation,CVS,Discount Tire Co.,Dominos,EBY- Brown Company,First Quality Enterprises,Foot Locker,General Mills,H. E. Butt Grocery Company,Hasbro,Hershey,Hooters,Ingram Micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Ingredion Incorporated,Inspire Brands,Inc.,International Flavors &amp; Fragrance,Kellogg Company,Kimberly-Clark,Kohl&apos;s Corporation,Kraft Heinz,L&apos;Oreal Usa,Lowe&apos;s Companies,Macys,Mars,Incorporated,McCormick,McDonalds,Meijer Companies,Ltd.,Mondelez,National DCP,Nestle Holdings,Newell Brands Inc.,Nike,Office Depot,Party City,Pep Boys,Pepsi,Pvh Corp.,RaceTrac,Ralph Lauren,Redbull</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>REI,SC Johnson,Southeastern Grocers,LLC,Staples,Inc.,Subway,Sysco,Target Corporation,The Clorox Company,The Gap Inc,The Home Depot Inc,Topco Holdings,Inc. (cooperative),Ulta Beauty,UNFI,Veritiv Corporation,W. W. Grainger,Walgreens Boots Alliance,Yum Brands</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Cap Account Match Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

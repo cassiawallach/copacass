@@ -1,0 +1,15 @@
+.datePicker_div {
+    border: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,#D4D4D4);
+    border-radius: var(--lwc-borderRadiusMedium,0.25rem);
+    background: var(--lwc-colorBackgroundAlt,rgb(255, 255, 255));
+    box-shadow: var(--lwc-shadowDropDown,0 2px 3px 0 rgba(0, 0, 0, 0.16));
+}
+.selected {
+    background-color: pink;
+}
+.today {
+    background-color: var(--lwc-colorBackgroundRowSelected,rgba(25, 33, 80, 0.05));
+}
+.event_date {
+    background-color: #01BBEA !important;
+}

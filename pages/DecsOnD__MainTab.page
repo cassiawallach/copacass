@@ -1,0 +1,22 @@
+<!--
+    - Copyright 2012-2020, Decisions on Demand, Inc.
+    - All Rights Reserved.
+ -->
+<apex:page sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/sfdcWrapper.js')}"/>
+    <apex:includeLightning />
+    <div id="lightning"/>
+    <script>
+        $Lightning.use(
+            "DecsOnD:MainTab_Container",
+            function () {
+                $Lightning.createComponent(
+                    "DecsOnD:MainTab",
+                    {
+                        classic: true
+                    },
+                    "lightning",
+                    createComponentHandler);
+            });
+    </script>
+</apex:page>

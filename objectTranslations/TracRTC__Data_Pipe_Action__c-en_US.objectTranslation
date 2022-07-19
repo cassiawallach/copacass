@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action Source --></label>
+        <name>TracRTC__Action_Source__c</name>
+        <picklistValues>
+            <masterLabel>FlowStep</masterLabel>
+            <translation><!-- FlowStep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settings</masterLabel>
+            <translation><!-- Settings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Action Type --></label>
+        <name>TracRTC__Action_Type__c</name>
+        <picklistValues>
+            <masterLabel>Filter</masterLabel>
+            <translation><!-- Filter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TokenRemoval</masterLabel>
+            <translation><!-- TokenRemoval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expression Type --></label>
+        <name>TracRTC__Expression_Type__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regex</masterLabel>
+            <translation><!-- Regex --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expression --></label>
+        <name>TracRTC__Expression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Index --></label>
+        <name>TracRTC__Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>TracRTC__Object_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Field --></label>
+        <name>TracRTC__Source_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Field --></label>
+        <name>TracRTC__Target_Field__c</name>
+    </fields>
+</CustomObjectTranslation>

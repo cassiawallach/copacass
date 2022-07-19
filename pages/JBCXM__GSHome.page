@@ -1,0 +1,10 @@
+<!-- Copyright (c) 2019 JBara Software, Inc.
+---- Purpose                    : Redirects Renewal center to Renewal Analyse
+---- Other comments (optional)  : None
+-->
+<apex:page sidebar="false" title="Renewal Forecast" controller="JBCXM.AdminBroker" extensions="JBCXM.NSRemoting,JBCXM.GSCommonBroker" tabStyle="Renewal_Center__tab">
+    <script>
+       var packageNS = "{!JSINHTMLENCODE(pkgNS)}" || '';
+       window.location.href = '/apex/' + packageNS +'RenewalAnalytics';
+    </script>
+</apex:page>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Job --></label>
+        <name>TracRTC__Batch_Job__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>TracRTC__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria Set --></label>
+        <name>TracRTC__Criteria_Set__c</name>
+        <relationshipLabel><!-- Flow Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Day --></label>
+        <name>TracRTC__Day__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>TracRTC__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow --></label>
+        <name>TracRTC__Flow__c</name>
+        <relationshipLabel><!-- Flow Executions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Frequency --></label>
+        <name>TracRTC__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Job --></label>
+        <name>TracRTC__Scheduled_Job__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>TracRTC__Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>TracRTC__Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>TracRTC__Type__c</name>
+        <picklistValues>
+            <masterLabel>One-Time</masterLabel>
+            <translation><!-- One-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurring</masterLabel>
+            <translation><!-- Recurring --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

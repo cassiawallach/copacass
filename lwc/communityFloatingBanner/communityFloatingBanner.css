@@ -1,0 +1,26 @@
+.marquee {
+    width: 100%;
+    line-height: 25px;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #00c3ef;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 51s linear infinite;
+    font-size:21px;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.marquee p:hover {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}

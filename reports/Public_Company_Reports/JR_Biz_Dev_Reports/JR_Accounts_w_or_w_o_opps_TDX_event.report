@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Type</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$Active_Opportunity__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$All_Opportunities_are_Lost__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>B&amp;H Photo,B&amp;H Photo Video,B3 Group,B3 Group Inc at Octo,Inc,BACA Systems,Backblaze,Bain,Baird,Baker College,Baldwin Risk Partners,BANDAI NAMCO Entertainment,Barr Foundation,BASF,BASF Digital Solutions GmbH,Bayer,Bazaarvoice,BCBS of ND,BCFS,BCFS HHS,Bci Miami,BD,Be The Match,Berklee College of Music,Bettercloud,BeyondTrust,Big Compass,BioLife Solutions,BioMarin,Bio-Rad Laboratories,Bio-Techne,Black Knight,BlackRock,Blackstone,Blattner Company,Blend,Blendery,Block Inc,Blue Canvas,BM2 Freight Services,BMC Software,BOK Financial,Bold Commerce,Booz | Allen | Hamilton,Booz Allen,Booz Allen Hamilton,Boston Properties,Boston Scientific,Brand I.D.,Brand ID,Breville,Bridgestone Americas,BrightBytes,BrightDrop,Brightwheel,Brookfield Properties Corporate,Brother International Corporation,Brother USA,BSCI,BSG Craft Brewing,Bubblebox,Bubblebox Holding,Bucher + Suter,Bucher and Suter,BugendaiTech US,Build-A-Bear Workshop</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>JR - Accounts w/ or w/o opps - TDX event</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Short__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Contract_Expiration_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

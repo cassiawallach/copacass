@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_50234741</developerName>
+        <masterLabel>Disposition</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Activity.Outreach_Call_Disposition_Name__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Answered - Meeting Set</sourceValue>
+            </sourceValues>
+            <value>Meeting Set</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Answered - No Longer with Company</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Not Interested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Wrong Contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Call Back Later</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Technical Issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Keep In Sequence</sourceValue>
+            </sourceValues>
+            <value>Answered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>No Answer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Call - No Answer</sourceValue>
+            </sourceValues>
+            <value>No Answer</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Left Voicemail</sourceValue>
+            </sourceValues>
+            <value>Left Voicemail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bad Number</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>No Number Available</sourceValue>
+            </sourceValues>
+            <value>Bad Number</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Gatekeeper</sourceValue>
+            </sourceValues>
+            <value>Gatekeeper</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Activity.Outreach_Sequence_Step_Number__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.Outreach_Current_Sequence_Step_Number__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Current_Sequence_Step_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Current_Sequence_Task_Due_Date__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Current_Sequence_Status__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Engagement_Score__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Finished_Sequence__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Contact.Outreach_Actively_Being_Sequenced__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Current_Sequence_User_Name__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Active_Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Outreach_Attributable_Sequence_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Current_Sequence_Name__c</field>
+    </columns>
+    <columns>
+        <field>Activity.Outreach_Sequence_Name__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Number_of_Active_Sequences__c</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>CALLDISPOSITION</field>
+    </columns>
+    <columns>
+        <field>CALLTYPE</field>
+    </columns>
+    <columns>
+        <field>CALLOBJECT</field>
+    </columns>
+    <columns>
+        <field>Activity.Outreach_Call_Direction__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_50234741</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>vp,rvp,svp,alliances,renewals,customer success,director,manager,administrator,enablement,marketing,misc,operations,specialist,avp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>outreach</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>COMPLETED_DATE_TIME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_FISCAL_YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Outreach_Call_Disposition_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity.Outreach_Call_Disposition_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Outreach Activities - Calls</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

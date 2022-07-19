@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>TracRTC__Account__c</name>
+        <relationshipLabel><!-- Pending Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>TracRTC__Case__c</name>
+        <relationshipLabel><!-- Pending Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TracRTC__Contact__c</name>
+        <relationshipLabel><!-- Pending Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Flow Step --></label>
+        <name>TracRTC__Flow_Step__c</name>
+        <relationshipLabel><!-- Pending Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By Complete --></label>
+        <name>TracRTC__Last_Modified_By_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>TracRTC__Lead__c</name>
+        <relationshipLabel><!-- Pending Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>TracRTC__Opportunity__c</name>
+        <relationshipLabel><!-- Pending Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Retraction Attempts --></label>
+        <name>TracRTC__Retraction_Attempts__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Retry Complete Action --></label>
+        <name>TracRTC__Retry_Complete_Action</name>
+    </recordTypes>
+</CustomObjectTranslation>

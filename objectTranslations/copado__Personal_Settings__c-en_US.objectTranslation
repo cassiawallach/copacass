@@ -35,8 +35,4 @@
         <label><!-- Mask API Key --></label>
         <name>copado__MaskApiKey__c</name>
     </fields>
-    <fields>
-        <label><!-- Minimum Logging Level --></label>
-        <name>copado__Minimum_Logging_Level__c</name>
-    </fields>
 </CustomObjectTranslation>

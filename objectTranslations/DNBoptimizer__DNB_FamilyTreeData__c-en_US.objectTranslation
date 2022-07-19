@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- FamilyTreeJobId --></label>
+        <name>DNBoptimizer__FamilyTreeJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- FamilyTreeJobStatus --></label>
+        <name>DNBoptimizer__FamilyTreeJobStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job_Type --></label>
+        <name>DNBoptimizer__Job_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

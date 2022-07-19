@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Copa Event Registration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Copa Event Registrations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Copa Event --></label>
+        <name>Copa_Event__c</name>
+        <relationshipLabel><!-- Copa Event Registrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Copa Event Registrations --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Copa Event Registration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

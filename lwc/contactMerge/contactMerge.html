@@ -1,0 +1,42 @@
+<template>
+    <div style="background-color: white;">
+        <div class="slds-section slds-is-open">
+            <h3 class="slds-section__title">
+                <lightning-button class="slds-theme_base slds-section__title-action" icon-position="left" variant="base"
+                    label="Merge Academy Progress"></lightning-button>
+            </h3>
+            <div class="slds-section__content">
+                <template if:true={isLoading}>
+                    <lightning-spinner class="slds-align_absolute-center" variant="inverse" size="medium">
+                    </lightning-spinner>
+                </template>
+
+                <template if:true={errorMsg}>
+                    <div class="slds-align_absolute-center slds-text-color_error">{errorMsg}</div>
+                </template>
+
+                <div class="slds-form slds-form_horizontal">
+                    <lightning-layout class="slds-m-bottom_x-small slds-wrap" multiple-rows="true">
+                        <lightning-input class="slds-p-left_medium slds-p-right_medium" label="Old Contact Id"
+                            placeholder="Old Contact Id" type="text" variant="standard" name="oldContactId"
+                            onchange={handleChange} required></lightning-input>
+                        <lightning-input class="slds-p-left_medium slds-p-right_medium" label="Old User Id"
+                            placeholder="Old User Id" type="text" variant="standard" name="oldUserId"
+                            onchange={handleChange} required></lightning-input>
+                        <lightning-input class="slds-p-left_medium slds-p-right_medium" label="New Contact Id"
+                            placeholder="New Contact Id" type="text" variant="standard" name="newContactId"
+                            onchange={handleChange} required></lightning-input>
+                        <lightning-input class="slds-p-left_medium slds-p-right_medium" label="New User Id"
+                            placeholder="New User Id" type="text" variant="standard" name="newUserId"
+                            onchange={handleChange} required></lightning-input>
+                    </lightning-layout>
+                    <lightning-layout class="slds-m-bottom_medium slds-wrap slds-align_absolute-center"
+                        multiple-rows="true">
+                        <lightning-button class="slds-theme_brand slds-m-bottom_medium" variant="brand" label="Merge"
+                            icon-name="standard:merge" onclick={handleMerge}></lightning-button>
+                    </lightning-layout>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

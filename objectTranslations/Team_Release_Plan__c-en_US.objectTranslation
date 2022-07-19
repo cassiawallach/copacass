@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Team - Release Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Team - Release Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Team - Release Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Blocked or On Hold - Controllers --></label>
+        <name>Blocked_or_On_Hold_Controllers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked or On Hold - Dependents --></label>
+        <name>Blocked_or_On_Hold_Dependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked or On Hold - Key Tasks --></label>
+        <name>Blocked_or_On_Hold_Key_Tasks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Week Days --></help>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Maximum Finish Date of all Key Tasks --></help>
+        <label><!-- Finish Date (RUS) --></label>
+        <name>Finish_Date_RUS__c</name>
+    </fields>
+    <fields>
+        <help><!-- LTTR = Lead Time To Release.  Calculated in Week Days.  Negative Number is BEFORE Release; Positive Number is AFTER Release --></help>
+        <label><!-- LTTR - Finish --></label>
+        <name>LTTR_Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- LTTR = Lead Time To Release.  Calculated in Week Days.  Negative Number is BEFORE Release; Positive Number is AFTER Release --></help>
+        <label><!-- LTTR - Start --></label>
+        <name>LTTR_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Plan --></label>
+        <name>Release_Plan__c</name>
+        <relationshipLabel><!-- Team - Release Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Minimum Start Date of all Key Tasks --></help>
+        <label><!-- Start Date (RUS) --></label>
+        <name>Start_Date_RUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Count - Key Tasks --></label>
+        <name>Total_Count_Key_Tasks__c</name>
+    </fields>
+    <layouts>
+        <layout>Team - Release Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Key Tasks - Rollup Summaries --></label>
+            <section>Key Tasks - Rollup Summaries</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Key Task --></label>
+        <name>New_Key_Task</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

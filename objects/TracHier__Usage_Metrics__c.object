@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Usage metrics collected by Traction Hierarchies.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TracHier__Account_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Account records in current org.</description>
+        <externalId>false</externalId>
+        <label>Account Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Child_Object_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Hierarchy Child Objects in current org.</description>
+        <externalId>false</externalId>
+        <label>Child Object Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Date_Last_Sync__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of the most recent LMO sync.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time of the most recent LMO sync.</inlineHelpText>
+        <label>Date of Last LMO Sync</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracHier__Fullscreen_Whitespace_Opens_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of how many times the fullscreen Whitespace page is opened in current org.</description>
+        <externalId>false</externalId>
+        <label>Fullscreen Whitespace Opens Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Hierarchy_Click_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of clicks on hierarchy in current org.</description>
+        <externalId>false</externalId>
+        <label>Hierarchy Click Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Hierarchy_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Hierarchies in current org.</description>
+        <externalId>false</externalId>
+        <label>Hierarchy Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Hierarchy_Scroll_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of scrolls on hierarchy in current org.</description>
+        <externalId>false</externalId>
+        <label>Hierarchy Scroll Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Hierarchy_Users_Active__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of active users in hierarchy for current org.</description>
+        <externalId>false</externalId>
+        <label>Hierarchy Users Active</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Last_Build_Hierarchy_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of the most recent processing by Build Hierarchies.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time of the most recent processing by Build Hierarchies.</inlineHelpText>
+        <label>Last Build Hierarchy Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracHier__Last_Build_Rollup_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date and time of the most recent processing by Build Rollups.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date and time of the most recent processing by Build Rollups.</inlineHelpText>
+        <label>Last Build Rollups Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracHier__License_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Salesforce licenses in current org.</description>
+        <externalId>false</externalId>
+        <label>License Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Rollup_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of Rollups in current org.</description>
+        <externalId>false</externalId>
+        <label>Rollup Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Settings_Enabled_A__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Settings Enabled Set A</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Settings_Enabled_B__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Settings Enabled Set B</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Users_Overridden_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of users with overridden fields in current org.</description>
+        <externalId>false</externalId>
+        <label>Users Overridden Fields</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__Users_Overridden_Filters__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of users with overridden filters in current org.</description>
+        <externalId>false</externalId>
+        <label>Users Overridden Filters</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TracHier__WS_CreateAccount_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Count of WhiteSpace Create Account Count.</description>
+        <externalId>false</externalId>
+        <label>Create Account Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Usage Metrics</label>
+    <visibility>Public</visibility>
+</CustomObject>

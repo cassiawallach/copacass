@@ -1,0 +1,76 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-card__body">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_12-of-12 slds-large-size_2-of-12 slds-align_absolute-center slds-p-around_xxx-small slds-grid slds-wrap">
+                    <div if:true={isBusy} class="slds-align_absolute-center slds-m-top_x-large">
+                        <lightning-spinner variant="brand" 
+                                            alternative-text="Loading...."     
+                                            size="medium">
+                        </lightning-spinner>
+                    </div>
+                    <a onclick={handleCollapsible} class="event_details-link">
+                        <div style={backgroundStyle} class="slds-grid slds-wrap">
+                            <span class="slds-col slds-size_1-of-1 event-icon-month">
+                                {eventStartMonth}
+                            </span>
+                            <span class="slds-col slds-size_1-of-1 event-icon-date">
+                                {eventStartDay}
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="slds-col slds-size_12-of-12 slds-large-size_8-of-12 slds-grid slds-wrap slds-p-around_medium">
+                    <div class="slds-col slds-size_1-of-12 slds-align_absolute-center">
+                        <template if:true={showDetails}>
+                            <button class="slds-button slds-button_icon slds-button_icon-container" title="Collapse Event Details" onclick={handleCollapsible}>
+                                <svg class="slds-button__icon" aria-hidden="true">
+                                  <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#chevronup"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Collapse Event Details</span>
+                            </button>
+                        </template>
+                        <template if:false={showDetails}>
+                            <button class="slds-button slds-button_icon slds-button_icon-container" title="Expand Event Details" onclick={handleCollapsible}>
+                                <svg class="slds-button__icon" aria-hidden="true">
+                                  <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Expand Event Details</span>
+                            </button>
+                        </template>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-col slds-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 slds-m-bottom--xx-small">
+                            <a onclick={handleCollapsible} class="event_details-link">
+                                <h2 class="event_title">{copaEvent.Title}</h2>
+                            </a>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-m-bottom--xx-small">
+                            <svg class="slds-button__icon slds-button__icon_large slds-m-right_xx-small svg-icon" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#clock"></use>
+                            </svg>
+                            <span>{copaEvent.EventTimeShownToPublicString}</span>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-m-bottom--xx-small">
+                            <svg class="slds-button__icon slds-button__icon_large slds-m-right_xx-small svg-icon" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#checkin"></use>
+                            </svg>
+                            <span>{copaEvent.Location}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_12-of-12 slds-large-size_2-of-12 slds-align_absolute-center">
+                    <lightning-button type="submit" label={registerButtonLabel} variant={buttonBrand} onclick={handleRegistration} disabled={registerButtonDisabled}></lightning-button>
+                </div>
+                <template if:true={showDetails}>
+                    <div class="slds-col slds-size_12-of-12 slds-large-size_12-of-12 slds-p-around_medium">
+                        <h2 class="event_title slds-text-align_center slds-border_top slds-p-top_small">Event Details</h2>
+                        <lightning-formatted-rich-text
+                            value={copaEvent.Details}
+                        ></lightning-formatted-rich-text>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

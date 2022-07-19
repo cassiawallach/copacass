@@ -1,0 +1,29 @@
+<template>
+    <div class="slds-is-relative">
+        <template if:true={isBusy}>
+            <div class="slds-align_absolute-center slds-p-around_medium spinner_div">
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+            </div>
+        </template>
+        <template if:true={status.hasError}>
+            <c-support-copado-error error-message={status.errorMessage}></c-support-copado-error>
+        </template>
+        <template if:true={hasRecord}>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col--padded slds-size_12-of-12">
+                    <c-copa-update-banner current-copa-update={currentCopaUpdate}></c-copa-update-banner>
+                </div>
+                <div class="slds-col--padded slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_8-of-12 slds-large-size_8-of-12 slds-m-top_large">
+                    <c-copa-update-details current-copa-update={currentCopaUpdate}></c-copa-update-details>
+                </div>
+                <div class="slds-col--padded slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 slds-m-top_large">
+                    <c-copa-update-list current-copa-update-id={currentCopaUpdate.Id} recent-copa-update-label={recentCopaUpdateLabel} number-of-recent-copa-updates={numberOfRecentCopaUpdates}></c-copa-update-list>
+                </div>
+            </div>
+        </template>
+        <template if:true={hasNoRecord}>
+            <c-support-copado-error error-heading="No Record Found" error-message="Invalid Copa Update Id Or No Copa Update Record Available."></c-support-copado-error>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reputation Points Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reputation Points Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Reputation Points --></label>
+        <name>Reputation_Points__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

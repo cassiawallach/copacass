@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active Users Dynamic Assignment --></label>
+        <name>TracRTC__Active_Users_Dynamic_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Users Group --></label>
+        <name>TracRTC__Active_Users_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Users Round Robin --></label>
+        <name>TracRTC__Active_Users_Round_Robin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attempts to Save Corrupt Flow --></label>
+        <name>TracRTC__Attempts_To_Save_Corrupt_Flows__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Lead Response Time --></label>
+        <name>TracRTC__Average_Lead_Response_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conversion Rate --></label>
+        <name>TracRTC__Conversion_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled Flow Steps Types --></label>
+        <name>TracRTC__Enabled_Flow_Steps_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Complete Without Error --></label>
+        <name>TracRTC__Last_Complete_Without_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads Matched --></label>
+        <name>TracRTC__Leads_Matched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads Merged --></label>
+        <name>TracRTC__Leads_Merged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads Processed By Complete --></label>
+        <name>TracRTC__Leads_Processed_By_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads with Errors --></label>
+        <name>TracRTC__Leads_with_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Count --></label>
+        <name>TracRTC__License_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settings Enabled --></label>
+        <name>TracRTC__Settings_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Active Users Last Week --></label>
+        <name>TracRTC__Total_Active_Users_Last_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Active Users --></label>
+        <name>TracRTC__Total_Active_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Leads Converted --></label>
+        <name>TracRTC__Total_Leads_Converted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Leads Last Week --></label>
+        <name>TracRTC__Total_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users With Admin Permission --></label>
+        <name>TracRTC__Users_With_Admin_Permission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users With User Permission --></label>
+        <name>TracRTC__Users_With_User_Permission__c</name>
+    </fields>
+</CustomObjectTranslation>

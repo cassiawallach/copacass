@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Adhoq Limit Reached --></label>
+        <name>modigie__AdhoqLimitReached__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Exception --></label>
+        <name>modigie__AllException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Callout Exception --></label>
+        <name>modigie__CalloutException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Callout Response --></label>
+        <name>modigie__CalloutResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Error --></label>
+        <name>modigie__CreditError__c</name>
+    </fields>
+    <fields>
+        <label><!-- DML Exception --></label>
+        <name>modigie__DMLException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Exception --></label>
+        <name>modigie__EmailException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invocable Limit Exceeded --></label>
+        <name>modigie__InvocableLimitExceeded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limit Exception --></label>
+        <name>modigie__LimitException__c</name>
+    </fields>
+    <fields>
+        <label><!-- NoDataFound Exception --></label>
+        <name>modigie__NoDataFoundException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Exception --></label>
+        <name>modigie__SecurityException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unexpected Exception --></label>
+        <name>modigie__UnexpectedException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Adhoq Limit Reached --></label>
+        <name>modigie__Users_Opted_For_AdhoqLimitReached__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For All Exception --></label>
+        <name>modigie__Users_Opted_For_AllException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Callout Exception --></label>
+        <name>modigie__Users_Opted_For_CalloutException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Callout Response --></label>
+        <name>modigie__Users_Opted_For_CalloutResponse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Credit Error --></label>
+        <name>modigie__Users_Opted_For_CreditError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For DML Exception --></label>
+        <name>modigie__Users_Opted_For_DMLException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Email Exception --></label>
+        <name>modigie__Users_Opted_For_EmailException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Invocable Limit Exceeded --></label>
+        <name>modigie__Users_Opted_For_InvocableLimitExceeded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Limit Exception --></label>
+        <name>modigie__Users_Opted_For_LimitException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For NoDataFound Exception --></label>
+        <name>modigie__Users_Opted_For_NoDataFoundException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Security Exception --></label>
+        <name>modigie__Users_Opted_For_SecurityException__c</name>
+    </fields>
+    <fields>
+        <label><!-- Users Opted For Unexpected Exception --></label>
+        <name>modigie__Users_Opted_For_UnexpectedException__c</name>
+    </fields>
+</CustomObjectTranslation>

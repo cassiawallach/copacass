@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_10485827</developerName>
+        <masterLabel>Status Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>copado__User_Story__c$copado__Status__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Design Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Planning Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Investigation Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Development Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tech. Review Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA DEV Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>QA UAT Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Testing Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Packaging Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Regression Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Release Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Work Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Acceptance Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Backburner</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rejected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Waiting for customer</sourceValue>
+            </sourceValues>
+            <value>Blocked</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Released</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Done</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <value>Completed or Released</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cancelled</sourceValue>
+            </sourceValues>
+            <value>Cancelled</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>copado__User_Story__c$copado__Status__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$Owner</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Developer__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__User_Story_Title__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$Name</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$Id</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Project__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Epic__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Sprint__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Release__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c$copado__Cancellation_Reason__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Team_Dependencies_For_UStory__r$copado__Provider_User_Story__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Team_Dependencies_For_UStory__r$copado__Dependent_User_Story__c</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>copado__User_Story__c$Id</primaryTableColumn>
+        <relatedTable>SecVulnUserStoryAssociation__c</relatedTable>
+        <relatedTableJoinColumn>User_Story__c</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <description>User Stories with or without parent; cross filter &quot;with SecVuln&quot;; NOTE: Only shows US that have been triaged</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_10485827</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c$copado__Team__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <field>copado__User_Story__c$copado__Close_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FedRAMP US % Completed v2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Stories_with_or_without_parent__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>copado__User_Story__c$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Links to the Action record this Role Allocation relates to --></help>
+        <label><!-- Action --></label>
+        <name>amc__Action__c</name>
+        <relationshipLabel><!-- Role Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula: Identifies whether this Role Allocation relates to a Role Forecast, Action or Holiday --></help>
+        <label><!-- Allocation Type --></label>
+        <name>amc__Allocation_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Contributor record this Role Allocation relates to --></help>
+        <label><!-- Contributor --></label>
+        <name>amc__Contributor__c</name>
+        <relationshipLabel><!-- Role Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Date this Role Allocation relates to --></help>
+        <label><!-- Date --></label>
+        <name>amc__Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Holiday record this Role Allocation relates to --></help>
+        <label><!-- Holiday --></label>
+        <name>amc__Holiday__c</name>
+        <relationshipLabel><!-- Role Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Roll up summary of the Hours Completed - Billable field on related Role Actual records --></help>
+        <label><!-- Hours Completed - Billable --></label>
+        <name>amc__Hours_Completed_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up summary of the Hours Completed - Non Billable field on related Role Actual records --></help>
+        <label><!-- Hours Completed - Non Billable --></label>
+        <name>amc__Hours_Completed_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up summary of the Hours Completed Value (Billable) field on related Role Actual records --></help>
+        <label><!-- Hours Completed Value (Billable) --></label>
+        <name>amc__Hours_Completed_Value_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll up summary of the Hours Completed Value (Cost) field on related Role Actual records --></help>
+        <label><!-- Hours Completed Value (Cost) --></label>
+        <name>amc__Hours_Completed_Value_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Billable Hours assigned to this Role Allocation from the Role Forecast or Action it relates to --></help>
+        <label><!-- Hours Scheduled - Billable --></label>
+        <name>amc__Hours_Scheduled_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Non Billable Hours assigned to this Role Allocation from the Role Forecast or Action it relates to --></help>
+        <label><!-- Hours Scheduled - Non Billable --></label>
+        <name>amc__Hours_Scheduled_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the scheduled billable value of this Role Allocation by multiplying the Hours Scheduled - Billable with the appropriate Billable Hourly Rate --></help>
+        <label><!-- Hours Scheduled Value (Billable) --></label>
+        <name>amc__Hours_Scheduled_Value_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the scheduled cost value of this Role Allocation by multiplying the Total Hours Scheduled with the appropriate Cost Hourly Rate --></help>
+        <label><!-- Hours Scheduled Value (Cost) --></label>
+        <name>amc__Hours_Scheduled_Value_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays the Manual Allocation value of the parent Action, Role Forecast, or Holiday Record --></help>
+        <label><!-- Manual Allocation --></label>
+        <name>amc__Manual_Allocation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Role Forecast record this Role Allocation relates to --></help>
+        <label><!-- Role Forecast --></label>
+        <name>amc__Role_Forecast__c</name>
+        <relationshipLabel><!-- Role Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Links to the Role record this Role Allocation relates to --></help>
+        <label><!-- Role --></label>
+        <name>amc__Role__c</name>
+        <relationshipLabel><!-- Role Allocations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula: Identifies the Skill Name referenced on the Action or Role Forecast record this Role Allocation relates to --></help>
+        <label><!-- Skill --></label>
+        <name>amc__Skill__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Total Hours Completed based on &apos;Hours Completed - Billable&apos; + &apos;Hours Completed - Non Billable&apos; --></help>
+        <label><!-- Total Hours Completed --></label>
+        <name>amc__Total_Hours_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Total Hours Scheduled based on &apos;Hours Scheduled - Billable&apos; + &apos;Hours Scheduled - Non Billable&apos; --></help>
+        <label><!-- Total Hours Scheduled --></label>
+        <name>amc__Total_Hours_Scheduled__c</name>
+    </fields>
+    <layouts>
+        <layout>Role Allocation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

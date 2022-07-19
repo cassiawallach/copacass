@@ -1,0 +1,14 @@
+<apex:page showHeader="true" sidebar="false" lightningStylesheets="true">
+    <apex:includeLightning />    
+    <div id="manageAvailabilityComponent" style="width:100%; height:100%;"></div>   
+    <script>
+        $Lightning.use("amc:ManageAvailabilityApp", function() {
+            $Lightning.createComponent("amc:ManageAvailability",
+            { 
+                'recordId' : '{!$CurrentPage.parameters.id}'
+            },
+            "manageAvailabilityComponent",
+            function(cmp) {});
+        });
+    </script>
+</apex:page>

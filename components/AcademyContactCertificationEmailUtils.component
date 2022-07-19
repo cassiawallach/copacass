@@ -1,0 +1,24 @@
+<apex:component id="AcademyContactCertificationEmailUtils" controller="AcademyContactCertificationEmailUtilCtlr" access="global">
+	<apex:slds />
+	<apex:attribute name="redwingTrainingPlanId" type="String" description="Current training plan to find the certification program id" assignTo="{!currentPlanIdApex}" />
+	<apex:attribute name="certificationProgramId" type="String" description="Current certification program id" assignTo="{!currentAcademyCertProgramIdApex}" />
+	<apex:attribute name="contactId" type="String" description="Id of the contact to find related certifications" assignTo="{!contactIdApex}" />
+	<apex:attribute name="emailType" type="String" description="Type of Email for which this component will used" assignTo="{!emailTypeApex}" />
+
+    <apex:outputPanel rendered="{!IF((emailType = 'MaintenanceResult') && !ISBLANK(ContactAcademyCertification) ,true,false)}">
+        <apex:outputText value="Certification Now Valid Through: {0, date, MMMM d','  yyyy}">
+            <apex:param value="{!ContactAcademyCertification.Expiration_Date__c}" />
+        </apex:outputText>
+        <p style="margin-top:25px;">
+            Click <a href="{!$Label.Copado_Community_URL}s/validate-credentials?StudentId={!ContactAcademyCertification.Certification_Student__c}">HERE</a> to validate the status of your certification.
+        </p>
+    </apex:outputPanel>
+	<apex:outputPanel rendered="{!IF((emailType = 'Reminder1' || emailType = 'Reminder2') && !ISBLANK(LearningPlan) ,true,false)}">
+		<span>You can register for maintenance from <a href="{!LearningPlan.Module_Community_URL__c}">here.</a></span>
+		<apex:outputPanel rendered="{!IF(emailType = 'Reminder1', true, false)}">
+			<apex:outputText escape="false" value=" This maintenance period will end on <b>{0, date, MMMM d','  yyyy}</b>.">
+				<apex:param value="{!LearningPlan.Maintenance_Expiration_Date__c}"/>
+			</apex:outputText>
+		</apex:outputPanel>
+	</apex:outputPanel>
+</apex:component>

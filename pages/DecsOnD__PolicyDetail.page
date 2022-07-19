@@ -1,0 +1,28 @@
+<!-- 
+ VisualForce wrapper for Lightning PolicyDetail component  
+
+ Copyright 2012-2018, Decisions on Demand, Inc.
+ All Rights Reserved.
+ -->
+
+<apex:page standardController="DecsOnD__Policy__c" wizard="false" showQuickActionVfHeader="false" cache="false" standardStylesheets="true"
+    showHeader="false" setup="false" showChat="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false">
+    <apex:stylesheet value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/css/decsond-sfdc-wrapper.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.DecsOnD__JS_Callbacks, '/sfdcWrapper.js')}"/>
+    <apex:includeLightning />
+    <div id="lightning" style="width:100%" />
+    <script>
+        $Lightning.use(
+            "DecsOnD:LightningPolicyEditorViewApp",
+            function () {
+                $Lightning.createComponent(
+                    "DecsOnD:PolicyDetail",
+                    {
+                        policyId: "{!JSINHTMLENCODE(DecsOnD__Policy__c.Id)}",
+                        classic: true
+                    },
+                    "lightning",
+                    createComponentHandler);
+            });
+    </script>
+</apex:page>

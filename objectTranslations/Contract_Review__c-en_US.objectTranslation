@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Reviews</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accepted Date by Attorney --></label>
+        <name>Accepted_Date_by_Attorney__c</name>
+    </fields>
+    <fields>
+        <help><!-- Have we confirmed that Copado does not have an agreement in place with an affiliate of this customer that can be leveraged for this agreement? --></help>
+        <label><!-- Affiliate agreement for this customer? --></label>
+        <name>Affiliate_agreement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- What type of agreement is this? --></help>
+        <label><!-- Agreement Type --></label>
+        <name>Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer MSA</masterLabel>
+            <translation><!-- Customer MSA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When did the customer’s agreement come in and when did it close? --></help>
+        <label><!-- Agreement come in and Close --></label>
+        <name>Agreement_come_in_and_Close__c</name>
+    </fields>
+    <fields>
+        <help><!-- Any other circumstances to note? --></help>
+        <label><!-- Any other circumstances? --></label>
+        <name>Any_other_circumstances__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned AE Name --></label>
+        <name>Assigned_AE_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned AE --></label>
+        <name>Assigned_AE__c</name>
+        <relationshipLabel><!-- Contract Reviews (Assigned AE) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Copado Approved Partner? --></label>
+        <name>Copado_Approved_Partner__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Account Name --></label>
+        <name>Customer_Account_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- What Customer account is this for? --></help>
+        <label><!-- Customer Account --></label>
+        <name>Customer_Account__c</name>
+        <relationshipLabel><!-- Contract Reviews --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Has the InfoSec team been engaged in this negotiation? --></help>
+        <label><!-- InfoSec Team Engaged? --></label>
+        <name>InfoSec_Team_Engaged__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kyle&apos;s Team Approval --></label>
+        <name>Kyles_Team_Approval__c</name>
+        <relationshipLabel><!-- Contract Reviews (Kyle&apos;s Team Approval) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Have you sent them our Legal FAQ doc and/or our Legal talking points via email? --></help>
+        <label><!-- Legal FAQ/Talking Sent? --></label>
+        <name>Legal_FAQ_Talking_Sent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Has Mark Desrosiers approved the request to start with their template? --></help>
+        <label><!-- Mark Desrosiers Approved The Request? --></label>
+        <name>Mark_Desrosiers_Approved_The_Request__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How many phone calls did this require with the customer’s team? --></help>
+        <label><!-- Number of Customer calls required --></label>
+        <name>Number_of_Customer_calls_required__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many rounds of redlines did this require? --></help>
+        <label><!-- Number of redlines in round --></label>
+        <name>Number_of_redlines_in_round__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are there other special considerations to keep in mind for this contract review? --></help>
+        <label><!-- Other Special Consideration --></label>
+        <name>Other_Special_Consideration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready to be sent to the Customer --></label>
+        <name>Ready_to_be_sent_to_the_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will the customer require professional services from Copado? --></help>
+        <label><!-- Require Professional Services? --></label>
+        <name>Require_Professional_Services__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Has Copado&apos;s Professional Services team been engaged? --></help>
+        <label><!-- Copado&apos;s Professional Services  Engaged? --></label>
+        <name>Rob_Canfield_s_Team_Engaged__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rob&apos;s Team Approval --></label>
+        <name>Robs_Team_Approval__c</name>
+        <relationshipLabel><!-- Contract Reviews (Rob&apos;s Team Approval) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SLA Business Days --></label>
+        <name>SLA_Business_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Date for Attorney --></label>
+        <name>SLA_Date_for_Attorney__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Executed &amp; Completed</masterLabel>
+            <translation><!-- Executed &amp; Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready For Customer</masterLabel>
+            <translation><!-- Ready For Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Have you asked for their lawyer to speak with our lawyer about why we should start with our template? --></help>
+        <label><!-- Talked With Customer Lawyer? --></label>
+        <name>Talked_With_Customer_Lawyer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Contract Review Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- To Be Filled Out By Legal --></label>
+            <section>To Be Filled Out By Legal</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot fill these fields without closing the Contract Review --></errorMessage>
+        <name>Contract_Review_Lawyer_fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill if you have a Copado Approved Partner --></errorMessage>
+        <name>Copado_Approved_Partner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill if you contacted the Customer&apos;s Lawyer or not? --></errorMessage>
+        <name>Lawyer_Contact_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Legal FAQ/ Talking is sent? --></errorMessage>
+        <name>Legal_FAQ_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill if Mark Desrosiers Approved or not? --></errorMessage>
+        <name>Mark_Desrosiers_Approved_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill if you need professional services --></errorMessage>
+        <name>Require_Professional_Services</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill if Rob Canfield&apos;s Team is engaged --></errorMessage>
+        <name>Rob_Canfields_team_engaged</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Contract_Review --></label>
+        <name>New_Contract_Review</name>
+    </webLinks>
+</CustomObjectTranslation>

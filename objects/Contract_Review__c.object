@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contract_Review_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contract_Review_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>Accepted_Date_by_Attorney__c</fullName>
+        <externalId>false</externalId>
+        <label>Accepted Date by Attorney</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Affiliate_agreement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have we confirmed that Copado does not have an agreement in place with an affiliate of this customer that can be leveraged for this agreement?</inlineHelpText>
+        <label>Affiliate agreement for this customer?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agreement_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What type of agreement is this?</inlineHelpText>
+        <label>Agreement Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer MSA</fullName>
+                    <default>false</default>
+                    <label>Customer MSA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agreement_come_in_and_Close__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>When did the customer’s agreement come in and when did it close?</inlineHelpText>
+        <label>Agreement come in and Close</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Any_other_circumstances__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Any other circumstances to note?</inlineHelpText>
+        <label>Any other circumstances?</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Assigned_AE_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Assigned_AE__r.FirstName &amp;&quot; &quot;&amp; Assigned_AE__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Assigned AE Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_AE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned AE</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contract_Reviews</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Copado_Approved_Partner__c</fullName>
+        <description>Has our Partner Success team confirmed that the vendor is approved by our team?</description>
+        <externalId>false</externalId>
+        <label>Copado Approved Partner?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>What Customer account is this for?</inlineHelpText>
+        <label>Customer Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Prospect</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contract Reviews</relationshipLabel>
+        <relationshipName>Contract_Reviews</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>InfoSec_Team_Engaged__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the InfoSec team been engaged in this negotiation?</inlineHelpText>
+        <label>InfoSec Team Engaged?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Kyles_Team_Approval__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Kyle&apos;s Team Approval</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contract_Reviews1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Legal_FAQ_Talking_Sent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have you sent them our Legal FAQ doc and/or our Legal talking points via email?</inlineHelpText>
+        <label>Legal FAQ/Talking Sent?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Mark_Desrosiers_Approved_The_Request__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has Mark Desrosiers approved the request to start with their template?</inlineHelpText>
+        <label>Mark Desrosiers Approved The Request?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Number_of_Customer_calls_required__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many phone calls did this require with the customer’s team?</inlineHelpText>
+        <label>Number of Customer calls required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_redlines_in_round__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many rounds of redlines did this require?</inlineHelpText>
+        <label>Number of redlines in round</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Special_Consideration__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are there other special considerations to keep in mind for this contract review?</inlineHelpText>
+        <label>Other Special Consideration</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ready_to_be_sent_to_the_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ready to be sent to the Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Require_Professional_Services__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Will the customer require professional services from Copado?</inlineHelpText>
+        <label>Require Professional Services?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rob_Canfield_s_Team_Engaged__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has Copado&apos;s Professional Services team been engaged?</inlineHelpText>
+        <label>Copado&apos;s Professional Services  Engaged?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Robs_Team_Approval__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rob&apos;s Team Approval</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contract_Reviews2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SLA_Business_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>(5 * ( FLOOR( ( SLA_Date_for_Attorney__c - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD(
+SLA_Date_for_Attorney__c - DATE( 1900, 1, 8), 7 ) ) )
+-
+(5 * ( FLOOR( (  Today() - DATE( 1900, 1, 8) ) / 7 ) ) + MIN( 5, MOD(
+ Today() - DATE( 1900, 1, 8), 7 ) ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SLA Business Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SLA_Date_for_Attorney__c</fullName>
+        <businessStatus>Active</businessStatus>
+        <externalId>false</externalId>
+        <formula>CASE(
+MOD(DATEVALUE(CreatedDate) - DATE(1900, 1, 7), 7), 
+0, CreatedDate+15,
+1, CreatedDate+13, 
+2, CreatedDate+13,
+3, CreatedDate+14, 
+4, CreatedDate+14, 
+5, CreatedDate+14, 
+6, CreatedDate+14,
+null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SLA Date for Attorney</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Ready For Customer</fullName>
+                    <default>false</default>
+                    <label>Ready For Customer</label>
+                </value>
+                <value>
+                    <fullName>Executed &amp; Completed</fullName>
+                    <default>false</default>
+                    <label>Executed &amp; Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Talked_With_Customer_Lawyer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Have you asked for their lawyer to speak with our lawyer about why we should start with our template?</inlineHelpText>
+        <label>Talked With Customer Lawyer?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Contract Review</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Agreement_Type__c</columns>
+        <columns>Customer_Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>Assigned_AE__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Contract_Review_Attorney_Contract_Review</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Contract Review Attorney</label>
+        <queue>Contract_Review_Attorney</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Contract_Review_Attorney_Queue_Contract_Review</fullName>
+        <columns>NAME</columns>
+        <columns>Customer_Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>Assigned_AE__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Contract Review Attorney</label>
+        <language>en_US</language>
+        <queue>Contract_Review_Attorney</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Customer_MSA_Agreement</fullName>
+        <columns>NAME</columns>
+        <columns>Agreement_Type__c</columns>
+        <columns>Customer_Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>Assigned_AE__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Agreement_Type__c</field>
+            <operation>equals</operation>
+            <value>Customer MSA</value>
+        </filters>
+        <label>Customer MSA Agreement</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Contract Review Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contract Reviews</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <listViewButtons>New_Contract_Review</listViewButtons>
+        <searchResultsAdditionalFields>Agreement_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Assigned_AE__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Contract_Review_Lawyer_fields</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (  NOT(Ready_to_be_sent_to_the_Customer__c),(OR(ISCHANGED( Agreement_come_in_and_Close__c ),  ISCHANGED( Number_of_redlines_in_round__c ),  ISCHANGED( Number_of_Customer_calls_required__c ),  ISCHANGED( Any_other_circumstances__c ))))</errorConditionFormula>
+        <errorMessage>Cannot fill these fields without closing the Contract Review</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Copado_Approved_Partner</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(Agreement_Type__c , &apos;Customer MSA&apos;),
+(ISPICKVAL(Require_Professional_Services__c, &apos;No&apos;)),
+ISBLANK(TEXT( Copado_Approved_Partner__c )))</errorConditionFormula>
+        <errorMessage>Please fill if you have a Copado Approved Partner</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lawyer_Contact_Check</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(Agreement_Type__c , &apos;Customer MSA&apos;),
+ISBLANK(TEXT( Talked_With_Customer_Lawyer__c )))</errorConditionFormula>
+        <errorMessage>Please fill if you contacted the Customer&apos;s Lawyer or not?</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Legal_FAQ_Check</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(Agreement_Type__c , &apos;Customer MSA&apos;),
+ISBLANK(TEXT( Legal_FAQ_Talking_Sent__c )))</errorConditionFormula>
+        <errorMessage>Please fill Legal FAQ/ Talking is sent?</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Mark_Desrosiers_Approved_Check</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(Agreement_Type__c , &apos;Customer MSA&apos;),
+ISBLANK(TEXT( Mark_Desrosiers_Approved_The_Request__c )))</errorConditionFormula>
+        <errorMessage>Please fill if Mark Desrosiers Approved or not?</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_Professional_Services</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(Agreement_Type__c , &apos;Customer MSA&apos;),
+ISBLANK(TEXT(Require_Professional_Services__c)))</errorConditionFormula>
+        <errorDisplayField>Accepted_Date_by_Attorney__c</errorDisplayField>
+        <errorMessage>Please fill if you need professional services</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Rob_Canfields_team_engaged</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(Agreement_Type__c , &apos;Customer MSA&apos;),
+(ISPICKVAL(Require_Professional_Services__c, &apos;Yes&apos;)),
+ISBLANK(TEXT(Rob_Canfield_s_Team_Engaged__c)))</errorConditionFormula>
+        <errorMessage>Please fill if Rob Canfield&apos;s Team is engaged</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Contract_Review</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/flow/Create_Contract_Review?AccountId={!Account.Id}</url>
+    </webLinks>
+</CustomObject>

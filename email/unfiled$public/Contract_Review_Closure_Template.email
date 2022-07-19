@@ -1,0 +1,5 @@
+<br>Hello {!Contract_Review__c.Assigned_AE_Name__c},</br>
+
+<br> <a href="{!Contract_Review__c.Id}">{!Contract_Review__c.Name}</a> is ready to be sent to the Customer.</br></br>
+
+<br>Thanks,</br>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Business Hours --></label>
+        <name>DecsOnD__Business_Hours__c</name>
+        <relationshipLabel><!-- Assignment Business Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Unique Hidden --></label>
+        <name>DecsOnD__User_Unique_Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>DecsOnD__User__c</name>
+        <relationshipLabel><!-- Assignment Business Hours --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Assignment Business Hours Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You must enter both a user and a business hours record --></errorMessage>
+        <name>DecsOnD__User_and_business_hours_are_required</name>
+    </validationRules>
+</CustomObjectTranslation>

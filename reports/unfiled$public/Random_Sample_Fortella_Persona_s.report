@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CONTACT_ID</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>Contact.Fortella_Buyer_Persona__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_OWNER_ROLE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CONTACT_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0035p00003lIDKA,0035p00003kY50r,0035p00003ds1BM,0035p00003Zk6Wp,0035p00003fxKqO,0035p00003dsKV8,0035p00003j4SCN,0035p00003j41h5,0035p00003j4HNx,0035p00003kWv0z,0035p00003fvInU,0035p00003kY47K,0035p00003b3OiF,0035p00003dGFLq,0035p00003kZ6sF,0035p00003ek5c8,0035p00003kW27n,0035p00003dK1ij,0035p00003kWuMe,0035p00003f4ed3,0035p00003hVYNs,0035p00003bv7ln,0035p00003bvvLJ,0035p00003j36yO,0035p00003hVXin,0035p00003jhINw,0035p00003XWZrF,0035p00003jiWEd,0035p00003Znt6j,0030N00003OXdlL</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Random Sample - Fortella Persona&apos;s</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -189,7 +189,7 @@
         <fullName>copado__ExtensionApplication__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Select the Copado Phase based on the Extension Tool you want to use. For example, if you select Test, the Extension Tool picklist will list the available Tools for that specific phase, e.g. Copado Robotic Test, Apex tests, or SCA tools such as PMD or Codescan.</inlineHelpText>
+        <inlineHelpText>Select the type of Application that relates to the extension.</inlineHelpText>
         <label>Copado Phase</label>
         <required>true</required>
         <trackTrending>false</trackTrending>
@@ -221,6 +221,33 @@
                 <value>
                     <fullName>None</fullName>
                     <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Copado Robotic Testing</fullName>
+                    <default>false</default>
+                    <label>Copado Robotic Testing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Extension_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deprecated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the name of the CMDT Extension Record this integration relates to.</inlineHelpText>
+        <label>Extension Name - Deprecated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
                     <label>None</label>
                 </value>
             </valueSetDefinition>
@@ -268,15 +295,55 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>copado__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the type of test you want to execute with the Extension.</inlineHelpText>
+        <label>Type - deprecated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Static Code Analysis</fullName>
+                    <default>false</default>
+                    <label>Static Code Analysis</label>
+                </value>
+                <value>
+                    <fullName>Functional</fullName>
+                    <default>false</default>
+                    <label>Functional</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Unit Test</fullName>
+                    <default>false</default>
+                    <label>Unit Test</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <label>Extension Configuration</label>
     <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
-        <columns>copado__ExtensionTool__c</columns>
         <columns>copado__ExtensionApplication__c</columns>
-        <columns>copado__Active__c</columns>
-        <columns>LAST_UPDATE</columns>
+        <columns>copado__Extension_Name__c</columns>
+        <columns>copado__Status__c</columns>
         <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -286,19 +353,12 @@
     </nameField>
     <pluralLabel>Extension Configurations</pluralLabel>
     <searchLayouts>
-        <searchResultsAdditionalFields>copado__ExtensionTool__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__ExtensionApplication__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Active__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>copado__Extension_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>copado__Status__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>copado__PreventUpdatingExtensionTool</fullName>
-        <active>true</active>
-        <description>This rule prevents users from modifying the Tool Configuration after the Extension Configuration is activated.</description>
-        <errorConditionFormula>AND( copado__Active__c , ISCHANGED( copado__ExtensionTool__c ) )</errorConditionFormula>
-        <errorMessage>This Extension Tool cannot be modified. Please create a new Extension Configuration record instead.</errorMessage>
-    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

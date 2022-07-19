@@ -1,0 +1,2 @@
+<apex:page standardController="DL_VC__Value_Tracker__c" extensions="DL_VC.ValueTrackerRefreshController" action="{! goToValueTracker }">
+</apex:page>

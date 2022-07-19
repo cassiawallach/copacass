@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User.vtse__Stand_Deliver_Task__c$OwnerId.vtse__Stand_Deliver_Submissions__r$vtse__Average_Feedback_Score__c</field>
+    </columns>
+    <columns>
+        <field>User.vtse__Stand_Deliver_Task__c$OwnerId$Name</field>
+    </columns>
+    <columns>
+        <field>User.vtse__Stand_Deliver_Task__c$OwnerId.vtse__Stand_Deliver_Submissions__r$Name</field>
+    </columns>
+    <columns>
+        <field>User.vtse__Stand_Deliver_Task__c$OwnerId.vtse__Stand_Deliver_Submissions__r.vtse__Assessment_Feedbacks__r$Name</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.vtse__Stand_Deliver_Task__c$OwnerId$vtse__Stand_Deliver__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Pitch Certification</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.vtse__Stand_Deliver_Task__c$OwnerId$vtse__Approval_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Manager</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Stand and Deliver Spring 22 by Manager</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Stand_and_Deliver_with_Users_and_Feedback__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -218,20 +218,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>copado__Extension_Configuration__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Extension Configuration</label>
-        <referenceTo>copado__ExtensionConfiguration__c</referenceTo>
-        <relationshipLabel>Quality Gate Rule Conditions</relationshipLabel>
-        <relationshipName>Quality_Gate_Rule_Conditions</relationshipName>
-        <required>true</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>copado__Filter_Criteria__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>

@@ -384,16 +384,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>copado:resultLogVisualizer</componentName>
-                <identifier>c_resultLogVisualizer</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-c34c6fb7-1bf3-4107-9f74-4f0868a67169</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
                     <value>NONE</value>
@@ -431,20 +421,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>customTab</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>body</name>
-                    <value>Facet-c34c6fb7-1bf3-4107-9f74-4f0868a67169</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>title</name>
-                    <value>Logs</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tab</componentName>
-                <identifier>flexipage_tab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>

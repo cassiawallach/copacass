@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" controller="TracRTC.CleanRecordCtlr">
+	<div style="width: 100%; text-align: center; padding: 5px 0;">
+		<span style="font-weight: bold; font-size: 14px">
+			This component is deprecated and should not be in use. Please contact your administrator for support.
+		</span>
+	</div>
+</apex:page>

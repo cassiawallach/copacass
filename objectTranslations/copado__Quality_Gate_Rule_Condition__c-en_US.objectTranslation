@@ -20,11 +20,6 @@
         <name>copado__ExecutionSequence__c</name>
     </fields>
     <fields>
-        <label><!-- Extension Configuration --></label>
-        <name>copado__Extension_Configuration__c</name>
-        <relationshipLabel><!-- Quality Gate Rule Conditions --></relationshipLabel>
-    </fields>
-    <fields>
         <help><!-- Define a filter criteria to evaluate the condition only when the specified files are present in the configured Copado Action --></help>
         <label><!-- Filter Criteria --></label>
         <name>copado__Filter_Criteria__c</name>
@@ -60,6 +55,13 @@
         <label><!-- Tool --></label>
         <name>copado__Tool__c</name>
     </fields>
+    <layouts>
+        <layout>Quality Gate Rule Condition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage><!-- The selected platform does not match the chosen pipeline or environment platform value. --></errorMessage>
         <name>copado__ConsistentPlatform</name>

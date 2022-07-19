@@ -1,0 +1,20 @@
+.top{
+    color:white;
+    background-color:#192150;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 51px;
+    font-size:x-large;
+}
+
+.middle{
+    background-color:white;
+}
+
+.bottom{
+    color:white;
+    background-color:#192150;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 51px;
+}

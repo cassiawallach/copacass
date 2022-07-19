@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_2067093</developerName>
+        <masterLabel>Activity Result</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Contact.Engagement_Score__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Replied</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Do Not Contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Interested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not Interested</sourceValue>
+            </sourceValues>
+            <value>Connected</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_21539593</developerName>
+        <masterLabel>Results</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CALLDISPOSITION</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Answered - Meeting Set</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - No Longer with Company</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Not Interested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Wrong Contact</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Call Back Later</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Technical Issue</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Answered - Keep In Sequence</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Gatekeeper</sourceValue>
+            </sourceValues>
+            <value>Answered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>No Answer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Call - No Answer</sourceValue>
+            </sourceValues>
+            <value>No Answer</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Left Voicemail</sourceValue>
+            </sourceValues>
+            <value>Left Voicemail</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bad Number</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>No Number Available</sourceValue>
+            </sourceValues>
+            <value>Bad Contact Info</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Contact.Engagement_Score__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Outreach_Number_of_Active_Tasks__c</field>
+    </columns>
+    <columns>
+        <field>CALLDISPOSITION</field>
+    </columns>
+    <columns>
+        <field>TASK_SUBTYPE</field>
+    </columns>
+    <columns>
+        <field>EVENT_SUBTYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>Account.Vertical__c</field>
+    </columns>
+    <columns>
+        <field>Account.Region__c</field>
+    </columns>
+    <columns>
+        <field>Account.AOV_Band__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>EMPLOYEES</field>
+    </columns>
+    <currency>USD</currency>
+    <description>BDR &amp; Alliances</description>
+    <filter>
+        <criteriaItems>
+            <column>TASK_TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Call</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>BDR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_ROLE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>operations,engineer,develop,VP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>answered</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CALLDURATIONFORMATTED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CALLDISPOSITION</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>bad number,no answer,left voicemail,call back later</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>melissa joubert,conner mcclanahan,anthony winbush,blake evans,Dallas Pitts,Jeffrey Denny,Meghan Downing,Nick Holland,Noah Cohen,Patric McCann,Rohit menon,austin tezza,Christine Proffitt,Ashley Guerra,Connor Meznarich,Elliott Raiford,John Katich,Ben Krockta,Michael Norsoph,Ellie Rice,Owen Johnson,Maximillian Mantle</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER_ROLE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>ASSIGNED</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TASK_TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_21539593</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>BDR Connects</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

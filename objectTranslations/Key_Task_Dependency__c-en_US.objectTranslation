@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Key Task Dependency</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Key Task Dependencies</value>
+    </caseValues>
+    <fields>
+        <label><!-- Control is Blocked or On Hold --></label>
+        <name>Control_is_Blocked_or_On_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling - Finish Date --></label>
+        <name>Controlling_Finish_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling Key Task - Status --></label>
+        <name>Controlling_Key_Task_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling Key Task to G.A. --></label>
+        <name>Controlling_Key_Task_to_G_A__c</name>
+        <relationshipLabel><!-- Dependent Key Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Controlling - Start Date --></label>
+        <name>Controlling_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controlling Team Plan --></label>
+        <name>Controlling_Team_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent - Finish Date --></label>
+        <name>Dependent_Finish_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Key Task - Status --></label>
+        <name>Dependent_Key_Task_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Key Task to G.A. --></label>
+        <name>Dependent_Key_Task_to_G_A__c</name>
+        <relationshipLabel><!-- Controlling Key Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dependent - Start Date --></label>
+        <name>Dependent_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Team Plan --></label>
+        <name>Dependent_Team_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent is Blocked or On Hold --></label>
+        <name>Dependent_is_Blocked_or_On_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>Key Task Dependency Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Controlling and Dependent Key Tasks must be within the same Release Plan --></errorMessage>
+        <name>Controlling_and_Dependent_Same_Release</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The only acceptable values for the Control is Blocked or On Hold field and the Dependent is Blocked or On Hold field are 1 or 0. --></errorMessage>
+        <name>Restricted_Values_on_Number_Fields</name>
+    </validationRules>
+</CustomObjectTranslation>

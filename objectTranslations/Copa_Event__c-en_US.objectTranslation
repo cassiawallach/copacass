@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Copa Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Copa Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Details --></label>
+        <name>Event_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Name --></label>
+        <name>Event_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Filled automatically based on Start Date, End Date and Timezone of event. --></help>
+        <label><!-- Event Time Shown To Public --></label>
+        <name>Event_Time_Shown_To_Public__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location/Meeting Link For Email --></label>
+        <name>Location_Meeting_Link_For_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter location for In-Person events. --></help>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Link --></label>
+        <name>Meeting_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Link --></label>
+        <name>Registration_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Timezone in which event is going to happen. --></help>
+        <label><!-- Timezone --></label>
+        <name>Timezone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue --></label>
+        <name>Venue__c</name>
+        <picklistValues>
+            <masterLabel>In-Person</masterLabel>
+            <translation><!-- In-Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virtual</masterLabel>
+            <translation><!-- Virtual --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Copa Event - Community</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Event Time --></label>
+            <section>Event Time</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copa Event - Marketing</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event Details --></label>
+            <section>Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- Event Time --></label>
+            <section>Event Time</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copa Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Events which are related to community. --></description>
+        <label><!-- Community Events --></label>
+        <name>Community_Events</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Events which are related to marketing. --></description>
+        <label><!-- Marketing Events --></label>
+        <name>Marketing_Events</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- End date should not be less then start date. --></errorMessage>
+        <name>End_Date_Cannot_Be_Prior_To_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide complete URL including http or https. --></errorMessage>
+        <name>Invalid_Registration_URL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the location for In-Person event. --></errorMessage>
+        <name>Location_Required_For_In_Person_Events</name>
+    </validationRules>
+</CustomObjectTranslation>

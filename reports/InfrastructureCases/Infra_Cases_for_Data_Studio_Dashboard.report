@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_17364812</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>719</to>
+            </sourceValues>
+            <value>Cases &lt; 30 Days Old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>719</from>
+                <to>1,439</to>
+            </sourceValues>
+            <value>Cases &gt;= 30 Days Old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,439</from>
+            </sourceValues>
+            <value>Cases &gt;= 60 Days Old</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_20816933</developerName>
+        <masterLabel>Status Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Response</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting approval</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting customer feedback</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hold - awaiting feedback</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Scheduling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Confirmation from Client</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Response from Client</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Confirmation from Client - Known Issue Created</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On Hold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Business Review Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Needs Requirements</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Backlog</sourceValue>
+            </sourceValues>
+            <value>Waiting / On Hold</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Complete</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Canceled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - No Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Escalated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Bug fix submitted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Duplicate</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Feature Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - No response from customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Out of scope</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Routed to internal helpdesk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Spam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deployed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Converted to User Story</sourceValue>
+            </sourceValues>
+            <value>Done / Canceled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>In progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Escalated</sourceValue>
+            </sourceValues>
+            <value>In Progress</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CLOSED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>BucketField_17364812</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Cases Assigned to the Infrastructure Team</description>
+    <filter>
+        <booleanFilter>((1 AND 2) OR 3) AND (4 OR 5 OR 6 OR 7)</booleanFilter>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.IT_Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Infrastructure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Infrastructure_Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_MONTHS:6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_MONTHS:6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSED_DATEONLY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS_MONTH</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Infra Cases for Data Studio Dashboard</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>OWNER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

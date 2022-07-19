@@ -1,0 +1,10 @@
+Hi {!Target_User.FirstName},<br/>
+<p>
+We need to verify your email address before you can start accessing Copado Community as a Partner.
+</p>
+<p>
+Verify your email address by clicking <a href="{!$Label.Copado_Community_URL}s/partnerverification?uid={!Target_User.Partner_Unique_Id__c}"  target="_blank">here</a>.
+</p>
+
+Thanks! <br/>
+Copado Community

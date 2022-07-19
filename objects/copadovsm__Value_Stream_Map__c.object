@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Value_Stream_Map_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -359,12 +362,12 @@
                 <value>
                     <fullName>Not Required</fullName>
                     <default>true</default>
-                    <label>Recalculation Not Required</label>
+                    <label>Not Required</label>
                 </value>
                 <value>
                     <fullName>Required</fullName>
                     <default>false</default>
-                    <label>Recalculation Required</label>
+                    <label>Required</label>
                 </value>
                 <value>
                     <fullName>Calculating</fullName>
@@ -374,12 +377,7 @@
                 <value>
                     <fullName>Failed</fullName>
                     <default>false</default>
-                    <label>Recalculation Failed</label>
-                </value>
-                <value>
-                    <fullName>Snapshot Failed</fullName>
-                    <default>false</default>
-                    <label>Snapshot Failed</label>
+                    <label>Failed</label>
                 </value>
                 <value>
                     <fullName>Snapshot In Progress</fullName>
@@ -453,6 +451,8 @@
     <label>Value Stream Map</label>
     <listViews>
         <fullName>copadovsm__All</fullName>
+        <columns>NAME</columns>
+        <columns>copadovsm__Recalculation_Status__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Fullcast GTM --></label>
+        <name>fcio1__Fullcast_GTM__c</name>
+        <relationshipLabel><!-- Team Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>fcio1__User__c</name>
+        <relationshipLabel><!-- Team Members --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

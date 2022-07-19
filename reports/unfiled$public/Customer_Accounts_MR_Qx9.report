@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>Account.Vertical__c</field>
+    </columns>
+    <columns>
+        <field>Account.Territory_Country__c</field>
+    </columns>
+    <columns>
+        <field>Account.Account_Health_Color__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>INDUSTRY</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Aerospace and Defense,&quot;Agriculture, Forestry and Fishing&quot;,Automotive and Transportation,Banking and Finance,&quot;Biotechnology, Pharmaceuticals and Medicine&quot;,Business and Management Services,Chemicals,Computers,Construction and Building Materials,Consumer Services,Education,Electronics,&quot;Entertainment, Travel and Leisure&quot;,Food and Beverage,Healthcare,High Tech,Insurance,Manufacturing,&quot;Mining, Quarrying and Drilling&quot;,Nonclassifiable Establishments,Not For Profit,Professional Services,Public Sector and Government,Real Estate,Rental and Leasing,Repair and Maintenance,Retail,Telecommunications and Publishing,Utilities and Energy,Wholesale</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Customer Accounts - MR</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

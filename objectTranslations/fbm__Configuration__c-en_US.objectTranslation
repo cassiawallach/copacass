@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- API Key --></label>
+        <name>fbm__API_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Insert Condition --></label>
+        <name>fbm__Condition_Account_Insert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Update Condition --></label>
+        <name>fbm__Condition_Account_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Insert Condition --></label>
+        <name>fbm__Condition_Contact_Insert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Update Condition --></label>
+        <name>fbm__Condition_Contact_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Insert Condition --></label>
+        <name>fbm__Condition_Lead_Insert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Update Condition --></label>
+        <name>fbm__Condition_Lead_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Account Delete Trigger --></label>
+        <name>fbm__Enable_Account_Delete_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Account Insert Trigger --></label>
+        <name>fbm__Enable_Account_Insert_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Account Update Trigger --></label>
+        <name>fbm__Enable_Account_Update_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Contact Delete Trigger --></label>
+        <name>fbm__Enable_Contact_Delete_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Contact Insert Trigger --></label>
+        <name>fbm__Enable_Contact_Insert_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Contact Update Trigger --></label>
+        <name>fbm__Enable_Contact_Update_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Enrichment Update Trigger --></label>
+        <name>fbm__Enable_Enrichment_Update_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Lead Delete Trigger --></label>
+        <name>fbm__Enable_Lead_Delete_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Lead Insert Trigger --></label>
+        <name>fbm__Enable_Lead_Insert_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Lead Update Trigger --></label>
+        <name>fbm__Enable_Lead_Update_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frontend URL --></label>
+        <name>fbm__Frontend_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service URL --></label>
+        <name>fbm__Service_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Email --></label>
+        <name>fbm__Support_Email__c</name>
+    </fields>
+</CustomObjectTranslation>

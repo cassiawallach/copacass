@@ -52,28 +52,11 @@
         <name>copado__Sandbox_Installation_URL__c</name>
     </fields>
     <fields>
-        <help><!-- Draft indicates that a placeholder record has been created.
-
-Pre-Release indicates a package version that has been generated but not yet promoted or is not ready for release. 
-
-A package version with Published status, indicates it can be released or deployed to production. 
-
-Deprecated highlights a package version that has been deleted and is no longer available for use.
-
-Open, Locked and Cancelled are used for packages related to User Story bundles. --></help>
         <label><!-- Status --></label>
         <name>copado__Status__c</name>
         <picklistValues>
             <masterLabel>Cancelled</masterLabel>
             <translation><!-- Cancelled --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Deprecated</masterLabel>
-            <translation><!-- Deprecated --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Draft</masterLabel>
-            <translation><!-- Draft --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Locked</masterLabel>
@@ -82,14 +65,6 @@ Open, Locked and Cancelled are used for packages related to User Story bundles. 
         <picklistValues>
             <masterLabel>Open</masterLabel>
             <translation><!-- Open --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Pre-Release</masterLabel>
-            <translation><!-- Pre-Release --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Published</masterLabel>
-            <translation><!-- Published --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -130,6 +105,29 @@ Open, Locked and Cancelled are used for packages related to User Story bundles. 
         <label><!-- View In Git --></label>
         <name>copado__View_In_Git__c</name>
     </fields>
+    <layouts>
+        <layout>Artifact Version Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Installation Key --></label>
+        <name>cmcSf__UpdateInstallationKey</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Configuration --></label>
+        <name>copado__EditConfiguration</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Lock Bundle --></label>
+        <name>copado__Lock_Bundle</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Publish Package Version --></label>
+        <name>copado__PublishPackageVersion</name>
+    </quickActions>
     <webLinks>
         <label><!-- Merge_Version --></label>
         <name>copado__Merge_Version</name>

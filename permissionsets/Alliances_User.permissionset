@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Account_Ownership_change_permission</name>
+    </customPermissions>
+    <description>Created this for story US-0027065</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Alliances User</label>
+</PermissionSet>

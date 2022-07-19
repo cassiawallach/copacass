@@ -41,4 +41,11 @@
         <label><!-- PromoteAPIName --></label>
         <name>copado__PromoteAPIName__c</name>
     </fields>
+    <layouts>
+        <layout>MultiCloudAutomationMap Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>

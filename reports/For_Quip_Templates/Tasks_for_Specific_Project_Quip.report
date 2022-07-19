@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>copado__Project__c.Activities$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>copado__Project__c.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>copado__Project__c.Activities$Priority</field>
+    </columns>
+    <columns>
+        <field>copado__Project__c.Activities$Status</field>
+    </columns>
+    <columns>
+        <field>copado__Project__c.Activities$Description</field>
+    </columns>
+    <columns>
+        <field>copado__Project__c.Activities$Owner</field>
+    </columns>
+    <crossFilters>
+        <operation>with</operation>
+        <primaryTableColumn>copado__Project__c$Id</primaryTableColumn>
+        <relatedTable>Activity</relatedTable>
+        <relatedTableJoinColumn>What</relatedTableJoinColumn>
+    </crossFilters>
+    <currency>USD</currency>
+    <description>Tasks &amp; Events related to a specific Project - Used for Quip Template. Filters All Projects, Created Date = All Time, and Record Type = IT Operations or Copado Work Management Project; Cross Filter set to &quot;with Activities&quot;</description>
+    <filter>
+        <criteriaItems>
+            <column>copado__Project__c$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Type in Project Name</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Tasks for Specific Project - Quip New</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Projects_with_or_w_o_Actvities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__Project__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

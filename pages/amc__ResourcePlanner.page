@@ -1,0 +1,21 @@
+<apex:page standardStylesheets="true" showHeader="true" tabStyle="ResourcePlanner__tab">
+    <apex:includeLightning />
+     
+    <div id="XXX">
+        <!-- Lightning Web Component will be included here. -->
+    </div>
+ 
+     <script>
+         $Lightning.use(
+             "c:ResourcePlannerApp", // Name of Aura Dependency app where c is namespace.
+             function() { // Callback function
+                 $Lightning.createComponent(
+                     "c:resourcePlanner", // Name of Lightning Component where c is namespace.
+                     {}, // attribute parameters
+                     "XXX" // Id of the element where Lightning Component will be rendered.
+                 );
+             }
+         );
+     </script>
+     
+</apex:page>

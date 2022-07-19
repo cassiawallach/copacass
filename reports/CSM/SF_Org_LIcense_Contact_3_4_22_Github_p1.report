@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Salesforce_Orgs__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Salesforce_Orgs__r$License_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account.Salesforce_Orgs__r$OrgId__c</field>
+    </columns>
+    <columns>
+        <field>Account$Customer_Success_Manager__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>SF Org License Contacts for 3/4/22 github p1</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Salesforce_Orgs__r$OrgId__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>00D41000000dqX7EAI,00D61000000ZKT,00D740000004caOEAQ,cEAO,00D6g000003rqsREAQ,00D8D0000004cZQUAY,00DC0000000PziRMAS,00DN0000000SUSeMAO,00Df2000001KgptEAC,00D5g000004Fv0xEAC,00D61000000ZKTcEAO</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>SF Org LIcense Contact 3.4.22 Github p1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Salesforce_Orgs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Usage__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

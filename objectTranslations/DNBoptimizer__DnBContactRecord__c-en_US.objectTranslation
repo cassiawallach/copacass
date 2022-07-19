@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- DNB Contact Fields --></label>
+        <name>DNBoptimizer__DNB_Contact_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- The single name by which the entity is primarily known or identified. --></help>
+        <label><!-- Business Name --></label>
+        <name>DNBoptimizer__BusinessName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the city, town, township, village, borough, etc. in which this address is located. --></help>
+        <label><!-- Primary Address City --></label>
+        <name>DNBoptimizer__City__c</name>
+    </fields>
+    <fields>
+        <help><!-- An identification number that uniquely defines a D&amp;B contact. --></help>
+        <label><!-- D&amp;B Contact ID --></label>
+        <name>DNBoptimizer__ContactID__c</name>
+    </fields>
+    <fields>
+        <help><!-- A sequence of digits used for voice communication with the entity.  This sequence of digits includes the area code or city code and domestic dialing code. --></help>
+        <label><!-- Contact Phone --></label>
+        <name>DNBoptimizer__ContactPhone__c</name>
+    </fields>
+    <fields>
+        <help><!-- The two-letter country/region code, defined by the International Organization for Standardization (ISO) ISO 3166-1 scheme, identifying the country/region in which the entity is located. --></help>
+        <label><!-- Primary Address Country/Region Code ISO2 --></label>
+        <name>DNBoptimizer__CountryCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Dun &amp; Bradstreet D-U-N-S Number with which the contact is associated. The D-U-N-S Number is an identification number assigned by Dun &amp; Bradstreet that uniquely identifies the entity in accordance with the Data Universal Numbering System (D-U-N-S). --></help>
+        <label><!-- D-U-N-S Number --></label>
+        <name>DNBoptimizer__DUNSNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- The predicted probability that a contact can be reached by the email listed for the contact, at the time of the most recent email verification. --></help>
+        <label><!-- Email Deliverability Score --></label>
+        <name>DNBoptimizer__EmailDeliverabilityScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- A formula field associated with Email Deliverability Score that identifies the quality range within which the score falls:  0-19 &quot;Very Poor&quot;, 20-39 &quot;Poor&quot;, 40-79 &quot;Fair&quot;, 80-89 &quot;Good&quot;, 90-100 &quot;Excellent&quot;. --></help>
+        <label><!-- Email Deliverability --></label>
+        <name>DNBoptimizer__EmailDeliverability__c</name>
+    </fields>
+    <fields>
+        <help><!-- The email address of the contact. --></help>
+        <label><!-- Email --></label>
+        <name>DNBoptimizer__Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- The given name of the individual. --></help>
+        <label><!-- First Name --></label>
+        <name>DNBoptimizer__FirstName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The job held by the entity. --></help>
+        <label><!-- Job Title --></label>
+        <name>DNBoptimizer__JobTitle__c</name>
+    </fields>
+    <fields>
+        <help><!-- The family name of the individual. --></help>
+        <label><!-- Last Name --></label>
+        <name>DNBoptimizer__LastName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The middle name of the individual. --></help>
+        <label><!-- Middle Name --></label>
+        <name>DNBoptimizer__MiddleName__c</name>
+    </fields>
+    <fields>
+        <help><!-- The correct form of address for the individual (e.g., Dr., Professor, Lord). --></help>
+        <label><!-- Prefix --></label>
+        <name>DNBoptimizer__NamePrefix__c</name>
+    </fields>
+    <fields>
+        <help><!-- The familial or professional suffix to the individual&apos;s name. --></help>
+        <label><!-- Suffix --></label>
+        <name>DNBoptimizer__NameSuffix__c</name>
+    </fields>
+    <fields>
+        <help><!-- The predicted probability (from 0 to 100) that a contact can be reached at least one of their listed phone numbers, at the time of the most recent phone verification. Decays at a rate of 2 points each month. --></help>
+        <label><!-- Phone Accuracy Score --></label>
+        <name>DNBoptimizer__PhoneAccuracyScore__c</name>
+    </fields>
+    <fields>
+        <help><!-- A formula field associated with Phone Accuracy Score that identifies the quality range within which the score falls:  0-19 &quot;Very Poor&quot;, 20-39 &quot;Poor&quot;, 40-79 &quot;Fair&quot;, 80-89 &quot;Good&quot;, 90-100 &quot;Excellent&quot;. --></help>
+        <label><!-- Phone Accuracy --></label>
+        <name>DNBoptimizer__PhoneAccuracy__c</name>
+    </fields>
+    <fields>
+        <help><!-- An identifier used by the local country&apos;s postal authority to identify where this address is located. --></help>
+        <label><!-- Primary Address Postal Code --></label>
+        <name>DNBoptimizer__PostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- The 1987 version of a 4-digit numeric coding system developed by the US Government for the classification of industrial activities to denote the industry in which the entity does most of its business. --></help>
+        <label><!-- SIC4 Code 1 --></label>
+        <name>DNBoptimizer__SIC4Code1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The business activity based on the scheme used for the industry code (e.g., &apos;highway and street construction&apos; is the description of industry code 1611 in the U.S. SIC (Standard Industrial Classification) system). --></help>
+        <label><!-- SIC4 Code 1 Description --></label>
+        <name>DNBoptimizer__SIC4Desc1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The shortened name of the locally governed area that forms part of a centrally governed nation. For example &apos;NJ&apos; for the US State New Jersey within Country United States. --></help>
+        <label><!-- Primary Address State Province Abbrev --></label>
+        <name>DNBoptimizer__StateProvinceAbbrev__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the locally governed area that forms part of a centrally governed nation to identify where this address is located. --></help>
+        <label><!-- Primary Address State Province --></label>
+        <name>DNBoptimizer__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>DNBoptimizer__inactive__c</name>
+    </fields>
+    <layouts>
+        <layout>D&amp;B Contact Record Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- D&amp;B Contact Data --></label>
+            <section>D&amp;B Contact Data</section>
+        </sections>
+        <sections>
+            <label><!-- Related D&amp;B Company --></label>
+            <section>Related D&amp;B Company</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

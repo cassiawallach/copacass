@@ -16,10 +16,10 @@
     </values>
     <values>
         <field>copado__TestTool__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">copadoQuality__CopadoRoboticTest</value>
     </values>
     <values>
         <field>copado__WhereIsThisUsed__c</field>
-        <value xsi:type="xsd:string">Deprecated</value>
+        <value xsi:type="xsd:string">This component will display in the right panel of the Extension Configuration Record Page, providing the user a way to configure the proper connection</value>
     </values>
 </CustomMetadata>

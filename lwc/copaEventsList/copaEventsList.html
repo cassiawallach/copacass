@@ -1,0 +1,48 @@
+<template>
+    <div class="slds-grid slds-wrap slds-grid--vertical-align-end border-bottom slds-grid--align-center">
+        <div class="slds-size--1-of-2 slds-order--1 slds-p-around_x-small">
+            <lightning-input
+                type="search"
+                variant="label-hidden"
+                name="searchEvent"
+                value={tags.searchEvent}
+                onchange={handleChange}
+                maxlength="255"
+                placeholder="Search By Title"
+            ></lightning-input>
+        </div>
+        <div class="slds-size--1-of-2 slds-order--2 slds-p-around_x-small slds-truncate slds-m-bottom_xxx-small">
+            <template if:true={tags.eventsDateFilter}>
+                <c-filter-pill filter-name='eventsDateFilter' filter-title={selectedDateString} onremove={handleRemoveFilter}></c-filter-pill>
+            </template>
+        </div>
+        <div class="slds-size--1-of-1 slds-order--3 slds-p-around_x-small slds-is-relative min-height">
+            <template if:true={status.hasError}>
+                <c-support-copado-error error-message={status.errorMessage}></c-support-copado-error>
+            </template>
+            <template if:false={status.hasError} for:each={copaEvents} for:item="event">
+                <div class="slds-m-bottom_small" key={event.Id}>
+                    <c-copa-events-card copa-event={event} onregister={handleRefreshAfterRegister} action-event-id={actionEventId}></c-copa-events-card>
+                </div>
+            </template>
+            <div if:true={isBusy} class="slds-align_absolute-center slds-m-top_x-large">
+                <lightning-spinner variant="brand" 
+                                    alternative-text="Loading...."     
+                                    size="medium">
+                </lightning-spinner>
+            </div>
+            <template if:true={hasNoRecords}>
+                <span class="slds-align_absolute-center slds-m-top_x-large no-records_text">No Records Found</span>
+            </template>
+        </div>
+        <div class="slds-size--1-of-1 slds-order--4 slds-m-vertical--medium slds-p-around_x-small slds-align_absolute-center">
+            <c-project-configuration-pagination 
+                total-records={totalCopaEvents} 
+                current-page-records={currentPageRecords} 
+                onpage={handlePage}
+                records-per-page-options={recordsPerPageOptions}
+                selected-records-per-page={defaultRecordsPerPage}
+            ></c-project-configuration-pagination>
+        </div>
+    </div>
+</template>

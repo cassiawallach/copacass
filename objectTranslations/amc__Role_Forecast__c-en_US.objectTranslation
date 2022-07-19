@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Identifes the Billable Hourly Rate used for this Role Forecast --></help>
+        <label><!-- Billable Hourly Rate --></label>
+        <name>amc__Billable_Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Billable&apos; --></help>
+        <label><!-- Billable Hours --></label>
+        <name>amc__Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the percentage of Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Billable&apos; --></help>
+        <label><!-- Billable Percentage --></label>
+        <name>amc__Billable_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Cost Hourly Rate used for this Role Forecast --></help>
+        <label><!-- Cost Hourly Rate --></label>
+        <name>amc__Cost_Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Forecasted End Date --></help>
+        <label><!-- End Date --></label>
+        <name>amc__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Days elapsed between the Start and End Date (inclusive) --></help>
+        <label><!-- Forecast Duration --></label>
+        <name>amc__Forecast_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Forecast GM% based on &apos;Forecast P&amp;L&apos; / &apos;Hours Forecast Value (Billable)&apos; --></help>
+        <label><!-- Forecast GM% --></label>
+        <name>amc__Forecast_GM__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Forecast P&amp;L based on &apos;Hours Forecast Value (Billable)&apos; - &apos;Hours Forecast Value (Cost)&apos; --></help>
+        <label><!-- Forecast P&amp;L --></label>
+        <name>amc__Forecast_P_L__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Billable Hours assigned to this Role on this Role Forecast --></help>
+        <label><!-- Hours Forecast - Billable --></label>
+        <name>amc__Hours_Forecast_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Non Billable Hours assigned to this Role on this Role Forecast --></help>
+        <label><!-- Hours Forecast - Non Billable --></label>
+        <name>amc__Hours_Forecast_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Hours Forecast Value (Billable) based on &apos;Hours Forecast - Billable&apos; x &apos;Billable Hourly Rate&apos; --></help>
+        <label><!-- Hours Forecast Value (Billable) --></label>
+        <name>amc__Hours_Forecast_Value_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Hours Forecast Value (Cost) based on &apos;Total Hours Forecast&apos; x &apos;Cost Hourly Rate&apos; --></help>
+        <label><!-- Hours Forecast Value (Cost) --></label>
+        <name>amc__Hours_Forecast_Value_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manual Allocation --></label>
+        <name>amc__Manual_Allocation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Non Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Non Billable&apos; --></help>
+        <label><!-- Non Billable Hours --></label>
+        <name>amc__Non_Billable_Hours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the percentage of Non Billable Hours requested for this Role Forecast. Used to determine &apos;Hours Forecast - Non Billable&apos; --></help>
+        <label><!-- Non Billable Percentage --></label>
+        <name>amc__Non_Billable_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Opportunity record this Role Forecast relates to --></help>
+        <label><!-- Opportunity --></label>
+        <name>amc__Opportunity__c</name>
+        <relationshipLabel><!-- Role Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Links to the Project record this Role Forecast record relates to --></help>
+        <label><!-- Project --></label>
+        <name>amc__Project__c</name>
+        <relationshipLabel><!-- Role Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Links to the Role record this Role Forecast relates to --></help>
+        <label><!-- Role --></label>
+        <name>amc__Role__c</name>
+        <relationshipLabel><!-- Role Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Links to the Skill record this Role Forecast relates to --></help>
+        <label><!-- Skill --></label>
+        <name>amc__Skill__c</name>
+        <relationshipLabel><!-- Role Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Forecasted Start Date --></help>
+        <label><!-- Start Date --></label>
+        <name>amc__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Total Hours Forecast based on &apos;Hours Forecast - Billable&apos; + &apos;Hours Forecast - Non Billable&apos; --></help>
+        <label><!-- Total Hours Forecast --></label>
+        <name>amc__Total_Hours_Forecast__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Working Days expected as part of this Role Forecast --></help>
+        <label><!-- Working Days --></label>
+        <name>amc__Working_Days__c</name>
+    </fields>
+    <layouts>
+        <layout>Role Forecast Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- The End Date must be greater or equal to the Start Date. --></errorMessage>
+        <name>amc__End_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Working Days must be greater than 0 --></errorMessage>
+        <name>amc__Ensure_Working_Days_Greater_Than_Zero</name>
+    </validationRules>
+</CustomObjectTranslation>

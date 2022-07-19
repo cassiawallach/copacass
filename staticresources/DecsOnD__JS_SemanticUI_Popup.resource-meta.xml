@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>A popup that displays additional information on top of a page
+
+Source: http://semantic-ui.com/modules/popup.html)
+
+License: MIT (http://semantic-ui.mit-license.org/)</description>
+</StaticResource>

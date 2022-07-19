@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active In Dynamic Date --></label>
+        <name>TracRTC__Active_In_Dynamic_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active In Round Robin Date --></label>
+        <name>TracRTC__Active_In_Round_Robin_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active In User Group Date --></label>
+        <name>TracRTC__Active_In_User_Group_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Been Dynamically Assigned --></label>
+        <name>TracRTC__Has_Been_Dynamically_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Included In Round Robin Step --></label>
+        <name>TracRTC__Is_Included_In_Round_Robin_Step__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Included In User Group --></label>
+        <name>TracRTC__Is_Included_In_User_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>TracRTC__User_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

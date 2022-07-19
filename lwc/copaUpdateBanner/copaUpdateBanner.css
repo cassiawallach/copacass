@@ -1,0 +1,36 @@
+.copa_update-div{
+    position:absolute;
+    inset:0px
+}
+.copa_update-date{
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 38px;
+    width: fit-content;
+    color: #192150;;
+}
+.copa_update-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -8px;
+    color: #192150;
+}
+@media screen and (min-width: 1024px){
+    .copa_update-img_div{
+        height: 25%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .copa_update-title, .copa_update-date{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 599px){
+    .copa_update-title{
+        font-size: 18px;
+    }
+    .copa_update-date{
+        font-size: 16px;
+    }
+}

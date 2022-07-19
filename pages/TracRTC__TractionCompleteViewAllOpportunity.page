@@ -1,0 +1,36 @@
+<!--
+ - Created by mlewis on 4/23/2019.
+ -->
+
+<apex:page id="TractionCompleteViewAllOpp" standardController="Opportunity" extensions="TracRTC.TractionCompleteViewAllExt">
+
+    <apex:includeLightning />
+    <apex:stylesheet value="{!URLFOR($Resource.TracRTC__TracRTC_SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+    <div class="TracRTC">
+        <div id="lightning" />
+    </div>
+
+    <script type="text/javascript">
+        $Lightning.use("TracRTC:lcvfTractionComplete", function() {
+            $Lightning.createComponent(
+                "TracRTC:TractionCompleteViewAll",
+                {
+                    recordId : "{!JSENCODE(opportunity.Id)}",
+                    SObjectType : "{!JSENCODE(sObjectTypeParam)}",
+                    title : "{!JSENCODE(titleParam)}",
+                    allQuery : "{!JSENCODE(queryParam)}",
+                    showCheckboxes : "{!JSENCODE(checkboxParam)}",
+                    displayMergeButton : "{!JSENCODE(mergeButtonParam)}",
+                    displayConvertButton : "{!JSENCODE(convertButtonParam)}",
+                    sessionId : "{!$Api.Session_ID}",
+                    viewAllObject : "{!JSENCODE(testParam)}"
+                },
+                "lightning",
+                function(cmp) {
+                    document.getElementById("lightning").className = "";
+                }
+            );
+        });
+    </script>
+</apex:page>

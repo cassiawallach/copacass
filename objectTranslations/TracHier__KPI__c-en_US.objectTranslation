@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Activities --></label>
+        <name>TracHier__Activities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opp Amount --></label>
+        <name>TracHier__Closed_Won_Opp_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opp Avg --></label>
+        <name>TracHier__Closed_Won_Opp_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Opps --></label>
+        <name>TracHier__Closed_Won_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts --></label>
+        <name>TracHier__Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI Date --></label>
+        <name>TracHier__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leads --></label>
+        <name>TracHier__Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Company --></label>
+        <name>TracHier__Master_Account__c</name>
+        <relationshipLabel><!-- KPIs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Open Cases --></label>
+        <name>TracHier__Open_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opp Amount --></label>
+        <name>TracHier__Open_Opp_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opps --></label>
+        <name>TracHier__Open_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Contact Roles --></label>
+        <name>TracHier__Opp_Contact_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Products Sold --></label>
+        <name>TracHier__Opp_Products_Sold__c</name>
+    </fields>
+</CustomObjectTranslation>

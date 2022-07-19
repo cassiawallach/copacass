@@ -69,20 +69,16 @@
             <translation><!-- Calculating --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Recalculation Failed</masterLabel>
-            <translation><!-- Recalculation Failed --></translation>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Recalculation Not Required</masterLabel>
-            <translation><!-- Recalculation Not Required --></translation>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Recalculation Required</masterLabel>
-            <translation><!-- Recalculation Required --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Snapshot Failed</masterLabel>
-            <translation><!-- Snapshot Failed --></translation>
+            <masterLabel>Required</masterLabel>
+            <translation><!-- Required --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Snapshot In Progress</masterLabel>
@@ -110,4 +106,59 @@
         <label><!-- Version --></label>
         <name>copadovsm__Version__c</name>
     </fields>
+    <layouts>
+        <layout>Value Stream Map Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Setup --></label>
+            <section>Setup</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Send to Slack --></label>
+        <name>Send_to_Slack</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Slack Alerts --></label>
+        <name>Slack_Alerts</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Activate --></label>
+        <name>copadovsm__Activate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add New Metric --></label>
+        <name>copadovsm__Add_New_Metric</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Configure Metrics --></label>
+        <name>copadovsm__Configure_Metrics</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Configure VSM Thresholds --></label>
+        <name>copadovsm__Configure_Thresholds</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Deactivate --></label>
+        <name>copadovsm__Deactivate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Enable Snapshot --></label>
+        <name>copadovsm__Enable_Snapshot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate Snapshot --></label>
+        <name>copadovsm__Generate_Snapshot</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Open Value Stream Map --></label>
+        <name>copadovsm__Open_Value_Stream_Map</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recalculate --></label>
+        <name>copadovsm__Recalculate</name>
+    </quickActions>
 </CustomObjectTranslation>

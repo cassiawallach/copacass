@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>ebsta5__SfUtils</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ebsta5__SfUtilsTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ebsta5__ViewModePicklist</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ebsta5__ViewModePicklistTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>PS created for a limited group of Sales managers and AEs. Grants access to the Ebsta Insights tab.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Ebsta Insights</label>
+    <license>Salesforce</license>
+    <tabSettings>
+        <tab>Ebsta_Insights</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

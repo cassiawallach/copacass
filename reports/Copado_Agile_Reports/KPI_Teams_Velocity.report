@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>copado__User_Story__c.copado__Story_Points_SFDC__c:SUM / copado__User_Story__c.copado__Story_Points_Other__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Points Accuracy</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_59607562</developerName>
+        <masterLabel>Main Sprint</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FK_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>2021 - Sprint 13 (previous)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2021 - Sprint 13 Hotel (past)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2021 - Sprint 13 Copado Plan (past)</sourceValue>
+            </sourceValues>
+            <value>2021 - Sprint 13</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>2021 - Sprint 12</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2021 - Sprint 12 Hotel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2021 - Sprint 12 Copado Plan</sourceValue>
+            </sourceValues>
+            <value>2021 - Sprint 12</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 0 (current) - v20 Design</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 0  Hotel (current) - v20 Design</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 0  Copado Plan (current) - v20 Design</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2022 - Sprint 0 (current) - Design</sourceValue>
+            </sourceValues>
+            <value>2022 - Sprint 0 - Design</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c.copado__Story_Points_SFDC__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c.copado__Story_Points_Other__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__Developer__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.copado__User_Story_Title__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>copado__User_Story__c.Subtask</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>next</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Rejected,Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.copado__Team__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>ux,infra</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$copado__Sprint__c.copado__Project__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Application</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>2022</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_59607562</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.copado__Team__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.copado__Project__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>KPI: Teams Velocity</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.copado__Sprint__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

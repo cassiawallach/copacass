@@ -1,0 +1,4 @@
+<!--<apex:page standardController="Opportunity" extensions="ValuePropositionsController">
+</apex:page> -->
+<apex:page standardController="Opportunity">
+</apex:page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Release Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Release Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Blocked or On Hold - Controllers --></label>
+        <name>Blocked_or_On_Hold_Controllers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked or On Hold - Dependents --></label>
+        <name>Blocked_or_On_Hold_Dependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blocked or On Hold - Key Tasks --></label>
+        <name>Blocked_or_On_Hold_Key_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Freeze Date --></label>
+        <name>Code_Freeze_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Freeze Date --></label>
+        <name>Feature_Freeze_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Beta Release Date --></label>
+        <name>First_Beta_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Planned G.A. Date --></label>
+        <name>Planned_G_A_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Beta Release Date --></label>
+        <name>Second_Beta_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Beta Release Date --></label>
+        <name>Third_Beta_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Count - Key Tasks --></label>
+        <name>Total_Count_Key_Tasks__c</name>
+    </fields>
+    <layouts>
+        <layout>Release Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Team Release Plans Rollup Summaries --></label>
+            <section>Team Release Plans Rollup Summaries</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

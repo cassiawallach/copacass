@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_27292810</developerName>
+        <masterLabel>Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>FROM_OPPORTUNITY_STAGE_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Marketing Qualification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pipeline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Alignment</sourceValue>
+            </sourceValues>
+            <value>Early</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Validation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Value Proposition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Formal Proposal</sourceValue>
+            </sourceValues>
+            <value>Middle</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Negotiation/Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Procurement</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Signed Contract Received</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Suspend</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fully Paid</sourceValue>
+            </sourceValues>
+            <value>Late</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>FROM_OPPORTUNITY_STAGE_NAME</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>CDF1</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SAL_Age__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_DURATION</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SAL_Acceptance_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Push_Counter__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_Reason_Detail__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_Reason_Detail_picklist__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.COVID_19_Risk__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_Reason__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.First_Demo_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Gong__Gong_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.DL_VC__Has_Value_Proposition__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BDR_Owner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BDR_Qualification_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BDR_Manager_Qualified_Date__c</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER_ACTIVE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Best_Relationship__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Best_Relationship_Score__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Trial__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Trial_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(TEXT(LEAD_SOURCE),
+
+&quot;Alliances Outbound&quot;,	&quot;Alliances&quot;,
+&quot;Partner&quot;,	&quot;Alliances&quot;,
+&quot;Partner Referral&quot;,	&quot;Alliances&quot;,
+&quot;Salesforce&quot;,	&quot;Alliances&quot;,
+&quot;Implementation Partner&quot;,	&quot;Alliances&quot;,
+&quot;Partner Outbound&quot;,	&quot;Alliances&quot;,
+&quot;Partner Recruitment&quot;,	&quot;Alliances&quot;,
+&quot;BDR Outbound&quot;,	&quot;B/SDR&quot;,
+&quot;SDR Outbound&quot;,	&quot;B/SDR&quot;,
+&quot;Outbound - BDR&quot;,	&quot;B/SDR&quot;,
+&quot;CSM Outbound&quot;,	&quot;CSM/RM&quot;,
+&quot;Renewals&quot;,	&quot;CSM/RM&quot;,
+&quot;Renewal&quot;,	&quot;CSM/RM&quot;,
+&quot;CSM&quot;,	&quot;CSM/RM&quot;,
+&quot;Customer&quot;,	&quot;CSM/RM&quot;,
+&quot;3rd Party Website&quot;,	&quot;Marketing&quot;,
+&quot;AppExchange&quot;,	&quot;Marketing&quot;,
+&quot;Drift&quot;,	&quot;Marketing&quot;,
+&quot;Live Event&quot;,	&quot;Marketing&quot;,
+&quot;Qualified Chat&quot;,	&quot;Marketing&quot;,
+&quot;Virtual Event&quot;,	&quot;Marketing&quot;,
+&quot;Web&quot;,	&quot;Marketing&quot;,
+&quot;AppExchange Chat Bot&quot;,	&quot;Marketing&quot;,
+&quot;Qualified Chat Bot&quot;,	&quot;Marketing&quot;,
+&quot;Watch Demo&quot;,	&quot;Marketing&quot;,
+&quot;Webinar&quot;,	&quot;Marketing&quot;,
+&quot;Webinar - Inbound&quot;,	&quot;Marketing&quot;,
+&quot;Lusha&quot;,	&quot;Other&quot;,
+&quot;Click Deploy&quot;,	&quot;Other&quot;,
+&quot;Copado&quot;,	&quot;Other&quot;,
+&quot;Other&quot;,	&quot;Other&quot;,
+&quot;Outbound - Other&quot;,	&quot;Other&quot;,
+&quot;Outbound - Other&quot;,	&quot;Other&quot;,
+&quot;Vlocity&quot;,	&quot;Other&quot;,
+&quot;Copado&quot;,	&quot;Other&quot;,
+&quot;ClickDeploy App&quot;,	&quot;Other&quot;,
+&quot;AE Outbound&quot;,	&quot;Sales&quot;,
+&quot;AE Prospecting&quot;,	&quot;Sales&quot;,
+&quot;LinkedIn&quot;,	&quot;Sales&quot;,
+&quot;Sales Person Relationship&quot;,	&quot;Sales&quot;,
+
+&quot;Other&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Lead Source</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>CPFY | Where are we loosing opps by Lead Source</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_CHANGE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.COVID_19_Risk__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SAL_Acceptance_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Lost_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Disqualified,Duplicate/replace by another Opp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FROM_OPPORTUNITY_STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FROM_OPPORTUNITY_STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EDM - NC Leaking Funnel - LS</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>include</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityHistory</reportType>
+    <scope>all</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OPP_CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

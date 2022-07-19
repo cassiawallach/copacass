@@ -1,0 +1,53 @@
+<template>
+    <div class="top slds-grid slds-gutters">
+        <div class="slds-col slds-size_4-of-4 slds-align_absolute-center">
+            <span>
+                <b>Scheduled Down Time</b>
+                <lightning-icon class="slds-m-left_small" icon-name="standard:duration_downscale" size="small">
+                </lightning-icon>
+            </span>
+        </div>
+    </div>
+
+    <div class="middle slds-grid slds-gutters slds-text-align_center slds-border_bottom slds-border_right slds-border_left">
+        <div class="slds-col slds-size_1-of-4">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <template for:each={downTimeRegions} for:item="region">
+            <div key={region} class="slds-col slds-size_1-of-4">
+                <span><b>{region}</b></span>
+            </div>
+        </template>
+    </div>
+
+    <template for:each={downTimeData} for:item="dt">
+        <div key={dt.valType} class="middle slds-grid slds-gutters slds-text-align_center slds-border_bottom slds-border_right slds-border_left">
+            <div class="slds-col slds-size_1-of-4 slds-border_right slds-p-around_small">
+                <span><b>{dt.valType}</b></span>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+                <span>
+                    <lightning-formatted-rich-text value={dt.region1}></lightning-formatted-rich-text>
+                </span>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+                <span>
+                    <lightning-formatted-rich-text value={dt.region2}></lightning-formatted-rich-text>
+                </span>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+                <span>
+                    <lightning-formatted-rich-text value={dt.region3}></lightning-formatted-rich-text>
+                </span>
+            </div>
+        </div>
+    </template>
+
+    <a href="https://status.copado.com/" target="_blank">
+        <div class="bottom slds-grid slds-gutters slds-text-align_center">
+            <span class="slds-align_absolute-center slds-col slds-size_4-of-4">
+                SHOW FULL SCHEDULE
+            </span>
+        </div>
+    </a>
+</template>

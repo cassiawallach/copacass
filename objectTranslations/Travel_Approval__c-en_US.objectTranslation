@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Travel Approval</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Travel Approvals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Billable to customer --></label>
+        <name>Billable_to_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Justification --></label>
+        <name>Business_Justification__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Travel Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For intra EU Travel please select domestic --></help>
+        <label><!-- Destination --></label>
+        <name>Destination__c</name>
+        <picklistValues>
+            <masterLabel>Domestic</masterLabel>
+            <translation><!-- Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Title --></label>
+        <name>Event_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>Organization__c</name>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue (Sales)</masterLabel>
+            <translation><!-- Revenue (Sales) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- i.e. Revenue (Sales), Operations, Marketing, Legal, Finance. --></help>
+        <label><!-- Organization (see Help Text) - - &gt; --></label>
+        <name>Organization_new__c</name>
+        <relationshipLabel><!-- Travel Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Purpose of Trip --></label>
+        <name>Purpose_of_Trip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Indicator --></label>
+        <name>Status_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Expenses --></label>
+        <name>Total_Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip End Date --></label>
+        <name>Trip_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip Start Date --></label>
+        <name>Trip_Start_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Travel Approval Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Destination Details --></label>
+            <section>Destination Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Change to New Request --></label>
+        <name>Change_to_New_Request</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please provide an estimate of Expenses. --></errorMessage>
+        <name>Estimated_Expenses_Required_For_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Trip end date must be greater than or equal to start date --></errorMessage>
+        <name>Trip_end_date_after_start_date</name>
+    </validationRules>
+</CustomObjectTranslation>

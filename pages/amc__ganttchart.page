@@ -1,0 +1,21 @@
+<apex:page standardStylesheets="false" showHeader="{! NOT(isiFrame) }" sidebar="false" standardController="amc__Project__c" extensions="amc.ganttController"
+    lightningStyleSheets="true">
+
+    <script>    
+        postMessageToLightningGantt = function (message, origin) {
+            parent.postMessage(message, origin);
+        }
+
+        window.addEventListener("message", function (event) {
+            if (event.origin !== lightningGanttOrigin) {
+                // Not the expected origin: reject message!
+                return;
+            }
+            // Handle message
+            processLightboxMessage(event.data);
+        }, false);
+    </script>
+
+    <c:GanttChartCore projectId="{! projectId }" readOnly="{! readOnly }" fixedProject="{! fixedProject }" projectOverview="{! projectOverview }"
+        lightningGanttOrigin="{! lightningGanttOrigin }" initialPageLoad="{! initialPageLoad }" deviceType="{! deviceType }" isiFrame="{! isiFrame }" communityName="{!communityName}" isLightning="{!isLightning}" />
+</apex:page>

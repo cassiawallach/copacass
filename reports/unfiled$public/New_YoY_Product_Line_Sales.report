@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>OPPORTUNITY_ID:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Opportunities</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_14440748</developerName>
+        <masterLabel>Product Lines</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Admin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Data Deploy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Dedicated Edition Platform</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Enterprise Edition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Enterprise Edition Platform</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Plan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Professional Edition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Professional Edition Platform</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Standard Edition Platform</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Standard Edition</sourceValue>
+            </sourceValues>
+            <value>1. Salesforce</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CRT - Qentinel Historical</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DevOps360</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>DevOps 360 Analytics</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Edition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enterprise Value Stream Management</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Guest User</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Value Stream Mapping</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Value Stream Mapping (Deactivated)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Enterprise Package</sourceValue>
+            </sourceValues>
+            <value>2. Testing &amp; Analytics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Functions</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mulesoft Plugin</sourceValue>
+            </sourceValues>
+            <value>3. MultiCloud</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Success</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Success+</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Program Architect</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Professional Services</sourceValue>
+            </sourceValues>
+            <value>4. Services</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>TOTAL_PRICE.CONVERT</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CLOSE_MONTH</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>QUANTITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>UNIT_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>PRODUCT_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Copado Success,Accelerator,academy day,Services,service hours,implementation,ownbackup,professional,new customer credit,copado pilot,enterprise biannually,admin certification,clickdeploy,enterprise yearly,dup</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>FiscalYear</dateGranularity>
+        <field>CLOSE_MONTH</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product2.Product_Line__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>New - YoY Product Line Sales</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCUR2FY</interval>
+    </timeFrameFilter>
+</Report>

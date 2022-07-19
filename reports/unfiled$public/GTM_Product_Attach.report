@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>SBQQ__Quote__c.SBQQ__Opportunity2__c.Id:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of Opps</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_17926999</developerName>
+        <masterLabel>Opp Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SBQQ__Quote__c$SBQQ__Opportunity2__c.StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Marketing Qualification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pipeline</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Discovery</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Prospecting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Alignment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Trial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Solution Validation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Value Proposition</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Demo</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Formal Proposal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiation/Review</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Procurement</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Signed Contract Received</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fully Paid</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Won</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partially Paid</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>Closed Lost</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_4976121</developerName>
+        <masterLabel>Opp Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>SBQQ__Quote__c$SBQQ__Opportunity2__c.Type</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New Customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New Account, New Business</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Add-on</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New Business Add-on</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Existing Account- Additional Business</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Existing Account - New Business</sourceValue>
+            </sourceValues>
+            <value>Expansion</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Renewal</sourceValue>
+            </sourceValues>
+            <value>Renewal</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63934899</developerName>
+        <masterLabel>Product</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__ProductName__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Compliance Hub Package</sourceValue>
+            </sourceValues>
+            <value>Compliance Hub Package</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Data Deploy</sourceValue>
+            </sourceValues>
+            <value>Copado Data Deploy</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DevOps360</sourceValue>
+            </sourceValues>
+            <value>DevOps 360</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DevOps 360 Analytics</sourceValue>
+            </sourceValues>
+            <value>DevOps 360 Analytics</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Program Architect</sourceValue>
+            </sourceValues>
+            <value>Program Architect</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Selenium User</sourceValue>
+            </sourceValues>
+            <value>Selenium User</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Value Stream Mapping</sourceValue>
+            </sourceValues>
+            <value>Value Stream Mapping</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mulesoft Plugin</sourceValue>
+            </sourceValues>
+            <value>Mulesoft Plugin</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Functions</sourceValue>
+            </sourceValues>
+            <value>Copado Functions</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Heroku Plugin</sourceValue>
+            </sourceValues>
+            <value>Heroku Plugin</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Enterprise Package</sourceValue>
+            </sourceValues>
+            <value>Copado Robotic Testing</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <columnName>FORMULA1</columnName>
+        <highColor>#FFFFFF</highColor>
+        <lowBreakpoint>0.0</lowBreakpoint>
+        <lowColor>#E6ECF2</lowColor>
+        <midColor>#FFFFFF</midColor>
+    </colorRanges>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c.Type</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$Opportunity_Owner_Name__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Opportunity2__c.StageName</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$Account_Industry__c</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$Name</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c.SBQQ__LineItems__r$Name</field>
+    </columns>
+    <columns>
+        <field>SBQQ__Quote__c$SBQQ__Account__c.Id</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>if(
+
+and(text(SBQQ__Quote__c.SBQQ__Opportunity2__c.Type)=&quot;New Customer&quot;,
+
+
+or(
+    
+    SBQQ__QuoteLine__c.SBQQ__ProductName__c=&quot;Compliance Hub Package&quot;,
+    SBQQ__QuoteLine__c.SBQQ__ProductName__c=&quot;Copado Data Deploy&quot;,
+    SBQQ__QuoteLine__c.SBQQ__ProductName__c=&quot;DevOps360&quot;,
+    SBQQ__QuoteLine__c.SBQQ__ProductName__c=&quot;DevOps 360 Analytics&quot;,
+    SBQQ__QuoteLine__c.SBQQ__ProductName__c=&quot;Value Stream Mapping&quot;
+
+
+
+)),
+
+1,
+
+0
+
+)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>New Customer Opp w/ % of Total Product</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Missing % of total products will have a 1 in the New Col but a - in the Expansion Col</description>
+    <filter>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Test Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Primary__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Opportunity2__c.Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Customer,Add-on,New Business Add-on</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c$SBQQ__Opportunity2__c.IsWon</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__ProductName__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>compliance,data,value,360,analytics,success</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <formattingRules>
+        <columnName>FORMULA1</columnName>
+        <values>
+            <backgroundColor>#E6ECF2</backgroundColor>
+            <rangeUpperBound>0.0</rangeUpperBound>
+        </values>
+    </formattingRules>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SBQQ__Quote__c.SBQQ__LineItems__r$SBQQ__ProductName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_4976121</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>SBQQ__Quote__c$SBQQ__Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CS - Search 4 Missing Products on Add-on</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Quotes_with_Quote_Lines_Additional_Opp_Info1__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>SBQQ__Quote__c$SBQQ__Opportunity2__c.CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

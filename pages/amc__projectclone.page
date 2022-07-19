@@ -1,0 +1,252 @@
+<apex:page standardController="amc__Project__c" extensions="amc.projectCloneExt" standardStylesheets="true" lightningStylesheets="true" docType="html-5.0">
+    <style type="text/css">
+        .icon-sizing{
+            width:25px;
+            height:25px;
+        }
+        .milestone-header{
+            display:flex;
+            width:100%;
+        }
+        .milestone-name{
+            width:90%;
+        }
+        .milestone-delete{
+            width:10%;
+        }
+    </style>    
+    <apex:outputPanel id="thePanel">
+        <apex:outputPanel id="messagePanel">
+            <apex:pageMessages escape="false" />
+        </apex:outputPanel>
+        <apex:sectionHeader title="Clone Project" subtitle="{!oldProjectName}" />
+        <apex:form id="theForm">
+            <apex:pageBlock mode="edit">
+                <apex:pageBlockSection title="Project Details" rendered="{!projectDetailFields.size>0}">
+                    <!-- <apex:inputField value="{!project.Opportunity__c}" /> -->
+                    <apex:inputField value="{!project['CurrencyIsoCode']}" rendered="{!isMulti}"/>
+                    <apex:repeat value="{!projectDetailFields}" var="field">
+                        <apex:inputField value="{!project[field]}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection title="Project Settings" rendered="{!projectSettingFields.size>0}">
+                    <apex:repeat value="{!projectSettingFields}" var="field">
+                        <apex:inputField value="{!project[field]}"/>
+                    </apex:repeat>
+                    <apex:inputField value="{!project.amc__Gantt_Chart_Unit__c}"/>
+                    <apex:inputField value="{!project.amc__Hours_Per_Day__c}"/>
+                    <apex:inputField value="{!project.amc__Archived__c}"/>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection title="Billing Information" rendered="{!billingInformationFields.size>0}">
+                    <apex:repeat value="{!billingInformationFields}" var="field">
+                        <apex:inputField value="{!project[field]}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection showHeader="true" title="Other Project Data" rendered="{!$ObjectType.amc__Project__c.FieldSets.amc__Custom_Clone_Fields.empty = false}">
+                    <!-- Custom Clone Field Set Data -->
+                    <apex:repeat value="{!$ObjectType.amc__Project__c.FieldSets.amc__Custom_Clone_Fields}" var="f">
+                        <apex:inputField value="{!project[f]}" required="{!f.required}" />
+                    </apex:repeat>
+                </apex:pageBlockSection>
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton value="Clone Project" action="{!cloneCustom}" />
+                    <apex:commandButton value="Cancel" action="{!cancel}" />
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+            <apex:pageBlock title="Clone Settings" id="settingsBlock">
+                <apex:pageBlockSection columns="1">
+                    Settings changed here will be applied across the whole project.
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" id="settingsSection">
+                    <apex:inputField value="{!dummyAction.amc__Start_Date__c}" id="startDate">
+                        <apex:actionSupport event="onchange" action="{!updateProjectDates}" onsubmit="showSpinner()" oncomplete="hideSpinner()" reRender="milestones, settingsSection"/>
+                    </apex:inputField>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >
+                            Clone Checklist Items
+                        </apex:outputLabel>
+                        <apex:inputCheckbox value="{!cloneItems}" />
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Forecast End Date</apex:outputLabel>
+                        <apex:outputText value="{!forecastEndDate}"/>
+                    </apex:pageBlockSectionItem> 
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >
+                            Clone Contributors
+                        </apex:outputLabel>
+                        <apex:inputCheckbox value="{!cloneContributors}" />
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >
+                            Run Asynchronously 
+                        </apex:outputLabel>
+                        <apex:inputCheckbox value="{!runAsync}" />
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >
+                            Clone Project Rates
+                        </apex:outputLabel>
+                        <apex:inputCheckbox value="{!cloneRates}" />
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock title="Budget Items" id="budgetBlock" rendered="{!budgetItems.size>0}">
+                <apex:pageBlockTable value="{!budgetItems}" var="bi">
+                    <apex:column headervalue="Name">
+                        <apex:inputField value="{!bi.Name}"/>
+                    </apex:column>
+                    <apex:column headervalue="Category">
+                        <apex:inputField value="{!bi.amc__Category__c}"/>
+                    </apex:column>
+                    <apex:column headervalue="Billable Budget">
+                        <apex:inputField value="{!bi.amc__Billable_Budget__c}"/>
+                    </apex:column>
+                    <apex:column headervalue="Cost Budget">
+                        <apex:inputField value="{!bi.amc__Cost_Budget__c}"/>
+                    </apex:column>
+                    <apex:column headervalue="">
+                        <apex:commandLink onclick="if(!confirm('Are you sure you want to remove this budget item?')){return false;}" action="{!removeRecord}">
+                            <apex:param name="index" value="{!recordIndexMap[bi.Id]}" assignTo="{!rowNum}"/>
+                            <apex:param name="type" value="budget" assignTo="{!deleteObjectType}"/>
+                            <span class="slds-icon_container slds-icon-utility-delete slds-icon-text-default" >
+                                <svg aria-hidden="true" class="slds-icon slds-icon--small icon-sizing">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#delete">
+                                    </use>
+                                </svg>
+                            </span>
+                        </apex:commandLink>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+            <apex:pageBlock title="Milestones & Actions" id="milestones">
+                <apex:repeat value="{!milestones}" var="m">
+                    <apex:pageBlockSection title="{!m.Name}" columns="2">
+                        <apex:facet name="header">
+                            <!--for some reason this only seems to show both name and icon if they are inside outputtext-->
+                            <apex:outputText >
+                                <div class="milestone-header">
+                                    <div class="milestone-name">
+                                        {!m.Name}
+                                    </div>
+                                    <div class="milestone-delete">
+                                        <apex:commandLink onclick="if(!confirm('Are you sure you want to remove this milestone and all its actions?')){return false;}" action="{!removeRecord}">
+                                            <apex:param name="index" value="{!recordIndexMap[m.Id]}" assignTo="{!rowNum}"/>
+                                            <apex:param name="type" value="milestone" assignTo="{!deleteObjectType}"/>
+                                            <span class="slds-icon_container slds-icon-utility-delete slds-icon-text-default" >
+                                                <svg aria-hidden="true" class="slds-icon slds-icon--small icon-sizing">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                        xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#delete">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </apex:commandLink>
+                                    </div>
+                                </div>
+                            </apex:outputText>
+                        </apex:facet>
+                        <apex:inputField value="{!m.Name}" />
+                        <apex:inputField value="{!m.amc__Status__c}" />
+                        <apex:inputField value="{!m.amc__Milestone_Owner__c}" />
+                        <apex:inputField value="{!m.amc__Milestone_Budget__c}" />
+                        <apex:inputField value="{!m.amc__Exclude_from_Scheduler__c}" />
+                        <apex:inputField value="{!m.amc__Milestone_Deadline__c}" />
+                        <apex:inputField value="{!m.amc__Exclude_from_Timesheet__c}" />
+                        <apex:inputField value="{!m.amc__Milestone_Notes__c}" style="width:200px" />
+                        <apex:inputField value="{!m.amc__Invoice_on_Completion__c}" />
+                        <apex:inputField value="{!m.amc__Invoice_Amount__c}" />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection title="{!m.Name}" columns="1" showHeader="false">
+                        <apex:pageblockTable rendered="{!NOT(ISBLANK(m.Id))}" value="{!actionMap[m.Id]}" var="a">
+                            <apex:column headervalue="Name">
+                                <apex:inputField value="{!a.Action_Name__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Owner">
+                                <apex:inputField value="{!a.Action_Owner__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Skill" rendered="{!IF(OR(project.amc__Project_Day_Rate__c = 'Skill-based', project.amc__Cost_Rate__c = 'Skill-based'), true, false)}">
+                                <apex:inputField value="{!a.Skill__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Start Date">
+                                <apex:inputField value="{!a.Start_Date__c}" />
+                            </apex:column>
+                            <apex:column headervalue="End Date">
+                                <apex:inputField value="{!a.End_Date__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Notes">
+                                <apex:inputText value="{!a.Notes__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Status">
+                                <apex:inputField value="{!a.Status__c}" rendered="{!NOT(useCustom)}" />
+                                <apex:inputField value="{!a.Custom_Status__c}" rendered="{!useCustom}" />
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">Hours Scheduled -
+                                    <br/>Billable</apex:facet>
+                                <apex:inputField value="{!a.Hours_Scheduled__c}" style="width:80px;" />
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">Hours Scheduled -
+                                    <br/>Non Billable</apex:facet>
+                                <apex:inputField value="{!a.Hours_Scheduled_Non_Billable__c}" style="width:80px;" />
+                            </apex:column>
+                            <apex:column >
+                                <apex:facet name="header">Material
+                                    <br/>Costs Scheduled</apex:facet>
+                                <apex:inputField value="{!a.Material_Costs_Scheduled__c}" style="width:80px;" />
+                            </apex:column>
+                            <apex:column headervalue="Create Task">
+                                <apex:inputField value="{!a.Task__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Create Event">
+                                <apex:inputField value="{!a.Event__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Event Start Time">
+                                <div style="width:120px;">
+                                    <div style="width:30px; float:left;">hh:</div>
+                                    <apex:inputField value="{!a.Start_Hour__c}" />
+                                </div>
+                                <div>
+                                    <div style="width:30px; float:left;">mm:</div>
+                                    <apex:inputField value="{!a.Start_Minute__c}" />
+                                </div>
+                            </apex:column>
+                            <apex:column headervalue="Notify Owner">
+                                <apex:inputField value="{!a.Notify__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Exc. Scheduler">
+                                <apex:inputField value="{!a.Exclude_from_Scheduler__c}" />
+                            </apex:column>
+                            <apex:column headervalue="Exc. Timesheet">
+                                <apex:inputField value="{!a.Exclude_from_Timesheet__c}" />
+                            </apex:column>
+                            <apex:column headervalue="">
+                                <apex:commandLink onclick="if(!confirm('Are you sure you want to remove this action?')){return false;}" action="{!removeRecord}">
+                                    <apex:param name="parentIndex" value="{!recordIndexMap[m.Id]}" assignTo="{!parentIndex}"/>
+                                    <apex:param name="index" value="{!recordIndexMap[a.Id]}" assignTo="{!rowNum}"/>
+                                    <apex:param name="type" value="action" assignTo="{!deleteObjectType}"/>
+                                    <span class="slds-icon_container slds-icon-utility-delete slds-icon-text-default" >
+                                        <svg aria-hidden="true" class="slds-icon slds-icon--small icon-sizing">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xlink:href="/apexpages/slds/latest/assets/icons/utility-sprite/svg/symbols.svg#delete">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                </apex:commandLink>
+                            </apex:column>
+                        </apex:pageblockTable>
+                    </apex:pageBlockSection>
+                </apex:repeat>
+                <apex:pageBlockButtons location="bottom">
+                    <apex:commandButton value="Clone Project" action="{!cloneCustom}" />
+                    <apex:commandButton value="Cancel" action="{!cancel}" />
+                </apex:pageBlockButtons>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:outputPanel>
+    <c:spinner />
+</apex:page>

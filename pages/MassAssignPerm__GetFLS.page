@@ -1,0 +1,3 @@
+<apex:page docType="html-5.0" standardStylesheets="false" title="Mass Assign Field Permission" tabStyle="Field_Permissions__tab">
+    <c:GetFLSComponent />
+</apex:page>

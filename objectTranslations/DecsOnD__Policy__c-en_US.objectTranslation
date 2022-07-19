@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active Version Label --></label>
+        <name>DecsOnD__Active_Version_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Version Number --></label>
+        <name>DecsOnD__Active_Version_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Version --></label>
+        <name>DecsOnD__Active_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of Salesforce object to which this policy applies --></help>
+        <label><!-- Applies to --></label>
+        <name>DecsOnD__Applies_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Author Versioning Rights --></label>
+        <name>DecsOnD__Author_Versioning_Rights__c</name>
+        <picklistValues>
+            <masterLabel>Activate</masterLabel>
+            <translation><!-- Activate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commit</masterLabel>
+            <translation><!-- Commit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Version Label --></label>
+        <name>DecsOnD__Current_Version_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Version Number --></label>
+        <name>DecsOnD__Current_Version_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Version --></label>
+        <name>DecsOnD__Current_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- For internal use only --></help>
+        <label><!-- Decision Point Configuration --></label>
+        <name>DecsOnD__DecisionPointConfiguration__c</name>
+    </fields>
+    <fields>
+        <help><!-- For internal use only --></help>
+        <label><!-- Decision Table Configurations --></label>
+        <name>DecsOnD__DecisionTableConfiguration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>DecsOnD__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Documentation --></label>
+        <name>DecsOnD__Documentation_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Online documentation --></help>
+        <label><!-- Documentation --></label>
+        <name>DecsOnD__Documentation_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>DecsOnD__Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lock Expires --></label>
+        <name>DecsOnD__LockExpires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked By --></label>
+        <name>DecsOnD__LockedBy__c</name>
+        <relationshipLabel><!-- Business Policies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Log level --></label>
+        <name>DecsOnD__Log_level__c</name>
+        <picklistValues>
+            <masterLabel>Debug</masterLabel>
+            <translation><!-- Debug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trace</masterLabel>
+            <translation><!-- Trace --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revision --></label>
+        <name>DecsOnD__Revision__c</name>
+    </fields>
+    <fields>
+        <help><!-- For internal use only --></help>
+        <label><!-- Schedule --></label>
+        <name>DecsOnD__Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>DecsOnD__Status_Derived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>DecsOnD__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Template Name --></label>
+        <name>DecsOnD__Template_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Control the visibility of the Triggers section --></help>
+        <label><!-- Triggers enabled? --></label>
+        <name>DecsOnD__Triggers_enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- UUID --></label>
+        <name>DecsOnD__UUID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>DecsOnD__ftxt_Status__c</name>
+    </fields>
+    <layouts>
+        <layout>Policy Administrator</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Decision Tables --></label>
+            <section>Decision Tables</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Author</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Decision Tables --></label>
+            <section>Decision Tables</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy Reviewer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Decision Tables --></label>
+            <section>Decision Tables</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Policy User</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Cannot change this field from inside Salesforce - contact your administrator or support@decisionsondemand.com for further assistance --></errorMessage>
+        <name>DecsOnD__Prevent_AppliesTo_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Rename of Policy is not allowed from inside Salesforce - contact your administrator or support@decisionsondemand.com for further assistance --></errorMessage>
+        <name>DecsOnD__Prevent_renaming</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>DecsOnD__Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Delete --></label>
+        <name>DecsOnD__Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Edit_Description --></label>
+        <name>DecsOnD__Edit_Description</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Export_Policy --></label>
+        <name>DecsOnD__Export_Policy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Import_Using_Token --></label>
+        <name>DecsOnD__Import_Using_Token</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refresh_From_Server --></label>
+        <name>DecsOnD__Refresh_From_Server</name>
+    </webLinks>
+</CustomObjectTranslation>

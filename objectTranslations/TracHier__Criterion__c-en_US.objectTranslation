@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Bridge --></label>
+        <name>TracHier__Bridge__c</name>
+        <relationshipLabel><!-- Criteria --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Custom --></label>
+        <name>TracHier__Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field --></label>
+        <name>TracHier__Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>TracHier__Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>TracHier__Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>TracHier__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

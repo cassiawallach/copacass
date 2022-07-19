@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_3513134</developerName>
+        <masterLabel>Department</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>User$UserRole</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>FINS Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fed/SLED Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>High Tech Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>HLS Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AVP Commercial</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AVP Enterprise HLS/GOV/FINS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AVP Enterprise HT/MERT/CMTPS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AVP Testing Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA South &amp; Central Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA UK &amp; North Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>India Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MERT Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mid Market Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RVP APAC Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Salesforce Testing Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SVP, Sales Strategic</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RVP Fed/SLED Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>RVP High Tech Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SMB Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Sales Engineer</sourceValue>
+            </sourceValues>
+            <value>Sales</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_22643527</developerName>
+        <masterLabel>Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>User$Country</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>US</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>UNITED STATES</sourceValue>
+            </sourceValues>
+            <value>USA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>INDIA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>FR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPAIN</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AUSTRALIA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>MT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AU</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GB</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Netherlands</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GERMANY</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>ES</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ireland</sourceValue>
+            </sourceValues>
+            <value>International</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>User$Country</field>
+    </columns>
+    <columns>
+        <field>User$Profile</field>
+    </columns>
+    <columns>
+        <field>User$UserRole</field>
+    </columns>
+    <columns>
+        <field>User.Case$OwnerId$Subject</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Case$OwnerId$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Security_Request</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>FiscalQuarter</dateGranularity>
+        <field>User.Case$OwnerId$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_3513134</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_22643527</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Security Cases by Depart and Reg by Quar</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Users_with_Internal_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User.Case$OwnerId$CreatedDate</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

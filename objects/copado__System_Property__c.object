@@ -171,7 +171,6 @@
         <deprecated>false</deprecated>
         <description>This is the unique name of the system property which is used as a reference in dynamic expressions.</description>
         <externalId>false</externalId>
-        <inlineHelpText>This is the unique name of the system property which is used as a reference in dynamic expressions.</inlineHelpText>
         <label>API Name</label>
         <length>255</length>
         <required>true</required>
@@ -185,7 +184,6 @@
         <deprecated>false</deprecated>
         <description>Lookup field to the environment which is linked to the system property.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup field to the environment which is linked to the system property.</inlineHelpText>
         <label>Environment</label>
         <referenceTo>copado__Environment__c</referenceTo>
         <relationshipLabel>System Properties</relationshipLabel>
@@ -200,7 +198,6 @@
         <deprecated>false</deprecated>
         <description>Select this checbox to hide the sensitive information.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Select this checbox to hide the sensitive information.</inlineHelpText>
         <label>Hide Value</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -224,7 +221,6 @@
         <deprecated>false</deprecated>
         <description>Lookup field to the pipeline linked to the system property.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup field to the pipeline linked to the system property.</inlineHelpText>
         <label>Pipeline</label>
         <referenceTo>copado__Deployment_Flow__c</referenceTo>
         <relationshipLabel>System Properties</relationshipLabel>
@@ -253,7 +249,6 @@
         <deprecated>false</deprecated>
         <description>Lookup field to the user linked to the system property.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Lookup field to the user linked to the system property.</inlineHelpText>
         <label>User</label>
         <referenceTo>User</referenceTo>
         <relationshipName>System_Properties</relationshipName>
@@ -266,7 +261,6 @@
         <deprecated>false</deprecated>
         <description>This is the value of the system property.</description>
         <externalId>false</externalId>
-        <inlineHelpText>This is the value of the system property.</inlineHelpText>
         <label>Value</label>
         <length>131072</length>
         <trackTrending>false</trackTrending>
@@ -276,16 +270,6 @@
     <label>System Property</label>
     <listViews>
         <fullName>copado__All</fullName>
-        <columns>NAME</columns>
-        <columns>copado__API_Name__c</columns>
-        <columns>copado__Value__c</columns>
-        <columns>copado__Is_Sensitive__c</columns>
-        <columns>copado__Pipeline__c</columns>
-        <columns>copado__Environment__c</columns>
-        <columns>copado__User__c</columns>
-        <columns>copado__ParentId__c</columns>
-        <columns>UPDATEDBY_USER</columns>
-        <columns>CREATED_DATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -295,53 +279,16 @@
     </nameField>
     <pluralLabel>System Properties</pluralLabel>
     <searchLayouts>
-        <customTabListAdditionalFields>copado__API_Name__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Value__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Is_Sensitive__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Pipeline__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__Environment__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__User__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>copado__ParentId__c</customTabListAdditionalFields>
-        <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__API_Name__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Value__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Is_Sensitive__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Pipeline__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__Environment__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__User__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>copado__ParentId__c</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>UPDATEDBY_USER</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__API_Name__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Value__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Is_Sensitive__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Pipeline__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__Environment__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__User__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>copado__ParentId__c</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>UPDATEDBY_USER</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
-        <searchFilterFields>NAME</searchFilterFields>
-        <searchFilterFields>copado__API_Name__c</searchFilterFields>
-        <searchFilterFields>copado__Is_Sensitive__c</searchFilterFields>
-        <searchFilterFields>copado__Pipeline__c</searchFilterFields>
-        <searchFilterFields>copado__Environment__c</searchFilterFields>
-        <searchFilterFields>copado__User__c</searchFilterFields>
-        <searchFilterFields>copado__ParentId__c</searchFilterFields>
-        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
-        <searchFilterFields>CREATED_DATE</searchFilterFields>
         <searchResultsAdditionalFields>copado__API_Name__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Value__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Is_Sensitive__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Pipeline__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__Environment__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>copado__User__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__ParentId__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>Read</sharingModel>
     <validationRules>
         <fullName>copado__API_Name_Cannot_Contain_Spaces</fullName>
         <active>true</active>

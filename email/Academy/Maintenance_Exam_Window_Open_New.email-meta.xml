@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <available>true</available>
+    <description>For maintenance exam window opening annoucement, updated email template.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Maintenance Exam Window Open New</name>
+    <packageVersions>
+        <majorNumber>5</majorNumber>
+        <minorNumber>200</minorNumber>
+        <namespace>redwing</namespace>
+    </packageVersions>
+    <style>none</style>
+    <subject>Copado Certification Maintenance Window for {!RelatedTo.Name} is Live!</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

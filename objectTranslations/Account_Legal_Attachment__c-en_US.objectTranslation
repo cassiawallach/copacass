@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Legal Attachment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Legal Attachments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Acceptance Before Payment?; --></label>
+        <name>Acceptance_Before_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Legal Attachments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Copado indemnity obligations? --></label>
+        <name>Additional_Copado_indemnity_obligations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Customer indemnity obligation --></label>
+        <name>Additional_Customer_indemnity_obligation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional restrictions? --></label>
+        <name>Additional_restrictions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Include email if acceptable --></help>
+        <label><!-- Address for notice --></label>
+        <name>Address_for_notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affiliates authorized to use? --></label>
+        <name>Affiliates_authorized_to_use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement posted/preprinted terms ? --></label>
+        <name>Agreement_posted_preprinted_terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement trumps shrink/click --></label>
+        <name>Agreement_trumps_shrink_click__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anti-Corruption language? --></label>
+        <name>Anti_Corruption_language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Any unusual considerations/requirements? --></label>
+        <name>Any_unusual_considerations_requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attachment Id --></label>
+        <name>Attachment_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check? --></label>
+        <name>Background_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- COI required? --></label>
+        <name>COI_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cap on Direct Damages? --></label>
+        <name>Cap_on_Direct_Damages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Request Form? --></label>
+        <name>Change_Request_Form__c</name>
+    </fields>
+    <fields>
+        <label><!-- Citizenship Restrictions? --></label>
+        <name>Citizenship_Restrictions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code of conduct --></label>
+        <name>Code_of_conduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance w/ Customer&apos;s code of conduct --></label>
+        <name>Compliance_w_Customer_s_code_of_conduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance with Copado&apos;s code of conduct --></label>
+        <name>Compliance_with_Copado_s_code_of_conduct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance with law? --></label>
+        <name>Compliance_with_law__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance with law? --></label>
+        <name>Compliance_with_law_conf__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concept of Work Product/Deliverables? --></label>
+        <name>Concept_of_Work_Product_Deliverables__c</name>
+    </fields>
+    <fields>
+        <help><!-- Controls on quantity of data at particular times --></help>
+        <label><!-- Content Controls --></label>
+        <name>Content_Controls__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard Confidentiality language --></label>
+        <name>Copado_Standard_Confidentiality_language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard Export Provision? --></label>
+        <name>Copado_Standard_Export_Provision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard Indemnification? --></label>
+        <name>Copado_Standard_Indemnification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard? --></label>
+        <name>Copado_Standard_Ins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard? --></label>
+        <name>Copado_Standard_Notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard Ownership language? --></label>
+        <name>Copado_Standard_Ownership_language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard? --></label>
+        <name>Copado_Standard_Taxes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Standard? --></label>
+        <name>Copado_Standard__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado audit of Customer&apos;s use --></label>
+        <name>Copado_audit_of_Customer_s_use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Process? --></label>
+        <name>Credit_Process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credits? --></label>
+        <name>Credits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Confidentiality definition? --></label>
+        <name>Custom_Confidentiality_definition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Confidentiality obligations? --></label>
+        <name>Custom_Confidentiality_obligations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Export provision? --></label>
+        <name>Custom_Export_provision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom? --></label>
+        <name>Custom_Ins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Ownership Language? --></label>
+        <name>Custom_Ownership_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom SLA? --></label>
+        <name>Custom_SLA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Support Exhibit? --></label>
+        <name>Custom_Support_Exhibit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom? --></label>
+        <name>Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Standard Indemnification? --></label>
+        <name>Customer_Standard_Indemnification__c</name>
+    </fields>
+    <fields>
+        <help><!-- (e.g., compliance with agreement, system records, SLA backup, security of Copado) --></help>
+        <label><!-- Customer can conduct security audit? --></label>
+        <name>Customer_can_conduct_security_audit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer to be named insured? --></label>
+        <name>Customer_to_be_named_insured__c</name>
+    </fields>
+    <fields>
+        <label><!-- DPA? --></label>
+        <name>DPA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data backup provisions? --></label>
+        <name>Data_backup_provisions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data center requirements? --></label>
+        <name>Data_center_requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disaster Recovery Continuity Provisions? --></label>
+        <name>Disaster_Recovery_Continuity_Provisions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disclaimer of Incidental, Special and Consequential Damages? --></help>
+        <label><!-- Disclaimer --></label>
+        <name>Disclaimer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>Agreement-Copado Paper</masterLabel>
+            <translation><!-- Agreement-Copado Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreement-Customer Paper</masterLabel>
+            <translation><!-- Agreement-Customer Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation><!-- Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BPA</masterLabel>
+            <translation><!-- BPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPA</masterLabel>
+            <translation><!-- DPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Agreement</masterLabel>
+            <translation><!-- Online Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP</masterLabel>
+            <translation><!-- RFP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Drug Screening? --></label>
+        <name>Drug_Screening__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electronic Notice acceptable? --></label>
+        <name>Electronic_Notice_acceptable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equal employment? --></label>
+        <name>Equal_employment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusions for downtime? --></label>
+        <name>Exclusions_for_downtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusive Remedy? --></label>
+        <name>Exclusive_Remedy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback provision? --></label>
+        <name>Feedback_provision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Force Majeure? --></label>
+        <name>Force_Majeure__c</name>
+    </fields>
+    <fields>
+        <help><!-- For example, some U.S, banks require only U.S. citizens to access their data --></help>
+        <label><!-- Geographic Restrictions? --></label>
+        <name>Geographic_Restrictions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographical limitations for fail-over? --></label>
+        <name>Geographical_limitations_for_fail_over__c</name>
+    </fields>
+    <fields>
+        <label><!-- Governing Law/ Jurisdiction ? --></label>
+        <name>Governing_Law_Jurisdiction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Governing Law? --></label>
+        <name>Governing_Law__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hiring Practices? --></label>
+        <name>Hiring_Practices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Holidays or business hours identified? --></label>
+        <name>Holidays_or_business_hours_identified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indemnification process? --></label>
+        <name>Indemnification_process__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jurisdiction Restriction ? --></label>
+        <name>Jurisdiction_Restriction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limitation on M&amp;A leveraging agreement? --></label>
+        <name>Limitation_ma_leveraging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limitations on our ownership of the IP? --></label>
+        <name>Limitations_on_our_ownership_of_the_IP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Implementation Addendum? --></label>
+        <name>Local_Implementation_Addendum__c</name>
+    </fields>
+    <fields>
+        <label><!-- MFN Pricing? --></label>
+        <name>MFN_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance of Records/Audit rights? --></label>
+        <name>Maintenance_of_Records_Audit_rights__c</name>
+    </fields>
+    <fields>
+        <label><!-- Milestone billing? --></label>
+        <name>Milestone_billing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Including travel, but excluding security policies --></help>
+        <label><!-- Must comply with Customer&apos;s policies --></label>
+        <name>Must_comply_with_Customer_s_policies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net --></label>
+        <name>Net__c</name>
+        <picklistValues>
+            <masterLabel>120</masterLabel>
+            <translation><!-- 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notice for outage? --></label>
+        <name>Notice_for_outage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notice for planned downtime? --></label>
+        <name>Notice_for_planned_downtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notices Required For Scheduled Downtime? --></label>
+        <name>Notices_Required_For_Scheduled_Downtime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notification for insurance changes ? --></label>
+        <name>Notification_for_insurance_changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Customer changes in online terms? --></label>
+        <name>Notify_Customer_changes_in_online_terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- On-Site policies? --></label>
+        <name>On_Site_policies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Source/Code Integrity? --></label>
+        <name>Open_Source_Code_Integrity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other articulated escalation framework ? --></label>
+        <name>Other_articulated_escalation_framework__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other unique provisions? --></label>
+        <name>Other_unique_provisions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership/Infringement? --></label>
+        <name>Ownership_Infringement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Performance Warranty? --></label>
+        <name>Performance_Warranty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Services warranty? --></label>
+        <name>Professional_Services_warranty__c</name>
+    </fields>
+    <fields>
+        <help><!-- Arbitration/Mediation/Leadership --></help>
+        <label><!-- Provision on negotiations? --></label>
+        <name>Provision_on_negotiations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provisions that survive? --></label>
+        <name>Provisions_that_survive__c</name>
+    </fields>
+    <fields>
+        <help><!-- i.e. equitable remedies/injunctive relief --></help>
+        <label><!-- Remedies? --></label>
+        <name>Remedies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required arbitration including carve-out --></label>
+        <name>Required_arbitration_including_carve_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required negotiation including carve-out --></label>
+        <name>Required_negotiation_including_carve_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution times? --></label>
+        <name>Resolution_times__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response times? --></label>
+        <name>Response_times__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return or destruction? --></label>
+        <name>Return_or_destruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLAs --></label>
+        <name>SLAs__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Security Exhibit? --></label>
+        <name>Security_Exhibit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short term extension right? --></label>
+        <name>Short_term_extension_right__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sole and Exclusive remedy? --></label>
+        <name>Sole_and_Exclusive_remedy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special timeframe? --></label>
+        <name>Special_timeframe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special way of notifying? --></label>
+        <name>Special_way_of_notifying__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Copado SLA? --></label>
+        <name>Standard_Copado_SLA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standard Support Exhibit? --></label>
+        <name>Standard_Support_Exhibit__c</name>
+    </fields>
+    <fields>
+        <help><!-- For example, only certain citizens? --></help>
+        <label><!-- Stated limitations on personnel --></label>
+        <name>Stated_limitations_on_personnel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subcontracting Prohibited? --></label>
+        <name>Subcontracting_Prohibited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Super Cap? --></label>
+        <name>Super_Cap__c</name>
+    </fields>
+    <fields>
+        <label><!-- System access restrictions --></label>
+        <name>System_access_restrictions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time is of the essence? --></label>
+        <name>Time_is_of_the_essence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transition assistance? --></label>
+        <name>Transition_assistance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel policies? --></label>
+        <name>Travel_policies__c</name>
+    </fields>
+    <fields>
+        <help><!-- Standard, success, etc. --></help>
+        <label><!-- Type of support? --></label>
+        <name>Type_of_support__c</name>
+    </fields>
+    <fields>
+        <help><!-- E.g. fraud, willful misconduct, confidentiality, etc. --></help>
+        <label><!-- Uncapped exclusions? --></label>
+        <name>Uncapped_exclusions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unusual license terms? --></label>
+        <name>Unusual_license_terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upgrades - migration / notification proc --></label>
+        <name>Upgrades_migration_notification_proc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use as reference for another customer? --></label>
+        <name>Use_as_reference_for_another_customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use of aggregated data? --></label>
+        <name>Use_of_aggregated_data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Venue --></label>
+        <name>Venue__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Document --></label>
+        <name>View_Document__c</name>
+    </fields>
+    <fields>
+        <label><!-- Waiver of subrogation? --></label>
+        <name>Waiver_of_subrogation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work made for hire language? --></label>
+        <name>Work_made_for_hire_language__c</name>
+    </fields>
+    <fields>
+        <label><!-- insurance considerations or language ? --></label>
+        <name>insurance_considerations_or_language__c</name>
+    </fields>
+    <fields>
+        <label><!-- publicly acknowledge this customer ? --></label>
+        <name>publicly_acknowledge_this_customer__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Legal Attachment Layout</layout>
+        <sections>
+            <label><!-- Access Control/System Restrictions --></label>
+            <section>Access Control/System Restrictions</section>
+        </sections>
+        <sections>
+            <label><!-- Aggregated/Anonymized Data --></label>
+            <section>Aggregated/Anonymized Data</section>
+        </sections>
+        <sections>
+            <label><!-- Audit Rights --></label>
+            <section>Audit Rights</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance --></label>
+            <section>Compliance</section>
+        </sections>
+        <sections>
+            <label><!-- Confidentiality --></label>
+            <section>Confidentiality</section>
+        </sections>
+        <sections>
+            <label><!-- Conflict Resolution --></label>
+            <section>Conflict Resolution</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DPA --></label>
+            <section>DPA</section>
+        </sections>
+        <sections>
+            <label><!-- Disasters/Data Backup/Business Interruptions --></label>
+            <section>Disasters/Data Backup/Business Interruptions</section>
+        </sections>
+        <sections>
+            <label><!-- Downtime/Upgrades/Fail-Over --></label>
+            <section>Downtime/Upgrades/Fail-Over</section>
+        </sections>
+        <sections>
+            <label><!-- Entities --></label>
+            <section>Entities</section>
+        </sections>
+        <sections>
+            <label><!-- Geographic, Jurisdiction, or Citizenship Restrictions --></label>
+            <section>Geographic, Jurisdiction, or Citizenship Restrictions</section>
+        </sections>
+        <sections>
+            <label><!-- Governing Law --></label>
+            <section>Governing Law</section>
+        </sections>
+        <sections>
+            <label><!-- Indemnification --></label>
+            <section>Indemnification</section>
+        </sections>
+        <sections>
+            <label><!-- Insurance --></label>
+            <section>Insurance</section>
+        </sections>
+        <sections>
+            <label><!-- Intellectual Property --></label>
+            <section>Intellectual Property</section>
+        </sections>
+        <sections>
+            <label><!-- License/Usage Restrictions --></label>
+            <section>License/Usage Restrictions</section>
+        </sections>
+        <sections>
+            <label><!-- Limitation on Liability --></label>
+            <section>Limitation on Liability</section>
+        </sections>
+        <sections>
+            <label><!-- Notice --></label>
+            <section>Notice</section>
+        </sections>
+        <sections>
+            <label><!-- Online Terms --></label>
+            <section>Online Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Other Issues --></label>
+            <section>Other Issues</section>
+        </sections>
+        <sections>
+            <label><!-- Payment/Pricing --></label>
+            <section>Payment/Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- People Ops --></label>
+            <section>People Ops</section>
+        </sections>
+        <sections>
+            <label><!-- Process For Potential Breach Notifications --></label>
+            <section>Process For Potential Breach Notifications</section>
+        </sections>
+        <sections>
+            <label><!-- References --></label>
+            <section>References</section>
+        </sections>
+        <sections>
+            <label><!-- SLA --></label>
+            <section>SLA</section>
+        </sections>
+        <sections>
+            <label><!-- Security Exhibit --></label>
+            <section>Security Exhibit</section>
+        </sections>
+        <sections>
+            <label><!-- Support --></label>
+            <section>Support</section>
+        </sections>
+        <sections>
+            <label><!-- Taxes --></label>
+            <section>Taxes</section>
+        </sections>
+        <sections>
+            <label><!-- Warranties --></label>
+            <section>Warranties</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New ALA --></label>
+        <name>New_ALA</name>
+    </quickActions>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- New_ALA --></label>
+        <name>New_ALA</name>
+    </webLinks>
+</CustomObjectTranslation>

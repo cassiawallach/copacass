@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>x</joinTable>
+        </blockInfo>
+        <columns>
+            <field>CUST_ID</field>
+        </columns>
+        <columns>
+            <field>copado__User_Story__c.copado__Close_Date__c</field>
+        </columns>
+        <columns>
+            <field>copado__User_Story__c.copado__Status__c</field>
+        </columns>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <columns>
+            <field>FK_CUSTENT_ID</field>
+        </columns>
+        <columns>
+            <field>FK_$copado__Release__c.copado__Planned_Date__c</field>
+        </columns>
+        <currency>USD</currency>
+        <format>Summary</format>
+        <name>US with Release</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.copado__Release__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>x</joinTable>
+        </blockInfo>
+        <columns>
+            <field>FK_CUSTENT_ID</field>
+        </columns>
+        <columns>
+            <field>FK_NAME</field>
+        </columns>
+        <columns>
+            <field>FK_$Security_Vulnerability__c.Vulnerability_Name__c</field>
+        </columns>
+        <columns>
+            <field>FK_$Security_Vulnerability__c.SLA_Due_Date__c</field>
+        </columns>
+        <columns>
+            <field>FK_$Security_Vulnerability__c.Vulnerability_Closed_Date__c</field>
+        </columns>
+        <currency>USD</currency>
+        <format>Summary</format>
+        <name>US with SecVuln</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>CustomEntityCustomEntity$copado__User_Story__c$SecVulnUserStoryAssociation__c@SecVulnUserStoryAssociation__c.Security_Vulnerability__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>x</joinTable>
+    </blockInfo>
+    <description>User Stories with a Release Joined with User Story with Security Vulnerability</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>US with Release joined US with SecVuln</name>
+    <params>
+        <name>lsk</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.copado__Release__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

@@ -1,0 +1,8 @@
+<!-- This VF Page is used when placing the Gantt in a Layout (eg Project Layout) -->
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" standardController="amc__Project__c" extensions="amc.ganttController"
+    lightningStyleSheets="true">
+
+    <c:GanttChartCore projectId="{! projectId }" readOnly="{! readOnly }" fixedProject="{! fixedProject }" projectOverview="{! projectOverview }"
+        lightningGanttOrigin="{! lightningGanttOrigin }" initialPageLoad="{! initialPageLoad }" deviceType="{! deviceType }" isiFrame="{! isiFrame }"
+    />
+</apex:page>

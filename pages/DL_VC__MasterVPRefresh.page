@@ -1,0 +1,4 @@
+<!--<apex:page standardController="Master_Value_Proposition__c" extensions="MasterVPRefreshController" action="{! GoToMasterValueProp }">
+</apex:page>-->
+<apex:page standardController="DL_VC__Master_Value_Proposition__c" >
+</apex:page>

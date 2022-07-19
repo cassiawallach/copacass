@@ -1,0 +1,14 @@
+<!--<apex:page standardController="Master_Value_Proposition__c" extensions="MasterValuePropController" sidebar="false">
+    <apex:iframe src="{! url }" scrolling="true" id="masterVP" height="{! height}"/>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageMessages >
+                </apex:pageMessages>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>-->
+
+<apex:page standardController="DL_VC__Master_Value_Proposition__c" >
+</apex:page>

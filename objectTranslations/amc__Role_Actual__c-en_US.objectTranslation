@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Identifies the Date this Role Actual relates to --></help>
+        <label><!-- Date --></label>
+        <name>amc__Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Identifies if the Time Log this Role Actual record relates to was marked as Exclude from Billable Capacity --></help>
+        <label><!-- Exclude from Billable Capacity --></label>
+        <name>amc__Exclude_from_Billable_Capacity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Holiday record this Role Actual relates to --></help>
+        <label><!-- Holiday --></label>
+        <name>amc__Holiday__c</name>
+        <relationshipLabel><!-- Role Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Billable Hours completed from the record this Role Actual relates to (e.g. Time Log or Holiday) --></help>
+        <label><!-- Hours Completed - Billable --></label>
+        <name>amc__Hours_Completed_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the number of Non Billable Hours completed from the record this Role Actual relates to (e.g. Time Log or Holiday) --></help>
+        <label><!-- Hours Completed - Non Billable --></label>
+        <name>amc__Hours_Completed_Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the completed billable value of this Role Actual by multiplying the Hours Completed - Billable with the appropriate Billable Hourly Rate --></help>
+        <label><!-- Hours Completed Value (Billable) --></label>
+        <name>amc__Hours_Completed_Value_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the completed cost value of this Role Allocation by multiplying the Total Hours Completed with the appropriate Cost Hourly Rate --></help>
+        <label><!-- Hours Completed Value (Cost) --></label>
+        <name>amc__Hours_Completed_Value_Cost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Identifies if the Time Log this Role Actual record relates to was marked as Non Billable --></help>
+        <label><!-- Non Billable --></label>
+        <name>amc__Non_Billable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Role Allocation record this Role Actual relates to --></help>
+        <label><!-- Role Allocation --></label>
+        <name>amc__Role_Allocation__c</name>
+        <relationshipLabel><!-- Role Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Links to the Role record this Role Actual relates to --></help>
+        <label><!-- Role --></label>
+        <name>amc__Role__c</name>
+        <relationshipLabel><!-- Role Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Links to the Time Log record this Role Actual relates to --></help>
+        <label><!-- Time Log --></label>
+        <name>amc__Time_Log__c</name>
+        <relationshipLabel><!-- Role Actuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the Total Hours Completed based on &apos;Hours Completed - Billable&apos; + &apos;Hours Completed - Non Billable&apos; --></help>
+        <label><!-- Total Hours Completed --></label>
+        <name>amc__Total_Hours_Completed__c</name>
+    </fields>
+    <layouts>
+        <layout>Role Actual Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

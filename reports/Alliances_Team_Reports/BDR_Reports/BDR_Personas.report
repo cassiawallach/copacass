@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_49818368</developerName>
+        <masterLabel>Persona</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>TITLE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>CIO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO, Amcas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO, Head of Technology for Personal Investing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO, Vice President Information Technology</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO / Director of Trust Investments</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO Graduate School</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO Liberty Seguros at Spain - Digital Transformation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO -Optical Communications and Life Sciences</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>CIO - Verizon Small Business</sourceValue>
+            </sourceValues>
+            <value>CxO</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Salesforce Administrator/BA at CareerBuilder</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support Analyst</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support Engineer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support Specialist</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support Team</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Support Technician</sourceValue>
+            </sourceValues>
+            <value>BA/Support</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Architect</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architect, Documentation Tools and Architecture</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architect - Cargill vendor</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architecte Technique Salesforce Lightning</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architectural and Contract Sales Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architecture Analyst</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architecture Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Architecture Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platform Architect</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Platform Architect/Tech Lead</sourceValue>
+            </sourceValues>
+            <value>Architects/EAs/PAs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>DEVELOPER</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer.Eas SF</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer(System Engineer)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer Analyst</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer Architect</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer - CustomerTimes - Ukraine</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer DB, Senior Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer Ii</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer Programmer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer - Release Manager</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer salesforce</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer - Siemens Germany</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Developer Support Engineer</sourceValue>
+            </sourceValues>
+            <value>Developer</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>Contact.X6s_Title_Function__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Fortella_Buyer_Persona__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Vi Althans</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_49818368</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BDR Personas</name>
+    <params>
+        <name>closed</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactActivity</reportType>
+    <roleHierarchyFilter>BDR_Sales</roleHierarchyFilter>
+    <scope>team</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

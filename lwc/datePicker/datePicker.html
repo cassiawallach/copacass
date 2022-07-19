@@ -1,0 +1,80 @@
+<template>
+    <div class="datePicker_div">
+        <div aria-hidden="false" aria-label="Date picker: June" class="slds-datepicker" role="dialog">
+          <div class="slds-datepicker__filter slds-grid">
+            <div class="slds-datepicker__filter_month slds-grid slds-grid_align-spread slds-grow">
+              <div class="slds-align-middle">
+                <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Month" onclick={previousMonth}>
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#left"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Previous Month</span>
+                </button>
+              </div>
+              <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="defaultPicker-month">{month}</h2>
+              <div class="slds-align-middle">
+                <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Month" onclick={nextMonth}>
+                  <svg class="slds-button__icon" aria-hidden="true">
+                    <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#right"></use>
+                  </svg>
+                  <span class="slds-assistive-text">Next Month</span>
+                </button>
+              </div>
+            </div>
+            <div class="slds-shrink-none">
+              <label class="slds-assistive-text" for="defaultPicker_select">Pick a Year</label>
+              <div class="slds-select_container">
+                <select class="slds-select" data-id="yearOption" id="defaultPicker_select" onchange={handleChangeYear}>
+                    <template if:true={hasYearOptions}>
+                        <template for:each={yearOptions} for:item="year">
+                            <option key={year.value} value={year.value} selected={year.selected}>{year.label}</option>
+                        </template>
+                    </template>
+                </select>
+              </div>
+            </div>
+          </div>
+          <table aria-labelledby="defaultPicker-month" aria-multiselectable="true" class="slds-datepicker__month" role="grid">
+            <thead>
+              <tr id="defaultPicker-weekdays">
+                <th id="defaultPicker-Sunday" scope="col">
+                  <abbr title="Sunday">Sun</abbr>
+                </th>
+                <th id="defaultPicker-Monday" scope="col">
+                  <abbr title="Monday">Mon</abbr>
+                </th>
+                <th id="defaultPicker-Tuesday" scope="col">
+                  <abbr title="Tuesday">Tue</abbr>
+                </th>
+                <th id="defaultPicker-Wednesday" scope="col">
+                  <abbr title="Wednesday">Wed</abbr>
+                </th>
+                <th id="defaultPicker-Thursday" scope="col">
+                  <abbr title="Thursday">Thu</abbr>
+                </th>
+                <th id="defaultPicker-Friday" scope="col">
+                  <abbr title="Friday">Fri</abbr>
+                </th>
+                <th id="defaultPicker-Saturday" scope="col">
+                  <abbr title="Saturday">Sat</abbr>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+                <template if:true={isResults}>
+                    <template for:each={datesInWeek} for:item="currWeek">
+                        <tr key={currWeek.isoWeek}>
+                            <template for:each={currWeek.dates} for:item="currWeekDates">
+                                <td key={currWeekDates.index} aria-selected="false" class="slds-day_adjacent-month" role="gridcell" aria-label={currWeekDates.formatted} data-date={currWeekDates.formatted} onclick={handleSelectedDate}>
+                                    <span class={currWeekDates.className}>{currWeekDates.text}</span>
+                                </td>
+                            </template>
+                        </tr>
+                    </template>
+                </template>
+            </tbody>
+          </table>
+          <button class="slds-button slds-align_absolute-center slds-text-link" onclick={goToday}>Today</button>
+        </div>
+      </div>
+</template>

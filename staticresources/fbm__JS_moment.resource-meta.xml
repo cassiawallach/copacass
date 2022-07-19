@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>application/zip</contentType>
+    <description>Parse, validate, manipulate, and display dates and times in JavaScript.        
+
+Source: http://momentjs.com/
+Copyright (c) JS Foundation and other contributors
+
+License: MIT (https://github.com/moment/momentjs.com/blob/master/LICENSE)</description>
+</StaticResource>

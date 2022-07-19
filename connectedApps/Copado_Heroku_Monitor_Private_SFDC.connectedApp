@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>fl@copa.do</contactEmail>
+    <infoUrl>http://copa.do</infoUrl>
+    <label>Copado Heroku Monitor (Private SFDC)</label>
+    <logoUrl>https://copado--c.eu2.content.force.com/servlet/servlet.ImageServer?id=015b0000003B4Je&amp;oid=00D2z0000008awY</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://sfdc-monitor.copa.do/oauthCallback</callbackUrl>
+        <consumerKey>3MVG9LlLrkcRhGHZ75_1zzxBX1n9cqmFWgbeR4H.SnxfFxiS_bY_aPyhu0L5fPfZG5.8xNGRnnQVkzdm93syk</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

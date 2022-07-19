@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Identifies if the Role Availability record is set as the active record related to this Role --></help>
+        <label><!-- Active --></label>
+        <name>amc__Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the percentage of billable work per week the Role should achieve --></help>
+        <label><!-- Billable Target --></label>
+        <name>amc__Billable_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Identifies how many days contain a value greater than 0 to calculate the number of days per week the Role works --></help>
+        <label><!-- Days per Week --></label>
+        <name>amc__Days_per_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the End Date the Role Availability applies to --></help>
+        <label><!-- End Date --></label>
+        <name>amc__End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Friday --></label>
+        <name>amc__Friday__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula: Calculates the total hours the Role will work during the week based on the sum of all individual Day values --></help>
+        <label><!-- Hours per Week --></label>
+        <name>amc__Hours_per_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Monday --></label>
+        <name>amc__Monday__c</name>
+    </fields>
+    <fields>
+        <help><!-- Links to the Role record this Role Availability relates to --></help>
+        <label><!-- Role --></label>
+        <name>amc__Role__c</name>
+        <relationshipLabel><!-- Role Availabilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Saturday --></label>
+        <name>amc__Saturday__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the Start Date the Role Availability applies from --></help>
+        <label><!-- Start Date --></label>
+        <name>amc__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Sunday --></label>
+        <name>amc__Sunday__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Thursday --></label>
+        <name>amc__Thursday__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Tuesday --></label>
+        <name>amc__Tuesday__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies how many hours the Role is set to work on this day of the week --></help>
+        <label><!-- Wednesday --></label>
+        <name>amc__Wednesday__c</name>
+    </fields>
+    <layouts>
+        <layout>Role Availability Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,66 @@
+<!-- Generating the authorization code for another org that wishes to import one of our decision points -->
+<apex:page standardController="DecsOnD__Policy__c" id="page_policy_exporter" sidebar="false" showHeader="false" extensions="DecsOnD.PolicyExporterController" action="{!getImportAuthorizationToken}">
+  <apex:sectionHeader title="Authorize Export" subtitle="{!DecsOnD__Policy__c.DecsOnD__Applies_to__c} {!DecsOnD__Policy__c.name}"/>
+  <style>
+    div.authTokenBlock{
+        padding: 8px; 
+        height:60px;
+        width:550px;
+        word-wrap:break-word;
+        border:2px solid #eaeaea;
+        border-radius: 4px;
+        background-color: #fff;
+        overflow:auto;
+    }
+    .headerLabel{
+        font-weight: bold;
+        padding-left:5px;
+        color:#4a4a56;
+    }
+    
+    div.instructionBlock{
+        padding: 8px; 
+        width:550px;
+        word-wrap:break-word;
+        border:2px solid #eaeaea;
+        border-radius: 4px;
+        overflow:auto;
+    }
+    
+    div.wrapper{
+        padding-left:8px;
+    }
+    
+    div.instructionWrapper{
+        padding-top:15px;
+        border-top:2px solid #eaeaea;
+        margin-top:20px;
+    }
+  </style>
+  
+    <apex:pageBlock id="pb_generate_authorization_code">
+         <apex:variable var="objectName" value="{!DecsOnD__Policy__c.DecsOnD__Applies_to__c}"/>
+         <apex:variable var="polName" value="{!DecsOnD__Policy__c.name}"/>
+         <apex:pageMessages showDetail="true"/>
+         <apex:outputPanel layout="block" styleClass="wrapper">
+              <apex:outputLabel value="Authorization code" styleClass="headerLabel"/><br/><br/>
+              <apex:outputPanel layout="block" styleClass="authTokenBlock">
+                  <apex:outputLabel value="{!authorizationToken}"/>
+              </apex:outputPanel>
+         </apex:outputPanel>
+         <!-- Some instructions on how to use this generated authorization code -->
+         <apex:outputPanel layout="block" styleClass="wrapper instructionWrapper">
+              <apex:outputLabel value="Instructions for using the Authorization Code" styleClass="headerLabel"/><br/><br/>
+              <apex:outputPanel layout="block" styleClass="instructionBlock">
+                  <apex:outputLabel value="You can use the authorization code above to import this policy into another Salesforce organization. Follow these steps:"/>
+                  <ul>
+                      <li>Copy the generated authorization code above</li>
+                      <li>Log in to the target Salesforce org</li>
+                      <li>In the target org, navigate to the <b>Business Policies</b> tab of the Decisions on Demand app</li>
+                      <li>Scroll down to the <b>Import Business Policy</b> section at the bottom of the page, then click Import Policy and paste the authorization code into <b>Authorization Token</b> text area</li>
+                      <li>Click the <b>Validate Token</b> button followed by <b>Import Policy</b> to import the policy</li>
+                  </ul>
+              </apex:outputPanel>
+         </apex:outputPanel>
+   </apex:pageBlock>
+</apex:page>

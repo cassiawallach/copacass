@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>23.Q1.GLB.PARENT: Copado Community Day,22.Q2.GLB.EVT: Connecting the Clouds Summit,23.Q1.AMER.EVT: FY23Q1 Porsche Driving Experience,22.Q4.AMER.EML: Campaign Stars Partner Program ENGAGED,23.Q1.AMER.WBN: Carasoft Public Sector Webinar,23.Q1.GLB.WBN: DevOps Excellence Roundtable,23.Q1.GLB.WBN: Introduction to Salesforce Backup and DevOps w SFBen,23.Q1.AMER.EVT: HIMSS22 Happy Hour,23.Q1.AMER.CNF: HiMSS - Carahsoft Booth - Demo,23.Q1.AMER.EVT: Orange County Salesforce Event (Copado/Slalom) 3/30/22,23.Q1.AMER.WBN: CPQ Webinar,23.Q1.EMEA.WBN: CPQ Webinar,23.Q1.APAC.WBN: CPQ Webinar,23.Q1.AMER.EVT: Salesforce WT: DC,23.Q1.AMER.EVT: Salesforce WT: Booth &amp; Sessions,23.Q1.AMER.EVT: Salesforce WT: Carahsoft Reception,22.EG.GLB.INB: App Exchange Chat Bot</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.SAL_Acceptance_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>2/1/2022</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Partner - With - SAL - This Q</name>
+    <params>
+        <name>terr</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityCampaign</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CAMPAIGN_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

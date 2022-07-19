@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Hierarchy Click Count --></label>
+        <name>TracHier__Hierarchy_Click_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Scroll Count --></label>
+        <name>TracHier__Hierarchy_Scroll_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Id --></label>
+        <name>TracHier__UserId__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -65,18 +65,6 @@
         <fields>NamespacePrefix</fields>
         <relatedList>copado__UISection__mdt.copado__Extension_Package_Configuration__c</relatedList>
     </relatedLists>
-    <relatedLists>
-        <fields>MasterLabel</fields>
-        <fields>DeveloperName</fields>
-        <fields>NamespacePrefix</fields>
-        <relatedList>copado__ExtensionKeyValueSetting__mdt.copado__Extension__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>MasterLabel</fields>
-        <fields>DeveloperName</fields>
-        <fields>NamespacePrefix</fields>
-        <relatedList>copado__MultiCloudAutomation__mdt.copado__Platform_Configuration__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

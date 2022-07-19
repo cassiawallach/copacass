@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>redwing__ILT_Session__c.redwing__ILT_Rosters__r$redwing__User__c</field>
+    </columns>
+    <columns>
+        <field>redwing__ILT_Session__c$Name</field>
+    </columns>
+    <columns>
+        <field>redwing__ILT_Session__c.redwing__ILT_Rosters__r$Name</field>
+    </columns>
+    <columns>
+        <field>redwing__ILT_Session__c.redwing__ILT_Rosters__r$redwing__Registered_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>redwing__ILT_Session__c$redwing__ILT_Class__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Copado Robotic Testing</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>redwing__ILT_Session__c.redwing__ILT_Rosters__r$redwing__User__c.CompanyName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CRT - Workshop - 12/8/21</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ILT_Sessions_Classes__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>redwing__ILT_Session__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

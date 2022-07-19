@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Done --></label>
+        <name>Q9__Done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>Q9__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Id --></label>
+        <name>Q9__Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Success --></label>
+        <name>Q9__Success__c</name>
+    </fields>
+</CustomObjectTranslation>

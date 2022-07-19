@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>TracRTC__Account__c</name>
+        <relationshipLabel><!-- History Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>TracRTC__Case__c</name>
+        <relationshipLabel><!-- History Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>TracRTC__Contact__c</name>
+        <relationshipLabel><!-- History Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Evaluated Fields --></label>
+        <name>TracRTC__Evaluated_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Name --></label>
+        <name>TracRTC__Flow_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Step Evaluated As --></label>
+        <name>TracRTC__Flow_Step_Evaluated_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Step --></label>
+        <name>TracRTC__Flow_Step__c</name>
+        <relationshipLabel><!-- History Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- History Index --></label>
+        <name>TracRTC__History_Index__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>TracRTC__Lead__c</name>
+        <relationshipLabel><!-- History Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Log Date --></label>
+        <name>TracRTC__Log_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Number --></label>
+        <name>TracRTC__Log_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Sort --></label>
+        <name>TracRTC__Log_Sort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matching Debug Info --></label>
+        <name>TracRTC__Matching_Debug_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified Fields --></label>
+        <name>TracRTC__Modified_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>TracRTC__Opportunity__c</name>
+        <relationshipLabel><!-- History Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Field Value --></label>
+        <name>TracRTC__Previous_Field_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates if the record was processed by the Traction Complete service. --></help>
+        <label><!-- Traction Complete Processed --></label>
+        <name>TracRTC__Realtime_Clean_Processed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>TracRTC__Record_Type_Name__c</name>
+    </fields>
+    <layouts>
+        <layout>History Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- History log used to track the first response time of a lead --></description>
+        <label><!-- First_Response --></label>
+        <name>TracRTC__First_Response</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -7,7 +7,6 @@
         <description>API name of static resource</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>API name of static resource</inlineHelpText>
         <label>Provider</label>
         <length>80</length>
         <required>true</required>
@@ -21,7 +20,6 @@
         <description>Name of static resource bundle provider</description>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
-        <inlineHelpText>Name of static resource bundle provider</inlineHelpText>
         <label>Static Resource Name</label>
         <length>80</length>
         <required>true</required>

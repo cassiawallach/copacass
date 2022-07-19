@@ -1,0 +1,16 @@
+Dear Accountsreceivable@copado.com,
+<p>
+Here is the draft invoice for 
+<a href="https://copado.lightning.force.com/{!kugo2p__KugamonInvoice__c.kugo2p__AccountId__c}"> {!kugo2p__KugamonInvoice__c.kugo2p__Account__c} </a>  for  <a href=" https://copado.lightning.force.com/{!kugo2p__KugamonInvoice__c.OpportunityId__c}">{!kugo2p__KugamonInvoice__c.Opportunity__c}. </a> </p>
+</br>
+<p>
+INVOICE SUMMARY </br>
+- Invoice Number: <a href="{!kugo2p__KugamonInvoice__c.Link}"> {!kugo2p__KugamonInvoice__c.Name} </a> </br>
+- Invoice Due Date: {!kugo2p__KugamonInvoice__c.kugo2p__InvoiceDueDate__c} </br>
+- Invoice Amount: {!kugo2p__KugamonInvoice__c.kugo2p__BalanceDueAmount__c} </p>
+</br>
+<p>
+Please review and prepare the final invoice in XERO.</p>
+<p>
+If you have any questions, please contact Operations:</br></br>
+Rosie Milem: rmilem@copado.com</br>

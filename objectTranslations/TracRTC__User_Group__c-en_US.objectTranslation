@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Advanced Round Robin Type --></label>
+        <name>TracRTC__Advanced_Round_Robin_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error_Message --></label>
+        <name>TracRTC__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Id --></label>
+        <name>TracRTC__Source_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Object --></label>
+        <name>TracRTC__Source_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync User Group --></label>
+        <name>TracRTC__Sync_User_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Group Label --></label>
+        <name>TracRTC__User_Group_Label__c</name>
+    </fields>
+    <sharingReasons>
+        <label><!-- User Group Manager --></label>
+        <name>TracRTC__User_Group_Manager</name>
+    </sharingReasons>
+</CustomObjectTranslation>

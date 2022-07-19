@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>fbm__Account__c</name>
+        <relationshipLabel><!-- FunnelBeam Enrichments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company City --></label>
+        <name>fbm__Company_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Country Code --></label>
+        <name>fbm__Company_Country_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Country --></label>
+        <name>fbm__Company_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Description --></label>
+        <name>fbm__Company_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Employee Range --></label>
+        <name>fbm__Company_Employee_Range__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Employee Size --></label>
+        <name>fbm__Company_Employee_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Employees Count --></label>
+        <name>fbm__Company_Employees_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Founded --></label>
+        <name>fbm__Company_Founded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Industry --></label>
+        <name>fbm__Company_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Linkedin --></label>
+        <name>fbm__Company_Linkedin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Phone --></label>
+        <name>fbm__Company_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Postal Code --></label>
+        <name>fbm__Company_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Revenue --></label>
+        <name>fbm__Company_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company State Code --></label>
+        <name>fbm__Company_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company State --></label>
+        <name>fbm__Company_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Street Address --></label>
+        <name>fbm__Company_Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Type --></label>
+        <name>fbm__Company_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Website --></label>
+        <name>fbm__Company_WebSite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Zip --></label>
+        <name>fbm__Company_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>fbm__Contact__c</name>
+        <relationshipLabel><!-- FunnelBeam Enrichments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>fbm__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- InvokeId --></label>
+        <name>fbm__InvokeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>fbm__Lead__c</name>
+        <relationshipLabel><!-- FunnelBeam Enrichments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>fbm__Parent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person City --></label>
+        <name>fbm__Person_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Company Name --></label>
+        <name>fbm__Person_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Company Tenure --></label>
+        <name>fbm__Person_Company_Tenure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Country --></label>
+        <name>fbm__Person_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Email --></label>
+        <name>fbm__Person_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person First Name --></label>
+        <name>fbm__Person_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Last Name --></label>
+        <name>fbm__Person_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Linkedin --></label>
+        <name>fbm__Person_Linkedin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Mobile Phone --></label>
+        <name>fbm__Person_Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person State Code --></label>
+        <name>fbm__Person_State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person State --></label>
+        <name>fbm__Person_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Title --></label>
+        <name>fbm__Person_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Email --></label>
+        <name>fbm__Professional_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequestId --></label>
+        <name>fbm__RequestId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ResponseId --></label>
+        <name>fbm__ResponseId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject Type --></label>
+        <name>fbm__SObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>fbm__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enriched</masterLabel>
+            <translation><!-- Enriched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>FunnelBeam Enrichment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Enrichment Information --></label>
+            <section>Enrichment Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

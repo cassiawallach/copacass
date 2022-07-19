@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>PARENTGROUPVAL(CDF1:SUM,BucketField_17364812)/PARENTGROUPVAL(CDF1:SUM,GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>% Age in Days</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>BucketField_17364812</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Age In Days</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_17364812</developerName>
+        <masterLabel>Age in Days</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>719</to>
+            </sourceValues>
+            <value>Cases &lt; 30 Days Old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>719</from>
+                <to>1,439</to>
+            </sourceValues>
+            <value>Cases &gt;= 30 Days Old</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,439</from>
+            </sourceValues>
+            <value>Cases &gt;= 60 Days Old</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_20816933</developerName>
+        <masterLabel>Status Bucket</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Response</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting approval</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting customer feedback</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hold - awaiting feedback</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Scheduling</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Confirmation from Client</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Response from Client</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Awaiting Confirmation from Client - Known Issue Created</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On Hold</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Business Review Blocked</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Needs Requirements</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Backlog</sourceValue>
+            </sourceValues>
+            <value>Waiting / On Hold</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Complete</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Canceled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - No Action</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Escalated</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Live</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Bug fix submitted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Duplicate</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Feature Request</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - No response from customer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Out of scope</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Resolved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Routed to internal helpdesk</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed - Spam</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Deployed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Converted to User Story</sourceValue>
+            </sourceValues>
+            <value>Done / Canceled</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>In progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Escalated</sourceValue>
+            </sourceValues>
+            <value>In Progress</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Funnel</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_17364812</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Infra Cases by Owner</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <colorRanges>
+        <columnName>FORMULA1</columnName>
+        <highBreakpoint>59.0</highBreakpoint>
+        <highColor>#B50E03</highColor>
+        <lowBreakpoint>30.0</lowBreakpoint>
+        <lowColor>#00B531</lowColor>
+        <midColor>#E6E830</midColor>
+    </colorRanges>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>1</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Row Count</description>
+        <developerName>CDF1</developerName>
+        <label>Row Count</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Active Cases assigned to the Infrastructure Team</description>
+    <filter>
+        <booleanFilter>1 AND ((2 AND 3) OR 4)</booleanFilter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Completed,Canceled,Closed,Closed - Bug fix submitted,Closed - Duplicate,Closed - Feature Request,Closed - No response from customer,Closed - Out of scope,Closed - Resolved,Closed - Routed to internal helpdesk,Closed - Spam,Complete,Converted to User Story,Closed - Escalated,Closed - No Action</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.IT_Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Infrastructure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Infrastructure_Request</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <formattingRules>
+        <columnName>FORMULA1</columnName>
+        <values>
+            <backgroundColor>#00B531</backgroundColor>
+            <rangeUpperBound>30.0</rangeUpperBound>
+        </values>
+        <values>
+            <backgroundColor>#E6E830</backgroundColor>
+            <rangeUpperBound>59.0</rangeUpperBound>
+        </values>
+        <values>
+            <backgroundColor>#B50E03</backgroundColor>
+        </values>
+    </formattingRules>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_17364812</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_20816933</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Infrastructure Active Cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CDF1</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -128,7 +128,9 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <content>copado__DataTemplateSetup</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -187,7 +189,7 @@
                 <value>
                     <fullName>No Attachments</fullName>
                     <default>true</default>
-                    <label>No Actions</label>
+                    <label>No Attachments</label>
                 </value>
                 <value>
                     <fullName>Insert Attachments</fullName>
@@ -333,6 +335,34 @@
     </fields>
     <label>Data Template</label>
     <listViews>
+        <fullName>CPQ_Templates</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>SBQQ</value>
+        </filters>
+        <label>CPQ Templates</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Conga_Composer_Templates</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Main_Object__c</field>
+            <operation>contains</operation>
+            <value>APXTConga4</value>
+        </filters>
+        <label>Conga Composer Templates</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
         <columns>copado__Active__c</columns>
@@ -341,8 +371,10 @@
         <columns>copado__Max_Record_Limit__c</columns>
         <columns>copado__Batch_Size__c</columns>
         <columns>CREATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+        <language>en_US</language>
     </listViews>
     <nameField>
         <label>Data Template Name</label>

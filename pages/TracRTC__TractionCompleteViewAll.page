@@ -1,0 +1,33 @@
+<apex:page standardController="Lead" extensions="TracRTC.TractionCompleteViewAllExt">
+
+    <apex:includeLightning />
+    <apex:stylesheet value="{!URLFOR($Resource.TracRTC__TracRTC_SLDS, 'assets/styles/salesforce-lightning-design-system-vf.min.css')}" />
+
+    <div class="TracRTC">
+        <div id="lightning" />
+    </div>
+
+    <script type="text/javascript">
+    		$Lightning.use("TracRTC:lcvfTractionComplete", function() {
+  				$Lightning.createComponent(
+            		"TracRTC:TractionCompleteViewAll",
+            		{
+		                recordId : "{!JSENCODE(lead.Id)}",
+                        accountMatchId : "{!JSENCODE(lead.TracRTC__Account__c)}",
+                        contactMatchId : "{!JSENCODE(lead.TracRTC__Contact__c)}",
+		                SObjectType : "{!JSENCODE(sObjectTypeParam)}",
+		                title : "{!JSENCODE(titleParam)}",
+		                allQuery : "{!JSENCODE(queryParam)}",
+                        showCheckboxes : "{!JSENCODE(checkboxParam)}",
+                        displayMergeButton : "{!JSENCODE(mergeButtonParam)}",
+                        displayConvertButton : "{!JSENCODE(convertButtonParam)}",
+                        sessionId : "{!$Api.Session_ID}"
+            		},
+            		"lightning",
+            		function(cmp) {
+              			document.getElementById("lightning").className = "";
+            		}
+            	);
+        	});
+    </script>
+</apex:page>

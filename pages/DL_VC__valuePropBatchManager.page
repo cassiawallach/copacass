@@ -1,0 +1,24 @@
+<!--
+Description: This VF Page allows you to launch the batch process adhocly.
+-->
+<apex:page controller="DL_VC.ValuePropBatchManagerController" showHeader="false" lightningStylesheets="true">
+    <head>
+        <apex:slds />
+    </head>
+    <body>
+        <apex:form >
+            <apex:pageBlock rendered="{! not_running }">
+                <apex:pageBlockSection >
+                    <apex:pageMessages >
+                    </apex:pageMessages>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="3">
+                    <apex:commandButton action="{!callBatch}" value="Refresh Value Propositions"/>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock rendered="{! running }">
+                Your batch job has begun. Check Apex jobs for the status.
+            </apex:pageBlock>
+        </apex:form>
+    </body>
+</apex:page>

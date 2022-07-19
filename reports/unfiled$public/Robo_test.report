@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>Opportunity.SBQQ__Quotes2__r$SBQQ__Primary__c</acrossGroupingContext>
+        <calculatedFormula>
+CDF1:SUM*PREVGROUPVAL(CDF1:SUM,SBQQ__Quote__c.SBQQ__Primary__c)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Opportunity$Name</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Non-Primary * Primary</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92026298</developerName>
+        <masterLabel>Product Type</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity.SBQQ__Quotes2__r.SBQQ__LineItems__r$SBQQ__Product__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Certification</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing On Premise Testing Robots - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Parallel Robot - Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing Standard Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Enterprise Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Professional Package</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Copado Robotic Testing User - Standard Package</sourceValue>
+            </sourceValues>
+            <value>Robotic</value>
+        </values>
+    </buckets>
+    <colorRanges>
+        <columnName>FORMULA1</columnName>
+        <highColor>#FFFFFF</highColor>
+        <lowBreakpoint>0.0</lowBreakpoint>
+        <lowColor>#FFFF93</lowColor>
+        <midColor>#FFFFFF</midColor>
+    </colorRanges>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$SBQQ__PrimaryQuote__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SBQQ__Quotes2__r$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SBQQ__Quotes2__r.SBQQ__LineItems__r$SBQQ__Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.SBQQ__Quotes2__r.SBQQ__LineItems__r$SBQQ__NetTotal__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <currency>USD</currency>
+    <customDetailFormulas>
+        <calculatedFormula>if(
+    CONTAINS(lower(SBQQ__QuoteLine__c.SBQQ__Product__c.Name),&quot;robotic&quot;)=TRUE,
+    1,0)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Has Robotic?</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$IsWon</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <formattingRules>
+        <columnName>FORMULA1</columnName>
+        <values>
+            <backgroundColor>#FFFF93</backgroundColor>
+            <rangeUpperBound>0.0</rangeUpperBound>
+        </values>
+    </formattingRules>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.SBQQ__Quotes2__r$SBQQ__Primary__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_92026298</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Robo test</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Opportunities_with_Primary_Quote_and_Quote_Lines__c</reportType>
+    <roleHierarchyFilter>System_Administrator</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$ClickDeploy_Enterprise_Trial_Expiry_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Usage metrics specific to an individual user.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TracRTC__Active_In_Dynamic_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime for when a user was last dynamically assigned.</description>
+        <externalId>false</externalId>
+        <label>Active In Dynamic Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Active_In_Round_Robin_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime for when a user was added to a round robin flow step.</description>
+        <externalId>false</externalId>
+        <label>Active In Round Robin Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Active_In_User_Group_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime for when a user was included in a user group.</description>
+        <externalId>false</externalId>
+        <label>Active In User Group Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Has_Been_Dynamically_Assigned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether or not a user was dynamically assigned.</description>
+        <externalId>false</externalId>
+        <label>Has Been Dynamically Assigned</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Is_Included_In_Round_Robin_Step__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether or not a user is included in a round robin step.</description>
+        <externalId>false</externalId>
+        <label>Is Included In Round Robin Step</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__Is_Included_In_User_Group__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether or not a user is included in a user group.</description>
+        <externalId>false</externalId>
+        <label>Is Included In User Group</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TracRTC__User_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Users salesforce user Id.</description>
+        <externalId>true</externalId>
+        <label>User Id</label>
+        <length>18</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>User Usage Metrics</label>
+    <listViews>
+        <fullName>TracRTC__All</fullName>
+        <columns>NAME</columns>
+        <columns>TracRTC__Active_In_Dynamic_Date__c</columns>
+        <columns>TracRTC__Active_In_Round_Robin_Date__c</columns>
+        <columns>TracRTC__Active_In_User_Group_Date__c</columns>
+        <columns>TracRTC__Has_Been_Dynamically_Assigned__c</columns>
+        <columns>TracRTC__Is_Included_In_Round_Robin_Step__c</columns>
+        <columns>TracRTC__Is_Included_In_User_Group__c</columns>
+        <columns>TracRTC__User_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>
