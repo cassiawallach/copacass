@@ -7490,6 +7490,26 @@
         <name>copadoconnect__Additional_Parameter__c</name>
     </customSettingAccesses>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>AE_SE_Mappings__c.Active_Primary_Mappings__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AE_SE_Mappings__c.Backup_SE__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AE_SE_Mappings__c.Primary_Mapping__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>AE_SE_Mappings__c.User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -9415,6 +9435,41 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Mapping__c.Duration_days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mapping__c.End_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mapping__c.Primary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mapping__c.Prior_Primary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mapping__c.Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Mapping__c.Vertical_RVP_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Mapping__c.Vertical_RVP__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>OmniESignatureTemplate.Description</field>
         <readable>true</readable>
@@ -10597,6 +10652,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.WhoId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Has_Mappings_Record__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>User.Team_Function__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -17045,6 +17110,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>AE_SE_Mappings__c-SE Mappings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AE_SE_Mappings__c-SE Mappings Layout</layout>
+        <recordType>AE_SE_Mappings__c.SE_Mappings</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -17282,6 +17354,9 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Mapping__c-Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -17399,6 +17474,9 @@
         <layout>User-User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>UserProvAccount-User Provisioning Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -17409,6 +17487,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>VehicleUserAssignment-Vehicle User Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Vertical_RVP__mdt-Vertical RVP Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Visit-Visit Layout</layout>
@@ -17470,6 +17551,19 @@
     <layoutAssignments>
         <layout>copadovsm__Value_Stream_Map_Snapshot__c-copadovsm__Value Stream Map Snapshot Layout</layout>
     </layoutAssignments>
+    <loginIpRanges>
+        <endAddress>255.255.255.255</endAddress>
+        <startAddress>0.0.0.0</startAddress>
+    </loginIpRanges>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>AE_SE_Mappings__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -18035,6 +18129,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>Macro</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Mapping__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -20273,6 +20376,17 @@
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>AE_SE_Mappings__c.AE_Mappings</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>AE_SE_Mappings__c.SE_Mappings</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
@@ -21285,10 +21399,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>AllowObjectDetectionTraining</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>AllowUniversalSearch</name>
     </userPermissions>
     <userPermissions>
@@ -21302,6 +21412,14 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApproveContract</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ArchiveArticles</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21433,10 +21551,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>DecisionTableExecUserAccess</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>DelegatedTwoFactor</name>
     </userPermissions>
     <userPermissions>
@@ -21514,6 +21628,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>EditTopics</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditTranslation</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21725,6 +21843,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManageQuotas</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManageRecommendationStrategies</name>
     </userPermissions>
     <userPermissions>
@@ -21766,6 +21888,14 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ManageSynonyms</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageTerritories</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageTranslation</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21813,6 +21943,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>OverrideForecasts</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>Packaging2</name>
     </userPermissions>
     <userPermissions>
@@ -21821,7 +21955,7 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>Packaging2PromoteVersion</name>
+        <name>PermitSubscriberLogin</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21829,7 +21963,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>PublishArticles</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>PublishPackaging</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>PublishTranslation</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21838,10 +21980,6 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ResetPasswords</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>RetainFieldHistory</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21877,7 +22015,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>SocialInsightsLogoAdmin</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>SolutionImport</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SubmitForTranslation</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21913,6 +22059,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>TraceXdsQueries</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>TransactionalEmailSend</name>
     </userPermissions>
     <userPermissions>
@@ -21941,11 +22091,19 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ViewAllForecasts</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ViewAllProfiles</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewAllUsers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewArchivedArticles</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21957,7 +22115,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ViewDataLeakageEvents</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ViewDeveloperName</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewDraftArticles</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21966,6 +22132,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewFlowUsageAndFlowEventData</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewGlobalHeader</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -21982,6 +22152,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewMyTeamsDashboards</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewPlatformEvents</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
@@ -22006,9 +22180,5 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ViewUserPII</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>WorkCalibrationUser</name>
     </userPermissions>
 </Profile>
