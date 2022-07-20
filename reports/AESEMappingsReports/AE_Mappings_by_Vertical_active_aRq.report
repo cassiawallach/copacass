@@ -43,7 +43,6 @@
     <columns>
         <field>Mapping__c.Start_Date__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Mapping__c.Status__c</column>

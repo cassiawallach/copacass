@@ -47,7 +47,6 @@
     <columns>
         <field>Mapping__c.Duration_days__c</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>Mapping__c.Status__c</column>
