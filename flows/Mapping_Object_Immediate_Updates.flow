@@ -4,7 +4,7 @@
         <name>New_SE_AE_Mapping_Email</name>
         <label>New SE/AE Mapping Email</label>
         <locationX>578</locationX>
-        <locationY>408</locationY>
+        <locationY>888</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -55,7 +55,37 @@
             </value>
         </assignmentItems>
     </assignments>
-    <description>sdf</description>
+    <assignments>
+        <name>Collect_Email_Addresses_0</name>
+        <label>Collect Email Addresses</label>
+        <locationX>578</locationX>
+        <locationY>768</locationY>
+        <assignmentItems>
+            <assignToReference>New_Mapping_Email_Recipients</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>AE_Email_Address</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>New_Mapping_Email_Recipients</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SE_Email_Address</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>New_Mapping_Email_Recipients</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RVP_Email_Address</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>New_SE_AE_Mapping_Email</targetReference>
+        </connector>
+    </assignments>
+    <environments>Default</environments>
     <interviewLabel>Mapping Object Immediate Updates {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Mapping Object Immediate Updates</label>
     <processMetadataValues>
@@ -101,6 +131,29 @@
         </outputAssignments>
     </recordLookups>
     <recordLookups>
+        <name>Get_AE_User_Record_0</name>
+        <label>Get AE User Record</label>
+        <locationX>578</locationX>
+        <locationY>648</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collect_Email_Addresses_0</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AE_User__r.User__r.Id</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>AE_Email_Address</assignToReference>
+            <field>Email</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
         <name>Get_RVP_Email</name>
         <label>Get RVP Email</label>
         <locationX>50</locationX>
@@ -124,6 +177,29 @@
         </outputAssignments>
     </recordLookups>
     <recordLookups>
+        <name>Get_RVP_Email_0</name>
+        <label>Get RVP Email</label>
+        <locationX>578</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_SE_User_Record_0</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Vertical_RVP__r.Id</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>RVP_Email_Address</assignToReference>
+            <field>Email</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
         <name>Get_SE_User_Record</name>
         <label>Get SE User Record</label>
         <locationX>50</locationX>
@@ -131,6 +207,29 @@
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_AE_User_Record</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SE_User__r.User__r.Id</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>SE_Email_Address</assignToReference>
+            <field>Email</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_SE_User_Record_0</name>
+        <label>Get SE User Record</label>
+        <locationX>578</locationX>
+        <locationY>528</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_AE_User_Record_0</targetReference>
         </connector>
         <filterLogic>or</filterLogic>
         <filters>
@@ -176,7 +275,7 @@
         <locationX>578</locationX>
         <locationY>288</locationY>
         <connector>
-            <targetReference>New_SE_AE_Mapping_Email</targetReference>
+            <targetReference>Get_RVP_Email_0</targetReference>
         </connector>
         <inputAssignments>
             <field>Status__c</field>
@@ -213,7 +312,7 @@
                 <targetReference>Status_Innative</targetReference>
             </connector>
             <label>Mapping End Date = Today</label>
-            <offsetNumber>1</offsetNumber>
+            <offsetNumber>2</offsetNumber>
             <offsetUnit>Minutes</offsetUnit>
             <recordField>End_Date__c</recordField>
             <timeSource>RecordField</timeSource>
@@ -224,7 +323,7 @@
                 <targetReference>Status_Active</targetReference>
             </connector>
             <label>Mapping Start Date = Today</label>
-            <offsetNumber>1</offsetNumber>
+            <offsetNumber>2</offsetNumber>
             <offsetUnit>Minutes</offsetUnit>
             <recordField>Start_Date__c</recordField>
             <timeSource>RecordField</timeSource>
