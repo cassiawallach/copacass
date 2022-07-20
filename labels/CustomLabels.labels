@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>RT_Label_for_AE_Mapping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_Label_for_AE_Mapping</shortDescription>
+        <value>0122z000001DYzkAAG</value>
+    </labels>
+    <labels>
+        <fullName>RT_Label_for_SE_Mapping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RT_Label_for_SE_Mapping</shortDescription>
+        <value>0122z000001DYzlAAG</value>
+    </labels>
+</CustomLabels>
