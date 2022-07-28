@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Copado Wiki.Content:Competitors</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Competitors</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Content:Copa Sales</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Copa Sales</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Sales Processes, Competitive Battle-cards, Meeting Guides, Sales Resources</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Content:People Ops</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>People Ops</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>HR, Internal Links, Onboarding Resources</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Content:Product</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Product</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>Copado Products &amp; Features</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Content:Prospect Meeting Guides</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Prospect Meeting Guides</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription>Demo Scripts, Discovery Questions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Content:Releases</fullName>
+        <managedTopicType>Content</managedTopicType>
+        <name>Releases</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription>Release Updates, Upgrade Instructions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Featured:Competitors</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Competitors</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Featured:Copa Sales</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Copa Sales</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Sales Processes, Competitive Battle-cards, Meeting Guides, Sales Resources</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Featured:People Ops</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>People Ops</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription>HR, Internal Links, Onboarding Resources</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Featured:Product</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Product</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription>Copado Products &amp; Features</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Featured:Prospect Meeting Guides</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Prospect Meeting Guides</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription>Demo Scripts, Discovery Questions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Featured:Releases</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Releases</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>Release Updates, Upgrade Instructions</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Navigational:Competitors</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Competitors</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Navigational:Copa Sales</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Copa Sales</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription>Sales Processes, Competitive Battle-cards, Meeting Guides, Sales Resources</topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Copado Wiki.Navigational:Product</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Product</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription>Copado Products &amp; Features</topicDescription>
+    </managedTopic>
+</ManagedTopics>
